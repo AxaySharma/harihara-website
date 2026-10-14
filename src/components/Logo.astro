@@ -1,0 +1,52 @@
+---
+interface Props {
+  variant?: 'full' | 'symbol' | 'wordmark';
+  light?: boolean;
+  class?: string;
+  width?: number;
+  height?: number;
+  alt?: string;
+}
+
+const {
+  variant = 'full',
+  light = false,
+  class: className = '',
+  width,
+  height,
+  alt = 'Hari Hara Serenity Chemical LLP',
+} = Astro.props;
+
+// Determine image source and default aspect ratio based on variant and light mode
+let src = '/brand/logo-full.png';
+let defaultWidth = 260;
+let defaultHeight = 69;
+
+if (variant === 'symbol') {
+  // Use SVG for symbol when available for sharp vector rendering
+  src = '/brand/logo-symbol.svg';
+  defaultWidth = 48;
+  defaultHeight = 60;
+} else if (variant === 'wordmark') {
+  src = '/brand/logo-wordmark.png';
+  defaultWidth = 220;
+  defaultHeight = 46;
+} else if (variant === 'full') {
+  src = light ? '/brand/logo-full-light.png' : '/brand/logo-full.png';
+  defaultWidth = 260;
+  defaultHeight = 69;
+}
+
+const finalWidth = width || defaultWidth;
+const finalHeight = height || defaultHeight;
+---
+
+<img
+  src={src}
+  alt={alt}
+  width={finalWidth}
+  height={finalHeight}
+  class={`inline-block object-contain ${className}`}
+  loading="eager"
+  decoding="async"
+/>

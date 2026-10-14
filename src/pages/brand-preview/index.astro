@@ -1,0 +1,115 @@
+---
+import Logo from '../../components/Logo.astro';
+import '../../styles/global.css';
+
+// Brand Preview page - Temporary inspection page for logo assets (noindex)
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Brand Assets Quality Preview | Hari Hara Serenity</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-gray-100 font-sans p-6 md:p-12 space-y-12">
+    <div class="max-w-6xl mx-auto space-y-8">
+      <div class="border-b border-gray-300 pb-4">
+        <h1 class="text-2xl font-bold text-gray-900">Brand Assets & Logo Inspection</h1>
+        <p class="text-sm text-gray-600 mt-1">
+          Temporary review page for inspecting edge fidelity, anti-aliasing, and contrast across paper (#F6F3EE) and charcoal (#1C1C1C) backgrounds.
+          <strong class="text-red-600">Must be deleted before launch.</strong>
+        </p>
+      </div>
+
+      <!-- SECTION 1: Paper Background (#F6F3EE) -->
+      <div class="space-y-4">
+        <h2 class="text-lg font-semibold text-gray-800">1. Light Background: Paper (<code class="bg-gray-200 px-1 py-0.5 rounded text-xs">#F6F3EE</code>)</h2>
+        <div class="bg-[#F6F3EE] p-8 md:p-12 rounded-xl shadow-xs border border-gray-200 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center">
+          
+          <div class="p-6 rounded border border-black/5 bg-[#FAF8F5]/50 flex flex-col items-center justify-between min-h-[220px]">
+            <span class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-4">logo-full.png</span>
+            <div class="my-auto">
+              <Logo variant="full" width={260} height={69} class="max-h-16 w-auto" />
+            </div>
+            <span class="text-[11px] text-gray-400 mt-4">Full lockup with original TM</span>
+          </div>
+
+          <div class="p-6 rounded border border-black/5 bg-[#FAF8F5]/50 flex flex-col items-center justify-between min-h-[220px]">
+            <span class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-4">logo-symbol (SVG & PNG)</span>
+            <div class="my-auto flex items-center gap-6">
+              <div class="text-center">
+                <img src="/brand/logo-symbol.svg" alt="Symbol SVG" class="h-16 w-auto mx-auto" />
+                <span class="text-[10px] text-gray-400">SVG</span>
+              </div>
+              <div class="text-center">
+                <img src="/brand/logo-symbol.png" alt="Symbol PNG" class="h-16 w-auto mx-auto" />
+                <span class="text-[10px] text-gray-400">PNG</span>
+              </div>
+            </div>
+            <span class="text-[11px] text-gray-400 mt-4">Symbol only (no TM)</span>
+          </div>
+
+          <div class="p-6 rounded border border-black/5 bg-[#FAF8F5]/50 flex flex-col items-center justify-between min-h-[220px]">
+            <span class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-4">logo-wordmark.png</span>
+            <div class="my-auto">
+              <Logo variant="wordmark" width={220} height={46} class="max-h-12 w-auto" />
+            </div>
+            <span class="text-[11px] text-gray-400 mt-4">Wordmark only (no symbol, no TM)</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION 2: Charcoal Background (#1C1C1C) -->
+      <div class="space-y-4">
+        <h2 class="text-lg font-semibold text-gray-800">2. Dark Background: Charcoal (<code class="bg-gray-200 px-1 py-0.5 rounded text-xs">#1C1C1C</code>)</h2>
+        <div class="bg-[#1C1C1C] p-8 md:p-12 rounded-xl shadow-xs grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center">
+          
+          <div class="p-6 rounded border border-white/10 bg-white/5 flex flex-col items-center justify-between min-h-[220px]">
+            <span class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-4">logo-full-light.png</span>
+            <div class="my-auto">
+              <Logo variant="full" light={true} width={260} height={69} class="max-h-16 w-auto" />
+            </div>
+            <span class="text-[11px] text-gray-500 mt-4">Off-white lockup for dark UI</span>
+          </div>
+
+          <div class="p-6 rounded border border-white/10 bg-white/5 flex flex-col items-center justify-between min-h-[220px]">
+            <span class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-4">logo-symbol (SVG & PNG)</span>
+            <div class="my-auto flex items-center gap-6">
+              <div class="text-center">
+                <img src="/brand/logo-symbol.svg" alt="Symbol SVG" class="h-16 w-auto mx-auto" />
+                <span class="text-[10px] text-gray-500">SVG</span>
+              </div>
+              <div class="text-center">
+                <img src="/brand/logo-symbol.png" alt="Symbol PNG" class="h-16 w-auto mx-auto" />
+                <span class="text-[10px] text-gray-500">PNG</span>
+              </div>
+            </div>
+            <span class="text-[11px] text-gray-500 mt-4">Crimson arch on dark background</span>
+          </div>
+
+          <div class="p-6 rounded border border-white/10 bg-white/5 flex flex-col items-center justify-between min-h-[220px]">
+            <span class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-4">apple-touch-icon & favicons</span>
+            <div class="my-auto flex items-center gap-4 justify-center">
+              <img src="/apple-touch-icon.png" alt="Apple Touch Icon" class="w-14 h-14 rounded-xl border border-white/10" />
+              <img src="/favicon.png" alt="Favicon PNG" class="w-8 h-8" />
+            </div>
+            <span class="text-[11px] text-gray-500 mt-4">Apple Touch Icon (180x180) & Favicon</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION 3: Social Preview Image -->
+      <div class="space-y-4">
+        <h2 class="text-lg font-semibold text-gray-800">3. Social Open Graph Preview (<code class="bg-gray-200 px-1 py-0.5 rounded text-xs">public/og-default.png</code> 1200x630)</h2>
+        <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-200 max-w-2xl">
+          <img src="/og-default.png" alt="OG Default Preview" class="w-full h-auto rounded border border-gray-100" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

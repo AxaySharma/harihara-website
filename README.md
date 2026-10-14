@@ -100,3 +100,10 @@ npx astro check
   - Body & UI: `Montserrat` (Latin sans) / Noto Sans per script
   - Arabic: `Noto Naskh Arabic` / `Noto Sans Arabic`
   - Non-Latin script font packages are dynamically imported only on their respective language pages.
+
+---
+
+## Temporary Pages
+
+- **`/brand-preview/`**: Temporary inspection page displaying all logo variants across `#F6F3EE` (paper) and `#1C1C1C` (charcoal) backgrounds to inspect anti-aliasing and edge fidelity. **Must be deleted before launch.**
+

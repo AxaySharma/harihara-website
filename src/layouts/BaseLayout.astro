@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import FontLoader from '../components/FontLoader.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import Logo from '../components/Logo.astro';
 import { languages, getVisibleLanguages } from '../i18n/languages.config';
 import { useTranslations } from '../i18n/utils';
 
@@ -35,6 +36,10 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
     <title>{pageTitle}</title>
     <meta name="description" content={metaDescription} />
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <!-- Hreflang tags for all visible/published languages -->
     {visibleLocales.map((locale) => {
@@ -51,10 +56,8 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
   <body class="bg-[var(--color-paper)] text-[var(--color-charcoal)] antialiased flex flex-col min-h-screen">
     <header class="border-b border-[var(--color-border)] bg-[var(--color-paper-light)]/80 backdrop-blur-xs sticky top-0 z-40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
-        <a href={lang === 'en' ? '/' : `/${lang}/`} class="flex items-center gap-2 group">
-          <span class="font-label text-sm tracking-widest font-bold text-[var(--color-charcoal)] group-hover:text-[var(--color-crimson)] transition-colors">
-            {t('short_name')}
-          </span>
+        <a href={lang === 'en' ? '/' : `/${lang}/`} class="flex items-center group">
+          <Logo variant="full" width={220} height={58} class="h-10 w-auto" alt={siteName} />
         </a>
         <div class="flex items-center gap-4">
           <LanguageSwitcher currentLang={lang} />
