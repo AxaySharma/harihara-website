@@ -1,0 +1,49 @@
+---
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+
+// Newsreader and Montserrat are common base fonts for Latin languages
+import '@fontsource/newsreader/400.css';
+import '@fontsource/newsreader/600.css';
+import '@fontsource/newsreader/700.css';
+import '@fontsource/montserrat/400.css';
+import '@fontsource/montserrat/500.css';
+import '@fontsource/montserrat/600.css';
+
+// Load non-Latin fonts strictly per language
+if (lang === 'hi') {
+  await import('@fontsource/noto-serif-devanagari/400.css');
+  await import('@fontsource/noto-serif-devanagari/700.css');
+  await import('@fontsource/noto-sans-devanagari/400.css');
+  await import('@fontsource/noto-sans-devanagari/600.css');
+} else if (lang === 'gu') {
+  await import('@fontsource/noto-serif-gujarati/400.css');
+  await import('@fontsource/noto-serif-gujarati/700.css');
+  await import('@fontsource/noto-sans-gujarati/400.css');
+  await import('@fontsource/noto-sans-gujarati/600.css');
+} else if (lang === 'zh') {
+  await import('@fontsource/noto-serif-sc/400.css');
+  await import('@fontsource/noto-serif-sc/700.css');
+  await import('@fontsource/noto-sans-sc/400.css');
+  await import('@fontsource/noto-sans-sc/600.css');
+} else if (lang === 'ja') {
+  await import('@fontsource/noto-serif-jp/400.css');
+  await import('@fontsource/noto-serif-jp/700.css');
+  await import('@fontsource/noto-sans-jp/400.css');
+  await import('@fontsource/noto-sans-jp/600.css');
+} else if (lang === 'ko') {
+  await import('@fontsource/noto-serif-kr/400.css');
+  await import('@fontsource/noto-serif-kr/700.css');
+  await import('@fontsource/noto-sans-kr/400.css');
+  await import('@fontsource/noto-sans-kr/600.css');
+} else if (lang === 'ar') {
+  await import('@fontsource/noto-naskh-arabic/400.css');
+  await import('@fontsource/noto-naskh-arabic/700.css');
+  await import('@fontsource/noto-sans-arabic/400.css');
+  await import('@fontsource/noto-sans-arabic/600.css');
+}
+---
+<!-- FontLoader component conditionally bundling non-Latin font assets -->

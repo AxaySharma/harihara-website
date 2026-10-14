@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    /* Brand & Accent Colours */
+    --color-crimson: #D01A45;
+    --color-maroon: #7A1230;
+    --color-charcoal: #1C1C1C;
+    --color-grey: #7A7A7A;
+    --color-paper: #F6F3EE;
+    --color-paper-light: #FAF8F5;
+    --color-border: rgba(28, 28, 28, 0.12);
+    --color-border-subtle: rgba(28, 28, 28, 0.06);
+
+    /* Typography stacks (defaults Latin) */
+    --font-heading: 'Newsreader', 'Times New Roman', Georgia, serif;
+    --font-body: 'Montserrat', system-ui, -apple-system, sans-serif;
+    --font-label: 'Montserrat', system-ui, -apple-system, sans-serif;
+
+    /* Radii */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-arch: 12rem 12rem 0 0;
+
+    /* Spacing / Layout tokens */
+    --content-max-width: 78rem;
+    --space-section: clamp(4rem, 8vw, 8rem);
+  }
+}
+
+/* Base resets & typography */
+html {
+  background-color: var(--color-paper);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Logical properties utility classes & helpers */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-label {
+  font-family: var(--font-label);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Script specific font-family overrides applied via html lang */
+html[lang="hi"] {
+  --font-heading: 'Noto Serif Devanagari', 'Newsreader', serif;
+  --font-body: 'Noto Sans Devanagari', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans Devanagari', 'Montserrat', sans-serif;
+}
+
+html[lang="gu"] {
+  --font-heading: 'Noto Serif Gujarati', 'Newsreader', serif;
+  --font-body: 'Noto Sans Gujarati', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans Gujarati', 'Montserrat', sans-serif;
+}
+
+html[lang="zh-Hans"] {
+  --font-heading: 'Noto Serif SC', 'Newsreader', serif;
+  --font-body: 'Noto Sans SC', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans SC', 'Montserrat', sans-serif;
+}
+
+html[lang="ja"] {
+  --font-heading: 'Noto Serif JP', 'Newsreader', serif;
+  --font-body: 'Noto Sans JP', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans JP', 'Montserrat', sans-serif;
+}
+
+html[lang="ko"] {
+  --font-heading: 'Noto Serif KR', 'Newsreader', serif;
+  --font-body: 'Noto Sans KR', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans KR', 'Montserrat', sans-serif;
+}
+
+html[lang="ar"] {
+  --font-heading: 'Noto Naskh Arabic', 'Newsreader', serif;
+  --font-body: 'Noto Sans Arabic', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans Arabic', 'Montserrat', sans-serif;
+}

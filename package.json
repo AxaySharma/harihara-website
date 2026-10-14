@@ -1,0 +1,38 @@
+{
+  "name": "harihara-website",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:i18n": "node scripts/check-i18n.js",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/newsreader": "^5.3.0",
+    "@fontsource/noto-naskh-arabic": "^5.3.0",
+    "@fontsource/noto-sans-arabic": "^5.3.0",
+    "@fontsource/noto-sans-devanagari": "^5.3.0",
+    "@fontsource/noto-sans-gujarati": "^5.3.0",
+    "@fontsource/noto-sans-jp": "^5.3.1",
+    "@fontsource/noto-sans-kr": "^5.3.1",
+    "@fontsource/noto-sans-sc": "^5.3.1",
+    "@fontsource/noto-serif-devanagari": "^5.3.0",
+    "@fontsource/noto-serif-gujarati": "^5.3.0",
+    "@fontsource/noto-serif-jp": "^5.3.1",
+    "@fontsource/noto-serif-kr": "^5.3.1",
+    "@fontsource/noto-serif-sc": "^5.3.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.8",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
+}

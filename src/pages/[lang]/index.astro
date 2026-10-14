@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+import { languages } from '../../i18n/languages.config';
+
+export function getStaticPaths() {
+  const nonDefaultLangs = Object.keys(languages).filter((l) => l !== 'en');
+  return nonDefaultLangs.map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+
+<BaseLayout lang={lang}>
+  <div class="max-w-4xl mx-auto px-4 py-20 sm:py-28 text-start">
+    <div class="inline-block px-3 py-1 mb-6 text-xs uppercase tracking-widest text-[var(--color-crimson)] border border-[var(--color-crimson)]/20 rounded-full font-label">
+      {t('short_name')}
+    </div>
+    <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl text-[var(--color-charcoal)] leading-tight tracking-tight mb-6">
+      {t('hero_heading')}
+    </h1>
+    <p class="font-body text-lg text-[var(--color-grey)] max-w-2xl leading-relaxed">
+      {t('hero_subheading')}
+    </p>
+  </div>
+</BaseLayout>

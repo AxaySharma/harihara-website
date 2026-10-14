@@ -1,0 +1,57 @@
+{
+  "terms": {
+    "bromine": {
+      "en": "Bromine",
+      "hi": "ब्रोमीन",
+      "gu": "બ્રોમિન",
+      "es": "Bromo",
+      "fr": "Brome",
+      "de": "Brom",
+      "it": "Bromo",
+      "zh": "溴",
+      "ja": "臭素",
+      "ko": "브롬",
+      "ar": "البروم",
+      "pt": "Bromo"
+    },
+    "bittern": {
+      "en": "Bittern",
+      "hi": "बिटर्न",
+      "gu": "બિટર્ન",
+      "es": "Salmuera residual (bittern)",
+      "fr": "Eaux-mères résiduelles (bittern)",
+      "de": "Restbitterlauge",
+      "it": "Salamoia residua (bittern)",
+      "zh": "苦卤",
+      "ja": "にがり",
+      "ko": "간수",
+      "ar": "المحلول الملحي المتبقي (البتيرن)",
+      "pt": "Salmoura residual (bittern)"
+    },
+    "bromide_salts": {
+      "en": "Bromide salts",
+      "hi": "ब्रोमाइड लवण",
+      "gu": "બ્રોમાઇડ ક્ષારો",
+      "es": "Sales de bromuro",
+      "fr": "Sels de bromure",
+      "de": "Bromidsalze",
+      "it": "Sali di bromuro",
+      "zh": "溴化物盐",
+      "ja": "臭化物塩",
+      "ko": "브롬화물 염",
+      "ar": "أملاح البروميد",
+      "pt": "Sais de brometo"
+    }
+  },
+  "protected_terms": [
+    "Hari Hara Serenity Chemical LLP",
+    "HARI HARA SERENITY",
+    "LLPIN: ACR-8196",
+    "GSTIN: 24AASFH7523H1Z5",
+    "Purchase@harihara.net",
+    "9427134190",
+    "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "Village Manaba, Taluka Rapar, District Kachchh, Gujarat"
+  ]
+}
