@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 265" width="214" height="265" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="132.5 79 234 253" width="234" height="253" fill="none">
   <defs>
-    <linearGradient id="symbol-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="sym-grad" x1="0%" y1="91" x2="0%" y2="320" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#D01A45" />
       <stop offset="100%" stop-color="#7A1230" />
     </linearGradient>
   </defs>
-  <g transform="translate(0, 265) scale(0.1, -0.1)" fill="url(#symbol-gradient)">
-    <!-- Arch -->
-    <path d="M1145 2526 c-88 -28 -126 -48 -195 -101 -101 -78 -168 -180 -201 -309 -17 -65 -19 -120 -19 -681 l1 -610 294 300 295 300 289 -292 c158 -161 291 -293 295 -293 4 0 6 280 4 623 l-3 622 -33 81 c-77 191 -219 320 -409 369 -88 23 -233 19 -318 -9z" />
-    <!-- Triangle with up-arrow -->
-    <path d="M1277 1297 c-18 -18 -292 -296 -611 -617 l-579 -585 569 -3 c312 -1 571 1 574 5 3 5 4 77 2 160 l-4 153 -173 0 c-96 0 -176 3 -178 8 -5 7 429 452 441 452 4 0 108 -101 230 -223 l224 -224 -78 -6 c-42 -4 -126 -7 -187 -7 l-109 0 3 -160 4 -160 368 0 367 0 0 208 -1 207 -407 413 c-224 226 -411 412 -416 412 -4 0 -22 -15 -39 -33z" />
+  <g fill="url(#sym-grad)">
+    <path d="M 190.5,150 A 59,59 0 0,1 308.5,150 L 308.5,263 L 249.5,204 L 190.5,263 Z" />
+    <path d="M 249.5,215 L 354.5,320 L 264.5,320 L 264.5,296 L 287.5,296 L 249.5,258 L 211.5,296 L 234.5,296 L 234.5,320 L 144.5,320 Z" />
   </g>
 </svg>

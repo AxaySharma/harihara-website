@@ -1,8 +1,8 @@
 ---
-import Logo from '../../components/Logo.astro';
 import '../../styles/global.css';
 
-// Brand Preview page - Temporary inspection page for logo assets (noindex)
+// Brand Preview page - Quality inspection dashboard (noindex, unlinked)
+// Must be deleted before launch.
 ---
 
 <!doctype html>
@@ -11,105 +11,279 @@ import '../../styles/global.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Brand Assets Quality Preview | Hari Hara Serenity</title>
+    <title>Brand Reconstruction & Quality Inspection | Hari Hara Serenity</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
-  <body class="bg-gray-100 font-sans p-6 md:p-12 space-y-12">
-    <div class="max-w-6xl mx-auto space-y-8">
-      <div class="border-b border-gray-300 pb-4">
-        <h1 class="text-2xl font-bold text-gray-900">Brand Assets & Logo Inspection</h1>
-        <p class="text-sm text-gray-600 mt-1">
-          Temporary review page for inspecting edge fidelity, anti-aliasing, and contrast across paper (#F6F3EE) and charcoal (#1C1C1C) backgrounds.
-          <strong class="text-red-600">Must be deleted before launch.</strong>
+  <body class="bg-gray-100 font-sans p-6 md:p-12 space-y-16">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- HEADER -->
+      <div class="border-b border-gray-300 pb-6">
+        <div class="inline-block px-3 py-1 mb-2 text-xs uppercase font-mono tracking-widest text-red-700 bg-red-100 rounded">
+          Temporary Inspection Tool — Delete Before Launch
+        </div>
+        <h1 class="text-3xl font-bold text-gray-900 mt-2">Brand Rebuild Quality & Overlay Inspection</h1>
+        <p class="text-sm text-gray-600 mt-2 max-w-3xl leading-relaxed">
+          Comparing the original low-resolution JPEG against the mathematically reconstructed vectors.
+          Inspects edge anti-aliasing, overlay registration, custom "A" geometry, and favicon scaling across 
+          both Paper (<code class="text-xs bg-gray-200 px-1 py-0.5 rounded">#F6F3EE</code>) and Charcoal (<code class="text-xs bg-gray-200 px-1 py-0.5 rounded">#1C1C1C</code>) backgrounds.
         </p>
       </div>
 
-      <!-- SECTION 1: Paper Background (#F6F3EE) -->
-      <div class="space-y-4">
-        <h2 class="text-lg font-semibold text-gray-800">1. Light Background: Paper (<code class="bg-gray-200 px-1 py-0.5 rounded text-xs">#F6F3EE</code>)</h2>
-        <div class="bg-[#F6F3EE] p-8 md:p-12 rounded-xl shadow-xs border border-gray-200 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center">
+      <!-- 1. FULL LOCKUP: ORIGINAL vs NEW SVG vs 50% OVERLAY -->
+      <section class="space-y-6">
+        <h2 class="text-xl font-bold text-gray-900 flex items-center gap-2">
+          <span>1. Full Lockup Comparison & 50% Overlay</span>
+        </h2>
+
+        <!-- Paper Background -->
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold text-gray-700">Paper Background (<code class="text-xs bg-gray-200 px-1">#F6F3EE</code>)</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-[#F6F3EE] p-6 rounded-xl border border-gray-200 shadow-xs flex flex-col justify-between">
+              <span class="text-xs font-mono uppercase text-gray-500 mb-4">(a) Original JPG</span>
+              <div class="my-auto py-4">
+                <img src="/design-assets/logo-original.jpg" alt="Original JPG" class="w-full h-auto object-contain max-h-24" />
+              </div>
+              <span class="text-[11px] text-gray-400 mt-4">1280x443 source with JPEG compression</span>
+            </div>
+
+            <div class="bg-[#F6F3EE] p-6 rounded-xl border border-gray-200 shadow-xs flex flex-col justify-between">
+              <span class="text-xs font-mono uppercase text-gray-500 mb-4">(b) New Reconstructed SVG</span>
+              <div class="my-auto py-4">
+                <img src="/brand/logo-full.svg" alt="New Reconstructed SVG" class="w-full h-auto object-contain max-h-24" />
+              </div>
+              <span class="text-[11px] text-gray-400 mt-4">Crisp vector, no clipped shapes</span>
+            </div>
+
+            <div class="bg-[#F6F3EE] p-6 rounded-xl border border-gray-200 shadow-xs flex flex-col justify-between">
+              <span class="text-xs font-mono uppercase text-gray-500 mb-4">(c) 50% Opacity Overlay</span>
+              <div class="my-auto py-4 relative">
+                <img src="/design-assets/logo-original.jpg" alt="Original" class="w-full h-auto object-contain max-h-24 block" />
+                <img src="/brand/logo-full.svg" alt="SVG Overlay" class="absolute inset-0 w-full h-full object-contain opacity-50 filter drop-shadow(0 0 1px blue)" />
+              </div>
+              <span class="text-[11px] text-blue-700 font-medium mt-4">Overlay verification (blue tinted SVG over JPG)</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Charcoal Background -->
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold text-gray-700">Charcoal Background (<code class="text-xs bg-gray-200 px-1">#1C1C1C</code>)</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-[#1C1C1C] p-6 rounded-xl shadow-xs flex flex-col justify-between">
+              <span class="text-xs font-mono uppercase text-gray-400 mb-4">logo-full-light.svg</span>
+              <div class="my-auto py-4">
+                <img src="/brand/logo-full-light.svg" alt="Full Light SVG" class="w-full h-auto object-contain max-h-24" />
+              </div>
+              <span class="text-[11px] text-gray-500 mt-4">Off-white (#F6F3EE) and Silver (#B9B9B9) for dark UI</span>
+            </div>
+
+            <div class="bg-[#1C1C1C] p-6 rounded-xl shadow-xs flex flex-col justify-between">
+              <span class="text-xs font-mono uppercase text-gray-400 mb-4">logo-full.png (High-Res 2400px rasterized)</span>
+              <div class="my-auto py-4">
+                <img src="/brand/logo-full-light.png" alt="Full Light PNG" class="w-full h-auto object-contain max-h-24" />
+              </div>
+              <span class="text-[11px] text-gray-500 mt-4">Crisp anti-aliased edges with zero white halo</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. SYMBOL & WORDMARK INDIVIDUAL INSPECTION -->
+      <section class="space-y-6">
+        <h2 class="text-xl font-bold text-gray-900">2. Symbol & Wordmark Variants</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          <div class="p-6 rounded border border-black/5 bg-[#FAF8F5]/50 flex flex-col items-center justify-between min-h-[220px]">
-            <span class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-4">logo-full.png</span>
-            <div class="my-auto">
-              <Logo variant="full" width={260} height={69} class="max-h-16 w-auto" />
-            </div>
-            <span class="text-[11px] text-gray-400 mt-4">Full lockup with original TM</span>
-          </div>
-
-          <div class="p-6 rounded border border-black/5 bg-[#FAF8F5]/50 flex flex-col items-center justify-between min-h-[220px]">
-            <span class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-4">logo-symbol (SVG & PNG)</span>
-            <div class="my-auto flex items-center gap-6">
-              <div class="text-center">
-                <img src="/brand/logo-symbol.svg" alt="Symbol SVG" class="h-16 w-auto mx-auto" />
-                <span class="text-[10px] text-gray-400">SVG</span>
+          <!-- Symbol on Paper & Charcoal -->
+          <div class="space-y-4">
+            <h3 class="text-sm font-semibold text-gray-700">Symbol (Arch & Triangle with Arrow)</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-[#F6F3EE] p-6 rounded-xl border border-gray-200 text-center flex flex-col items-center justify-between min-h-[220px]">
+                <span class="text-xs font-mono uppercase text-gray-500">Paper #F6F3EE</span>
+                <img src="/brand/logo-symbol.svg" alt="Symbol SVG" class="h-28 w-auto my-auto object-contain" />
+                <span class="text-[10px] text-gray-400">logo-symbol.svg</span>
               </div>
-              <div class="text-center">
-                <img src="/brand/logo-symbol.png" alt="Symbol PNG" class="h-16 w-auto mx-auto" />
-                <span class="text-[10px] text-gray-400">PNG</span>
+              <div class="bg-[#1C1C1C] p-6 rounded-xl text-center flex flex-col items-center justify-between min-h-[220px]">
+                <span class="text-xs font-mono uppercase text-gray-400">Charcoal #1C1C1C</span>
+                <img src="/brand/logo-symbol.svg" alt="Symbol SVG on dark" class="h-28 w-auto my-auto object-contain" />
+                <span class="text-[10px] text-gray-500">Unchanged crimson gradient</span>
               </div>
             </div>
-            <span class="text-[11px] text-gray-400 mt-4">Symbol only (no TM)</span>
           </div>
 
-          <div class="p-6 rounded border border-black/5 bg-[#FAF8F5]/50 flex flex-col items-center justify-between min-h-[220px]">
-            <span class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-4">logo-wordmark.png</span>
-            <div class="my-auto">
-              <Logo variant="wordmark" width={220} height={46} class="max-h-12 w-auto" />
+          <!-- Wordmark on Paper & Charcoal -->
+          <div class="space-y-4">
+            <h3 class="text-sm font-semibold text-gray-700">Wordmark ("HARI HARA" + Subtitle)</h3>
+            <div class="grid grid-cols-1 gap-4">
+              <div class="bg-[#F6F3EE] p-6 rounded-xl border border-gray-200 flex flex-col items-center justify-between min-h-[110px]">
+                <img src="/brand/logo-wordmark.svg" alt="Wordmark SVG" class="w-full max-w-md h-auto my-auto object-contain" />
+                <span class="text-[10px] text-gray-400 mt-2">logo-wordmark.svg (Cleaned edges, unclipped final A)</span>
+              </div>
             </div>
-            <span class="text-[11px] text-gray-400 mt-4">Wordmark only (no symbol, no TM)</span>
           </div>
 
         </div>
-      </div>
+      </section>
 
-      <!-- SECTION 2: Charcoal Background (#1C1C1C) -->
-      <div class="space-y-4">
-        <h2 class="text-lg font-semibold text-gray-800">2. Dark Background: Charcoal (<code class="bg-gray-200 px-1 py-0.5 rounded text-xs">#1C1C1C</code>)</h2>
-        <div class="bg-[#1C1C1C] p-8 md:p-12 rounded-xl shadow-xs grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center">
+      <!-- 3. 400% ZOOM CROPS OF CRITICAL DETAILS -->
+      <section class="space-y-6">
+        <h2 class="text-xl font-bold text-gray-900">3. 400% Zoom Detail Inspection</h2>
+        <p class="text-xs text-gray-500">Inspecting tricky areas: triangle corners, arrow cutout, custom "A" with crimson triangle, "R" curves, and second line letterforms.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           
-          <div class="p-6 rounded border border-white/10 bg-white/5 flex flex-col items-center justify-between min-h-[220px]">
-            <span class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-4">logo-full-light.png</span>
-            <div class="my-auto">
-              <Logo variant="full" light={true} width={260} height={69} class="max-h-16 w-auto" />
-            </div>
-            <span class="text-[11px] text-gray-500 mt-4">Off-white lockup for dark UI</span>
-          </div>
-
-          <div class="p-6 rounded border border-white/10 bg-white/5 flex flex-col items-center justify-between min-h-[220px]">
-            <span class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-4">logo-symbol (SVG & PNG)</span>
-            <div class="my-auto flex items-center gap-6">
-              <div class="text-center">
-                <img src="/brand/logo-symbol.svg" alt="Symbol SVG" class="h-16 w-auto mx-auto" />
-                <span class="text-[10px] text-gray-500">SVG</span>
+          <!-- Zoom 1: Triangle Corners & Cutout -->
+          <div class="bg-white p-4 rounded-xl border border-gray-200 space-y-3">
+            <span class="text-xs font-semibold text-gray-800 block">Triangle Corners & Arrow (400%)</span>
+            <div class="space-y-2">
+              <div class="overflow-hidden rounded border border-gray-200 bg-gray-50">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Original JPG (Blur & artifacts)</span>
+                <img src="/brand/zoom-orig-triangle.png" alt="Original Triangle" class="w-full h-32 object-contain" style="image-rendering: pixelated;" />
               </div>
-              <div class="text-center">
-                <img src="/brand/logo-symbol.png" alt="Symbol PNG" class="h-16 w-auto mx-auto" />
-                <span class="text-[10px] text-gray-500">PNG</span>
+              <div class="overflow-hidden rounded border border-gray-200 bg-[#F6F3EE]">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Vector Rebuild (Pure 45° paths)</span>
+                <div class="h-32 flex items-center justify-center overflow-hidden">
+                  <svg viewBox="132 205 236 125" class="w-full h-full">
+                    <path d="M 249.5,215 L 354.5,320 L 264.5,320 L 264.5,296 L 287.5,296 L 249.5,258 L 211.5,296 L 234.5,296 L 234.5,320 L 144.5,320 Z" fill="#7A1230" />
+                  </svg>
+                </div>
               </div>
             </div>
-            <span class="text-[11px] text-gray-500 mt-4">Crimson arch on dark background</span>
           </div>
 
-          <div class="p-6 rounded border border-white/10 bg-white/5 flex flex-col items-center justify-between min-h-[220px]">
-            <span class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-4">apple-touch-icon & favicons</span>
-            <div class="my-auto flex items-center gap-4 justify-center">
-              <img src="/apple-touch-icon.png" alt="Apple Touch Icon" class="w-14 h-14 rounded-xl border border-white/10" />
-              <img src="/favicon.png" alt="Favicon PNG" class="w-8 h-8" />
+          <!-- Zoom 2: Custom A (A1 in HARI) -->
+          <div class="bg-white p-4 rounded-xl border border-gray-200 space-y-3">
+            <span class="text-xs font-semibold text-gray-800 block">Custom "A" Geometry (400%)</span>
+            <div class="space-y-2">
+              <div class="overflow-hidden rounded border border-gray-200 bg-gray-50">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Original JPG (Custom inverted V)</span>
+                <img src="/brand/zoom-orig-A1.png" alt="Original A1" class="w-full h-32 object-contain" style="image-rendering: pixelated;" />
+              </div>
+              <div class="overflow-hidden rounded border border-gray-200 bg-[#F6F3EE]">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Vector Rebuild (With crimson triangle)</span>
+                <div class="h-32 flex items-center justify-center overflow-hidden">
+                  <svg viewBox="490 200 100 95" class="w-full h-full">
+                    <path d="M -9 0 L 303 700 H 463 L 776 0 H 606 L 414 618 H 350 L 157 0 Z" fill="#1C1C1C" transform="translate(496.09, 291) scale(0.12428, -0.12428)" />
+                    <path d="M 383 275 L 458 150 L 308 150 Z" fill="#D01A45" transform="translate(496.09, 291) scale(0.12428, -0.12428)" />
+                  </svg>
+                </div>
+              </div>
             </div>
-            <span class="text-[11px] text-gray-500 mt-4">Apple Touch Icon (180x180) & Favicon</span>
+          </div>
+
+          <!-- Zoom 3: Letter R Curves -->
+          <div class="bg-white p-4 rounded-xl border border-gray-200 space-y-3">
+            <span class="text-xs font-semibold text-gray-800 block">Letter "R" Curve & Leg (400%)</span>
+            <div class="space-y-2">
+              <div class="overflow-hidden rounded border border-gray-200 bg-gray-50">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Original JPG</span>
+                <img src="/brand/zoom-orig-R.png" alt="Original R" class="w-full h-32 object-contain" style="image-rendering: pixelated;" />
+              </div>
+              <div class="overflow-hidden rounded border border-gray-200 bg-[#F6F3EE]">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Vector Rebuild (Montserrat Bold)</span>
+                <div class="h-32 flex items-center justify-center overflow-hidden">
+                  <svg viewBox="585 200 90 95" class="w-full h-full">
+                    <path d="M565 0 357 264H245V0H83V700H392Q550 700 626 636 703 572 703 469 703 397 662 342 621 287 534 266L750 0ZM245 407V557H384Q460 557 499 524 539 491 539 432 539 373 499 340 460 307 384 307H245V407Z" fill="#1C1C1C" transform="translate(584.92, 291) scale(0.12428, -0.12428)" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zoom 4: Line 2 Letterforms -->
+          <div class="bg-white p-4 rounded-xl border border-gray-200 space-y-3">
+            <span class="text-xs font-semibold text-gray-800 block">Line 2 "SERENITY" (400%)</span>
+            <div class="space-y-2">
+              <div class="overflow-hidden rounded border border-gray-200 bg-gray-50">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Original JPG</span>
+                <img src="/brand/zoom-orig-line2.png" alt="Original Line 2" class="w-full h-32 object-contain" style="image-rendering: pixelated;" />
+              </div>
+              <div class="overflow-hidden rounded border border-gray-200 bg-[#F6F3EE]">
+                <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-gray-200 block text-gray-600">Vector Rebuild</span>
+                <div class="h-32 flex items-center justify-center overflow-hidden">
+                  <svg viewBox="400 305 270 35" class="w-full h-full">
+                    <use href="#wordmark-snippet" />
+                    <!-- Rendered directly in wordmark SVG -->
+                    <image href="/brand/logo-wordmark.svg" x="392" y="192" width="734" height="158" />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
-      </div>
+      </section>
 
-      <!-- SECTION 3: Social Preview Image -->
-      <div class="space-y-4">
-        <h2 class="text-lg font-semibold text-gray-800">3. Social Open Graph Preview (<code class="bg-gray-200 px-1 py-0.5 rounded text-xs">public/og-default.png</code> 1200x630)</h2>
-        <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-200 max-w-2xl">
-          <img src="/og-default.png" alt="OG Default Preview" class="w-full h-auto rounded border border-gray-100" />
+      <!-- 4. FAVICONS & APPLE TOUCH ICONS -->
+      <section class="space-y-6">
+        <h2 class="text-xl font-bold text-gray-900">4. Favicons & Apple Touch Icon (1x & 4x Zoom)</h2>
+
+        <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-xs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center items-end">
+          
+          <!-- Apple Touch Icon -->
+          <div class="flex flex-col items-center space-y-3">
+            <span class="text-xs font-mono uppercase text-gray-500">apple-touch-icon.png (180x180)</span>
+            <div class="flex items-center gap-4">
+              <div class="text-center">
+                <img src="/apple-touch-icon.png" alt="1x" class="w-[45px] h-[45px] rounded-lg border border-gray-300 mx-auto" />
+                <span class="text-[10px] text-gray-400">1x (45px display)</span>
+              </div>
+              <div class="text-center">
+                <img src="/apple-touch-icon.png" alt="Full" class="w-[90px] h-[90px] rounded-xl border border-gray-300 mx-auto" />
+                <span class="text-[10px] text-gray-400">2x (90px)</span>
+              </div>
+            </div>
+            <span class="text-[11px] text-gray-400">Even padding, #F6F3EE background, no clipped triangle</span>
+          </div>
+
+          <!-- Favicon PNG (32px) -->
+          <div class="flex flex-col items-center space-y-3">
+            <span class="text-xs font-mono uppercase text-gray-500">favicon.png (32x32)</span>
+            <div class="flex items-center gap-4">
+              <div class="text-center">
+                <img src="/favicon.png" alt="Favicon 1x" class="w-8 h-8 mx-auto" />
+                <span class="text-[10px] text-gray-400">1x (32px)</span>
+              </div>
+              <div class="text-center">
+                <img src="/favicon.png" alt="Favicon 4x" class="w-24 h-24 mx-auto" style="image-rendering: pixelated;" />
+                <span class="text-[10px] text-gray-400">4x Zoom</span>
+              </div>
+            </div>
+            <span class="text-[11px] text-gray-400">Pixel-crisp transparent raster</span>
+          </div>
+
+          <!-- Favicon SVG -->
+          <div class="flex flex-col items-center space-y-3">
+            <span class="text-xs font-mono uppercase text-gray-500">favicon.svg (Vector)</span>
+            <div class="flex items-center gap-4">
+              <div class="text-center">
+                <img src="/favicon.svg" alt="SVG 1x" class="w-8 h-8 mx-auto" />
+                <span class="text-[10px] text-gray-400">1x (32px)</span>
+              </div>
+              <div class="text-center">
+                <img src="/favicon.svg" alt="SVG 4x" class="w-24 h-24 mx-auto" />
+                <span class="text-[10px] text-gray-400">4x Scalable</span>
+              </div>
+            </div>
+            <span class="text-[11px] text-gray-400">Infinitely scalable vector favicon</span>
+          </div>
+
+          <!-- Social Preview OG Image -->
+          <div class="flex flex-col items-center space-y-3">
+            <span class="text-xs font-mono uppercase text-gray-500">og-default.png (1200x630)</span>
+            <img src="/og-default.png" alt="OG Preview" class="w-48 h-auto rounded border border-gray-200 mx-auto" />
+            <span class="text-[11px] text-gray-400">Centred full lockup on #F6F3EE</span>
+          </div>
+
         </div>
-      </div>
+      </section>
+
     </div>
   </body>
 </html>

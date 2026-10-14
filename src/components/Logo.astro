@@ -1,7 +1,10 @@
 ---
+import { SHOW_LOGO_TM } from '../config';
+
 interface Props {
   variant?: 'full' | 'symbol' | 'wordmark';
   light?: boolean;
+  showTM?: boolean;
   class?: string;
   width?: number;
   height?: number;
@@ -11,42 +14,65 @@ interface Props {
 const {
   variant = 'full',
   light = false,
+  showTM = SHOW_LOGO_TM,
   class: className = '',
   width,
   height,
   alt = 'Hari Hara Serenity Chemical LLP',
 } = Astro.props;
 
-// Determine image source and default aspect ratio based on variant and light mode
-let src = '/brand/logo-full.png';
+// Determine vector SVG source and dimensions based on variant
+let src = '/brand/logo-full.svg';
 let defaultWidth = 260;
-let defaultHeight = 69;
+let defaultHeight = 72;
 
 if (variant === 'symbol') {
-  // Use SVG for symbol when available for sharp vector rendering
   src = '/brand/logo-symbol.svg';
-  defaultWidth = 48;
+  defaultWidth = 56;
   defaultHeight = 60;
 } else if (variant === 'wordmark') {
-  src = '/brand/logo-wordmark.png';
-  defaultWidth = 220;
-  defaultHeight = 46;
+  src = '/brand/logo-wordmark.svg';
+  defaultWidth = 210;
+  defaultHeight = 45;
 } else if (variant === 'full') {
-  src = light ? '/brand/logo-full-light.png' : '/brand/logo-full.png';
+  src = light ? '/brand/logo-full-light.svg' : '/brand/logo-full.svg';
   defaultWidth = 260;
-  defaultHeight = 69;
+  defaultHeight = 72;
 }
 
 const finalWidth = width || defaultWidth;
 const finalHeight = height || defaultHeight;
+const tmColor = light ? '#B9B9B9' : '#7A7A7A';
 ---
 
-<img
-  src={src}
-  alt={alt}
-  width={finalWidth}
-  height={finalHeight}
-  class={`inline-block object-contain ${className}`}
-  loading="eager"
-  decoding="async"
-/>
+<div class={`inline-flex items-center relative ${className}`}>
+  <img
+    src={src}
+    alt={alt}
+    width={finalWidth}
+    height={finalHeight}
+    class="inline-block object-contain"
+    loading="eager"
+    decoding="async"
+  />
+
+  {showTM && variant === 'symbol' && (
+    <span
+      class="absolute top-0 end-0 font-sans font-bold leading-none select-none text-[9px] translate-x-1.5 -translate-y-0.5"
+      style={`color: ${tmColor};`}
+      aria-hidden="true"
+    >
+      ™
+    </span>
+  )}
+
+  {showTM && (variant === 'full' || variant === 'wordmark') && (
+    <span
+      class="font-sans font-bold leading-none select-none text-[10px] self-start mt-1 ms-0.5"
+      style={`color: ${tmColor};`}
+      aria-hidden="true"
+    >
+      ™
+    </span>
+  )}
+</div>
