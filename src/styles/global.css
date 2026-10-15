@@ -6,26 +6,41 @@
     --color-crimson: #D01A45;
     --color-maroon: #7A1230;
     --color-charcoal: #1C1C1C;
-    --color-grey: #6F6F6F; /* calibrated for WCAG AA >= 4.5:1 against #F6F3EE */
+    --color-secondary: #55524F; /* Guaranteed >= 5.5:1 on #F6F3EE */
     --color-paper: #F6F3EE;
     --color-paper-light: #FAF8F5;
-    --color-border: rgba(28, 28, 28, 0.12);
-    --color-border-subtle: rgba(28, 28, 28, 0.06);
+    --color-border: rgba(28, 28, 28, 0.20); /* 20% charcoal per brief */
+    --color-border-subtle: rgba(28, 28, 28, 0.10);
+
+    /* Required Typography Tokens in REM */
+    --text-xs: 0.875rem; /* 14px minimum anywhere */
+    --text-sm: 1rem;     /* 16px */
+    --text-base: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem); /* 18px to 20px */
+    --text-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);      /* 20px to 24px */
+    --text-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+    --text-2xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+    --text-hero: clamp(2.75rem, 1.8rem + 4.5vw, 5.5rem);
+
+    /* Section Spacing Token */
+    --section-space: clamp(4.5rem, 3rem + 7vw, 9rem);
 
     /* Typography stacks (defaults Latin) */
     --font-heading: 'Newsreader', 'Times New Roman', Georgia, serif;
     --font-body: 'Montserrat', system-ui, -apple-system, sans-serif;
     --font-label: 'Montserrat', system-ui, -apple-system, sans-serif;
 
+    /* Base Per-Language Scaling & Line-Height Variables */
+    --script-scale: 1;
+    --lh-body: 1.65;
+
     /* Radii */
-    --radius-sm: 0.25rem;
-    --radius-md: 0.5rem;
-    --radius-lg: 0.75rem;
-    --radius-arch: 12rem 12rem 0 0;
+    --radius-sm: 0.125rem; /* 2px square corners */
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-arch: 14rem 14rem 0 0;
 
     /* Spacing / Layout tokens */
     --content-max-width: 78rem;
-    --space-section: clamp(4rem, 8vw, 8rem);
   }
 }
 
@@ -34,9 +49,13 @@ html {
   background-color: var(--color-paper);
   color: var(--color-charcoal);
   font-family: var(--font-body);
+  font-size: calc(1rem * var(--script-scale));
+  line-height: var(--lh-body);
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  overflow-wrap: anywhere;
 }
 
 body {
@@ -45,19 +64,60 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* 3px High-Contrast Focus Ring with Offset on all interactive elements */
+:focus,
+:focus-visible {
+  outline: 3px solid var(--color-crimson) !important;
+  outline-offset: 3px !important;
+}
+
+/* Double focus ring on dark or crimson backgrounds */
+.focus-on-dark:focus,
+.focus-on-dark:focus-visible,
+[data-theme-dark] :focus,
+[data-theme-dark] :focus-visible,
+.bg-\[var\(--color-crimson\)\]:focus,
+.bg-\[var\(--color-crimson\)\]:focus-visible,
+.btn-primary:focus,
+.btn-primary:focus-visible {
+  outline: 3px solid var(--color-charcoal) !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 2px var(--color-paper) !important;
 }
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
-    animation-duration: 0.01ms !important;
+    animation: none !important;
+    animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition: none !important;
+    transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
 }
 
-/* Logical properties utility classes & helpers */
+/* High Contrast Mode support */
+@media (prefers-contrast: more) {
+  :root {
+    --color-border: rgba(28, 28, 28, 0.6) !important;
+    --color-secondary: #2C2A29 !important;
+  }
+  :focus-visible {
+    outline-width: 4px !important;
+    outline-offset: 4px !important;
+  }
+  .border,
+  [class*="border-"] {
+    border-color: currentColor !important;
+  }
+}
+
+/* Typography Utility Classes adhering strictly to tokens */
 .font-heading {
   font-family: var(--font-heading);
 }
@@ -69,42 +129,71 @@ body {
 .font-label {
   font-family: var(--font-label);
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em; /* At most 0.12em */
 }
 
-/* Script specific font-family overrides applied via html lang */
+/* Script-Specific Typography Overrides, Font Boosting & Line-Heights */
 html[lang="hi"] {
   --font-heading: 'Noto Serif Devanagari', 'Newsreader', serif;
   --font-body: 'Noto Sans Devanagari', 'Montserrat', sans-serif;
   --font-label: 'Noto Sans Devanagari', 'Montserrat', sans-serif;
+  --script-scale: 1.08;
+  --lh-body: 1.8;
 }
 
 html[lang="gu"] {
   --font-heading: 'Noto Serif Gujarati', 'Newsreader', serif;
   --font-body: 'Noto Sans Gujarati', 'Montserrat', sans-serif;
   --font-label: 'Noto Sans Gujarati', 'Montserrat', sans-serif;
-}
-
-html[lang="zh-Hans"] {
-  --font-heading: 'Noto Serif SC', 'Newsreader', serif;
-  --font-body: 'Noto Sans SC', 'Montserrat', sans-serif;
-  --font-label: 'Noto Sans SC', 'Montserrat', sans-serif;
-}
-
-html[lang="ja"] {
-  --font-heading: 'Noto Serif JP', 'Newsreader', serif;
-  --font-body: 'Noto Sans JP', 'Montserrat', sans-serif;
-  --font-label: 'Noto Sans JP', 'Montserrat', sans-serif;
-}
-
-html[lang="ko"] {
-  --font-heading: 'Noto Serif KR', 'Newsreader', serif;
-  --font-body: 'Noto Sans KR', 'Montserrat', sans-serif;
-  --font-label: 'Noto Sans KR', 'Montserrat', sans-serif;
+  --script-scale: 1.08;
+  --lh-body: 1.8;
 }
 
 html[lang="ar"] {
   --font-heading: 'Noto Naskh Arabic', 'Newsreader', serif;
   --font-body: 'Noto Sans Arabic', 'Montserrat', sans-serif;
   --font-label: 'Noto Sans Arabic', 'Montserrat', sans-serif;
+  --script-scale: 1.08;
+  --lh-body: 1.8;
+}
+
+html[lang="zh-Hans"] {
+  --font-heading: 'Noto Serif SC', 'Newsreader', serif;
+  --font-body: 'Noto Sans SC', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans SC', 'Montserrat', sans-serif;
+  --script-scale: 1.04;
+  --lh-body: 1.75;
+}
+
+html[lang="ja"] {
+  --font-heading: 'Noto Serif JP', 'Newsreader', serif;
+  --font-body: 'Noto Sans JP', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans JP', 'Montserrat', sans-serif;
+  --script-scale: 1.04;
+  --lh-body: 1.75;
+}
+
+html[lang="ko"] {
+  --font-heading: 'Noto Serif KR', 'Newsreader', serif;
+  --font-body: 'Noto Sans KR', 'Montserrat', sans-serif;
+  --font-label: 'Noto Sans KR', 'Montserrat', sans-serif;
+  --script-scale: 1.04;
+  --lh-body: 1.75;
+}
+
+/* Disable letter-spacing on scripts without case */
+html[lang="hi"] .font-label,
+html[lang="hi"] .uppercase,
+html[lang="gu"] .font-label,
+html[lang="gu"] .uppercase,
+html[lang="ar"] .font-label,
+html[lang="ar"] .uppercase,
+html[lang="zh-Hans"] .font-label,
+html[lang="zh-Hans"] .uppercase,
+html[lang="ja"] .font-label,
+html[lang="ja"] .uppercase,
+html[lang="ko"] .font-label,
+html[lang="ko"] .uppercase {
+  letter-spacing: normal !important;
+  text-transform: none !important;
 }

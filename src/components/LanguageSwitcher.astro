@@ -24,6 +24,7 @@ const menuId = `${idPrefix}-lang-menu`;
 ---
 
 <div class={`relative inline-block text-start language-switcher ${className}`} data-lang-switcher>
+  <!-- 48px tall trigger with code and visible chevron, 3px focus ring -->
   <button
     id={btnId}
     type="button"
@@ -32,16 +33,16 @@ const menuId = `${idPrefix}-lang-menu`;
     aria-controls={menuId}
     aria-label={selectLangLabel}
     data-lang-btn
-    class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs tracking-wider uppercase font-medium text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] border border-transparent hover:border-[var(--color-border)] transition-colors cursor-pointer"
+    class="inline-flex items-center gap-2 h-12 px-3 text-[1rem] tracking-wider uppercase font-semibold text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] border border-[var(--color-border)] hover:border-[var(--color-crimson)] transition-colors cursor-pointer rounded-[2px]"
   >
-    <span class="font-semibold text-[11px] tracking-widest">{currentLangConfig.code.toUpperCase()}</span>
+    <span class="tracking-widest">{currentLangConfig.code.toUpperCase()}</span>
     <svg
       data-lang-arrow
-      class="w-3 h-3 text-[var(--color-grey)] transition-transform duration-200"
+      class="w-4 h-4 text-[var(--color-secondary)] transition-transform duration-200"
       viewBox="0 0 16 16"
       fill="none"
       stroke="currentColor"
-      stroke-width="1.5"
+      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-hidden="true"
@@ -55,7 +56,7 @@ const menuId = `${idPrefix}-lang-menu`;
     role="menu"
     aria-labelledby={btnId}
     data-lang-menu
-    class="hidden absolute end-0 z-50 mt-1 min-w-[13.5rem] max-h-[75vh] overflow-y-auto border border-[var(--color-border)] bg-[var(--color-paper)] py-1.5 shadow-[0_4px_16px_rgba(0,0,0,0.06)] focus:outline-none"
+    class="hidden absolute end-0 z-50 mt-1 min-w-[15rem] max-h-[75vh] overflow-y-auto border border-[var(--color-border)] bg-[var(--color-paper)] py-1.5 shadow-[0_4px_16px_rgba(0,0,0,0.08)] focus:outline-none"
   >
     {visibleLanguages.map((lang) => {
       const isSelected = lang.code === currentLang;
@@ -68,12 +69,12 @@ const menuId = `${idPrefix}-lang-menu`;
           dir={lang.direction}
           data-lang={lang.code}
           aria-current={isSelected ? 'true' : undefined}
-          class={`flex items-center justify-between px-3.5 py-2 text-xs transition-colors hover:bg-[var(--color-paper-light)] focus:bg-[var(--color-paper-light)] focus:outline-none ${
-            isSelected ? 'font-semibold text-[var(--color-crimson)] bg-[var(--color-paper-light)]' : 'text-[var(--color-charcoal)]'
+          class={`flex items-center justify-between px-4 h-12 text-[1.0625rem] transition-colors hover:bg-[var(--color-paper-light)] focus:bg-[var(--color-paper-light)] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] ${
+            isSelected ? 'font-bold text-[var(--color-crimson)] bg-[var(--color-paper-light)]' : 'text-[var(--color-charcoal)]'
           }`}
         >
-          <span class="text-[13px] font-medium">{lang.nativeName}</span>
-          <span class="text-[10px] text-[var(--color-grey)] uppercase tracking-wider">{lang.name}</span>
+          <span class="font-medium">{lang.nativeName}</span>
+          <span class="text-[0.875rem] text-[var(--color-secondary)] uppercase tracking-[0.1em]">{lang.name}</span>
         </a>
       );
     })}

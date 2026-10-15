@@ -24,7 +24,7 @@ const navItems = [
 <!-- Skip to content link (first focusable element) -->
 <a
   href="#main-content"
-  class="skip-to-content sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--color-crimson)] focus:text-[var(--color-paper)] focus:text-xs focus:uppercase focus:font-semibold focus:tracking-wider focus:outline-none focus:ring-2 focus:ring-[var(--color-charcoal)]"
+  class="skip-to-content sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-[var(--color-crimson)] focus:text-[var(--color-paper)] focus:text-[1rem] focus:font-semibold focus:outline-none focus:ring-3 focus:ring-[var(--color-charcoal)]"
 >
   {t('a11y.skip_to_content')}
 </a>
@@ -34,32 +34,34 @@ const navItems = [
   class="sticky top-0 z-40 w-full transition-colors duration-200"
   data-scrolled="false"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between">
+  <!-- 80px tall on desktop (h-20), 68px on mobile (h-[4.25rem]) -->
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8 h-[4.25rem] lg:h-20 flex items-center justify-between">
     <!-- Left: Brand mark (Logo symbol ~36px) + Live text HARI HARA SERENITY -->
     <a
       href={homeHref}
-      class="brand-link inline-flex items-center gap-3.5 focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] focus:ring-offset-2 focus:ring-offset-[var(--color-paper)]"
+      class="brand-link inline-flex items-center gap-3.5 min-h-[48px] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] focus:ring-offset-2 focus:ring-offset-[var(--color-paper)]"
       aria-label="Hari Hara Serenity Chemical LLP"
     >
       <Logo variant="symbol" height={36} width={34} class="h-9 w-auto shrink-0" />
-      <span class="brand-title font-semibold text-xs sm:text-[13px] text-[var(--color-charcoal)] uppercase tracking-[0.22em] select-none whitespace-nowrap">
+      <span class="brand-title font-semibold text-[0.875rem] sm:text-[1rem] text-[var(--color-charcoal)] uppercase tracking-[0.14em] select-none">
         HARI HARA SERENITY
       </span>
     </a>
 
-    <!-- Centre/Right: Desktop Navigation -->
+    <!-- Centre/Right: Desktop Navigation with 1.5rem gaps -->
     <nav
-      class="hidden lg:flex items-center gap-7 lg:gap-8"
+      class="hidden lg:flex items-center gap-6"
       aria-label={t('a11y.main_navigation')}
     >
       {navItems.map((item) => (
         <a
           href={`#${item.id}`}
           data-nav-target={item.id}
-          class="nav-link relative py-1 text-xs uppercase tracking-[0.14em] font-medium text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)]"
+          class="nav-link relative inline-flex items-center min-h-[48px] px-1 text-[1rem] font-medium text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)]"
         >
-          {item.label}
-          <span class="nav-indicator absolute bottom-0 inset-x-0 h-[1.5px] bg-[var(--color-crimson)] scale-x-0 transition-transform duration-200 origin-start" />
+          <span>{item.label}</span>
+          <!-- 2px crimson active underline -->
+          <span class="nav-indicator absolute bottom-2 inset-x-0 h-[2px] bg-[var(--color-crimson)] scale-x-0 transition-transform duration-200 origin-start" />
         </a>
       ))}
     </nav>
@@ -74,11 +76,11 @@ const navItems = [
         />
       </div>
 
-      <!-- Mobile Menu Button (<900px / lg) -->
+      <!-- Mobile Menu Button: at least 48 x 48 px (<900px / lg) -->
       <button
         id="mobile-menu-trigger"
         type="button"
-        class="lg:hidden p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] cursor-pointer"
+        class="lg:hidden min-w-[48px] min-h-[48px] flex items-center justify-center p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] cursor-pointer"
         aria-expanded="false"
         aria-controls="mobile-menu-drawer"
         aria-label={t('a11y.open_menu')}
@@ -88,7 +90,7 @@ const navItems = [
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="1.5"
+          stroke-width="1.75"
           stroke-linecap="round"
           stroke-linejoin="round"
           aria-hidden="true"
@@ -111,14 +113,14 @@ const navItems = [
   class="fixed inset-0 z-50 bg-[var(--color-paper)] hidden flex-col justify-between px-6 py-6 overflow-y-auto"
 >
   <!-- Drawer Top Bar -->
-  <div class="flex items-center justify-between border-b border-[var(--color-border)] pb-5">
+  <div class="flex items-center justify-between border-b border-[var(--color-border)] pb-4 min-h-[48px]">
     <a
       href={homeHref}
-      class="mobile-drawer-brand inline-flex items-center gap-3"
+      class="mobile-drawer-brand inline-flex items-center gap-3 min-h-[48px]"
       tabindex="-1"
     >
-      <Logo variant="symbol" height={32} width={30} class="h-8 w-auto shrink-0" />
-      <span class="font-semibold text-xs text-[var(--color-charcoal)] uppercase tracking-[0.2em]">
+      <Logo variant="symbol" height={34} width={32} class="h-8.5 w-auto shrink-0" />
+      <span class="font-semibold text-[1rem] text-[var(--color-charcoal)] uppercase tracking-[0.14em]">
         HARI HARA SERENITY
       </span>
     </a>
@@ -126,7 +128,7 @@ const navItems = [
     <button
       id="mobile-menu-close"
       type="button"
-      class="p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] cursor-pointer"
+      class="min-w-[48px] min-h-[48px] flex items-center justify-center p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] cursor-pointer"
       aria-label={t('a11y.close_menu')}
     >
       <svg
@@ -134,7 +136,7 @@ const navItems = [
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        stroke-width="1.5"
+        stroke-width="1.75"
         stroke-linecap="round"
         stroke-linejoin="round"
         aria-hidden="true"
@@ -145,12 +147,12 @@ const navItems = [
     </button>
   </div>
 
-  <!-- Large Editorial Serif Navigation Links -->
-  <nav class="flex flex-col gap-5 py-8 my-auto">
+  <!-- Large Editorial Serif Navigation Links (1.75 to 2rem, 56px tap height) -->
+  <nav class="flex flex-col gap-2 py-8 my-auto">
     {navItems.map((item) => (
       <a
         href={`#${item.id}`}
-        class="mobile-nav-link font-heading text-2xl sm:text-3xl text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)]"
+        class="mobile-nav-link min-h-[56px] flex items-center font-heading text-[1.875rem] text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)]"
       >
         {item.label}
       </a>
@@ -158,8 +160,8 @@ const navItems = [
   </nav>
 
   <!-- Mobile Drawer Footer with Language Switcher -->
-  <div class="border-t border-[var(--color-border)] pt-6 flex flex-col gap-4">
-    <div class="text-[11px] uppercase tracking-wider text-[var(--color-grey)]">
+  <div class="border-t border-[var(--color-border)] pt-6 flex flex-col gap-3">
+    <div class="text-[0.875rem] uppercase tracking-[0.1em] text-[var(--color-secondary)] font-medium">
       {t('a11y.select_language')}
     </div>
     <div>
@@ -201,7 +203,7 @@ const navItems = [
   html[lang="ko"] .brand-title,
   html[lang="ar"] .brand-title {
     /* Brand title is in Latin Montserrat, keep tracking */
-    letter-spacing: 0.22em;
+    letter-spacing: 0.14em;
   }
 
   /* Disable letter-spacing on nav labels for scripts without casing */

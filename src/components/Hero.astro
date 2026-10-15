@@ -10,72 +10,72 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 ---
 
-<section id="hero" class="relative pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 overflow-hidden">
+<section id="hero" class="relative overflow-hidden hero-section">
   <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Desktop 12-column grid: 7 cols text on start side, 5 cols art on end side bottom-aligned -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-end">
-      <!-- Start Column: Editorial Copy & Actions (7 cols desktop) -->
+    <!-- Desktop 12-column grid: 6.5 cols text on start side, 5.5 cols art on end side bottom-aligned -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-end">
+      <!-- Start Column: Editorial Copy & Actions (6.5 cols desktop) -->
       <div class="lg:col-span-7 flex flex-col justify-end text-start">
-        <!-- Eyebrow with leading crimson rule -->
+        <!-- Eyebrow with leading crimson rule, minimum 0.875rem, secondary color #55524F -->
         <div class="hero-load-item flex items-center gap-3 mb-6 sm:mb-8" style="--stagger: 0;">
-          <span class="w-6 h-[1.5px] bg-[var(--color-crimson)] shrink-0" aria-hidden="true"></span>
-          <span class="hero-eyebrow font-label text-xs tracking-[0.2em] uppercase font-semibold text-[var(--color-charcoal)]">
+          <span class="w-6 h-[2px] bg-[var(--color-crimson)] shrink-0" aria-hidden="true"></span>
+          <span class="hero-eyebrow font-label text-[0.875rem] tracking-[0.12em] uppercase font-semibold text-[var(--color-secondary)]">
             {t('hero.eyebrow')}
           </span>
         </div>
 
-        <!-- Headline: Newsreader, regular weight, clamp(), tight leading -->
+        <!-- Headline: Newsreader, regular weight, --text-hero token, tight leading ~1.08 -->
         <h1
-          class="hero-load-item font-heading font-normal text-[var(--color-charcoal)] text-[2.5rem] sm:text-[3.5rem] md:text-[4.25rem] lg:text-[4.75rem] leading-[1.08] tracking-[-0.02em] mb-6 sm:mb-8"
+          class="hero-load-item font-heading font-normal text-[var(--color-charcoal)] leading-[1.08] tracking-[-0.02em] mb-6 sm:mb-8 hero-headline"
           style="--stagger: 1;"
         >
           {t('hero.headline')}
         </h1>
 
-        <!-- Lead paragraph -->
+        <!-- Lead paragraph: --text-lg, max-width 36em, line length 60-70 characters -->
         <p
-          class="hero-load-item font-body text-base sm:text-lg md:text-xl text-[var(--color-charcoal)]/85 max-w-2xl leading-relaxed mb-6 sm:mb-8"
+          class="hero-load-item font-body text-[var(--color-charcoal)] max-w-[36em] leading-relaxed mb-6 sm:mb-8 hero-lead"
           style="--stagger: 2;"
         >
           {t('hero.lead')}
         </p>
 
-        <!-- Status line with thin crimson dot -->
+        <!-- Status line with thin crimson dot, minimum 0.875rem, secondary color -->
         <div
           class="hero-load-item inline-flex items-center gap-2.5 mb-8 sm:mb-10"
           style="--stagger: 3;"
         >
-          <span class="w-2 h-2 rounded-full bg-[var(--color-crimson)] shrink-0" aria-hidden="true"></span>
-          <span class="text-xs uppercase tracking-[0.14em] font-medium text-[var(--color-grey)]">
+          <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-crimson)] shrink-0" aria-hidden="true"></span>
+          <span class="text-[0.875rem] uppercase tracking-[0.1em] font-medium text-[var(--color-secondary)]">
             {t('hero.status')}
           </span>
         </div>
 
         <!-- Two Action Links: Primary button & Secondary text link -->
         <div
-          class="hero-load-item flex flex-wrap items-center gap-5 sm:gap-8"
+          class="hero-load-item flex flex-wrap items-center gap-6 sm:gap-8"
           style="--stagger: 4;"
         >
-          <!-- Primary button: solid crimson, paper text, 2px radius, visible focus -->
+          <!-- Primary button: 56px tall, 1.0625rem semibold, padding-inline 2rem, hover #7A1230, double ring on dark/crimson -->
           <a
             href="#contact"
-            class="inline-flex items-center justify-center px-6 py-3.5 bg-[var(--color-crimson)] text-[var(--color-paper)] text-xs font-semibold uppercase tracking-[0.16em] rounded-[2px] transition-colors hover:bg-[var(--color-maroon)] focus:outline-none focus:ring-2 focus:ring-[var(--color-charcoal)] focus:ring-offset-2 focus:ring-offset-[var(--color-paper)]"
+            class="btn-primary inline-flex items-center justify-center min-h-[3.5rem] px-6 sm:px-8 max-w-full text-center bg-[var(--color-crimson)] text-[var(--color-paper)] text-[1.0625rem] font-semibold uppercase tracking-[0.12em] rounded-[2px] transition-colors hover:bg-[var(--color-maroon)] focus:outline-none"
           >
             {t('hero.cta_primary')}
           </a>
 
-          <!-- Secondary text link with thin arrow (mirrors in RTL) -->
+          <!-- Secondary text link: 1.0625rem with 2px underline, mirrors in RTL -->
           <a
             href="#about"
-            class="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] py-1"
+            class="group inline-flex items-center gap-2.5 min-h-[48px] py-2 text-[1.0625rem] font-semibold text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)]"
           >
-            <span>{t('hero.cta_secondary')}</span>
+            <span class="border-b-2 border-current pb-0.5">{t('hero.cta_secondary')}</span>
             <svg
-              class="w-4 h-4 text-[var(--color-crimson)] transition-transform duration-200 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180"
+              class="w-4.5 h-4.5 text-[var(--color-crimson)] transition-transform duration-200 group-hover:translate-x-1.5 rtl:group-hover:-translate-x-1.5 rtl:rotate-180"
               viewBox="0 0 16 16"
               fill="none"
               stroke="currentColor"
-              stroke-width="1.5"
+              stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
               aria-hidden="true"
@@ -86,57 +86,57 @@ const t = useTranslations(lang);
         </div>
       </div>
 
-      <!-- End Column: Arch Artwork (5 cols desktop, ~75% width on mobile) -->
+      <!-- End Column: Arch Artwork (5 cols on 12-col desktop grid, ~5.5 cols visually, min 520px desktop) -->
       <div class="lg:col-span-5 flex flex-col items-center lg:items-end w-full mt-6 lg:mt-0">
-        <div class="w-[78%] sm:w-[65%] lg:w-full max-w-[420px] flex flex-col">
+        <div class="w-full max-w-[480px] flex flex-col">
           <HeroArt />
-          <!-- Translated Caption below artwork -->
-          <p class="font-body text-[11px] sm:text-xs text-[var(--color-grey)] text-start mt-3.5 leading-relaxed tracking-normal">
+          <!-- Translated Caption below artwork: minimum 0.875rem in secondary color -->
+          <p class="font-body text-[0.875rem] text-[var(--color-secondary)] text-start mt-4 leading-relaxed tracking-normal">
             {t('hero.caption')}
           </p>
         </div>
       </div>
     </div>
 
-    <!-- Ruled Facts Strip below hero block (4 cols desktop, 2 tablet, 1 mobile separated by 1px rules) -->
-    <div class="mt-16 sm:mt-24 pt-10 sm:pt-12 border-t border-[var(--color-border)]">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 facts-strip divide-y md:divide-y-0 divide-[var(--color-border)]">
+    <!-- Ruled Facts Strip below hero block: 1 column below 640px, 2 columns on tablet, 4 on desktop -->
+    <div class="facts-wrapper border-t border-[var(--color-border)]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 facts-strip divide-y sm:divide-y-0 divide-[var(--color-border)]">
         <!-- Item 1: Location -->
-        <div class="fact-col py-5 md:py-0 md:pe-6 lg:pe-8 flex flex-col gap-2">
-          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+        <div class="fact-col py-8 sm:py-6 sm:pe-6 lg:pe-8 flex flex-col gap-2.5">
+          <span class="fact-label font-label text-[0.875rem] tracking-[0.1em] uppercase text-[var(--color-secondary)] font-medium">
             {t('facts.location_label')}
           </span>
-          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+          <span class="font-body text-[1.1875rem] text-[var(--color-charcoal)] leading-relaxed font-normal">
             {t('facts.location_value')}
           </span>
         </div>
 
         <!-- Item 2: Planned focus -->
-        <div class="fact-col py-5 md:py-0 md:px-6 lg:px-8 md:border-s md:border-[var(--color-border)] flex flex-col gap-2">
-          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+        <div class="fact-col py-8 sm:py-6 sm:px-6 lg:px-8 sm:border-s sm:border-[var(--color-border)] flex flex-col gap-2.5">
+          <span class="fact-label font-label text-[0.875rem] tracking-[0.1em] uppercase text-[var(--color-secondary)] font-medium">
             {t('facts.focus_label')}
           </span>
-          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+          <span class="font-body text-[1.1875rem] text-[var(--color-charcoal)] leading-relaxed font-normal">
             {t('facts.focus_value')}
           </span>
         </div>
 
         <!-- Item 3: Industries -->
-        <div class="fact-col py-5 md:py-0 md:pe-6 lg:px-8 md:border-t lg:border-t-0 md:border-s-0 lg:border-s lg:border-[var(--color-border)] flex flex-col gap-2">
-          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+        <div class="fact-col py-8 sm:py-6 sm:pe-6 lg:px-8 sm:border-t lg:border-t-0 sm:border-s-0 lg:border-s lg:border-[var(--color-border)] flex flex-col gap-2.5">
+          <span class="fact-label font-label text-[0.875rem] tracking-[0.1em] uppercase text-[var(--color-secondary)] font-medium">
             {t('facts.industries_label')}
           </span>
-          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+          <span class="font-body text-[1.1875rem] text-[var(--color-charcoal)] leading-relaxed font-normal">
             {t('facts.industries_value')}
           </span>
         </div>
 
         <!-- Item 4: Status -->
-        <div class="fact-col py-5 md:py-0 md:px-6 lg:ps-8 md:border-t lg:border-t-0 md:border-s md:border-[var(--color-border)] flex flex-col gap-2">
-          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+        <div class="fact-col py-8 sm:py-6 sm:px-6 lg:ps-8 sm:border-t lg:border-t-0 sm:border-s sm:border-[var(--color-border)] flex flex-col gap-2.5">
+          <span class="fact-label font-label text-[0.875rem] tracking-[0.1em] uppercase text-[var(--color-secondary)] font-medium">
             {t('facts.status_label')}
           </span>
-          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+          <span class="font-body text-[1.1875rem] text-[var(--color-charcoal)] leading-relaxed font-normal">
             {t('facts.status_value')}
           </span>
         </div>
@@ -146,6 +146,34 @@ const t = useTranslations(lang);
 </section>
 
 <style>
+  .hero-section {
+    padding-block: var(--section-space);
+  }
+
+  .hero-headline {
+    font-size: var(--text-hero);
+  }
+
+  .hero-lead {
+    font-size: var(--text-lg);
+  }
+
+  .facts-wrapper {
+    margin-top: clamp(3.5rem, 2.5rem + 4vw, 6rem);
+    padding-top: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+  }
+
+  .fact-col {
+    padding: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    .fact-col {
+      padding-inline: 0;
+      padding-block: 1.75rem;
+    }
+  }
+
   /* Load-in entrance animation: fade and rise 12px with 80ms stagger, 600ms ease-out */
   @media (prefers-reduced-motion: no-preference) {
     .hero-load-item {
@@ -163,7 +191,7 @@ const t = useTranslations(lang);
     }
   }
 
-  /* No JS or reduced-motion guarantee */
+  /* Reduced-motion guarantee */
   @media (prefers-reduced-motion: reduce) {
     .hero-load-item {
       opacity: 1 !important;

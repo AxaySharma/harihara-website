@@ -58,3 +58,12 @@ Elegant, calm, industrial-premium. Not a typical AI/SaaS template. Warm off-whit
 
 ## Tech
 Astro (latest stable), TypeScript strict, Tailwind CSS v4, static output. Hosted on Cloudflare Pages. Contact form via Web3Forms (key in env var, never committed) with honeypot and a consent checkbox. Accessible (WCAG AA), mobile-first, Lighthouse 95+, minimal JavaScript, sitemap and robots, social preview image.
+
+## Typography and accessibility standards (apply to every section)
+- All sizes in rem, never px, so the site respects the visitor's browser font-size setting. It must stay usable at 200% and 400% zoom and with a larger default browser font, with no clipped or overlapping text and no horizontal scroll at 320 px.
+- Minimum sizes: body 1.125rem on mobile and up to 1.25rem on desktop; nav links and buttons 1rem; the smallest text anywhere 0.875rem. Nothing smaller.
+- Line height: 1.65 Latin, 1.8 Hindi/Gujarati/Arabic, 1.75 CJK. Paragraph width 60 to 70 characters.
+- Per-script size boost: Devanagari, Gujarati, Arabic 1.08x; CJK 1.04x.
+- Uppercase labels: sparing, tracking at most 0.12em, never for scripts without case.
+- Contrast: body text at least 7:1 on paper (charcoal #1C1C1C); secondary text at least 5.5:1 (#55524F on #F6F3EE, never light grey). Crimson only for large text, rules, buttons and accents.
+- Interactive targets at least 48 x 48 px. Visible 3px focus ring with offset on every interactive element. Meaning never by colour alone. Respect prefers-reduced-motion and prefers-contrast.
