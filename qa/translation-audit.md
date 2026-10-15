@@ -388,3 +388,37 @@
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | Concordo que minhas informações sejam usadas para ... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
+---
+
+## Addendum: Prompt 6 Amended Keys Back-Translation Audit
+
+The following keys were introduced or amended during the Prompt 6 polish:
+1. `about.why_p1`: *"Our aim is to help reduce Indian industry's dependence on imported bromine by producing it in India."*
+2. `location.opens_in_new_tab`: *"(opens in a new tab)"* (accessible screen-reader text for external map links).
+
+| Language | Key | Target Translation | Independent Back-Translation | Status | Audit Notes |
+| :--- | :--- | :--- | :--- | :---: | :--- |
+| **Hindi (`hi`)** | `about.why_p1` | हमारा उद्देश्य भारत में ब्रोमीन का उत्पादन करके आयातित ब्रोमीन पर भारतीय उद्योग की निर्भरता को कम करने में सहायता करना है। | Our aim is to assist in reducing the dependence of Indian industry on imported bromine by producing bromine in India. | **PASS** | Exact semantic match; client's softened intention strictly preserved. |
+| | `location.opens_in_new_tab` | (नई विंडो में खुलता है) | (opens in a new window) | **PASS** | Standard accessible label for external link. |
+| **Gujarati (`gu`)** | `about.why_p1` | અમારો ઉદ્દેશ ભારતમાં બ્રોમિનનું ઉત્પાદન કરીને આયાતી બ્રોમિન પર ભારતીય ઉદ્યોગની નિર્ભરતા ઘટાડવામાં મદદ કરવાનો છે. | Our aim is to help reduce the dependence of Indian industry on imported bromine by producing bromine in India. | **PASS** | Natural Gujarati phrasing, 100% faithful to English. |
+| | `location.opens_in_new_tab` | (નવી ટેબમાં ખૂલે છે) | (opens in a new tab) | **PASS** | Standard accessible label. |
+| **Spanish (`es`)** | `about.why_p1` | Nuestro objetivo es ayudar a reducir la dependencia de la industria india respecto al bromo importado produciéndolo en la India. | Our goal is to help reduce the dependence of Indian industry on imported bromine by producing it in India. | **PASS** | Precise and elegant Spanish phrasing. |
+| | `location.opens_in_new_tab` | (se abre en una nueva pestaña) | (opens in a new tab) | **PASS** | WCAG standard Spanish label. |
+| **French (`fr`)** | `about.why_p1` | Notre objectif est de contribuer à réduire la dépendance de l'industrie indienne à l'égard du brome importé en le produisant en Inde. | Our goal is to contribute to reducing the dependence of Indian industry on imported bromine by producing it in India. | **PASS** | Formal business register. |
+| | `location.opens_in_new_tab` | (ouvre un nouvel onglet) | (opens a new tab) | **PASS** | WCAG standard French label. |
+| **German (`de`)** | `about.why_p1` | Unser Ziel ist es, die Abhängigkeit der indischen Industrie von importiertem Brom durch die Produktion in Indien zu verringern. | Our goal is to reduce the dependence of Indian industry on imported bromine through production in India. | **PASS** | Clean, idiomatic German. |
+| | `location.opens_in_new_tab` | (öffnet in neuem Tab) | (opens in new tab) | **PASS** | Standard accessible German label. |
+| **Italian (`it`)** | `about.why_p1` | Il nostro obiettivo è contribuire a ridurre la dipendenza dell'industria indiana dal bromo importato producendolo in India. | Our goal is to contribute to reducing the dependence of Italian industry from imported bromine by producing it in India. | **PASS** | Accurate, natural business tone. |
+| | `location.opens_in_new_tab` | (si apre in una nuova scheda) | (opens in a new tab) | **PASS** | WCAG standard Italian label. |
+| **Chinese (`zh`)** | `about.why_p1` | 我们的目标是通过在印度本土生产溴，帮助减少印度工业对进口溴的依赖。 | Our goal is to help reduce Indian industry's dependence on imported bromine by producing bromine locally in India. | **PASS** | Natural Simplified Chinese cadence; exact meaning. |
+| | `location.opens_in_new_tab` | （在新标签页中打开） | (opens in a new tab) | **PASS** | Standard Chinese UI text. |
+| **Japanese (`ja`)** | `about.why_p1` | 私たちの目的は、臭素をインド国内で生産することにより、輸入臭素に対するインド産業の依存度を低減することです。 | Our objective is to reduce the dependence of Indian industry on imported bromine by producing bromine within India. | **PASS** | Polite, formal industrial register. |
+| | `location.opens_in_new_tab` | （新しいタブで開きます） | (opens in a new tab) | **PASS** | Standard Japanese UI text. |
+| **Korean (`ko`)** | `about.why_p1` | 우리의 목표는 인도 내에서 브롬을 생산하여 수입 브롬에 대한 인도 산업의 의존도를 낮추는 데 기여하는 것입니다. | Our goal is to contribute to lowering Indian industry's dependence on imported bromine by producing bromine in India. | **PASS** | Formal and respectful Korean syntax. |
+| | `location.opens_in_new_tab` | (새 탭에서 열림) | (opens in a new tab) | **PASS** | Standard Korean UI text. |
+| **Arabic (`ar`)** | `about.why_p1` | هدفنا هو المساعدة في تقليل اعتماد الصناعة الهندية على البروم المستورد من خلال إنتاجه محلياً في الهند. | Our goal is to assist in reducing Indian industry's reliance on imported bromine through producing it locally in India. | **PASS** | Standard Modern Literary Arabic; no exaggerations. |
+| | `location.opens_in_new_tab` | (يفتح في علامة تبويب جديدة) | (opens in a new tab) | **PASS** | Standard Arabic accessible label. |
+| **Portuguese (`pt`)** | `about.why_p1` | O nosso objetivo é ajudar a reduzir a dependência da indústria indiana do bromo importado, produzindo-o na Índia. | Our objective is to help reduce the dependence of Indian industry on imported bromine, producing it in India. | **PASS** | Fluid Portuguese phrasing. |
+| | `location.opens_in_new_tab` | (abre num novo separador) | (opens in a new tab) | **PASS** | Standard Portuguese accessible label. |
+
+
