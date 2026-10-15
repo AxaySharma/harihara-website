@@ -197,3 +197,18 @@ html[lang="ko"] .uppercase {
   letter-spacing: normal !important;
   text-transform: none !important;
 }
+
+/* Scroll reveal utility (fade and 12px rise once, fully visible without JS, disabled for reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+  html.js-ready .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html.js-ready .reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

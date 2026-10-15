@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('not_found.title')}
+  description={t('not_found.desc')}
+>
+  <div class="py-[var(--section-space)] bg-[var(--color-paper)] flex items-center justify-center min-h-[60vh]">
+    <div class="max-w-[36em] mx-auto px-4 text-center space-y-6">
+      <span class="font-heading text-[5rem] sm:text-[6.5rem] leading-none text-[var(--color-crimson)] block">
+        {t('not_found.heading')}
+      </span>
+      <h1 class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)]">
+        {t('not_found.subheading')}
+      </h1>
+      <p class="text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed">
+        {t('not_found.desc')}
+      </p>
+      <div class="pt-4">
+        <a
+          href="/"
+          class="btn-primary inline-flex items-center justify-center min-h-[3.5rem] px-8 text-center bg-[var(--color-crimson)] text-[var(--color-paper)] text-[1.0625rem] font-semibold uppercase tracking-[0.12em] rounded-[2px] transition-colors hover:bg-[var(--color-maroon)] focus:outline-none focus:ring-3 focus:ring-[var(--color-charcoal)]"
+        >
+          {t('not_found.home_link')}
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

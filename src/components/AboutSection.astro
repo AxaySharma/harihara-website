@@ -1,0 +1,105 @@
+---
+import { useTranslations } from '../i18n/utils';
+import { SHOW_PARTNERS } from '../config';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const partners = [
+  { name: 'Dinesh Ratanshi Bhawani', role: t('about.partners.0.role') || 'Designated Partner' },
+  { name: 'Ravilal Rasiklal Patel', role: t('about.partners.1.role') || 'Designated Partner' },
+  { name: 'Pranav Dharmnath Avhad', role: t('about.partners.2.role') || 'Partner' },
+  { name: 'Ketan Valji Dholu', role: t('about.partners.3.role') || 'Partner' },
+  { name: 'Dinesh Manilal Chopda', role: t('about.partners.4.role') || 'Partner' },
+  { name: 'Bipin Narshibhai Patel', role: t('about.partners.5.role') || 'Partner' },
+];
+---
+
+<section
+  id="about"
+  class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper)] scroll-mt-24"
+  aria-labelledby="about-heading"
+>
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Label -->
+    <div class="mb-6 sm:mb-8">
+      <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)]">
+        {t('about.label')}
+      </span>
+    </div>
+
+    <!-- Two-column editorial layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
+      <!-- Start Column: Large Serif Statement -->
+      <div class="lg:col-span-6 xl:col-span-7">
+        <h2
+          id="about-heading"
+          class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] leading-tight text-[var(--color-charcoal)]"
+        >
+          {t('about.statement')}
+        </h2>
+      </div>
+
+      <!-- End Column: Body copy -->
+      <div class="lg:col-span-6 xl:col-span-5 space-y-6">
+        <p class="text-[var(--text-base)] leading-relaxed text-[var(--color-charcoal)] max-w-[36em]">
+          {t('about.body')}
+        </p>
+      </div>
+    </div>
+
+    <!-- Ruled line of three short facts below -->
+    <div class="mt-12 sm:mt-16 pt-8 border-t border-[var(--color-border)]">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[var(--color-border)] rtl:sm:divide-x-reverse">
+        <div class="pt-4 sm:pt-0 sm:pe-6">
+          <p class="font-heading text-[1.125rem] sm:text-[1.25rem] text-[var(--color-charcoal)]">
+            {t('about.fact_llp')}
+          </p>
+        </div>
+        <div class="pt-4 sm:pt-0 sm:px-6">
+          <p class="font-heading text-[1.125rem] sm:text-[1.25rem] text-[var(--color-charcoal)]">
+            {t('about.fact_act')}
+          </p>
+        </div>
+        <div class="pt-4 sm:pt-0 sm:ps-6">
+          <div class="inline-flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-crimson)] shrink-0" aria-hidden="true" />
+            <p class="font-heading text-[1.125rem] sm:text-[1.25rem] text-[var(--color-charcoal)]">
+              {t('about.fact_status')}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Founding partners (Ruled list of 6 rows, shown when SHOW_PARTNERS is true) -->
+    {SHOW_PARTNERS && (
+      <div class="mt-16 sm:mt-24 pt-10 border-t border-[var(--color-border)]">
+        <div class="mb-6">
+          <h3 class="text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)]">
+            {t('about.partners_heading')}
+          </h3>
+        </div>
+
+        <div class="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
+          {partners.map((p) => (
+            <div class="py-4.5 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6">
+              <!-- Name left in serif (Always Latin script verbatim) -->
+              <span class="font-heading text-[1.1875rem] sm:text-[1.3125rem] text-[var(--color-charcoal)]">
+                {p.name}
+              </span>
+              <!-- Role right in label style -->
+              <span class="text-[0.875rem] sm:text-[1rem] font-medium uppercase tracking-[0.1em] text-[var(--color-secondary)]">
+                {p.role}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</section>

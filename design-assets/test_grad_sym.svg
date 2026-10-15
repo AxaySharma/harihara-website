@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 443" width="1280" height="443">
+  <defs>
+    <linearGradient id="arch-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DB1E4D" />
+      <stop offset="25%" stop-color="#C31D47" />
+      <stop offset="50%" stop-color="#98203F" />
+      <stop offset="75%" stop-color="#6C1E34" />
+      <stop offset="100%" stop-color="#3E1E2A" />
+    </linearGradient>
+    <linearGradient id="tri-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E21448" />
+      <stop offset="25%" stop-color="#D31D4A" />
+      <stop offset="50%" stop-color="#B02448" />
+      <stop offset="75%" stop-color="#88203D" />
+      <stop offset="100%" stop-color="#661C32" />
+    </linearGradient>
+  </defs>
+  <path d="M 189.5 149.5 A 60 60 0 0 1 309.5 149.5 L 309.5 263.0 L 249.5 203.0 L 189.5 263.0 Z" fill="url(#arch-grad)" />
+  <path d="M 249.5 211.0 L 126.0 337.5 L 241.5 337.5 L 241.5 303.0 L 205.0 303.0 L 249.5 258.5 L 294.0 303.0 L 257.5 303.0 L 257.5 337.5 L 373.0 337.5 Z" fill="url(#tri-grad)" />
+</svg>

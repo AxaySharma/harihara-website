@@ -2,6 +2,7 @@
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
   "convenience_note": "مترجم للتيسير. النسخة الإنجليزية هي النسخة الرسمية المعتمدة.",
+  "report_translation_issue": "الإبلاغ عن مشكلة في الترجمة",
   "a11y": {
     "skip_to_content": "الانتقال إلى المحتوى الرئيسي",
     "open_menu": "فتح قائمة التنقل",
@@ -35,5 +36,182 @@
     "industries_value": "الأدوية، الكيماويات الزراعية، مثبطات اللهب، معالجة المياه، حقول النفط",
     "status_label": "الحالة",
     "status_value": "المنشأة قيد التطوير"
+  },
+  "about": {
+    "label": "عن المشروع",
+    "statement": "هدفنا هو تزويد الصناعة الهندية ببروم عالي الجودة وتقليل اعتمادها على الواردات.",
+    "body": "تعمل شركة Hari Hara Serenity Chemical LLP على إنشاء منشأة في Rapar, Kachchh, Gujarat لاستخلاص وتكرير البروم من المحلول الملحي المتبقي (البتيرن) الناتج بعد إنتاج الملح. يُعد البروم مدخلاً أساسياً في الصناعات الدوائية، والكيماويات الزراعية، ومثبطات اللهب، ومعالجة المياه، وكيماويات حقول النفط.",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "المنشأة قيد التطوير",
+    "partners_heading": "الشركاء المؤسسون",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "شريك معين"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "شريك معين"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "شريك"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "شريك"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "شريك"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "شريك"
+      }
+    ]
+  },
+  "process": {
+    "label": "العملية",
+    "heading": "من البتيرن إلى البروم",
+    "intro": "العملية المخططة في منشأتنا في Rapar، والتي هي قيد التطوير حالياً.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "البتيرن",
+        "desc": "المحلول الملحي المتبقي بعد إنتاج الملح."
+      },
+      {
+        "num": "02",
+        "title": "استخلاص",
+        "desc": "يتم استخلاص البروم من البتيرن."
+      },
+      {
+        "num": "03",
+        "title": "تنقية",
+        "desc": "تتم تنقية وتكرير البروم المستخلص."
+      },
+      {
+        "num": "04",
+        "title": "البروم",
+        "desc": "بروم بدرجة صناعية، ومركبات البروم وأملاح البروميد."
+      }
+    ]
+  },
+  "products": {
+    "label": "المنتجات",
+    "heading": "المنتجات المخططة",
+    "status_tag": "مخطط",
+    "enquire_link": "استفسر",
+    "items": [
+      {
+        "num": "01",
+        "title": "البروم (درجة صناعية)",
+        "desc": "بروم بدرجة نقاء صناعية، مستخلص ومنقى من البتيرن في منشأتنا في Rapar.",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "مركبات البروم وأملاح البروميد",
+        "desc": "مركبات البروم وأملاح البروميد للاستخدامات الصناعية التحويلية.",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "للاستفسارات المتعلقة بالمنتجات، يرجى التواصل معنا."
+  },
+  "industries": {
+    "label": "القطاعات",
+    "heading": "القطاعات التي يخدمها البروم",
+    "intro": "يعد البروم عنصراً أساسياً لهذه القطاعات الصناعية.",
+    "items": [
+      {
+        "num": "01",
+        "name": "الصناعات الدوائية"
+      },
+      {
+        "num": "02",
+        "name": "الكيماويات الزراعية"
+      },
+      {
+        "num": "03",
+        "name": "مثبطات اللهب"
+      },
+      {
+        "num": "04",
+        "name": "معالجة المياه"
+      },
+      {
+        "num": "05",
+        "name": "كيماويات حقول النفط"
+      }
+    ]
+  },
+  "location": {
+    "label": "المنشأة والموقع",
+    "heading": "أين نبني المنشأة",
+    "maps_link": "فتح في خرائط Google",
+    "plant_title": "المنشأة (قيد التطوير)",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "المكتب الرئيسي والمحاسبي",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "المكتب المسجل",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "اتصل بنا",
+    "heading": "تواصل معنا",
+    "line": "للاستفسارات حول المنتجات أو الشراكات أو أي استفسارات أخرى.",
+    "email_label": "البريد الإلكتروني",
+    "phone_label": "الهاتف وWhatsApp",
+    "enquiries_note": "تتم مراجعة الاستفسارات والرد عليها من قِبل Ketan Dholu, Partner.",
+    "form": {
+      "name_label": "الاسم",
+      "company_label": "الشركة",
+      "email_label": "البريد الإلكتروني",
+      "phone_label": "الهاتف",
+      "type_label": "نوع الاستفسار",
+      "type_options": {
+        "product": "استفسار عن المنتجات",
+        "partnership": "شراكة",
+        "other": "أخرى"
+      },
+      "message_label": "الرسالة",
+      "consent_label": "أوافق على استخدام بياناتي للرد على هذا الاستفسار وفقاً لما هو موضح في سياسة الخصوصية.",
+      "consent_privacy_link": "سياسة الخصوصية",
+      "submit_btn": "إرسال الاستفسار",
+      "submitting_btn": "جارٍ الإرسال...",
+      "success_message": "شكراً لك. تم استلام استفسارك وستتم مراجعته من قِبل Ketan Dholu, Partner.",
+      "error_message": "عذراً، حدث خطأ أثناء إرسال استفسارك. يرجى مراسلتنا مباشرة عبر البريد الإلكتروني Purchase@harihara.net.",
+      "validation": {
+        "name_required": "يرجى إدخال اسمك.",
+        "email_required": "يرجى إدخال عنوان بريدك الإلكتروني.",
+        "email_invalid": "يرجى إدخال عنوان بريد إلكتروني صالح.",
+        "message_required": "يرجى كتابة رسالتك.",
+        "consent_required": "يرجى الموافقة على سياسة الخصوصية للمتابعة."
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "روابط سريعة",
+    "privacy_policy": "سياسة الخصوصية",
+    "disclaimer": "إخلاء المسؤولية",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "سياسة الخصوصية",
+    "privacy_description": "سياسة الخصوصية لشركة Hari Hara Serenity Chemical LLP المتوافقة مع قانون DPDP لعام 2023.",
+    "disclaimer_title": "إخلاء المسؤولية",
+    "disclaimer_description": "إخلاء المسؤولية القانوني لموقع Hari Hara Serenity Chemical LLP.",
+    "last_updated": "آخر تحديث: أكتوبر 2026"
+  },
+  "not_found": {
+    "title": "الصفحة غير موجودة",
+    "heading": "404",
+    "subheading": "هذه الصفحة غير متوفرة.",
+    "desc": "تعذر العثور على الصفحة التي تبحث عنها. يرجى التحقق من الرابط أو العودة إلى الصفحة الرئيسية.",
+    "home_link": "العودة إلى الصفحة الرئيسية"
   }
 }

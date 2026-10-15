@@ -1,7 +1,8 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
-  "convenience_note": "સરળતા માટે અનુવાદિત. અધિકૃત સંસ્કરણ અંગ્રેજીમાં છે.",
+  "convenience_note": "સરળતા ખાતર અનુવાદ કરેલ છે. સત્તાવાર સંસ્કરણ ફક્ત અંગ્રેજીમાં છે.",
+  "report_translation_issue": "અનુવાદ સમસ્યાની જાણ કરો",
   "a11y": {
     "skip_to_content": "મુખ્ય સામગ્રી પર જાઓ",
     "open_menu": "નેવિગેશન મેનૂ ખોલો",
@@ -10,7 +11,7 @@
     "select_language": "ભાષા પસંદ કરો"
   },
   "nav": {
-    "about": "પરિચય",
+    "about": "વિશે",
     "process": "પ્રક્રિયા",
     "products": "ઉત્પાદનો",
     "industries": "ઉદ્યોગો",
@@ -20,20 +21,197 @@
   "hero": {
     "eyebrow": "રાપર, કચ્છ, ગુજરાત",
     "headline": "ભારતીય ઉદ્યોગ માટે ગુણવત્તાયુક્ત બ્રોમિનના સ્ત્રોતનું નિર્માણ.",
-    "lead": "અમે મીઠાના ઉત્પાદન પછી બાકી રહેલા અવશેષ ક્ષારયુક્ત જળ (બિટર્ન)માંથી બ્રોમિન મેળવવા અને શુદ્ધ કરવા માટે રાપર, કચ્છ ખાતે પ્લાન્ટ સ્થાપી રહ્યા છીએ.",
+    "lead": "અમે મીઠાના ઉત્પાદન પછી બાકી રહેલા ક્ષારયુક્ત જળ (બિટર્ન) માંથી બ્રોમિન મેળવવા અને શુદ્ધ કરવા માટે રાપર, કચ્છ ખાતે પ્લાન્ટ સ્થાપી રહ્યા છીએ.",
     "status": "પ્લાન્ટ નિર્માણાધીન છે",
     "cta_primary": "સંપર્ક કરો",
     "cta_secondary": "પ્રોજેક્ટ વિશે",
-    "caption": "ચિત્રાત્મક કલાકૃતિ: મીઠાના અગરો, બિટર્નનો સ્ત્રોત."
+    "caption": "દ્રષ્ટાંતરૂપ કલાકૃતિ: મીઠાના અગરો, બિટર્નનો સ્ત્રોત."
   },
   "facts": {
     "location_label": "સ્થળ",
-    "location_value": "ગામ માનાબા, તાલુકો રાપર, જિલ્લો કચ્છ, ગુજરાત",
-    "focus_label": "આયોજિત લક્ષ્ય",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "આયોજિત ફોકસ",
     "focus_value": "બ્રોમિન અને બ્રોમિન સંયોજનો",
     "industries_label": "ઉદ્યોગો",
-    "industries_value": "ફાર્માસ્યુટિકલ, એગ્રોકેમિકલ, ફ્લેમ રિટાર્ડન્ટ્સ, જળ શુદ્ધિકરણ, ઓઇલ-ફીલ્ડ",
+    "industries_value": "ફાર્માસ્યુટિકલ, એગ્રોકેમિકલ, ફ્લેમ રિટાર્ડન્ટ્સ, વોટર ટ્રીટમેન્ટ, ઓઇલ-ફીલ્ડ",
     "status_label": "સ્થિતિ",
     "status_value": "પ્લાન્ટ નિર્માણાધીન છે"
+  },
+  "about": {
+    "label": "પ્રોજેક્ટ વિશે",
+    "statement": "અમારો ઉદ્દેશ્ય ભારતીય ઉદ્યોગોને ગુણવત્તાયુક્ત બ્રોમિન સપ્લાય કરવાનો અને આયાત પરની નિર્ભરતા ઘટાડવાનો છે.",
+    "body": "Hari Hara Serenity Chemical LLP મીઠાના ઉત્પાદન પછી બાકી રહેલા ક્ષારયુક્ત જળ (બિટર્ન) માંથી બ્રોમિન મેળવવા અને શુદ્ધ કરવા માટે રાપર, કચ્છ, ગુજરાત ખાતે પ્લાન્ટ સ્થાપી રહ્યું છે. બ્રોમિન ફાર્માસ્યુટિકલ, એગ્રોકેમિકલ, ફ્લેમ-રિટાર્ડન્ટ, વોટર-ટ્રીટમેન્ટ અને ઓઇલ-ફીલ્ડ કેમિકલ ઉદ્યોગો માટે મુખ્ય ઘટક છે.",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "પ્લાન્ટ નિર્માણાધીન છે",
+    "partners_heading": "સ્થાપક ભાગીદારો",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "નિયુક્ત ભાગીદાર"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "નિયુક્ત ભાગીદાર"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "ભાગીદાર"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "ભાગીદાર"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "ભાગીદાર"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "ભાગીદાર"
+      }
+    ]
+  },
+  "process": {
+    "label": "પ્રક્રિયા",
+    "heading": "બિટર્નથી બ્રોમિન સુધી",
+    "intro": "અમારા રાપર પ્લાન્ટ ખાતે આયોજિત પ્રક્રિયા, જે હાલ નિર્માણાધીન છે.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "બિટર્ન",
+        "desc": "મીઠાના ઉત્પાદન પછી બાકી રહેલું ક્ષારયુક્ત જળ."
+      },
+      {
+        "num": "02",
+        "title": "રિકવરી",
+        "desc": "બિટર્નમાંથી બ્રોમિન મેળવવામાં આવે છે."
+      },
+      {
+        "num": "03",
+        "title": "શુદ્ધિકરણ",
+        "desc": "મેળવેલા બ્રોમિનને શુદ્ધ કરવામાં આવે છે."
+      },
+      {
+        "num": "04",
+        "title": "બ્રોમિન",
+        "desc": "ઔદ્યોગિક-ગ્રેડ બ્રોમિન, તેમજ બ્રોમિન સંયોજનો અને બ્રોમાઇડ ક્ષારો."
+      }
+    ]
+  },
+  "products": {
+    "label": "ઉત્પાદનો",
+    "heading": "આયોજિત ઉત્પાદનો",
+    "status_tag": "આયોજિત",
+    "enquire_link": "પૂછપરછ કરો",
+    "items": [
+      {
+        "num": "01",
+        "title": "બ્રોમિન (ઔદ્યોગિક ગ્રેડ)",
+        "desc": "ઔદ્યોગિક-ગ્રેડ બ્રોમિન, જે અમારા રાપર પ્લાન્ટ ખાતે બિટર્નમાંથી મેળવીને શુદ્ધ કરવાનું આયોજિત છે.",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "બ્રોમિન સંયોજનો અને બ્રોમાઇડ ક્ષારો",
+        "desc": "ડાઉનસ્ટ્રીમ ઔદ્યોગિક ઉપયોગ માટે બ્રોમિન સંયોજનો અને બ્રોમાઇડ ક્ષારો.",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "ઉત્પાદન પૂછપરછ માટે, કૃપા કરીને સંપર્ક કરો."
+  },
+  "industries": {
+    "label": "ઉદ્યોગો",
+    "heading": "બ્રોમિન જે ઉદ્યોગોમાં ઉપયોગી છે",
+    "intro": "બ્રોમિન આ ઉદ્યોગો માટે મુખ્ય કાચો માલ છે.",
+    "items": [
+      {
+        "num": "01",
+        "name": "ફાર્માસ્યુટિકલ"
+      },
+      {
+        "num": "02",
+        "name": "એગ્રોકેમિકલ"
+      },
+      {
+        "num": "03",
+        "name": "ફ્લેમ રિટાર્ડન્ટ્સ"
+      },
+      {
+        "num": "04",
+        "name": "વોટર ટ્રીટમેન્ટ"
+      },
+      {
+        "num": "05",
+        "name": "ઓઇલ-ફીલ્ડ કેમિકલ્સ"
+      }
+    ]
+  },
+  "location": {
+    "label": "પ્લાન્ટ અને સ્થળ",
+    "heading": "અમે ક્યાં નિર્માણ કરી રહ્યા છીએ",
+    "maps_link": "Google Maps માં ખોલો",
+    "plant_title": "પ્લાન્ટ (નિર્માણાધીન)",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "કોર્પોરેટ અને એકાઉન્ટ્સ કાર્યાલય",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "નોંધાયેલ કાર્યાલય",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "સંપર્ક",
+    "heading": "સંપર્ક કરો",
+    "line": "ઉત્પાદન, ભાગીદારી અથવા અન્ય પૂછપરછ માટે.",
+    "email_label": "ઈમેલ",
+    "phone_label": "ફોન અને WhatsApp",
+    "enquiries_note": "પૂછપરછ Ketan Dholu, Partner દ્વારા વાંચવામાં અને જવાબ આપવામાં આવે છે.",
+    "form": {
+      "name_label": "નામ",
+      "company_label": "કંપની",
+      "email_label": "ઈમેલ",
+      "phone_label": "ફોન",
+      "type_label": "પૂછપરછનો પ્રકાર",
+      "type_options": {
+        "product": "ઉત્પાદન પૂછપરછ",
+        "partnership": "ભાગીદારી",
+        "other": "અન્ય"
+      },
+      "message_label": "સંદેશ",
+      "consent_label": "હું સંમત છું કે ગોપનીયતા નીતિમાં વર્ણવ્યા મુજબ આ પૂછપરછનો જવાબ આપવા માટે મારી વિગતોનો ઉપયોગ થઈ શકે છે.",
+      "consent_privacy_link": "ગોપનીયતા નીતિ",
+      "submit_btn": "પૂછપરછ મોકલો",
+      "submitting_btn": "મોકલી રહ્યું છે...",
+      "success_message": "આભાર. તમારી પૂછપરછ મળી ગઈ છે અને Ketan Dholu, Partner દ્વારા તેની સમીક્ષા કરવામાં આવશે.",
+      "error_message": "માફ કરશો, તમારી પૂછપરછ સબમિટ કરવામાં સમસ્યા આવી. કૃપા કરીને અમને સીધા Purchase@harihara.net પર ઈમેલ કરો.",
+      "validation": {
+        "name_required": "કૃપા કરીને તમારું નામ દાખલ કરો.",
+        "email_required": "કૃપા કરીને તમારું ઈમેલ સરનામું દાખલ કરો.",
+        "email_invalid": "કૃપા કરીને માન્ય ઈમેલ સરનામું દાખલ કરો.",
+        "message_required": "કૃપા કરીને સંદેશ દાખલ કરો.",
+        "consent_required": "આગળ વધવા માટે કૃપા કરીને ગોપનીયતા નીતિ સાથે સંમત થાઓ."
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "ઝડપી લિંક્સ",
+    "privacy_policy": "ગોપનીયતા નીતિ",
+    "disclaimer": "અસ્વીકરણ",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "ગોપનીયતા નીતિ",
+    "privacy_description": "Hari Hara Serenity Chemical LLP માટે ગોપનીયતા નીતિ, DPDP એક્ટ 2023 સાથે સુસંગત.",
+    "disclaimer_title": "અસ્વીકરણ",
+    "disclaimer_description": "Hari Hara Serenity Chemical LLP વેબસાઇટ માટે કાનૂની અસ્વીકરણ.",
+    "last_updated": "છેલ્લું અપડેટ: ઓક્ટોબર 2026"
+  },
+  "not_found": {
+    "title": "પૃષ્ઠ મળ્યું નથી",
+    "heading": "404",
+    "subheading": "આ પૃષ્ઠ અસ્તિત્વમાં નથી.",
+    "desc": "તમે જે પૃષ્ઠ શોધી રહ્યાં છો તે મળ્યું નથી. કૃપા કરીને સરનામું તપાસો અથવા મુખ્ય પૃષ્ઠ પર પાછા ફરો.",
+    "home_link": "મુખ્ય પૃષ્ઠ પર પાછા ફરો"
   }
 }

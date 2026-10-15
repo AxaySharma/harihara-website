@@ -1,7 +1,8 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
-  "convenience_note": "편의를 위해 번역되었습니다. 공식 본문은 영문본입니다.",
+  "convenience_note": "편의를 위해 번역되었습니다. 공식 버전은 영어 원문입니다.",
+  "report_translation_issue": "번역 문제 신고",
   "a11y": {
     "skip_to_content": "본문 바로가기",
     "open_menu": "내비게이션 메뉴 열기",
@@ -10,7 +11,7 @@
     "select_language": "언어 선택"
   },
   "nav": {
-    "about": "회사 소개",
+    "about": "소개",
     "process": "공정",
     "products": "제품",
     "industries": "적용 산업",
@@ -19,12 +20,12 @@
   },
   "hero": {
     "eyebrow": "Rapar, Kachchh, Gujarat",
-    "headline": "인도 산업을 위한 고품질 브롬 공급원 구축.",
-    "lead": "소금 생산 후 남은 잔류 염수(간수)에서 브롬을 회수 및 정제하기 위해 구자라트주 카치 라파르(Rapar, Kachchh)에 플랜트를 구축하고 있습니다.",
-    "status": "플랜트 구축 진행 중",
+    "headline": "인도 산업을 위한 고품질 브롬 공급원의 구축.",
+    "lead": "소금 생산 후 남은 잔류 염수(간수)에서 브롬을 회수 및 정제하기 위해 구자라트주 카치현 라파르(Rapar, Kachchh)에 플랜트를 설립하고 있습니다.",
+    "status": "플랜트 개발 중",
     "cta_primary": "문의하기",
-    "cta_secondary": "프로젝트 정보",
-    "caption": "삽화: 간수의 공급원인 염전."
+    "cta_secondary": "프로젝트 알아보기",
+    "caption": "예시 이미지: 염전, 간수의 공급원."
   },
   "facts": {
     "location_label": "위치",
@@ -32,8 +33,185 @@
     "focus_label": "계획 품목",
     "focus_value": "브롬 및 브롬 화합물",
     "industries_label": "적용 산업",
-    "industries_value": "제약, 농화학, 난연제, 수처리, 유전 화학",
+    "industries_value": "제약, 농약, 난연제, 수처리, 유전 화학",
     "status_label": "상태",
-    "status_value": "플랜트 구축 진행 중"
+    "status_value": "플랜트 개발 중"
+  },
+  "about": {
+    "label": "프로젝트 소개",
+    "statement": "우리의 목표는 인도 산업에 고품질 브롬을 공급하고 수입 의존도를 낮추는 것입니다.",
+    "body": "Hari Hara Serenity Chemical LLP 는 제염 후 남은 잔류 염수(간수)에서 브롬을 회수 및 정제하기 위해 인도 구자라트주 카치현 라파르(Rapar, Kachchh, Gujarat)에 플랜트를 구축하고 있습니다. 브롬은 제약, 농약, 난연제, 수처리 및 유전 화학 산업의 핵심 필수 원료입니다.",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "플랜트 개발 중",
+    "partners_heading": "창립 파트너",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "지정 파트너"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "지정 파트너"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "파트너"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "파트너"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "파트너"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "파트너"
+      }
+    ]
+  },
+  "process": {
+    "label": "공정",
+    "heading": "간수에서 브롬으로",
+    "intro": "현재 건설 및 개발 진행 중인 라파르 플랜트의 계획 공정입니다.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "간수",
+        "desc": "소금 생산 후 남은 잔류 염수."
+      },
+      {
+        "num": "02",
+        "title": "회수",
+        "desc": "간수에서 브롬 성분을 회수 및 추출합니다."
+      },
+      {
+        "num": "03",
+        "title": "정제",
+        "desc": "회수된 브롬을 고순도로 정제합니다."
+      },
+      {
+        "num": "04",
+        "title": "브롬 제품",
+        "desc": "공업용 브롬 및 브롬 화합물, 브롬화물 염."
+      }
+    ]
+  },
+  "products": {
+    "label": "제품",
+    "heading": "계획 제품",
+    "status_tag": "계획",
+    "enquire_link": "문의하기",
+    "items": [
+      {
+        "num": "01",
+        "title": "공업용 브롬",
+        "desc": "라파르 플랜트에서 간수로부터 회수 및 정제될 계획의 공업용 등급 브롬.",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "브롬 화합물 및 브롬화물 염",
+        "desc": "다운스트림 산업용 브롬 화합물 및 브롬화물 염 제품군.",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "제품 문의사항은 양식을 통해 문의해 주시기 바랍니다."
+  },
+  "industries": {
+    "label": "적용 산업",
+    "heading": "브롬이 활용되는 산업",
+    "intro": "브롬은 아래 주요 산업에서 필수적인 기초 원료입니다.",
+    "items": [
+      {
+        "num": "01",
+        "name": "제약 산업"
+      },
+      {
+        "num": "02",
+        "name": "농약 화학"
+      },
+      {
+        "num": "03",
+        "name": "난연제"
+      },
+      {
+        "num": "04",
+        "name": "수처리"
+      },
+      {
+        "num": "05",
+        "name": "유전 화학"
+      }
+    ]
+  },
+  "location": {
+    "label": "플랜트 및 위치",
+    "heading": "건설 위치 안내",
+    "maps_link": "Google 지도에서 열기",
+    "plant_title": "플랜트 (개발 중)",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "기업 및 회계 사무소",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "등록 사무소",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "문의",
+    "heading": "문의하기",
+    "line": "제품 문의, 사업 협력 및 기타 문의 사항.",
+    "email_label": "이메일",
+    "phone_label": "전화 및 WhatsApp",
+    "enquiries_note": "모든 문의는 파트너 Ketan Dholu, Partner 가 직접 확인하고 답변합니다.",
+    "form": {
+      "name_label": "성함",
+      "company_label": "회사명",
+      "email_label": "이메일 주소",
+      "phone_label": "전화번호",
+      "type_label": "문의 유형",
+      "type_options": {
+        "product": "제품 문의",
+        "partnership": "협력 제안",
+        "other": "기타"
+      },
+      "message_label": "문의 내용",
+      "consent_label": "개인정보 처리방침에 명시된 대로 본 문의에 응답하기 위해 개인정보를 사용하는 데 동의합니다.",
+      "consent_privacy_link": "개인정보 처리방침",
+      "submit_btn": "문의 보내기",
+      "submitting_btn": "전송 중...",
+      "success_message": "감사합니다. 문의가 성공적으로 접수되었으며 Ketan Dholu, Partner 가 검토 후 연락드리겠습니다.",
+      "error_message": "전송 중 오류가 발생했습니다. Purchase@harihara.net 으로 직접 이메일을 보내주시기 바랍니다.",
+      "validation": {
+        "name_required": "성함을 입력해 주세요.",
+        "email_required": "이메일 주소를 입력해 주세요.",
+        "email_invalid": "유효한 이메일 주소를 입력해 주세요.",
+        "message_required": "문의 내용을 입력해 주세요.",
+        "consent_required": "제출을 위해 개인정보 처리방침에 동의해 주세요."
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "빠른 링크",
+    "privacy_policy": "개인정보 처리방침",
+    "disclaimer": "면책 조항",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "개인정보 처리방침",
+    "privacy_description": "인도 2023년 DPDP 법을 준수하는 Hari Hara Serenity Chemical LLP의 개인정보 처리방침.",
+    "disclaimer_title": "면책 조항",
+    "disclaimer_description": "Hari Hara Serenity Chemical LLP 웹사이트 법적 고지 및 면책 조항.",
+    "last_updated": "최종 업데이트: 2026년 10월"
+  },
+  "not_found": {
+    "title": "페이지를 찾을 수 없습니다",
+    "heading": "404",
+    "subheading": "존재하지 않는 페이지입니다.",
+    "desc": "요청하신 페이지를 찾을 수 없습니다. 주소를 확인하시거나 홈으로 이동해 주시기 바랍니다.",
+    "home_link": "홈으로 이동"
   }
 }

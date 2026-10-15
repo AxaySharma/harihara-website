@@ -1,0 +1,89 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const steps = [
+  {
+    num: '01',
+    title: t('process.steps.0.title'),
+    desc: t('process.steps.0.desc'),
+  },
+  {
+    num: '02',
+    title: t('process.steps.1.title'),
+    desc: t('process.steps.1.desc'),
+  },
+  {
+    num: '03',
+    title: t('process.steps.2.title'),
+    desc: t('process.steps.2.desc'),
+  },
+  {
+    num: '04',
+    title: t('process.steps.3.title'),
+    desc: t('process.steps.3.desc'),
+  },
+];
+---
+
+<section
+  id="process"
+  class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper-light)] scroll-mt-24"
+  aria-labelledby="process-heading"
+>
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="mb-12 sm:mb-16 max-w-[36em]">
+      <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
+        {t('process.label')}
+      </span>
+      <h2
+        id="process-heading"
+        class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)] mb-4"
+      >
+        {t('process.heading')}
+      </h2>
+      <p class="text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed">
+        {t('process.intro')}
+      </p>
+    </div>
+
+    <!-- 4 Numbered Steps Sequence with subtle connecting line -->
+    <div class="relative">
+      <!-- Horizontal Connecting Rule on Desktop (hidden on mobile) -->
+      <div
+        class="hidden lg:block absolute top-[2.25rem] inset-x-8 h-[1px] bg-[var(--color-border)] pointer-events-none"
+        aria-hidden="true"
+      />
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
+        {steps.map((step) => (
+          <div class="relative flex flex-col pt-4 lg:pt-0">
+            <!-- Large Serif Numeral with paper-light background badge to sit cleanly over the connecting line -->
+            <div class="mb-4 inline-flex items-center">
+              <span class="font-heading text-[2.25rem] sm:text-[2.75rem] text-[var(--color-crimson)] leading-none pe-4 bg-[var(--color-paper-light)]">
+                {step.num}
+              </span>
+            </div>
+
+            <!-- Title -->
+            <h3 class="font-heading text-[1.25rem] sm:text-[1.375rem] text-[var(--color-charcoal)] mb-2">
+              {step.title}
+            </h3>
+
+            <!-- Description -->
+            <p class="text-[1rem] sm:text-[1.0625rem] text-[var(--color-secondary)] leading-relaxed">
+              {step.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

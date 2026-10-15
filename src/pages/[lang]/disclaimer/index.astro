@@ -1,0 +1,14 @@
+---
+import DisclaimerContent from '../../../components/DisclaimerContent.astro';
+import { languages } from '../../../i18n/languages.config';
+
+export function getStaticPaths() {
+  return Object.keys(languages)
+    .filter((l) => l !== 'en')
+    .map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+---
+
+<DisclaimerContent lang={lang || 'en'} />

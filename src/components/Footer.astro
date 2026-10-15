@@ -1,0 +1,131 @@
+---
+import Logo from './Logo.astro';
+import { useTranslations } from '../i18n/utils';
+import { languages } from '../i18n/languages.config';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const langConfig = languages[lang] || languages.en;
+
+const currentYear = new Date().getFullYear();
+const copyrightText = t('footer.copyright').replace('{year}', currentYear.toString());
+
+const navLinks = [
+  { id: 'about', label: t('nav.about') },
+  { id: 'process', label: t('nav.process') },
+  { id: 'products', label: t('nav.products') },
+  { id: 'industries', label: t('nav.industries') },
+  { id: 'location', label: t('nav.plant') },
+  { id: 'contact', label: t('nav.contact') },
+];
+
+const privacyHref = lang === 'en' ? '/privacy-policy/' : `/${lang}/privacy-policy/`;
+const disclaimerHref = lang === 'en' ? '/disclaimer/' : `/${lang}/disclaimer/`;
+const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig.name} (${lang})`);
+---
+
+<footer
+  class="relative bg-[var(--color-charcoal)] text-[var(--color-paper)] pt-16 sm:pt-20 pb-12 sm:pb-16 border-t border-[#363432]"
+  aria-labelledby="footer-brand"
+  data-theme-dark="true"
+>
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 pb-12 border-b border-[#363432] items-start">
+      <!-- Col 1: Brand & Logo Lockup -->
+      <div class="lg:col-span-5 space-y-4">
+        <a
+          href={lang === 'en' ? '/' : `/${lang}/`}
+          class="inline-block focus:outline-none focus:ring-3 focus:ring-[var(--color-charcoal)] rounded-[2px]"
+          aria-label="Hari Hara Serenity Chemical LLP"
+        >
+          <Logo variant="full" light={true} height={48} width={180} class="h-12 w-auto" />
+        </a>
+        <p class="text-[1rem] text-[#DCD8D0] leading-relaxed max-w-[28em]">
+          {t('hero.lead')}
+        </p>
+      </div>
+
+      <!-- Col 2: Quick Links Navigation -->
+      <div class="lg:col-span-4 space-y-3">
+        <span class="block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[#C4C2BE]">
+          {t('footer.quick_links')}
+        </span>
+        <ul class="grid grid-cols-2 gap-2.5">
+          {navLinks.map((link) => (
+            <li>
+              <a
+                href={lang === 'en' ? `#${link.id}` : `/${lang}/#${link.id}`}
+                class="text-[1rem] text-[#E5E2DC] hover:text-[var(--color-paper)] transition-colors underline decoration-transparent hover:decoration-current focus:outline-none focus:ring-2 focus:ring-[var(--color-paper)] rounded-[2px]"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Col 3: Legal & Language Information -->
+      <div class="lg:col-span-3 space-y-3">
+        <span class="block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[#C4C2BE]">
+          Legal
+        </span>
+        <ul class="space-y-2">
+          <li>
+            <a
+              href={privacyHref}
+              class="text-[1rem] text-[#E5E2DC] hover:text-[var(--color-paper)] transition-colors underline decoration-transparent hover:decoration-current focus:outline-none focus:ring-2 focus:ring-[var(--color-paper)] rounded-[2px]"
+            >
+              {t('footer.privacy_policy')}
+            </a>
+          </li>
+          <li>
+            <a
+              href={disclaimerHref}
+              class="text-[1rem] text-[#E5E2DC] hover:text-[var(--color-paper)] transition-colors underline decoration-transparent hover:decoration-current focus:outline-none focus:ring-2 focus:ring-[var(--color-paper)] rounded-[2px]"
+            >
+              {t('footer.disclaimer')}
+            </a>
+          </li>
+          {lang !== 'en' && (
+            <li class="pt-2">
+              <a
+                href={`mailto:Purchase@harihara.net?subject=${reportSubject}`}
+                class="inline-flex items-center gap-1.5 text-[0.875rem] text-[#C4C2BE] hover:text-[var(--color-paper)] transition-colors underline decoration-1 underline-offset-2 focus:outline-none focus:ring-2 focus:ring-[var(--color-paper)] rounded-[2px]"
+              >
+                <span>{t('report_translation_issue')}</span>
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom: Legal Identification Line verbatim & Copyright -->
+    <div class="pt-8 space-y-4">
+      <!-- Mandatory Exact Protected Text -->
+      <p class="text-[0.9375rem] sm:text-[1rem] text-[#DCD8D0] leading-relaxed">
+        {t('footer.exact_text')}
+      </p>
+
+      {lang !== 'en' && (
+        <p class="text-[0.875rem] text-[#A8A49E] italic">
+          {t('convenience_note')}
+        </p>
+      )}
+
+      <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-[0.875rem] text-[#A8A49E]">
+        <p>{copyrightText}</p>
+        <p class="text-[0.875rem]">Self-hosted fonts &bull; Zero tracking cookies &bull; Hosted on Cloudflare</p>
+      </div>
+    </div>
+  </div>
+</footer>

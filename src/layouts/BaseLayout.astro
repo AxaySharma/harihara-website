@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import FontLoader from '../components/FontLoader.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import { languages, getVisibleLanguages } from '../i18n/languages.config';
 import { useTranslations } from '../i18n/utils';
 
@@ -25,6 +26,43 @@ const visibleLocales = getVisibleLanguages(showDrafts);
 const siteUrl = Astro.site ? Astro.site.toString().replace(/\/$/, '') : 'https://harihara.net';
 const canonicalPath = lang === 'en' ? '/' : `/${lang}/`;
 const canonicalUrl = `${siteUrl}${canonicalPath}`;
+const ogImageUrl = `${siteUrl}/og-default.png`;
+
+// JSON-LD Organization Structured Data
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hari Hara Serenity Chemical LLP",
+  "url": siteUrl,
+  "logo": `${siteUrl}/brand/logo-full.png`,
+  "email": "Purchase@harihara.net",
+  "telephone": "+91-9427134190",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Village Manaba, Taluka Rapar",
+      "addressLocality": "District Kachchh",
+      "addressRegion": "Gujarat",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass",
+      "addressLocality": "Bhuj, Kachchh",
+      "addressRegion": "Gujarat",
+      "postalCode": "370001",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East)",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400072",
+      "addressCountry": "IN"
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -40,12 +78,29 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content={siteName} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
     <!-- Hreflang tags for visible languages -->
     {visibleLocales.map((locale) => {
       const href = locale.code === 'en' ? `${siteUrl}/` : `${siteUrl}/${locale.code}/`;
       return <link rel="alternate" hreflang={locale.htmlLang} href={href} />;
     })}
     <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
     <!-- Language auto-detect script (runs on initial visit) -->
     {lang === 'en' && <script is:inline src="/scripts/auto-detect.js" />}
@@ -69,10 +124,26 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
       <slot />
     </main>
 
-    <footer class="border-t border-[var(--color-border)] py-10 px-4 text-center text-[0.875rem] text-[var(--color-secondary)]">
-      <div class="max-w-[78rem] mx-auto space-y-2">
-        <p>Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008</p>
-      </div>
-    </footer>
+    <!-- Comprehensive Footer -->
+    <Footer lang={lang} />
+
+    <!-- Scroll Reveal Client Script -->
+    <script is:inline>
+      (function() {
+        if (!('IntersectionObserver' in window)) return;
+        document.documentElement.classList.add('js-ready');
+        const elements = document.querySelectorAll('.reveal-on-scroll');
+        if (elements.length === 0) return;
+        const observer = new IntersectionObserver(function(entries, obs) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -40px 0px', threshold: 0.1 });
+        elements.forEach(function(el) { observer.observe(el); });
+      })();
+    </script>
   </body>
 </html>

@@ -2,6 +2,7 @@
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
   "convenience_note": "Translated for convenience. The English version is the official version.",
+  "report_translation_issue": "Report a translation issue",
   "a11y": {
     "skip_to_content": "Skip to content",
     "open_menu": "Open navigation menu",
@@ -35,5 +36,182 @@
     "industries_value": "Pharmaceutical, agrochemical, flame retardants, water treatment, oil-field",
     "status_label": "Status",
     "status_value": "Plant under development"
+  },
+  "about": {
+    "label": "About the project",
+    "statement": "Our aim is to supply quality bromine to Indian industry and reduce its dependence on imports.",
+    "body": "Hari Hara Serenity Chemical LLP is setting up a plant at Rapar, Kachchh, Gujarat, to recover and purify bromine from bittern, the residual brine left after salt production. Bromine is a key input for the pharmaceutical, agrochemical, flame-retardant, water-treatment and oil-field chemical industries.",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "Plant under development",
+    "partners_heading": "Founding partners",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "Designated Partner"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "Designated Partner"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "Partner"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "Partner"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "Partner"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "Partner"
+      }
+    ]
+  },
+  "process": {
+    "label": "Process",
+    "heading": "From bittern to bromine",
+    "intro": "The planned process at our Rapar plant, which is under development.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Bittern",
+        "desc": "The residual brine left after salt production."
+      },
+      {
+        "num": "02",
+        "title": "Recovery",
+        "desc": "Bromine is recovered from the bittern."
+      },
+      {
+        "num": "03",
+        "title": "Purification",
+        "desc": "The recovered bromine is purified."
+      },
+      {
+        "num": "04",
+        "title": "Bromine",
+        "desc": "Industrial-grade bromine, and bromine compounds and bromide salts."
+      }
+    ]
+  },
+  "products": {
+    "label": "Products",
+    "heading": "Planned products",
+    "status_tag": "Planned",
+    "enquire_link": "Enquire",
+    "items": [
+      {
+        "num": "01",
+        "title": "Bromine (industrial grade)",
+        "desc": "Industrial-grade bromine, recovered and purified from bittern at our Rapar plant.",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "Bromine compounds and bromide salts",
+        "desc": "Bromine compounds and bromide salts for downstream industrial use.",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "For product enquiries, please get in touch."
+  },
+  "industries": {
+    "label": "Industries",
+    "heading": "Industries bromine serves",
+    "intro": "Bromine is a key input for these industries.",
+    "items": [
+      {
+        "num": "01",
+        "name": "Pharmaceutical"
+      },
+      {
+        "num": "02",
+        "name": "Agrochemical"
+      },
+      {
+        "num": "03",
+        "name": "Flame retardants"
+      },
+      {
+        "num": "04",
+        "name": "Water treatment"
+      },
+      {
+        "num": "05",
+        "name": "Oil-field chemicals"
+      }
+    ]
+  },
+  "location": {
+    "label": "Plant and location",
+    "heading": "Where we are building",
+    "maps_link": "Open in Google Maps",
+    "plant_title": "Plant (under development)",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "Corporate and Accounts Office",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "Registered Office",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Get in touch",
+    "line": "For product, partnership or other enquiries.",
+    "email_label": "Email",
+    "phone_label": "Phone & WhatsApp",
+    "enquiries_note": "Enquiries are read and replied to by Ketan Dholu, Partner.",
+    "form": {
+      "name_label": "Name",
+      "company_label": "Company",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "type_label": "Enquiry type",
+      "type_options": {
+        "product": "Product enquiry",
+        "partnership": "Partnership",
+        "other": "Other"
+      },
+      "message_label": "Message",
+      "consent_label": "I agree that my details may be used to reply to this enquiry, as described in the Privacy Policy.",
+      "consent_privacy_link": "Privacy Policy",
+      "submit_btn": "Send enquiry",
+      "submitting_btn": "Sending...",
+      "success_message": "Thank you. Your enquiry has been received and will be reviewed by Ketan Dholu, Partner.",
+      "error_message": "Sorry, there was a problem submitting your enquiry. Please email us directly at Purchase@harihara.net.",
+      "validation": {
+        "name_required": "Please enter your name.",
+        "email_required": "Please enter your email address.",
+        "email_invalid": "Please enter a valid email address.",
+        "message_required": "Please enter a message.",
+        "consent_required": "Please agree to the privacy policy to submit."
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "Quick links",
+    "privacy_policy": "Privacy Policy",
+    "disclaimer": "Disclaimer",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "Privacy Policy",
+    "privacy_description": "Privacy policy for Hari Hara Serenity Chemical LLP, aligned with the DPDP Act 2023.",
+    "disclaimer_title": "Disclaimer",
+    "disclaimer_description": "Legal disclaimer for Hari Hara Serenity Chemical LLP website.",
+    "last_updated": "Last updated: October 2026"
+  },
+  "not_found": {
+    "title": "Page not found",
+    "heading": "404",
+    "subheading": "This page does not exist.",
+    "desc": "The page you are looking for could not be found. Please check the address or return to the home page.",
+    "home_link": "Return to home page"
   }
 }

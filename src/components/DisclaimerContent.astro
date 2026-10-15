@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+
+const siteName = t('site_name');
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('legal.disclaimer_title')}
+  description={t('legal.disclaimer_description')}
+>
+  <div class="py-[var(--section-space)] bg-[var(--color-paper)]">
+    <div class="max-w-[70ch] mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Non-English convenience notice if applicable -->
+      {lang !== 'en' && (
+        <div class="mb-8 p-4 bg-[var(--color-paper-light)] border border-[var(--color-border)] rounded-[2px] text-[0.875rem] text-[var(--color-secondary)]">
+          <p>{t('legal.official_version_notice')}</p>
+        </div>
+      )}
+
+      <!-- Header -->
+      <header class="mb-10 pb-6 border-b border-[var(--color-border)]">
+        <h1 class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)] mb-3">
+          {t('legal.disclaimer_title')}
+        </h1>
+        <p class="text-[0.875rem] font-medium text-[var(--color-secondary)]">
+          {t('legal.last_updated')} &bull; {siteName}
+        </p>
+      </header>
+
+      <!-- Binding English content with lang="en" for screen readers -->
+      <article lang="en" class="space-y-8 text-[var(--text-base)] text-[var(--color-charcoal)] leading-relaxed">
+        <section class="space-y-3">
+          <h2 class="font-heading text-[1.375rem] sm:text-[1.5rem] text-[var(--color-charcoal)]">
+            1. General Information Only
+          </h2>
+          <p>
+            The content provided on this website (harihara.net) is published solely for general informational, corporate presentation, and commercial introductory purposes regarding Hari Hara Serenity Chemical LLP.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="font-heading text-[1.375rem] sm:text-[1.5rem] text-[var(--color-charcoal)]">
+            2. Projects and Products Under Development
+          </h2>
+          <p>
+            The chemical manufacturing facility at Rapar, Kachchh, Gujarat, as well as the proposed bromine recovery processes, industrial-grade bromine, and derivative bromide compounds described herein, are planned and currently under active development.
+          </p>
+          <p>
+            Nothing on this website constitutes an immediate offer to sell, a commercial tender, an invitation to treat, a formal price quotation, or an operational performance guarantee.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="font-heading text-[1.375rem] sm:text-[1.5rem] text-[var(--color-charcoal)]">
+            3. Regulatory Disclosures and Forward-Looking Statements
+          </h2>
+          <p>
+            No statement on this website shall be construed as claiming any unissued statutory licence, environmental consent, regulatory approval, or quality certification. Statements regarding timelines, planned engineering processes, future product availability, and facility setup are forward-looking expectations based on current plans and are subject to engineering, regulatory, and market revisions.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="font-heading text-[1.375rem] sm:text-[1.5rem] text-[var(--color-charcoal)]">
+            4. Translations for Convenience
+          </h2>
+          <p>
+            This website is provided in multiple languages to facilitate communication with domestic and international partners. Translations are provided strictly for reader convenience. In the event of any discrepancy, ambiguity, or conflict between any translated version and the original English text, the English language version shall be the sole official, definitive, and legally binding authority.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="font-heading text-[1.375rem] sm:text-[1.5rem] text-[var(--color-charcoal)]">
+            5. External Links
+          </h2>
+          <p>
+            This website may contain links to external third-party services, such as Google Maps for facility location coordinates. We have no control over, and assume no responsibility or liability for, the content, privacy practices, or availability of third-party websites or services.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="font-heading text-[1.375rem] sm:text-[1.5rem] text-[var(--color-charcoal)]">
+            6. Contact for Legal Inquiries
+          </h2>
+          <p>
+            For any legal or formal correspondence regarding this disclaimer, please contact:
+          </p>
+          <div class="bg-[var(--color-paper-light)] p-4 border border-[var(--color-border)] rounded-[2px] text-[1rem]">
+            <p class="font-semibold text-[var(--color-charcoal)]">Hari Hara Serenity Chemical LLP</p>
+            <p>LLPIN: ACR-8196</p>
+            <p>Email: <a href="mailto:Purchase@harihara.net" class="text-[var(--color-crimson)] underline">Purchase@harihara.net</a></p>
+            <p>Attention: Ketan Dholu, Partner</p>
+          </div>
+        </section>
+      </article>
+
+      <!-- Return link -->
+      <div class="mt-12 pt-8 border-t border-[var(--color-border)]">
+        <a
+          href={lang === 'en' ? '/' : `/${lang}/`}
+          class="inline-flex items-center gap-2 text-[1rem] font-semibold text-[var(--color-crimson)] hover:text-[var(--color-maroon)] transition-colors underline decoration-2 underline-offset-4 focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]"
+        >
+          <svg class="w-4 h-4 rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
+          <span>{lang === 'en' ? 'Back to home page' : t('not_found.home_link')}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

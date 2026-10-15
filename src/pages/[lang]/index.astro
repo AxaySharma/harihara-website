@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
+import AboutSection from '../../components/AboutSection.astro';
+import ProcessSection from '../../components/ProcessSection.astro';
+import ProductsSection from '../../components/ProductsSection.astro';
+import IndustriesSection from '../../components/IndustriesSection.astro';
+import LocationSection from '../../components/LocationSection.astro';
+import ContactSection from '../../components/ContactSection.astro';
 import { languages } from '../../i18n/languages.config';
 
 export function getStaticPaths() {
@@ -10,26 +16,28 @@ export function getStaticPaths() {
   }));
 }
 
-const { lang } = Astro.params;
-
-const navTargetSections = [
-  'about',
-  'process',
-  'products',
-  'industries',
-  'location',
-  'contact',
-];
+const { lang = 'en' } = Astro.params;
 ---
 
 <BaseLayout lang={lang}>
   <!-- Hero Section -->
   <Hero lang={lang} />
 
-  <!-- Anchor target marker containers for header navigation targets -->
-  <div class="nav-targets" aria-hidden="true">
-    {navTargetSections.map((id) => (
-      <div id={id} class="scroll-mt-24 pointer-events-none" />
-    ))}
-  </div>
+  <!-- About Section -->
+  <AboutSection lang={lang} />
+
+  <!-- Process Section -->
+  <ProcessSection lang={lang} />
+
+  <!-- Products Section -->
+  <ProductsSection lang={lang} />
+
+  <!-- Industries Section (Dark background) -->
+  <IndustriesSection lang={lang} />
+
+  <!-- Plant and Location Section -->
+  <LocationSection lang={lang} />
+
+  <!-- Contact & Enquiry Form Section -->
+  <ContactSection lang={lang} />
 </BaseLayout>

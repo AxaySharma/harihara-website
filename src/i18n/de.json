@@ -2,6 +2,7 @@
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
   "convenience_note": "Bequemlichkeitshalber übersetzt. Die englische Version ist die offizielle Fassung.",
+  "report_translation_issue": "Übersetzungsfehler melden",
   "a11y": {
     "skip_to_content": "Zum Hauptinhalt springen",
     "open_menu": "Navigationsmenü öffnen",
@@ -35,5 +36,182 @@
     "industries_value": "Pharmazeutik, Agrochemie, Flammschutzmittel, Wasseraufbereitung, Ölfeldchemie",
     "status_label": "Status",
     "status_value": "Anlage in Entwicklung"
+  },
+  "about": {
+    "label": "Über das Projekt",
+    "statement": "Unser Ziel ist es, die indische Industrie mit Qualitätsbrom zu versorgen und ihre Abhängigkeit von Importen zu verringern.",
+    "body": "Hari Hara Serenity Chemical LLP errichtet eine Anlage in Rapar, Kachchh, Gujarat, zur Gewinnung und Reinigung von Brom aus Restbitterlauge, der nach der Salzgewinnung verbleibenden Restsole. Brom ist ein zentraler Rohstoff für die Pharmazie-, Agrochemie-, Flammschutzmittel-, Wasseraufbereitungs- und Ölfeldchemieindustrie.",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "Anlage in Entwicklung",
+    "partners_heading": "Gründungspartner",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "Designierter Partner"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "Designierter Partner"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "Partner"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "Partner"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "Partner"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "Partner"
+      }
+    ]
+  },
+  "process": {
+    "label": "Verfahren",
+    "heading": "Von der Restbitterlauge zum Brom",
+    "intro": "Das geplante Verfahren an unserem Standort Rapar, der sich derzeit im Aufbau befindet.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Restbitterlauge",
+        "desc": "Die nach der Salzgewinnung verbleibende Restsole."
+      },
+      {
+        "num": "02",
+        "title": "Gewinnung",
+        "desc": "Brom wird aus der Restbitterlauge gewonnen."
+      },
+      {
+        "num": "03",
+        "title": "Reinigung",
+        "desc": "Das gewonnene Brom wird hochrein aufbereitet."
+      },
+      {
+        "num": "04",
+        "title": "Brom",
+        "desc": "Industriebrom sowie Bromverbindungen und Bromidsalze."
+      }
+    ]
+  },
+  "products": {
+    "label": "Produkte",
+    "heading": "Geplante Produkte",
+    "status_tag": "Geplant",
+    "enquire_link": "Anfragen",
+    "items": [
+      {
+        "num": "01",
+        "title": "Brom (Industriequalität)",
+        "desc": "Industriegerechtes Brom, das in unserer Anlage in Rapar aus Restbitterlauge gewonnen und aufbereitet werden soll.",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "Bromverbindungen und Bromidsalze",
+        "desc": "Bromverbindungen und Bromidsalze für nachgelagerte industrielle Anwendungen.",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "Für Produktanfragen nehmen Sie bitte Kontakt mit uns auf."
+  },
+  "industries": {
+    "label": "Branchen",
+    "heading": "Branchen, die Brom beliefert",
+    "intro": "Brom ist ein wesentlicher Vorstoff für diese Industriebereiche.",
+    "items": [
+      {
+        "num": "01",
+        "name": "Pharmazeutik"
+      },
+      {
+        "num": "02",
+        "name": "Agrochemie"
+      },
+      {
+        "num": "03",
+        "name": "Flammschutzmittel"
+      },
+      {
+        "num": "04",
+        "name": "Wasseraufbereitung"
+      },
+      {
+        "num": "05",
+        "name": "Ölfeldchemie"
+      }
+    ]
+  },
+  "location": {
+    "label": "Anlage und Standort",
+    "heading": "Unser Entwicklungsstandort",
+    "maps_link": "In Google Maps öffnen",
+    "plant_title": "Anlage (in Entwicklung)",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "Unternehmens- und Buchhaltungsbüro",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "Eingetragener Sitz",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "heading": "Kontakt aufnehmen",
+    "line": "Für Produkt-, Partnerschafts- und allgemeine Anfragen.",
+    "email_label": "E-Mail",
+    "phone_label": "Telefon & WhatsApp",
+    "enquiries_note": "Anfragen werden von Partner Ketan Dholu, Partner gelesen und beantwortet.",
+    "form": {
+      "name_label": "Name",
+      "company_label": "Unternehmen",
+      "email_label": "E-Mail",
+      "phone_label": "Telefon",
+      "type_label": "Art der Anfrage",
+      "type_options": {
+        "product": "Produktanfrage",
+        "partnership": "Partnerschaft",
+        "other": "Sonstiges"
+      },
+      "message_label": "Nachricht",
+      "consent_label": "Ich stimme zu, dass meine Angaben zur Beantwortung dieser Anfrage gemäß der Datenschutzerklärung verarbeitet werden dürfen.",
+      "consent_privacy_link": "Datenschutzerklärung",
+      "submit_btn": "Anfrage senden",
+      "submitting_btn": "Wird gesendet...",
+      "success_message": "Vielen Dank. Ihre Anfrage ist eingegangen und wird von Ketan Dholu, Partner geprüft.",
+      "error_message": "Beim Übermitteln ist ein Fehler aufgetreten. Bitte schreiben Sie uns direkt an Purchase@harihara.net.",
+      "validation": {
+        "name_required": "Bitte geben Sie Ihren Namen ein.",
+        "email_required": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+        "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "message_required": "Bitte geben Sie eine Nachricht ein.",
+        "consent_required": "Bitte stimmen Sie der Datenschutzerklärung zu, um fortzufahren."
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "Schnelllinks",
+    "privacy_policy": "Datenschutzerklärung",
+    "disclaimer": "Haftungsausschluss",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "Datenschutzerklärung",
+    "privacy_description": "Datenschutzerklärung von Hari Hara Serenity Chemical LLP im Einklang mit dem DPDP Act 2023.",
+    "disclaimer_title": "Haftungsausschluss",
+    "disclaimer_description": "Rechtlicher Haftungsausschluss für die Website von Hari Hara Serenity Chemical LLP.",
+    "last_updated": "Zuletzt aktualisiert: Oktober 2026"
+  },
+  "not_found": {
+    "title": "Seite nicht gefunden",
+    "heading": "404",
+    "subheading": "Diese Seite existiert nicht.",
+    "desc": "Die gewünschte Seite konnte nicht gefunden werden. Bitte prüfen Sie die Adresse oder kehren Sie zur Startseite zurück.",
+    "home_link": "Zur Startseite zurückkehren"
   }
 }

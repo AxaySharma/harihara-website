@@ -1,6 +1,6 @@
 # Automated QA Test Report
 
-**Execution Date**: 2026-10-15T08:32:54.250Z
+**Execution Date**: 2026-10-15T11:03:30.336Z
 **Overall Status**: ✅ PASS
 
 ## Summary Table
@@ -16,7 +16,7 @@
 | **Check G** | Forbidden-Content Scan (Trademarks, DPIIT, "we supply", certifications) | PASS | Clean scan: zero forbidden claims or DEV stubs in dist/ |
 | **Check H** | Content Completeness & Protected Identifiers | PASS | All protected identifiers (LLPIN, GSTIN, Company Name, addresses) verified |
 | **Check I** | Internal Links & Security Audit | PASS | All internal anchor targets exist; external links have rel="noopener" |
-| **Check J** | Lighthouse Mobile Scores (/ and /ar/) | PASS | English: Perf 99, A11y 100, BP 100, SEO 100; Arabic: Perf 99, A11y 100, BP 96, SEO 100 |
+| **Check J** | Lighthouse Mobile Scores (/ and /ar/) | PASS | English: Perf 99, A11y 100, BP 100, SEO 100; Arabic: Perf 98, A11y 100, BP 96, SEO 100 |
 | **Check K** | Visual Screenshots & Review Sheet | PASS | 24 multi-language screenshots captured; qa/review-sheet.png generated |
 
 ## 10 Smallest Font Elements (Font Audit)

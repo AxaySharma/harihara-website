@@ -1,9 +1,10 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
-  "convenience_note": "仅供参考。英文版本为官方正式版本。",
+  "convenience_note": "本翻译仅供参考。官方版本以英文版为准。",
+  "report_translation_issue": "反馈翻译问题",
   "a11y": {
-    "skip_to_content": "跳转至主要内容",
+    "skip_to_content": "跳至主要内容",
     "open_menu": "打开导航菜单",
     "close_menu": "关闭导航菜单",
     "main_navigation": "主导航",
@@ -11,29 +12,206 @@
   },
   "nav": {
     "about": "关于我们",
-    "process": "生产工艺",
-    "products": "产品介绍",
-    "industries": "应用行业",
-    "plant": "工厂设施",
+    "process": "工艺流程",
+    "products": "产品",
+    "industries": "适用领域",
+    "plant": "工厂",
     "contact": "联系我们"
   },
   "hero": {
     "eyebrow": "Rapar, Kachchh, Gujarat",
-    "headline": "为印度工业构建高品质溴素供应来源。",
-    "lead": "我们正在古吉拉特邦卡奇县拉帕尔（Rapar, Kachchh）筹建工厂，从制盐后的残留苦卤中提取并提纯溴素。",
-    "status": "工厂正在筹建中",
-    "cta_primary": "取得联系",
+    "headline": "为印度工业构建高品质溴素供应源。",
+    "lead": "我们正在古吉拉特邦卡奇县拉帕尔（Rapar, Kachchh）设立一家工厂，从制盐后的残留盐水（苦卤）中回收并提纯溴素。",
+    "status": "工厂正在建设中",
+    "cta_primary": "联系我们",
     "cta_secondary": "了解项目",
-    "caption": "概念示意图：盐田，苦卤之来源。"
+    "caption": "示意图：盐田，苦卤的来源。"
   },
   "facts": {
-    "location_label": "地理位置",
+    "location_label": "选址",
     "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
-    "focus_label": "规划方向",
-    "focus_value": "溴素及溴化物化合物",
-    "industries_label": "应用行业",
+    "focus_label": "规划重点",
+    "focus_value": "溴素及溴化合物",
+    "industries_label": "适用领域",
     "industries_value": "制药、农化、阻燃剂、水处理、油田化学品",
-    "status_label": "建设状态",
-    "status_value": "工厂正在筹建中"
+    "status_label": "现状",
+    "status_value": "工厂正在建设中"
+  },
+  "about": {
+    "label": "关于该项目",
+    "statement": "我们的目标是向印度工业供应高品质溴素，并降低其对进口的依赖。",
+    "body": "Hari Hara Serenity Chemical LLP 正在印度古吉拉特邦卡奇县拉帕尔（Rapar, Kachchh, Gujarat）设立工厂，从制盐后的残留盐水（苦卤）中回收并提纯溴素。溴素是制药、农化、阻燃剂、水处理和油田化学品等工业领域的关键原材料。",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "工厂正在建设中",
+    "partners_heading": "创始合伙人",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "指定合伙人"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "指定合伙人"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "合伙人"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "合伙人"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "合伙人"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "合伙人"
+      }
+    ]
+  },
+  "process": {
+    "label": "工艺流程",
+    "heading": "从苦卤到溴素",
+    "intro": "拉帕尔（Rapar）工厂规划的工艺流程，目前正在建设中。",
+    "steps": [
+      {
+        "num": "01",
+        "title": "苦卤",
+        "desc": "制盐后留下的残留盐水。"
+      },
+      {
+        "num": "02",
+        "title": "回收",
+        "desc": "从苦卤中回收提取溴素。"
+      },
+      {
+        "num": "03",
+        "title": "提纯",
+        "desc": "对回收的溴素进行高纯度提纯。"
+      },
+      {
+        "num": "04",
+        "title": "溴产品",
+        "desc": "工业级溴素，以及溴化合物与溴化物盐。"
+      }
+    ]
+  },
+  "products": {
+    "label": "产品",
+    "heading": "规划产品",
+    "status_tag": "规划中",
+    "enquire_link": "咨询",
+    "items": [
+      {
+        "num": "01",
+        "title": "工业级溴素",
+        "desc": "工业级溴素，规划在我们拉帕尔（Rapar）工厂由苦卤回收提纯获得。",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "溴化合物与溴化物盐",
+        "desc": "用于下游工业用途的溴化合物和溴化物盐产品。",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "如需咨询产品详情，请与我们联系。"
+  },
+  "industries": {
+    "label": "适用领域",
+    "heading": "溴素服务的工业领域",
+    "intro": "溴素是这些工业领域的关键原材料。",
+    "items": [
+      {
+        "num": "01",
+        "name": "医药工业"
+      },
+      {
+        "num": "02",
+        "name": "农业化学品"
+      },
+      {
+        "num": "03",
+        "name": "阻燃剂"
+      },
+      {
+        "num": "04",
+        "name": "水处理"
+      },
+      {
+        "num": "05",
+        "name": "油田化学品"
+      }
+    ]
+  },
+  "location": {
+    "label": "工厂与选址",
+    "heading": "项目建设地点",
+    "maps_link": "在 Google 地图中查看",
+    "plant_title": "工厂（建设中）",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "企业与财务办事处",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "注册办事处",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "联系我们",
+    "heading": "取得联系",
+    "line": "欢迎就产品、合作或其它事项进行咨询。",
+    "email_label": "电子邮件",
+    "phone_label": "电话及 WhatsApp",
+    "enquiries_note": "所有咨询均由合伙人 Ketan Dholu, Partner 亲自查阅并回复。",
+    "form": {
+      "name_label": "姓名",
+      "company_label": "公司名称",
+      "email_label": "电子邮件",
+      "phone_label": "电话",
+      "type_label": "咨询类别",
+      "type_options": {
+        "product": "产品咨询",
+        "partnership": "商务合作",
+        "other": "其它"
+      },
+      "message_label": "留言信息",
+      "consent_label": "我同意根据《隐私政策》所述，将我的信息用于回复此咨询。",
+      "consent_privacy_link": "隐私政策",
+      "submit_btn": "发送咨询",
+      "submitting_btn": "正在发送...",
+      "success_message": "感谢您的留言。我们已收到您的咨询，Ketan Dholu, Partner 将尽快回复。",
+      "error_message": "抱歉，提交咨询时出现错误。请直接发送邮件至 Purchase@harihara.net 与我们联系。",
+      "validation": {
+        "name_required": "请输入您的姓名。",
+        "email_required": "请输入您的电子邮件地址。",
+        "email_invalid": "请输入有效的电子邮件地址。",
+        "message_required": "请输入留言内容。",
+        "consent_required": "请同意隐私政策以继续提交。"
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "快捷导航",
+    "privacy_policy": "隐私政策",
+    "disclaimer": "免责声明",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "隐私政策",
+    "privacy_description": "Hari Hara Serenity Chemical LLP 隐私政策，符合 2023 年印度 DPDP 法案要求。",
+    "disclaimer_title": "免责声明",
+    "disclaimer_description": "Hari Hara Serenity Chemical LLP 网站法律免责声明。",
+    "last_updated": "最近更新：2026年10月"
+  },
+  "not_found": {
+    "title": "页面未找到",
+    "heading": "404",
+    "subheading": "该页面不存在。",
+    "desc": "无法找到您所请求的页面。请检查网址或返回网站首页。",
+    "home_link": "返回首页"
   }
 }

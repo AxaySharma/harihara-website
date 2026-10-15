@@ -2,12 +2,13 @@
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
   "convenience_note": "Tradotto per comodità. La versione inglese è la versione ufficiale.",
+  "report_translation_issue": "Segnala un errore di traduzione",
   "a11y": {
     "skip_to_content": "Salta al contenuto principale",
     "open_menu": "Apri menu di navigazione",
     "close_menu": "Chiudi menu di navigazione",
     "main_navigation": "Navigazione principale",
-    "select_language": "Seleziona lingua"
+    "select_language": "Seleziona la lingua"
   },
   "nav": {
     "about": "Chi siamo",
@@ -15,25 +16,202 @@
     "products": "Prodotti",
     "industries": "Settori",
     "plant": "Impianto",
-    "contact": "Contatto"
+    "contact": "Contatti"
   },
   "hero": {
     "eyebrow": "Rapar, Kachchh, Gujarat",
-    "headline": "Costruzione di una fonte di bromo di qualità per l'industria indiana.",
-    "lead": "Stiamo allestendo un impianto a Rapar, Kachchh, per recuperare e purificare il bromo dalla salamoia residua (bittern) rimasta dopo la produzione del sale.",
+    "headline": "Costruire una fonte di bromo di qualità per l'industria indiana.",
+    "lead": "Stiamo avviando un impianto a Rapar, Kachchh, per recuperare e purificare il bromo dalla salamoia residua (bittern) rimasta dopo la produzione del sale.",
     "status": "Impianto in fase di sviluppo",
     "cta_primary": "Contattaci",
     "cta_secondary": "Informazioni sul progetto",
-    "caption": "Opera illustrativa: saline, la fonte del bittern."
+    "caption": "Illustrazione: saline, la fonte della salamoia residua."
   },
   "facts": {
-    "location_label": "Posizione",
+    "location_label": "Ubicazione",
     "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
-    "focus_label": "Obiettivo previsto",
-    "focus_value": "Bromo e composti del bromo",
+    "focus_label": "Focus pianificato",
+    "focus_value": "Bromo e composti di bromo",
     "industries_label": "Settori",
-    "industries_value": "Farmaceutico, agrochimico, ritardanti di fiamma, trattamento acque, giacimenti petroliferi",
+    "industries_value": "Farmaceutico, agrochimico, ritardanti di fiamma, trattamento acque, petrolifero",
     "status_label": "Stato",
     "status_value": "Impianto in fase di sviluppo"
+  },
+  "about": {
+    "label": "Informazioni sul progetto",
+    "statement": "Il nostro obiettivo è fornire bromo di qualità all'industria indiana e ridurre la dipendenza dalle importazioni.",
+    "body": "Hari Hara Serenity Chemical LLP sta realizzando un impianto a Rapar, Kachchh, Gujarat, per recuperare e purificare il bromo dalla salamoia residua (bittern) derivante dalla produzione del sale. Il bromo è una materia prima chiave per i settori farmaceutico, agrochimico, dei ritardanti di fiamma, del trattamento delle acque e della chimica petrolifera.",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "Impianto in fase di sviluppo",
+    "partners_heading": "Soci fondatori",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "Socio designato"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "Socio designato"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "Socio"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "Socio"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "Socio"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "Socio"
+      }
+    ]
+  },
+  "process": {
+    "label": "Processo",
+    "heading": "Dalla salamoia residua al bromo",
+    "intro": "Il processo pianificato presso il nostro stabilimento di Rapar, attualmente in fase di sviluppo.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Salamoia residua",
+        "desc": "La salamoia rimanente al termine della produzione di sale."
+      },
+      {
+        "num": "02",
+        "title": "Recupero",
+        "desc": "Il bromo viene estratto dalla salamoia residua."
+      },
+      {
+        "num": "03",
+        "title": "Purificazione",
+        "desc": "Il bromo recuperato viene sottoposto a purificazione."
+      },
+      {
+        "num": "04",
+        "title": "Bromo",
+        "desc": "Bromo per usi industriali, composti di bromo e sali di bromuro."
+      }
+    ]
+  },
+  "products": {
+    "label": "Prodotti",
+    "heading": "Prodotti pianificati",
+    "status_tag": "Pianificato",
+    "enquire_link": "Richiedi informazioni",
+    "items": [
+      {
+        "num": "01",
+        "title": "Bromo (grado industriale)",
+        "desc": "Bromo di purezza industriale, previsto per essere recuperato e purificato dalla salamoia residua a Rapar.",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "Composti di bromo e sali di bromuro",
+        "desc": "Composti bromurati e sali di bromuro per impieghi industriali a valle.",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "Per richieste relative ai prodotti, vi invitiamo a contattarci."
+  },
+  "industries": {
+    "label": "Settori",
+    "heading": "I settori serviti dal bromo",
+    "intro": "Il bromo è una componente essenziale per queste filiere industriali.",
+    "items": [
+      {
+        "num": "01",
+        "name": "Farmaceutico"
+      },
+      {
+        "num": "02",
+        "name": "Agrochimico"
+      },
+      {
+        "num": "03",
+        "name": "Ritardanti di fiamma"
+      },
+      {
+        "num": "04",
+        "name": "Trattamento acque"
+      },
+      {
+        "num": "05",
+        "name": "Chimica petrolifera"
+      }
+    ]
+  },
+  "location": {
+    "label": "Impianto e ubicazione",
+    "heading": "Dove stiamo costruendo",
+    "maps_link": "Apri in Google Maps",
+    "plant_title": "Impianto (in fase di sviluppo)",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "Ufficio direzionale e contabile",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "Sede legale",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "Contatti",
+    "heading": "Mettiti in contatto",
+    "line": "Per informazioni sui prodotti, collaborazioni o altre richieste.",
+    "email_label": "Email",
+    "phone_label": "Telefono e WhatsApp",
+    "enquiries_note": "Le richieste vengono lette e gestite da Ketan Dholu, Partner.",
+    "form": {
+      "name_label": "Nome",
+      "company_label": "Azienda",
+      "email_label": "Email",
+      "phone_label": "Telefono",
+      "type_label": "Tipo di richiesta",
+      "type_options": {
+        "product": "Informazioni prodotto",
+        "partnership": "Collaborazione",
+        "other": "Altro"
+      },
+      "message_label": "Messaggio",
+      "consent_label": "Acconsento al trattamento dei miei dati per rispondere a questa richiesta, come descritto nell'Informativa sulla Privacy.",
+      "consent_privacy_link": "Informativa sulla Privacy",
+      "submit_btn": "Invia richiesta",
+      "submitting_btn": "Invio in corso...",
+      "success_message": "Grazie. La richiesta è stata ricevuta e sarà esaminata da Ketan Dholu, Partner.",
+      "error_message": "Si è verificato un errore nell'invio del modulo. Scrivici direttamente all'indirizzo Purchase@harihara.net.",
+      "validation": {
+        "name_required": "Inserisci il tuo nome.",
+        "email_required": "Inserisci il tuo indirizzo email.",
+        "email_invalid": "Inserisci un indirizzo email valido.",
+        "message_required": "Inserisci un messaggio.",
+        "consent_required": "È necessario accettare l'informativa sulla privacy per procedere."
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "Collegamenti rapidi",
+    "privacy_policy": "Informativa sulla Privacy",
+    "disclaimer": "Disclaimer legale",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "Informativa sulla Privacy",
+    "privacy_description": "Informativa sulla privacy di Hari Hara Serenity Chemical LLP, redatta in conformità al DPDP Act 2023.",
+    "disclaimer_title": "Disclaimer legale",
+    "disclaimer_description": "Dichiarazione di non responsabilità e note legali per il sito web di Hari Hara Serenity Chemical LLP.",
+    "last_updated": "Ultimo aggiornamento: ottobre 2026"
+  },
+  "not_found": {
+    "title": "Pagina non trovata",
+    "heading": "404",
+    "subheading": "Questa pagina non esiste.",
+    "desc": "La pagina cercata non è disponibile. Si prega di verificare l'indirizzo o tornare alla pagina iniziale.",
+    "home_link": "Torna alla pagina iniziale"
   }
 }

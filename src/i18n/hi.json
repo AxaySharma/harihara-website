@@ -2,6 +2,7 @@
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
   "convenience_note": "सुविधा के लिए अनुवादित। आधिकारिक संस्करण केवल अंग्रेज़ी में है।",
+  "report_translation_issue": "अनुवाद समस्या की रिपोर्ट करें",
   "a11y": {
     "skip_to_content": "सीधे मुख्य सामग्री पर जाएं",
     "open_menu": "नेविगेशन मेनू खोलें",
@@ -28,12 +29,189 @@
   },
   "facts": {
     "location_label": "स्थान",
-    "location_value": "गांव मानाबा, तालुका रापर, जिला कच्छ, गुजरात",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
     "focus_label": "नियोजित फोकस",
     "focus_value": "ब्रोमीन और ब्रोमीन यौगिक",
     "industries_label": "उद्योग",
     "industries_value": "फार्मास्युटिकल, कृषि रसायन, ज्वाला मंदक, जल उपचार, तेल क्षेत्र",
     "status_label": "स्थिति",
     "status_value": "संयंत्र विकासाधीन है"
+  },
+  "about": {
+    "label": "परियोजना के बारे में",
+    "statement": "हमारा उद्देश्य भारतीय उद्योग को गुणवत्तापूर्ण ब्रोमीन की आपूर्ति करना और आयात पर उसकी निर्भरता को कम करना है।",
+    "body": "Hari Hara Serenity Chemical LLP नमक उत्पादन के बाद बचे अवशेष लवण जल (बिटर्न) से ब्रोमीन को पुनर्प्राप्त और शुद्ध करने के लिए रापर, कच्छ, गुजरात में एक संयंत्र स्थापित कर रहा है। ब्रोमीन फार्मास्युटिकल, कृषि रसायन, ज्वाला मंदक, जल उपचार और तेल क्षेत्र के रासायनिक उद्योगों के लिए एक महत्वपूर्ण कच्चा माल है।",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "संयंत्र विकासाधीन है",
+    "partners_heading": "संस्थापक भागीदार",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "नामित भागीदार"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "नामित भागीदार"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "भागीदार"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "भागीदार"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "भागीदार"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "भागीदार"
+      }
+    ]
+  },
+  "process": {
+    "label": "प्रक्रिया",
+    "heading": "बिटर्न से ब्रोमीन तक",
+    "intro": "हमारे रापर संयंत्र में नियोजित प्रक्रिया, जो वर्तमान में विकासाधीन है।",
+    "steps": [
+      {
+        "num": "01",
+        "title": "बिटर्न",
+        "desc": "नमक उत्पादन के बाद बचा अवशेष लवण जल।"
+      },
+      {
+        "num": "02",
+        "title": "पुनर्प्राप्ति",
+        "desc": "बिटर्न से ब्रोमीन को पुनर्प्राप्त किया जाता है।"
+      },
+      {
+        "num": "03",
+        "title": "शुद्धिकरण",
+        "desc": "पुनर्प्राप्त ब्रोमीन को शुद्ध किया जाता है।"
+      },
+      {
+        "num": "04",
+        "title": "ब्रोमीन",
+        "desc": "औद्योगिक-ग्रेड ब्रोमीन, तथा ब्रोमीन यौगिक और ब्रोमाइड लवण।"
+      }
+    ]
+  },
+  "products": {
+    "label": "उत्पाद",
+    "heading": "नियोजित उत्पाद",
+    "status_tag": "नियोजित",
+    "enquire_link": "पूछताछ करें",
+    "items": [
+      {
+        "num": "01",
+        "title": "ब्रोमीन (औद्योगिक ग्रेड)",
+        "desc": "औद्योगिक-ग्रेड ब्रोमीन, जो हमारे रापर संयंत्र में बिटर्न से पुनर्प्राप्त और शुद्ध किया जाना नियोजित है।",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "ब्रोमीन यौगिक और ब्रोमाइड लवण",
+        "desc": "डाउनस्ट्रीम औद्योगिक उपयोग के लिए ब्रोमीन यौगिक और ब्रोमाइड लवण।",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "उत्पाद संबंधी पूछताछ के लिए, कृपया संपर्क करें।"
+  },
+  "industries": {
+    "label": "उद्योग",
+    "heading": "उद्योग जिनमें ब्रोमीन उपयोगी है",
+    "intro": "ब्रोमीन इन उद्योगों के लिए एक महत्वपूर्ण कच्चा माल है।",
+    "items": [
+      {
+        "num": "01",
+        "name": "फार्मास्युटिकल"
+      },
+      {
+        "num": "02",
+        "name": "कृषि रसायन"
+      },
+      {
+        "num": "03",
+        "name": "ज्वाला मंदक"
+      },
+      {
+        "num": "04",
+        "name": "जल उपचार"
+      },
+      {
+        "num": "05",
+        "name": "तेल क्षेत्र रसायन"
+      }
+    ]
+  },
+  "location": {
+    "label": "संयंत्र और स्थान",
+    "heading": "हम कहाँ निर्माण कर रहे हैं",
+    "maps_link": "Google Maps में खोलें",
+    "plant_title": "संयंत्र (विकासाधीन)",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "कॉर्पोरेट और लेखा कार्यालय",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "पंजीकृत कार्यालय",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "संपर्क",
+    "heading": "संपर्क करें",
+    "line": "उत्पाद, साझेदारी या अन्य पूछताछ के लिए।",
+    "email_label": "ईमेल",
+    "phone_label": "फ़ोन और WhatsApp",
+    "enquiries_note": "पूछताछ Ketan Dholu, Partner द्वारा पढ़ी और उत्तर दी जाती हैं।",
+    "form": {
+      "name_label": "नाम",
+      "company_label": "कंपनी",
+      "email_label": "ईमेल",
+      "phone_label": "फ़ोन",
+      "type_label": "पूछताछ का प्रकार",
+      "type_options": {
+        "product": "उत्पाद पूछताछ",
+        "partnership": "साझेदारी",
+        "other": "अन्य"
+      },
+      "message_label": "संदेश",
+      "consent_label": "मैं सहमत हूँ कि मेरी जानकारी का उपयोग इस पूछताछ का उत्तर देने के लिए किया जा सकता है, जैसा कि गोपनीयता नीति में वर्णित है।",
+      "consent_privacy_link": "गोपनीयता नीति",
+      "submit_btn": "पूछताछ भेजें",
+      "submitting_btn": "भेज रहे हैं...",
+      "success_message": "धन्यवाद। आपकी पूछताछ प्राप्त हो गई है और Ketan Dholu, Partner द्वारा इसकी समीक्षा की जाएगी।",
+      "error_message": "क्षमा करें, आपकी पूछताछ भेजने में समस्या आई। कृपया हमें सीधे Purchase@harihara.net पर ईमेल करें।",
+      "validation": {
+        "name_required": "कृपया अपना नाम दर्ज करें।",
+        "email_required": "कृपया अपना ईमेल पता दर्ज करें।",
+        "email_invalid": "कृपया एक मान्य ईमेल पता दर्ज करें।",
+        "message_required": "कृपया संदेश दर्ज करें।",
+        "consent_required": "आगे बढ़ने के लिए कृपया गोपनीयता नीति से सहमति दें।"
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "त्वरित लिंक",
+    "privacy_policy": "गोपनीयता नीति",
+    "disclaimer": "अस्वीकरण",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "गोपनीयता नीति",
+    "privacy_description": "Hari Hara Serenity Chemical LLP की गोपनीयता नीति, DPDP अधिनियम 2023 के अनुरूप।",
+    "disclaimer_title": "अस्वीकरण",
+    "disclaimer_description": "Hari Hara Serenity Chemical LLP वेबसाइट के लिए कानूनी अस्वीकरण।",
+    "last_updated": "अंतिम अद्यतन: अक्टूबर 2026"
+  },
+  "not_found": {
+    "title": "पृष्ठ नहीं मिला",
+    "heading": "404",
+    "subheading": "यह पृष्ठ मौजूद नहीं है।",
+    "desc": "आप जिस पृष्ठ की तलाश कर रहे हैं वह नहीं मिला। कृपया पता जांचें या मुख्य पृष्ठ पर वापस जाएं।",
+    "home_link": "मुख्य पृष्ठ पर वापस जाएं"
   }
 }

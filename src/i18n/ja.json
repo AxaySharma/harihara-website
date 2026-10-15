@@ -2,8 +2,9 @@
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
   "convenience_note": "便宜上の翻訳です。公式版は英語版となります。",
+  "report_translation_issue": "翻訳の問題を報告する",
   "a11y": {
-    "skip_to_content": "メインコンテンツへスキップ",
+    "skip_to_content": "本文へスキップ",
     "open_menu": "ナビゲーションメニューを開く",
     "close_menu": "ナビゲーションメニューを閉じる",
     "main_navigation": "メインナビゲーション",
@@ -23,8 +24,8 @@
     "lead": "製塩後に残る塩水（にがり）から臭素を回収・高純度精製するため、グジャラート州カッチ県ラパル（Rapar, Kachchh）にプラントを建設中です。",
     "status": "プラント建設中",
     "cta_primary": "お問い合わせ",
-    "cta_secondary": "事業概要について",
-    "caption": "イメージ図：にがりの供給源である塩田。"
+    "cta_secondary": "事業概要を見る",
+    "caption": "説明図：塩田、にがりの供給源。"
   },
   "facts": {
     "location_label": "所在地",
@@ -33,7 +34,184 @@
     "focus_value": "臭素および臭素化合物",
     "industries_label": "適用分野",
     "industries_value": "医薬品、農薬、難燃剤、水処理、油田化学",
-    "status_label": "現況",
+    "status_label": "状況",
     "status_value": "プラント建設中"
+  },
+  "about": {
+    "label": "プロジェクトについて",
+    "statement": "私たちの目標は、インド産業に高品質な臭素を供給し、輸入への依存度を低減することです。",
+    "body": "Hari Hara Serenity Chemical LLP は、製塩後の残留塩水（にがり）から臭素を回収・精製するため、グジャラート州カッチ県ラパル（Rapar, Kachchh, Gujarat）にプラントを設立しています。臭素は、製薬、農薬、難燃剤、水処理、油田化学産業における極めて重要な基礎原材料です。",
+    "fact_llp": "Limited Liability Partnership",
+    "fact_act": "Registered under the LLP Act, 2008",
+    "fact_status": "プラント建設中",
+    "partners_heading": "創業パートナー",
+    "partners": [
+      {
+        "name": "Dinesh Ratanshi Bhawani",
+        "role": "指定パートナー"
+      },
+      {
+        "name": "Ravilal Rasiklal Patel",
+        "role": "指定パートナー"
+      },
+      {
+        "name": "Pranav Dharmnath Avhad",
+        "role": "パートナー"
+      },
+      {
+        "name": "Ketan Valji Dholu",
+        "role": "パートナー"
+      },
+      {
+        "name": "Dinesh Manilal Chopda",
+        "role": "パートナー"
+      },
+      {
+        "name": "Bipin Narshibhai Patel",
+        "role": "パートナー"
+      }
+    ]
+  },
+  "process": {
+    "label": "工程",
+    "heading": "にがりから臭素へ",
+    "intro": "建設を進めているラパル・プラントにおける計画製造プロセス。",
+    "steps": [
+      {
+        "num": "01",
+        "title": "にがり",
+        "desc": "製塩後に残る残留塩水。"
+      },
+      {
+        "num": "02",
+        "title": "回収",
+        "desc": "にがりから臭素を回収・抽出します。"
+      },
+      {
+        "num": "03",
+        "title": "精製",
+        "desc": "回収した臭素を高純度に精製します。"
+      },
+      {
+        "num": "04",
+        "title": "臭素製品",
+        "desc": "工業グレード臭素、ならびに臭素化合物および臭化物塩。"
+      }
+    ]
+  },
+  "products": {
+    "label": "取扱品目",
+    "heading": "計画製品",
+    "status_tag": "計画中",
+    "enquire_link": "お問い合わせ",
+    "items": [
+      {
+        "num": "01",
+        "title": "工業用グレード臭素",
+        "desc": "ラパル工場にてにがりから回収・精製される計画の工業用グレード臭素。",
+        "type": "product_bromine"
+      },
+      {
+        "num": "02",
+        "title": "臭素化合物および臭化物塩",
+        "desc": "各種産業用途向けの臭素化合物および臭化物塩。",
+        "type": "product_compounds"
+      }
+    ],
+    "footer_note": "製品に関するお問い合わせは、フォームよりご連絡ください。"
+  },
+  "industries": {
+    "label": "適用分野",
+    "heading": "臭素が支える産業分野",
+    "intro": "臭素はこれらの産業において不可欠な原料です。",
+    "items": [
+      {
+        "num": "01",
+        "name": "医薬品"
+      },
+      {
+        "num": "02",
+        "name": "農薬"
+      },
+      {
+        "num": "03",
+        "name": "難燃剤"
+      },
+      {
+        "num": "04",
+        "name": "水処理"
+      },
+      {
+        "num": "05",
+        "name": "油田化学品"
+      }
+    ]
+  },
+  "location": {
+    "label": "プラントおよび拠点",
+    "heading": "建設拠点",
+    "maps_link": "Google マップで開く",
+    "plant_title": "プラント（建設中）",
+    "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "corp_title": "本社および会計事務所",
+    "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
+    "reg_title": "登録事務所",
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+  },
+  "contact": {
+    "label": "お問い合わせ",
+    "heading": "ご連絡はこちらから",
+    "line": "製品、パートナーシップ、その他のお問い合わせ。",
+    "email_label": "Eメール",
+    "phone_label": "電話および WhatsApp",
+    "enquiries_note": "お問い合わせはパートナーの Ketan Dholu, Partner が確認し回答いたします。",
+    "form": {
+      "name_label": "お名前",
+      "company_label": "貴社名",
+      "email_label": "Eメールアドレス",
+      "phone_label": "電話番号",
+      "type_label": "お問い合わせ項目",
+      "type_options": {
+        "product": "製品について",
+        "partnership": "協業・パートナーシップ",
+        "other": "その他"
+      },
+      "message_label": "メッセージ本文",
+      "consent_label": "プライバシーポリシーに記載されているとおり、この問い合わせに回答する目的で個人情報が使用されることに同意します。",
+      "consent_privacy_link": "プライバシーポリシー",
+      "submit_btn": "送信する",
+      "submitting_btn": "送信中...",
+      "success_message": "ありがとうございます。お問い合わせを受け付けました。Ketan Dholu, Partner よりご連絡いたします。",
+      "error_message": "送信中にエラーが発生しました。お手数ですが Purchase@harihara.net まで直接メールをお送りください。",
+      "validation": {
+        "name_required": "お名前を入力してください。",
+        "email_required": "Eメールアドレスを入力してください。",
+        "email_invalid": "有効なEメールアドレスを入力してください。",
+        "message_required": "メッセージを入力してください。",
+        "consent_required": "送信するにはプライバシーポリシーに同意してください。"
+      }
+    }
+  },
+  "footer": {
+    "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
+    "quick_links": "リンク",
+    "privacy_policy": "プライバシーポリシー",
+    "disclaimer": "免責事項",
+    "copyright": "© {year} Hari Hara Serenity Chemical LLP"
+  },
+  "legal": {
+    "official_version_notice": "The English version is the official and binding version of this document. This translation is provided for convenience.",
+    "privacy_title": "プライバシーポリシー",
+    "privacy_description": "インド DPDP 法（2023年）に準拠した Hari Hara Serenity Chemical LLP のプライバシーポリシー。",
+    "disclaimer_title": "免責事項",
+    "disclaimer_description": "Hari Hara Serenity Chemical LLP ウェブサイトに関する法的免責事項。",
+    "last_updated": "最終更新日：2026年10月"
+  },
+  "not_found": {
+    "title": "ページが見つかりません",
+    "heading": "404",
+    "subheading": "お探しのページは存在しません。",
+    "desc": "指定されたURLのページが見つかりませんでした。アドレスをご確認いただくか、トップページにお戻りください。",
+    "home_link": "トップページへ戻る"
   }
 }

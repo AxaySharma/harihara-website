@@ -160,7 +160,18 @@ function runContentAndLinksCheck() {
     'Hari Hara Serenity Chemical LLP',
     'LLPIN: ACR-8196',
     'GSTIN: 24AASFH7523H1Z5',
-    'Limited Liability Partnership registered under the LLP Act, 2008'
+    'Limited Liability Partnership registered under the LLP Act, 2008',
+    'Purchase@harihara.net',
+    '9427134190',
+    'Village Manaba, Taluka Rapar, District Kachchh, Gujarat',
+    'Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001',
+    '106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra',
+    'Dinesh Ratanshi Bhawani',
+    'Ravilal Rasiklal Patel',
+    'Pranav Dharmnath Avhad',
+    'Ketan Valji Dholu',
+    'Dinesh Manilal Chopda',
+    'Bipin Narshibhai Patel'
   ];
 
   for (const lang of ALL_LANGUAGES) {
@@ -420,7 +431,8 @@ async function runPlaywrightSuite(browser) {
       for (const a of anchors) {
         const href = a.getAttribute('href');
         if (href.startsWith('#')) {
-          const targetId = href.substring(1);
+          const rawId = href.substring(1);
+          const targetId = rawId.split('?')[0];
           if (targetId && !document.getElementById(targetId)) {
             missingTargets.push(href);
           }
@@ -441,6 +453,44 @@ async function runPlaywrightSuite(browser) {
     if (linksCheck.insecureExternal.length > 0) {
       testResults.checkI_links.pass = false;
       testResults.checkI_links.failures.push(`[${lang}] External link missing rel="noopener": ${linksCheck.insecureExternal.join(', ')}`);
+    }
+
+    // Verify Contact Form Interactive States (Empty submit, Invalid email, Consent check)
+    const formAudit = await page.evaluate(async () => {
+      const form = document.getElementById('enquiry-form');
+      if (!form) return { hasForm: false };
+
+      const submitBtn = document.getElementById('submit-btn');
+      const errName = document.getElementById('err-name');
+      const errEmail = document.getElementById('err-email');
+      const errMessage = document.getElementById('err-message');
+      const errConsent = document.getElementById('err-consent');
+
+      // 1. Empty submit
+      submitBtn.click();
+      const nameErrVisible = errName && !errName.classList.contains('hidden');
+      const emailErrVisible = errEmail && !errEmail.classList.contains('hidden');
+      const msgErrVisible = errMessage && !errMessage.classList.contains('hidden');
+      const consentErrVisible = errConsent && !errConsent.classList.contains('hidden');
+
+      // 2. Invalid email format
+      document.getElementById('form-name').value = 'Test User';
+      document.getElementById('form-email').value = 'invalid-email-string';
+      document.getElementById('form-message').value = 'Test enquiry message';
+      document.getElementById('form-consent').checked = true;
+      submitBtn.click();
+      const invalidEmailErr = errEmail && !errEmail.classList.contains('hidden');
+
+      return {
+        hasForm: true,
+        emptyValidationWorks: nameErrVisible && emailErrVisible && msgErrVisible && consentErrVisible,
+        invalidEmailValidationWorks: invalidEmailErr
+      };
+    });
+
+    if (formAudit.hasForm && (!formAudit.emptyValidationWorks || !formAudit.invalidEmailValidationWorks)) {
+      testResults.checkI_links.pass = false;
+      testResults.checkI_links.failures.push(`[${lang}] Contact form validation failed to display required error messages.`);
     }
 
     await page.close();
