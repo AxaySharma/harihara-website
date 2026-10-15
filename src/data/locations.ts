@@ -28,9 +28,9 @@ export const LOCATIONS: LocationItem[] = [
     titleKey: 'location.corp_title',
     // Verbatim address as provided by the client
     address: 'Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001',
-    // Client-supplied share link for Corporate and Accounts Office
+    // Client-supplied Google Maps place link for Corporate and Accounts Office
     mapsQuery: 'Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001',
-    mapsUrl: 'https://maps.app.goo.gl/Chd3jr7f788MtsAz7',
+    mapsUrl: 'https://www.google.com/maps/place/Shiv+Aaradhna+Society,+Airport+Ring+Rd,+near+Shiv+Mandir,+Yogeswar+Nagar,+Bhuj,+Gujarat+370001/@23.2588477,69.638145,17z/data=!3m1!4b1!4m6!3m5!1s0x39511ddc94ea9a91:0x7ad80501dd62939e!8m2!3d23.2588477!4d69.6407146!16s%2Fg%2F11k446sbr9',
     isPrimary: false,
   },
   {
