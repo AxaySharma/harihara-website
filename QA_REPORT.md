@@ -16,7 +16,7 @@
 | **Check F** | prefers-reduced-motion | PASS | CSS media query disables transform/entrance animations cleanly |
 | **Check G** | Forbidden-Content & Stock Credits Scan | PASS | Zero forbidden claims (DPIIT, Startup India, certifications, "we supply") and zero public stock agency credit names |
 | **Check H** | Content Completeness & Protected Identifiers | PASS | All 15 statutory identifiers (LLPIN, GSTIN, Company Name, verbatim addresses, partner names) verified intact |
-| **Check I** | Links & Corporate Coordinates URL | PASS | Corporate office links verified to exact coordinates 23.2588477%2C69.6407146 with rel="noopener" and sr-only label |
+| **Check I** | Links & Corporate Office Map URL | PASS | Corporate office link verified to client URL https://maps.app.goo.gl/Chd3jr7f788MtsAz7 with rel="noopener" and sr-only label |
 | **Check J** | Lighthouse Mobile & Desktop Scores | PASS | English: Mobile 99/100/100/100, Desktop 100/100/100/100; Arabic: Mobile 99/100/96/100; Japanese & Hindi >= 98 |
 | **Check K** | Screenshot Review Sheet | PASS | qa/review-sheet.png generated with 6 desktop/mobile/RTL views |
 

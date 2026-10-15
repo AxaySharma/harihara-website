@@ -75,7 +75,7 @@ const HEAVY_LANGUAGES = ['en', 'de', 'hi', 'ar', 'ja'];
 const HEAVY_WIDTHS = [320, 390, 1280];
 
 // Expected corporate maps URL
-const CORPORATE_MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=23.2588477%2C69.6407146';
+const CORPORATE_MAPS_URL = 'https://maps.app.goo.gl/Chd3jr7f788MtsAz7';
 
 // Global test results accumulator
 const testResults = {
@@ -515,9 +515,9 @@ async function testViewportBatch(browser, vp) {
             });
 
             // Check Corporate Office Map Link URL
-            const corpLink = document.querySelector('a[href*="23.2588477"]');
+            const corpLink = document.querySelector('a[href*="maps.app.goo.gl/Chd3jr7f788MtsAz7"]');
             if (!corpLink) {
-              results.push('Corporate office map link is missing exact coordinates URL (23.2588477%2C69.6407146)');
+              results.push('Corporate office map link is missing expected short URL (https://maps.app.goo.gl/Chd3jr7f788MtsAz7)');
             } else {
               const href = corpLink.getAttribute('href');
               if (href !== opts.corporateMapsUrl) {
@@ -774,7 +774,7 @@ function generateQAReport() {
   md += `| **Check F** | prefers-reduced-motion | PASS | CSS media query disables transform/entrance animations cleanly |\n`;
   md += `| **Check G** | Forbidden-Content & Stock Credits Scan | ${testResults.checkG_forbiddenContent.pass ? 'PASS' : 'FAIL'} | ${testResults.checkG_forbiddenContent.hits.length === 0 ? 'Zero forbidden claims (DPIIT, Startup India, certifications, "we supply") and zero public stock agency credit names' : testResults.checkG_forbiddenContent.hits.map(h => `${h.file}: ${h.label}`).join('<br>')} |\n`;
   md += `| **Check H** | Content Completeness & Protected Identifiers | ${testResults.checkH_contentCompleteness.pass ? 'PASS' : 'FAIL'} | ${testResults.checkH_contentCompleteness.failures.length === 0 ? 'All 15 statutory identifiers (LLPIN, GSTIN, Company Name, verbatim addresses, partner names) verified intact' : testResults.checkH_contentCompleteness.failures.join('<br>')} |\n`;
-  md += `| **Check I** | Links & Corporate Coordinates URL | ${testResults.checkI_linksAndMaps.pass ? 'PASS' : 'FAIL'} | ${testResults.checkI_linksAndMaps.failures.length === 0 ? 'Corporate office links verified to exact coordinates 23.2588477%2C69.6407146 with rel="noopener" and sr-only label' : testResults.checkI_linksAndMaps.failures.join('<br>')} |\n`;
+  md += `| **Check I** | Links & Corporate Office Map URL | ${testResults.checkI_linksAndMaps.pass ? 'PASS' : 'FAIL'} | ${testResults.checkI_linksAndMaps.failures.length === 0 ? 'Corporate office link verified to client URL https://maps.app.goo.gl/Chd3jr7f788MtsAz7 with rel="noopener" and sr-only label' : testResults.checkI_linksAndMaps.failures.join('<br>')} |\n`;
   md += `| **Check J** | Lighthouse Mobile & Desktop Scores | PASS | English: Mobile 99/100/100/100, Desktop 100/100/100/100; Arabic: Mobile 99/100/96/100; Japanese & Hindi >= 98 |\n`;
   md += `| **Check K** | Screenshot Review Sheet | PASS | qa/review-sheet.png generated with 6 desktop/mobile/RTL views |\n\n`;
 
