@@ -1,7 +1,8 @@
 import type { APIRoute } from 'astro';
+import { getEnvFlag } from '../config/env';
 
 export const GET: APIRoute = ({ site }) => {
-  const isNoIndex = import.meta.env.PUBLIC_NOINDEX === 'true' || process.env.PUBLIC_NOINDEX === 'true';
+  const isNoIndex = getEnvFlag('PUBLIC_NOINDEX', false);
 
   let content = '';
   if (isNoIndex) {

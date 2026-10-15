@@ -1,5 +1,6 @@
 ---
 import { languages, getVisibleLanguages } from '../i18n/languages.config';
+import { getEnvFlag } from '../config/env';
 
 interface Props {
   currentLang: string;
@@ -15,7 +16,7 @@ const {
   idPrefix = 'header',
 } = Astro.props;
 
-const showDrafts = import.meta.env.SHOW_DRAFT_LANGUAGES === 'true';
+const showDrafts = getEnvFlag('SHOW_DRAFT_LANGUAGES', false);
 const visibleLanguages = getVisibleLanguages(showDrafts);
 const currentLangConfig = languages[currentLang] || languages.en;
 
