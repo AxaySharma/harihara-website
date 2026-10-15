@@ -13,13 +13,13 @@
     --color-border-subtle: rgba(28, 28, 28, 0.10);
 
     /* Required Typography Tokens in REM */
-    --text-xs: 0.875rem; /* 14px mobile minimum, rises to 0.9375rem on desktop */
+    --text-xs: 0.875rem; /* 14px mobile minimum, rises on desktop */
     --text-sm: 1rem;     /* 16px */
-    --text-base: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem); /* 18px to 20px */
-    --text-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);      /* 20px to 24px */
-    --text-xl: clamp(1.5rem, 1.3rem + 1vw, 2.25rem);
-    --text-2xl: clamp(2rem, 1.5rem + 2vw, 3.5rem);
-    --text-hero: clamp(2.75rem, 1.8rem + 4.5vw, 6.25rem);
+    --text-base: clamp(1.125rem, 1.05rem + 0.2vw, 1.35rem); /* ~18px mobile, 19.36px at 1280, 21.75px at 1920, 24.1px at 2560 */
+    --text-lg: clamp(1.2rem, 1.1rem + 0.25vw, 1.45rem);
+    --text-xl: clamp(1.5rem, 1.3rem + 0.5vw, 2rem);
+    --text-2xl: clamp(2rem, 1.35rem + 1.5vw, 3.4rem);
+    --text-hero: clamp(3.25rem, 1.8rem + 3.6vw, 6.6rem);
 
     /* Section Spacing Token - max reduced from 9rem to 7rem per prompt */
     --section-space: clamp(4rem, 2.5rem + 4.5vw, 7rem);
@@ -49,8 +49,8 @@ html {
   background-color: var(--color-paper);
   color: var(--color-charcoal);
   font-family: var(--font-body);
-  /* Fluid root scaling: 100% up to 1440px, grows smoothly to ~115% at 1920px, ~135% at 2560px */
-  font-size: calc(clamp(100%, 100% + 0.0315 * (100vw - 1440px), 140%) * var(--script-scale));
+  /* Fluid root scaling: 100% up to 1440px, grows smoothly to ~106.6% at 1920px, 113% at 2560px, capped at 113% */
+  font-size: calc(clamp(100%, 100% + 0.0022 * (100vw - 1440px), 113%) * var(--script-scale));
   line-height: var(--lh-body);
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -91,14 +91,25 @@ body {
   min-width: 0;
 }
 
-/* Desktop minimum typography rules (1024px and up):
-   - nav links, buttons, FAQ summaries: minimum 1.125rem (18px)
-   - labels, eyebrows, captions, facts labels, switcher items, footnotes: minimum 0.9375rem (15px at 16px root) */
+/* Section heading and body text utilities ensuring tokens are applied reliably */
+.section-heading {
+  font-size: var(--text-2xl) !important;
+}
+
+.body-text,
+p.hero-lead,
+[class*="text-[var(--text-base)]"] {
+  font-size: var(--text-base) !important;
+}
+
+/* Desktop typography rules (1024px and up):
+   - nav links, buttons, FAQ summaries: 18px at <=1440px, 18.9px at 1920px, 19.6px at 2560px
+   - labels, eyebrows, captions, facts labels, switcher items, footnotes: 15px at <=1440px, 15.8px at 1920px, 16.5px at 2560px */
 @media (min-width: 1024px) {
   .nav-link,
   .btn-primary,
   details summary {
-    font-size: 1.125rem !important;
+    font-size: clamp(1.085rem, calc(1.125rem - 0.0006rem * (100vw - 1440px) / 16px), 1.125rem) !important;
   }
 
   .font-label,
@@ -108,9 +119,9 @@ body {
   [data-caption],
   p.caption-text,
   span.label-text,
-  .text-\[0\.875rem\],
-  .text-xs {
-    font-size: 0.9375rem !important;
+  .text-xs,
+  [class*="text-[0.875rem]"] {
+    font-size: clamp(0.915rem, calc(0.9375rem - 0.00045rem * (100vw - 1440px) / 16px), 0.9375rem) !important;
   }
 }
 

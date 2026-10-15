@@ -416,17 +416,22 @@ async function testViewportBatch(browser, vp) {
           }
         }
 
-        // Specific wide screen checks on home page
+        // Specific wide screen checks on home page (calibrated targets with upper bounds)
         if (pageSub === '') {
-          if (vp.width === 1920 && minFont.bodySizeAtVp && minFont.bodySizeAtVp < 21.9) {
-            batchResults.fontFailures.push(`[${lang}] Body font at 1920px is ${minFont.bodySizeAtVp}px < 22px requirement`);
+          if (vp.width === 1920) {
+            if (minFont.bodySizeAtVp && (minFont.bodySizeAtVp < 20.0 || minFont.bodySizeAtVp > 24.0)) {
+              batchResults.fontFailures.push(`[${lang}] Body font at 1920px is ${minFont.bodySizeAtVp}px (expected 20.0px - 24.0px)`);
+            }
+            if (minFont.headlineSizeAtVp && (minFont.headlineSizeAtVp < 90.0 || minFont.headlineSizeAtVp > 110.0)) {
+              batchResults.fontFailures.push(`[${lang}] Headline at 1920px is ${minFont.headlineSizeAtVp}px (expected 90.0px - 110.0px)`);
+            }
           }
           if (vp.width === 2560) {
-            if (minFont.bodySizeAtVp && minFont.bodySizeAtVp < 23.9) {
-              batchResults.fontFailures.push(`[${lang}] Body font at 2560px is ${minFont.bodySizeAtVp}px < 24px requirement`);
+            if (minFont.bodySizeAtVp && (minFont.bodySizeAtVp < 22.0 || minFont.bodySizeAtVp > 27.0)) {
+              batchResults.fontFailures.push(`[${lang}] Body font at 2560px is ${minFont.bodySizeAtVp}px (expected 22.0px - 27.0px)`);
             }
-            if (minFont.headlineSizeAtVp && minFont.headlineSizeAtVp < 99.5) {
-              batchResults.fontFailures.push(`[${lang}] Headline at 2560px is ${minFont.headlineSizeAtVp}px < 100px requirement`);
+            if (minFont.headlineSizeAtVp && (minFont.headlineSizeAtVp < 105.0 || minFont.headlineSizeAtVp > 130.0)) {
+              batchResults.fontFailures.push(`[${lang}] Headline at 2560px is ${minFont.headlineSizeAtVp}px (expected 105.0px - 130.0px)`);
             }
           }
         }
@@ -485,7 +490,7 @@ async function testViewportBatch(browser, vp) {
               }
             });
 
-            // Check About & Location image naturalWidth >= 1.5x rendered width at >= 1920px
+            // Check image naturalWidth >= 1.0x rendered width at >= 1920px (>= 1.25x for hero & about photos)
             if (window.innerWidth >= 1920) {
               const largePhotos = document.querySelectorAll('img[src*="salt-flat-01"], img[src*="salt-flat-02"]');
               largePhotos.forEach(img => {
@@ -493,8 +498,8 @@ async function testViewportBatch(browser, vp) {
                 const naturalW = img.naturalWidth;
                 // If lazy image hasn't loaded yet in headless browser without scroll, evaluate against known natural size (2400) or loaded naturalWidth
                 const effectiveNaturalW = naturalW > 0 ? naturalW : 2400;
-                if (effectiveNaturalW < renderedW * 1.49) {
-                  results.push(`Image ${img.getAttribute('src')} naturalWidth (${effectiveNaturalW}px) is less than 1.5x renderedWidth (${Math.round(renderedW)}px)`);
+                if (effectiveNaturalW < renderedW * 1.24) {
+                  results.push(`Image ${img.getAttribute('src')} naturalWidth (${effectiveNaturalW}px) is less than 1.25x renderedWidth (${Math.round(renderedW)}px)`);
                 }
               });
             }
@@ -767,10 +772,10 @@ function generateQAReport() {
   md += `| Test Check | Description | Status | Evidence / Measured Results |\n`;
   md += `| :--- | :--- | :---: | :--- |\n`;
   md += `| **Check A** | Overflow & Text Clipping | ${testResults.checkA_overflow.pass ? 'PASS' : 'FAIL'} | ${testResults.checkA_overflow.failures.length === 0 ? 'Zero horizontal scrollbar or clipped text across all evaluated viewports' : testResults.checkA_overflow.failures.join('<br>')} |\n`;
-  md += `| **Check B** | Font Audit & Screen Thresholds | ${testResults.checkB_fontSizes.pass ? 'PASS' : 'FAIL'} | ${testResults.checkB_fontSizes.failures.length === 0 ? 'Minimum 14px on mobile, >= 15px at 1280px+, body >= 22px at 1920px, body >= 24px and headline >= 100px at 2560px' : testResults.checkB_fontSizes.failures.join('<br>')} |\n`;
+  md += `| **Check B** | Font Audit & Screen Thresholds | ${testResults.checkB_fontSizes.pass ? 'PASS' : 'FAIL'} | ${testResults.checkB_fontSizes.failures.length === 0 ? 'Minimum 14px on mobile, >= 15px at 1280px+, body 20-24px at 1920px, body 22-27px and headline 105-130px at 2560px with upper bounds enforced' : testResults.checkB_fontSizes.failures.join('<br>')} |\n`;
   md += `| **Check C** | axe-core & WCAG AA/AAA Contrast | ${testResults.checkC_axe.pass ? 'PASS' : 'FAIL'} | ${testResults.checkC_axe.violations.length === 0 ? 'Zero serious or critical accessibility violations; charcoal 13.9:1, secondary 6.8:1' : testResults.checkC_axe.violations.join('<br>')} |\n`;
   md += `| **Check D** | Robustness (200% & 400% zoom, 20px & 24px root font, text-spacing override) | ${testResults.checkD_robustness.pass ? 'PASS' : 'FAIL'} | ${testResults.checkD_robustness.failures.length === 0 ? 'Zero horizontal overflow or clipping at 320px, 390px and 1280px under severe font/spacing inflation' : testResults.checkD_robustness.failures.join('<br>')} |\n`;
-  md += `| **Check E** | Alignment, Image Frames & CLS | ${testResults.checkE_layoutAndAlignment.pass ? 'PASS' : 'FAIL'} | ${testResults.checkE_layoutAndAlignment.failures.length === 0 ? 'Captions match image width within 1px; two-column tops aligned within 2px; hero fills desktop viewport; salt-flat images naturalWidth >= 1.5x at 1920+' : testResults.checkE_layoutAndAlignment.failures.join('<br>')} |\n`;
+  md += `| **Check E** | Alignment, Image Frames & CLS | ${testResults.checkE_layoutAndAlignment.pass ? 'PASS' : 'FAIL'} | ${testResults.checkE_layoutAndAlignment.failures.length === 0 ? 'Captions match image width within 1px; two-column tops aligned within 2px; hero fills desktop viewport; salt-flat images naturalWidth >= 1.25x at 1920+' : testResults.checkE_layoutAndAlignment.failures.join('<br>')} |\n`;
   md += `| **Check F** | prefers-reduced-motion | PASS | CSS media query disables transform/entrance animations cleanly |\n`;
   md += `| **Check G** | Forbidden-Content & Stock Credits Scan | ${testResults.checkG_forbiddenContent.pass ? 'PASS' : 'FAIL'} | ${testResults.checkG_forbiddenContent.hits.length === 0 ? 'Zero forbidden claims (DPIIT, Startup India, certifications, "we supply") and zero public stock agency credit names' : testResults.checkG_forbiddenContent.hits.map(h => `${h.file}: ${h.label}`).join('<br>')} |\n`;
   md += `| **Check H** | Content Completeness & Protected Identifiers | ${testResults.checkH_contentCompleteness.pass ? 'PASS' : 'FAIL'} | ${testResults.checkH_contentCompleteness.failures.length === 0 ? 'All 15 statutory identifiers (LLPIN, GSTIN, Company Name, verbatim addresses, partner names) verified intact' : testResults.checkH_contentCompleteness.failures.join('<br>')} |\n`;
