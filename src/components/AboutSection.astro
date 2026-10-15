@@ -24,7 +24,7 @@ const partners = [
   class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper)] scroll-mt-24"
   aria-labelledby="about-heading"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="site-container">
     <!-- Section Label -->
     <div class="mb-6 sm:mb-8">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)]">
@@ -33,9 +33,9 @@ const partners = [
     </div>
 
     <!-- Two-column editorial layout -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
+    <div class="grid-12 items-start">
       <!-- Start Column: Large Serif Statement -->
-      <div class="lg:col-span-6 xl:col-span-7">
+      <div class="col-span-12 lg:col-span-7">
         <h2
           id="about-heading"
           class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] leading-tight text-[var(--color-charcoal)]"
@@ -45,7 +45,7 @@ const partners = [
       </div>
 
       <!-- End Column: Body copy -->
-      <div class="lg:col-span-6 xl:col-span-5 space-y-6">
+      <div class="col-span-12 lg:col-span-5 space-y-6">
         <p class="text-[var(--text-base)] leading-relaxed text-[var(--color-charcoal)] max-w-[36em]">
           {t('about.body')}
         </p>
@@ -78,31 +78,31 @@ const partners = [
 
     <!-- Wide landscape photo of salt flat with caption -->
     <div class="mt-14 sm:mt-20">
-      <div class="relative w-full aspect-[21/9] sm:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
+      <div class="relative w-full aspect-[16/9] sm:aspect-[21/9] lg:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
         <img
-          src="/images/about-salt-flats.jpg"
+          src="/images/salt-flat-01.jpg"
           alt={t('about.photo_alt')}
           width="1600"
           height="600"
           loading="lazy"
           decoding="async"
-          class="w-full h-full object-cover filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+          class="w-full h-full object-cover object-center filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
         />
       </div>
-      <p class="text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
+      <p class="w-full text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
         {t('about.photo_caption')}
       </p>
     </div>
 
     <!-- Ruled block titled "Why this project" with three short paragraphs -->
     <div class="mt-14 sm:mt-20 pt-10 border-t border-[var(--color-border)]">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start">
-        <div class="lg:col-span-4">
+      <div class="grid-12 items-start">
+        <div class="col-span-12 lg:col-span-4">
           <h3 class="font-heading text-[1.375rem] sm:text-[1.625rem] text-[var(--color-charcoal)]">
             {t('about.why_heading')}
           </h3>
         </div>
-        <div class="lg:col-span-8 space-y-4 text-[var(--text-base)] text-[var(--color-charcoal)] leading-relaxed max-w-[44em]">
+        <div class="col-span-12 lg:col-span-8 space-y-4 text-[var(--text-base)] text-[var(--color-charcoal)] leading-relaxed max-w-[44em]">
           <p>{t('about.why_p1')}</p>
           <p>{t('about.why_p2')}</p>
           <p class="text-[var(--color-secondary)]">{t('about.why_p3')}</p>

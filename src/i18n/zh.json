@@ -27,7 +27,8 @@
     "cta_primary": "联系我们",
     "cta_secondary": "了解项目",
     "caption": "盐田，苦卤之源。示意图。",
-    "image_alt": "色彩斑斓的晒盐蒸发池鸟瞰图"
+    "image_alt": "色彩斑斓的晒盐蒸发池鸟瞰图",
+    "image_caption": "插图：盐田，苦卤之源。"
   },
   "facts": {
     "location_label": "选址",
@@ -244,7 +245,6 @@
     "quick_links": "快捷导航",
     "privacy_policy": "隐私政策",
     "disclaimer": "免责声明",
-    "image_credits": "版权与图片鸣谢",
     "faq": "常见问题解答",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "Hari Hara Serenity Chemical LLP 隐私政策，符合 2023 年印度 DPDP 法案要求。",
     "disclaimer_title": "免责声明",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP 网站法律免责声明。",
-    "image_credits_title": "图片版权与开源许可说明",
-    "image_credits_description": "Hari Hara Serenity 网站所使用的示意性照片来源出处与开源授权声明。",
     "last_updated": "最近更新：2026年10月"
   },
   "not_found": {

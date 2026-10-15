@@ -27,7 +27,8 @@
     "cta_primary": "Entre em contato",
     "cta_secondary": "Sobre o projeto",
     "caption": "Salinas, a fonte de salmoura residual. Imagem representativa.",
-    "image_alt": "Vista aérea de tanques de evaporação de sal com águas coloridas"
+    "image_alt": "Vista aérea de tanques de evaporação de sal com águas coloridas",
+    "image_caption": "Ilustração: salinas, a fonte da água-mãe."
   },
   "facts": {
     "location_label": "Localização",
@@ -244,7 +245,6 @@
     "quick_links": "Links rápidos",
     "privacy_policy": "Política de Privacidade",
     "disclaimer": "Aviso Legal",
-    "image_credits": "Créditos das imagens",
     "faq": "Perguntas e respostas",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "Política de Privacidade da Hari Hara Serenity Chemical LLP, alinhada à Lei DPDP de 2023.",
     "disclaimer_title": "Aviso Legal",
     "disclaimer_description": "Termo de isenção de responsabilidade legal para o site da Hari Hara Serenity Chemical LLP.",
-    "image_credits_title": "Créditos de imagem e licenciamento",
-    "image_credits_description": "Licenças e atribuições das fotografias representativas utilizadas no site da Hari Hara Serenity.",
     "last_updated": "Última atualização: outubro de 2026"
   },
   "not_found": {

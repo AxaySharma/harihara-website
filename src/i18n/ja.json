@@ -27,7 +27,8 @@
     "cta_primary": "お問い合わせ",
     "cta_secondary": "事業概要を見る",
     "caption": "製塩池（にがりの供給源）。イメージ写真。",
-    "image_alt": "色とりどりの製塩蒸発池の航空写真"
+    "image_alt": "色とりどりの製塩蒸発池の航空写真",
+    "image_caption": "図解：苦汁の供給源である塩田。"
   },
   "facts": {
     "location_label": "所在地",
@@ -244,7 +245,6 @@
     "quick_links": "リンク",
     "privacy_policy": "プライバシーポリシー",
     "disclaimer": "免責事項",
-    "image_credits": "クレジット表記",
     "faq": "よくあるご質問",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "インド DPDP 法（2023年）に準拠した Hari Hara Serenity Chemical LLP のプライバシーポリシー。",
     "disclaimer_title": "免責事項",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP ウェブサイトに関する法的免責事項。",
-    "image_credits_title": "画像の権利とライセンス",
-    "image_credits_description": "Hari Hara Serenity ウェブサイトで使用されているイメージ写真のライセンスおよび帰属情報。",
     "last_updated": "最終更新日：2026年10月"
   },
   "not_found": {

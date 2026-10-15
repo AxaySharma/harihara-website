@@ -13,35 +13,35 @@ const industries = [
     num: '01',
     name: t('industries.items.0.name'),
     desc: t('industries.items.0.desc'),
-    img: '/images/industry-pharmaceutical.jpg',
+    img: '/images/industry-lab-01.jpg',
     alt: t('industries.items.0.image_alt'),
   },
   {
     num: '02',
     name: t('industries.items.1.name'),
     desc: t('industries.items.1.desc'),
-    img: '/images/industry-agrochemical.jpg',
+    img: '/images/industry-fields-01.jpg',
     alt: t('industries.items.1.image_alt'),
   },
   {
     num: '03',
     name: t('industries.items.2.name'),
     desc: t('industries.items.2.desc'),
-    img: '/images/industry-flame-retardants.jpg',
+    img: '/images/industry-electronics-01.jpg',
     alt: t('industries.items.2.image_alt'),
   },
   {
     num: '04',
     name: t('industries.items.3.name'),
     desc: t('industries.items.3.desc'),
-    img: '/images/industry-water-treatment.jpg',
+    img: '/images/industry-water-01.jpg',
     alt: t('industries.items.3.image_alt'),
   },
   {
     num: '05',
     name: t('industries.items.4.name'),
     desc: t('industries.items.4.desc'),
-    img: '/images/industry-oil-field.jpg',
+    img: '/images/industry-energy-01.jpg',
     alt: t('industries.items.4.image_alt'),
   },
 ];
@@ -53,7 +53,7 @@ const industries = [
   aria-labelledby="industries-heading"
   data-theme-dark="true"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="site-container">
     <!-- Header -->
     <div class="mb-12 sm:mb-16 max-w-[42em]">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[#C4C2BE] mb-3">
@@ -76,9 +76,9 @@ const industries = [
     <!-- Five numbered rows with hairlines, duotone arch-cropped photos, and monoline pictograms -->
     <div class="divide-y divide-[#363432] border-y border-[#363432]">
       {industries.map((item, idx) => (
-        <div class="py-6 sm:py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center group">
-          <!-- Col 1: Numeral & Industry Name & General Background Descriptor -->
-          <div class="md:col-span-8 flex items-start gap-5 sm:gap-8">
+        <div class="py-6 sm:py-8 grid-12 items-center group">
+          <!-- Numeral & Industry Name & General Background Descriptor -->
+          <div class="col-span-12 md:col-span-8 flex items-start gap-5 sm:gap-8">
             <span class="font-heading text-[1.5rem] sm:text-[1.875rem] text-[var(--color-crimson)] leading-none shrink-0 w-8 pt-1">
               {item.num}
             </span>
@@ -94,10 +94,10 @@ const industries = [
             </div>
           </div>
 
-          <!-- Col 2: Duotone Photo + Monoline Pictogram -->
-          <div class="md:col-span-4 flex items-center justify-start md:justify-end gap-5">
-            <!-- Arch-cropped small duotone photo (~160x100 on mobile, ~140x160 on desktop) -->
-            <div class="relative w-[130px] sm:w-[150px] aspect-[4/5] rounded-t-[75px] rounded-b-[2px] overflow-hidden border border-[#363432] bg-[#2A2826] shrink-0">
+          <!-- Duotone Photo + Monoline Pictogram -->
+          <div class="col-span-12 md:col-span-4 flex items-center justify-start md:justify-end gap-5">
+            <!-- Arch-cropped small duotone photo (~130x160 on mobile, ~150x187 on desktop) -->
+            <div class="arch-frame relative w-[120px] sm:w-[140px] aspect-[4/5] border border-[#363432] bg-[#2A2826] shrink-0">
               <img
                 src={item.img}
                 alt={item.alt}
@@ -105,7 +105,7 @@ const industries = [
                 height="375"
                 loading="lazy"
                 decoding="async"
-                class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 hover:grayscale-0 transition-[filter] duration-300"
+                class="w-full h-full object-cover object-center filter grayscale contrast-125 brightness-90 hover:grayscale-0 transition-[filter] duration-300"
               />
               <div class="absolute inset-0 bg-[#D01A45] mix-blend-color opacity-25 pointer-events-none" aria-hidden="true" />
             </div>

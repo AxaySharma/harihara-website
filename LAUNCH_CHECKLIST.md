@@ -28,8 +28,8 @@ This document records the mandatory verification and configuration steps that mu
   - If the client delivers official high-resolution vector artwork (`.svg` / `.ai`), swap the files into `public/brand/` and re-verify visual fidelity.
 - [ ] **Client Written Approval of Content**:
   - Obtain written client approval for all English source copy across all sections, including the general-background content in all sections.
-- [ ] **Review Image Licences & Credits**:
-  - Confirm all image licences in `src/data/image-credits.json`, `public/IMAGE_CREDITS.md` and `/image-credits/`.
+- [ ] **Image Licences & Internal Audit**:
+  - docs/IMAGE_CREDITS.md is complete and every image licence is no-attribution.
 - [ ] **Client Legal Approval of Privacy Policy & Disclaimer**:
   - The client must review and approve both `/privacy-policy/` and `/disclaimer/`. Note: The developer is not a lawyer; these pages provide standard DPDP Act 2023 aligned editorial baselines and must be legally verified by the client's legal counsel prior to binding use.
 

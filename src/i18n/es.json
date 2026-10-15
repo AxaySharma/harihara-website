@@ -27,7 +27,8 @@
     "cta_primary": "Póngase en contacto",
     "cta_secondary": "Sobre el proyecto",
     "caption": "Salinas, la fuente de salmuera residual. Imagen representativa.",
-    "image_alt": "Vista aérea de balsas de evaporación de sal con aguas coloridas"
+    "image_alt": "Vista aérea de balsas de evaporación de sal con aguas coloridas",
+    "image_caption": "Ilustración: salinas, la fuente del amargón."
   },
   "facts": {
     "location_label": "Ubicación",
@@ -244,7 +245,6 @@
     "quick_links": "Enlaces rápidos",
     "privacy_policy": "Política de Privacidad",
     "disclaimer": "Aviso Legal",
-    "image_credits": "Créditos de imagen",
     "faq": "Preguntas y respuestas",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "Política de privacidad de Hari Hara Serenity Chemical LLP conforme a la Ley DPDP de 2023.",
     "disclaimer_title": "Aviso Legal",
     "disclaimer_description": "Aviso legal y descargo de responsabilidad para el sitio web de Hari Hara Serenity Chemical LLP.",
-    "image_credits_title": "Créditos de imágenes y licencias",
-    "image_credits_description": "Licencias y atribuciones de las fotografías representativas utilizadas en el sitio web de Hari Hara Serenity.",
     "last_updated": "Última actualización: octubre de 2026"
   },
   "not_found": {

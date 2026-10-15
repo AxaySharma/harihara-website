@@ -27,7 +27,8 @@
     "cta_primary": "संपर्क करें",
     "cta_secondary": "परियोजना के बारे में",
     "caption": "चित्रमय कलाकृति: नमक के क्यारे, बिटर्न का स्रोत।",
-    "image_alt": "Aerial view of colorful salt evaporation ponds"
+    "image_alt": "Aerial view of colorful salt evaporation ponds",
+    "image_caption": "रेखाचित्र: नमक के पैन, बिटरन का स्रोत।"
   },
   "facts": {
     "location_label": "स्थान",
@@ -258,7 +259,6 @@
     "quick_links": "त्वरित लिंक",
     "privacy_policy": "गोपनीयता नीति",
     "disclaimer": "अस्वीकरण",
-    "image_credits": "Image credits",
     "faq": "Questions and answers",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -268,8 +268,6 @@
     "privacy_description": "Hari Hara Serenity Chemical LLP की गोपनीयता नीति, DPDP अधिनियम 2023 के अनुरूप।",
     "disclaimer_title": "अस्वीकरण",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP वेबसाइट के लिए कानूनी अस्वीकरण।",
-    "image_credits_title": "Image Credits & Licensing",
-    "image_credits_description": "Licensing and attribution for representative photographs used on the Hari Hara Serenity website.",
     "last_updated": "अंतिम अद्यतन: अक्टूबर 2026"
   },
   "not_found": {

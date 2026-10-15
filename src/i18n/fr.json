@@ -27,7 +27,8 @@
     "cta_primary": "Nous contacter",
     "cta_secondary": "Découvrir le projet",
     "caption": "Marais salants, la source des eaux-mères. Image représentative.",
-    "image_alt": "Vue aérienne de bassins d'évaporation de sel aux eaux colorées"
+    "image_alt": "Vue aérienne de bassins d'évaporation de sel aux eaux colorées",
+    "image_caption": "Illustration : marais salants, la source des eaux-mères."
   },
   "facts": {
     "location_label": "Emplacement",
@@ -244,7 +245,6 @@
     "quick_links": "Accès rapide",
     "privacy_policy": "Politique de Confidentialité",
     "disclaimer": "Mentions Légales",
-    "image_credits": "Crédits photos",
     "faq": "Questions et réponses",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "Politique de confidentialité de Hari Hara Serenity Chemical LLP, conforme au DPDP Act 2023.",
     "disclaimer_title": "Mentions Légales et Clause de non-responsabilité",
     "disclaimer_description": "Clause de non-responsabilité légale pour le site internet de Hari Hara Serenity Chemical LLP.",
-    "image_credits_title": "Crédits photographiques et licences",
-    "image_credits_description": "Licences et attributions des photographies représentatives figurant sur le site Hari Hara Serenity.",
     "last_updated": "Dernière mise à jour : octobre 2026"
   },
   "not_found": {

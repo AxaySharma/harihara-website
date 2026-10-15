@@ -45,7 +45,7 @@ const steps = [
   class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper-light)] scroll-mt-24"
   aria-labelledby="process-heading"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="site-container">
     <!-- Header -->
     <div class="mb-12 sm:mb-16 max-w-[36em]">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
@@ -62,23 +62,23 @@ const steps = [
       </p>
     </div>
 
-    <!-- 4 Numbered Steps Sequence with subtle connecting line -->
+    <!-- 4 Numbered Steps Sequence with subtle connecting line: horizontal on desktop, vertical on mobile -->
     <div class="relative">
-      <!-- Horizontal Connecting Rule on Desktop (hidden on mobile) -->
+      <!-- Horizontal Connecting Rule on Desktop (hidden below lg) -->
       <div
-        class="hidden lg:block absolute top-[2.25rem] inset-x-8 h-[1px] bg-[var(--color-border)] pointer-events-none"
+        class="hidden lg:block absolute top-[1.75rem] inset-x-8 h-[1px] bg-[var(--color-border)] pointer-events-none"
         aria-hidden="true"
       />
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
-        {steps.map((step) => (
-          <div class="relative flex flex-col pt-4 lg:pt-0">
+        {steps.map((step, idx) => (
+          <div class="relative flex flex-col pt-2 lg:pt-0">
             <!-- Large Serif Numeral with paper-light background badge & SVG drawing -->
             <div class="mb-5 flex items-center justify-between pe-4">
-              <span class="font-heading text-[2.25rem] sm:text-[2.75rem] text-[var(--color-crimson)] leading-none pe-4 bg-[var(--color-paper-light)]">
+              <span class="font-heading text-[2.25rem] sm:text-[2.75rem] text-[var(--color-crimson)] leading-none pe-4 bg-[var(--color-paper-light)] z-10">
                 {step.num}
               </span>
-              <div class="p-2 bg-[var(--color-paper)] border border-[var(--color-border)] rounded-[2px]" set:html={step.svg} />
+              <div class="p-2 bg-[var(--color-paper)] border border-[var(--color-border)] rounded-[2px] z-10 shrink-0" set:html={step.svg} />
             </div>
 
             <!-- Title -->

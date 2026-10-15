@@ -27,7 +27,8 @@
     "cta_primary": "문의하기",
     "cta_secondary": "프로젝트 알아보기",
     "caption": "염전, 간수의 원천. 대표 이미지.",
-    "image_alt": "다채로운 색상의 염전 증발지 항공 사진"
+    "image_alt": "다채로운 색상의 염전 증발지 항공 사진",
+    "image_caption": "삽화: 간수의 공급원인 염전."
   },
   "facts": {
     "location_label": "위치",
@@ -244,7 +245,6 @@
     "quick_links": "빠른 링크",
     "privacy_policy": "개인정보 처리방침",
     "disclaimer": "면책 조항",
-    "image_credits": "이미지 출처",
     "faq": "질문과 답변",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "인도 2023년 DPDP 법을 준수하는 Hari Hara Serenity Chemical LLP의 개인정보 처리방침.",
     "disclaimer_title": "면책 조항",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP 웹사이트 법적 고지 및 면책 조항.",
-    "image_credits_title": "이미지 저작권 및 라이선스",
-    "image_credits_description": "Hari Hara Serenity 웹사이트에서 사용된 대표 사진들의 라이선스 및 출처 안내.",
     "last_updated": "최종 업데이트: 2026년 10월"
   },
   "not_found": {

@@ -39,7 +39,7 @@ const locations = [
   class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper)] scroll-mt-24"
   aria-labelledby="location-heading"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="site-container">
     <!-- Header -->
     <div class="mb-10 sm:mb-12 max-w-[44em]">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
@@ -58,18 +58,18 @@ const locations = [
 
     <!-- Wide photo of salt flats / coast of Kachchh -->
     <div class="mb-12 sm:mb-16">
-      <div class="relative w-full aspect-[21/9] sm:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
+      <div class="relative w-full aspect-[16/9] sm:aspect-[21/9] lg:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
         <img
-          src="/images/location-salt-flats.jpg"
+          src="/images/salt-flat-02.jpg"
           alt={t('location.photo_alt')}
           width="1600"
           height="600"
           loading="lazy"
           decoding="async"
-          class="w-full h-full object-cover filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+          class="w-full h-full object-cover object-center filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
         />
       </div>
-      <p class="text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
+      <p class="w-full text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
         {t('location.photo_caption')}
       </p>
     </div>

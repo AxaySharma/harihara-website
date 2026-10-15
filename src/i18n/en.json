@@ -27,7 +27,8 @@
     "cta_primary": "Get in touch",
     "cta_secondary": "About the project",
     "caption": "Salt pans, the source of bittern. Representative image.",
-    "image_alt": "Aerial view of colorful salt evaporation ponds"
+    "image_alt": "Aerial view of colorful salt evaporation ponds",
+    "image_caption": "Illustration: salt pans, the source of bittern."
   },
   "facts": {
     "location_label": "Location",
@@ -272,7 +273,6 @@
     "quick_links": "Quick links",
     "privacy_policy": "Privacy Policy",
     "disclaimer": "Disclaimer",
-    "image_credits": "Image credits",
     "faq": "Questions and answers",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -282,8 +282,6 @@
     "privacy_description": "Privacy policy for Hari Hara Serenity Chemical LLP, aligned with the DPDP Act 2023.",
     "disclaimer_title": "Disclaimer",
     "disclaimer_description": "Legal disclaimer for Hari Hara Serenity Chemical LLP website.",
-    "image_credits_title": "Image Credits & Licensing",
-    "image_credits_description": "Licensing and attribution for representative photographs used on the Hari Hara Serenity website.",
     "last_updated": "Last updated: October 2026"
   },
   "not_found": {

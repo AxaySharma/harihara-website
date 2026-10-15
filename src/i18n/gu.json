@@ -27,7 +27,8 @@
     "cta_primary": "સંપર્ક કરો",
     "cta_secondary": "પ્રોજેક્ટ વિશે",
     "caption": "મીઠાના અગરો, બિટર્નનો સ્ત્રોત. પ્રતિનિધિ ચિત્ર.",
-    "image_alt": "રંગબેરંગી મીઠાના બાષ્પીભવન તળાવોનું હવાઈ દ્રશ્ય"
+    "image_alt": "રંગબેરંગી મીઠાના બાષ્પીભવન તળાવોનું હવાઈ દ્રશ્ય",
+    "image_caption": "રેખાચિત્ર: મીઠાના અગરો, બિટર્નનો સ્રોત."
   },
   "facts": {
     "location_label": "સ્થળ",
@@ -244,7 +245,6 @@
     "quick_links": "ઝડપી લિંક્સ",
     "privacy_policy": "ગોપનીયતા નીતિ",
     "disclaimer": "અસ્વીકરણ",
-    "image_credits": "ચિત્ર ક્રેડિટ્સ",
     "faq": "પ્રશ્નો અને જવાબો",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "Hari Hara Serenity Chemical LLP માટે ગોપનીયતા નીતિ, DPDP એક્ટ 2023 સાથે સુસંગત.",
     "disclaimer_title": "અસ્વીકરણ",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP વેબસાઇટ માટે કાનૂની અસ્વીકરણ.",
-    "image_credits_title": "ચિત્ર ક્રેડિટ્સ અને લાઇસન્સિંગ",
-    "image_credits_description": "હરિ હારા સેરેનિટી વેબસાઇટ પર વપરાયેલ પ્રતિનિધિ ફોટોગ્રાફ્સ માટેનું લાઇસન્સિંગ અને એટ્રિબ્યુશન.",
     "last_updated": "છેલ્લું અપડેટ: ઓક્ટોબર 2026"
   },
   "not_found": {

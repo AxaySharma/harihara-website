@@ -27,7 +27,8 @@
     "cta_primary": "Kontakt aufnehmen",
     "cta_secondary": "Über das Projekt",
     "caption": "Salzgärten, die Quelle der Bitterlauge. Symbolbild.",
-    "image_alt": "Luftaufnahme von farbigen Salzverdunstungsbecken"
+    "image_alt": "Luftaufnahme von farbigen Salzverdunstungsbecken",
+    "image_caption": "Illustration: Salzgärten, der Ursprung der Bittersalzlauge."
   },
   "facts": {
     "location_label": "Standort",
@@ -244,7 +245,6 @@
     "quick_links": "Schnelllinks",
     "privacy_policy": "Datenschutzerklärung",
     "disclaimer": "Haftungsausschluss",
-    "image_credits": "Bildnachweise",
     "faq": "Fragen und Antworten",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "Datenschutzerklärung von Hari Hara Serenity Chemical LLP im Einklang mit dem DPDP Act 2023.",
     "disclaimer_title": "Haftungsausschluss",
     "disclaimer_description": "Rechtlicher Haftungsausschluss für die Website von Hari Hara Serenity Chemical LLP.",
-    "image_credits_title": "Bildnachweise und Lizenzen",
-    "image_credits_description": "Lizenz- und Urheberangaben zu den auf der Website verwendeten Symbolbildern.",
     "last_updated": "Zuletzt aktualisiert: Oktober 2026"
   },
   "not_found": {

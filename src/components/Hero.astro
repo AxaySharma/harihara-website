@@ -11,11 +11,11 @@ const t = useTranslations(lang);
 ---
 
 <section id="hero" class="relative overflow-hidden hero-section">
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Desktop 12-column grid: 6.5 cols text on start side, 5.5 cols art on end side bottom-aligned -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-end">
-      <!-- Start Column: Editorial Copy & Actions (6.5 cols desktop) -->
-      <div class="lg:col-span-7 flex flex-col justify-end text-start">
+  <div class="site-container">
+    <!-- Desktop 12-column grid: 7 cols text on start side, 5 cols art on end side bottom-aligned -->
+    <div class="grid-12 items-end">
+      <!-- Start Column: Editorial Copy & Actions (7 cols desktop) -->
+      <div class="col-span-12 lg:col-span-7 flex flex-col justify-end text-start">
         <!-- Eyebrow with leading crimson rule, minimum 0.875rem, secondary color #55524F -->
         <div class="hero-load-item flex items-center gap-3 mb-6 sm:mb-8" style="--stagger: 0;">
           <span class="w-6 h-[2px] bg-[var(--color-crimson)] shrink-0" aria-hidden="true"></span>
@@ -86,16 +86,13 @@ const t = useTranslations(lang);
         </div>
       </div>
 
-      <!-- End Column: Arch Artwork with real photo & SVG fallback (5 cols desktop) -->
-      <div class="lg:col-span-5 flex flex-col items-center lg:items-end w-full mt-6 lg:mt-0">
+      <!-- End Column: Arch Artwork with clean SVG salt pans (5 cols desktop) -->
+      <div class="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-end w-full mt-6 lg:mt-0">
         <div class="w-full max-w-[480px] flex flex-col">
-          <HeroArt
-            image="/images/hero-salt-pans.jpg"
-            alt={t('hero.image_alt')}
-          />
+          <HeroArt />
           <!-- Translated Caption below artwork: minimum 0.875rem in secondary color -->
           <p class="font-body text-[0.875rem] text-[var(--color-secondary)] text-start mt-4 leading-relaxed tracking-normal">
-            {t('hero.caption')}
+            {t('hero.image_caption')}
           </p>
         </div>
       </div>

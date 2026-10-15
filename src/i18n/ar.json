@@ -27,7 +27,8 @@
     "cta_primary": "تواصل معنا",
     "cta_secondary": "عن المشروع",
     "caption": "ملاحات، مصدر البتيرن. صورة توضيحية.",
-    "image_alt": "منظر جوي لأحواض تبخير الملح ذات المياه الملونة"
+    "image_alt": "منظر جوي لأحواض تبخير الملح ذات المياه الملونة",
+    "image_caption": "رسم توضيحي: أحواض الملح، مصدر المحلول المر."
   },
   "facts": {
     "location_label": "الموقع",
@@ -244,7 +245,6 @@
     "quick_links": "روابط سريعة",
     "privacy_policy": "سياسة الخصوصية",
     "disclaimer": "إخلاء المسؤولية",
-    "image_credits": "بيانات الصور",
     "faq": "الأسئلة الشائعة",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "سياسة الخصوصية لشركة Hari Hara Serenity Chemical LLP المتوافقة مع قانون DPDP لعام 2023.",
     "disclaimer_title": "إخلاء المسؤولية",
     "disclaimer_description": "إخلاء المسؤولية القانوني لموقع Hari Hara Serenity Chemical LLP.",
-    "image_credits_title": "بيانات الصور والتراخيص",
-    "image_credits_description": "معلومات التراخيص وحقوق النشر للصور التوضيحية التمثيلية المستخدمة على موقع Hari Hara Serenity.",
     "last_updated": "آخر تحديث: أكتوبر 2026"
   },
   "not_found": {

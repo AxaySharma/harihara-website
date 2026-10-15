@@ -36,22 +36,22 @@ const navItems = [
   data-scrolled="false"
 >
   <!-- 80px tall on desktop (h-20), 68px on mobile (h-[4.25rem]) -->
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8 h-[4.25rem] lg:h-20 flex items-center justify-between">
+  <div class="site-container h-[4.25rem] lg:h-20 flex items-center justify-between">
     <!-- Left: Brand mark (Logo symbol ~36px) + Live text HARI HARA SERENITY -->
     <a
       href={homeHref}
-      class="brand-link inline-flex items-center gap-3.5 min-h-[48px] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] focus:ring-offset-2 focus:ring-offset-[var(--color-paper)]"
+      class="brand-link inline-flex items-center gap-3.5 min-h-[48px] shrink-0 focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] focus:ring-offset-2 focus:ring-offset-[var(--color-paper)]"
       aria-label="Hari Hara Serenity Chemical LLP"
     >
       <Logo variant="symbol" height={36} width={34} class="h-9 w-auto shrink-0" />
-      <span class="brand-title font-semibold text-[0.875rem] sm:text-[1rem] text-[var(--color-charcoal)] uppercase tracking-[0.14em] select-none">
+      <span class="brand-title font-semibold text-[0.875rem] sm:text-[1rem] text-[var(--color-charcoal)] uppercase tracking-[0.14em] select-none whitespace-nowrap">
         HARI HARA SERENITY
       </span>
     </a>
 
-    <!-- Centre/Right: Desktop Navigation with 1.25rem-1.5rem gaps, hidden below 1180px -->
+    <!-- Centre/Right: Desktop Navigation with 1.25rem-1.5rem gaps, hidden below 1180px, strictly no wrapping -->
     <nav
-      class="hidden min-[1180px]:flex items-center gap-5 xl:gap-6"
+      class="hidden min-[1180px]:flex items-center gap-4 xl:gap-6 shrink-0 flex-nowrap"
       aria-label={t('a11y.main_navigation')}
     >
       {navItems.map((item) => (

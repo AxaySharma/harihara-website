@@ -37,7 +37,7 @@ const blocks = [
   class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper)] scroll-mt-24"
   aria-labelledby="bromine-heading"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="site-container">
     <!-- Section Label -->
     <div class="mb-4">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)]">
@@ -99,31 +99,31 @@ const blocks = [
       </div>
     </div>
 
-    <!-- Two-column editorial layout: Photo in arch frame on start side, 5 ruled text blocks on end side -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-      <!-- Start Column: Macro Photo in Arch Frame -->
-      <div class="lg:col-span-5 flex flex-col items-center lg:items-start">
-        <div class="w-full max-w-[380px]">
-          <!-- Arch shape frame: semicircular top, straight sides, thin 1px outline offset -->
-          <div class="relative w-full rounded-t-[190px] rounded-b-[2px] overflow-hidden border border-[var(--color-border)] bg-[#F7F2E8] aspect-[3/4] shadow-[0_0_0_1px_rgba(28,28,28,0.06)]">
+    <!-- Two-column editorial layout: Photo in scaling arch frame, 5 ruled text blocks -->
+    <div class="grid-12 items-start">
+      <!-- Image Column: Macro Photo in Scaling Arch Frame (Order: Heading, Image, Text on mobile) -->
+      <div class="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-start order-1 lg:order-1">
+        <div class="w-full max-w-[380px] flex flex-col">
+          <!-- Scaling arch frame: aspect-ratio + top radius 999px 999px 0 0 -->
+          <div class="arch-frame relative w-full aspect-[3/4] border border-[var(--color-border)] bg-[#F7F2E8] shadow-[0_0_0_1px_rgba(28,28,28,0.06)]">
             <img
-              src="/images/bromine-liquid.jpg"
+              src="/images/liquid-element-01.jpg"
               alt={t('bromine.photo_alt')}
               width="600"
               height="800"
               loading="lazy"
               decoding="async"
-              class="w-full h-full object-cover filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+              class="w-full h-full object-cover object-center filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
             />
           </div>
-          <p class="text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
+          <p class="w-full text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
             {t('bromine.photo_caption')}
           </p>
         </div>
       </div>
 
-      <!-- End Column: Five Short Ruled Text Blocks -->
-      <div class="lg:col-span-7 divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
+      <!-- Text Column: Five Short Ruled Text Blocks -->
+      <div class="col-span-12 lg:col-span-7 divide-y divide-[var(--color-border)] border-y border-[var(--color-border)] order-2 lg:order-2">
         {blocks.map((b) => (
           <div class="py-6 sm:py-7 first:pt-4 last:pb-4 space-y-2">
             <h3 class="font-heading text-[1.25rem] sm:text-[1.375rem] text-[var(--color-charcoal)]">

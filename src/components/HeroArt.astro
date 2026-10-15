@@ -1,33 +1,17 @@
 ---
 interface Props {
-  image?: string;
-  alt?: string;
   class?: string;
 }
 
-const { image, alt = '', class: className = '' } = Astro.props;
+const { class: className = '' } = Astro.props;
 ---
 
 <div class={`hero-art-wrapper relative w-full select-none ${className}`}>
   <!-- 1px charcoal-at-20% outline arch offset 16px behind the filled arch -->
   <div class="hero-art-backdrop-arch absolute inset-0 pointer-events-none" aria-hidden="true"></div>
 
-  <div class="hero-art-frame relative w-full overflow-hidden">
-    {image ? (
-      <div class="relative w-full aspect-[4/5] overflow-hidden bg-[#F7F2E8]">
-        <img
-          src={image}
-          alt={alt}
-          width="800"
-          height="1000"
-          fetchpriority="high"
-          loading="eager"
-          decoding="async"
-          class="w-full h-full object-cover block filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
-        />
-      </div>
-    ) : (
-      <div class="hero-art-canvas relative w-full aspect-[4/5] bg-[#F7F2E8] overflow-hidden min-h-[520px]">
+  <div class="hero-art-frame arch-frame relative w-full overflow-hidden">
+    <div class="hero-art-canvas relative w-full aspect-[4/5] bg-[#F7F2E8] overflow-hidden">
         <!-- Inline SVG with salt pan geometry, high contrast mineral dykes, visible feTurbulence grain, and subtle ambient drift -->
         <svg
           viewBox="0 0 600 750"
@@ -156,7 +140,6 @@ const { image, alt = '', class: className = '' } = Astro.props;
           </g>
         </svg>
       </div>
-    )}
   </div>
 </div>
 
@@ -173,7 +156,7 @@ const { image, alt = '', class: className = '' } = Astro.props;
     inset-inline-end: 0;
     width: calc(100% - 1rem);
     height: calc(100% - 1rem);
-    border-radius: 14rem 14rem 0 0;
+    border-radius: 999px 999px 0 0;
     border: 1px solid rgba(28, 28, 28, 0.20);
     transform: translate(16px, -16px);
   }
@@ -184,7 +167,7 @@ const { image, alt = '', class: className = '' } = Astro.props;
 
   /* Main Arch frame mirroring the brand arch symbol */
   .hero-art-frame {
-    border-radius: 14rem 14rem 0 0;
+    border-radius: 999px 999px 0 0;
     box-shadow: 0 0 0 1px var(--color-border);
     background-color: var(--color-paper-light);
   }

@@ -27,7 +27,6 @@ const navLinks = [
 
 const privacyHref = lang === 'en' ? '/privacy-policy/' : `/${lang}/privacy-policy/`;
 const disclaimerHref = lang === 'en' ? '/disclaimer/' : `/${lang}/disclaimer/`;
-const imageCreditsHref = lang === 'en' ? '/image-credits/' : `/${lang}/image-credits/`;
 const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig.name} (${lang})`);
 ---
 
@@ -36,10 +35,10 @@ const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig
   aria-labelledby="footer-brand"
   data-theme-dark="true"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 pb-12 border-b border-[#363432] items-start">
+  <div class="site-container">
+    <div class="grid-12 pb-12 border-b border-[#363432] items-start">
       <!-- Col 1: Brand & Logo Lockup -->
-      <div class="lg:col-span-5 space-y-4">
+      <div class="col-span-12 lg:col-span-5 space-y-4">
         <a
           href={lang === 'en' ? '/' : `/${lang}/`}
           class="inline-block focus:outline-none focus:ring-3 focus:ring-[var(--color-charcoal)] rounded-[2px]"
@@ -53,7 +52,7 @@ const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig
       </div>
 
       <!-- Col 2: Quick Links Navigation -->
-      <div class="lg:col-span-4 space-y-3">
+      <div class="col-span-12 lg:col-span-4 space-y-3">
         <span class="block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[#C4C2BE]">
           {t('footer.quick_links')}
         </span>
@@ -72,7 +71,7 @@ const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig
       </div>
 
       <!-- Col 3: Legal & Language Information -->
-      <div class="lg:col-span-3 space-y-3">
+      <div class="col-span-12 lg:col-span-3 space-y-3">
         <span class="block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[#C4C2BE]">
           Legal
         </span>
@@ -91,14 +90,6 @@ const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig
               class="text-[1rem] text-[#E5E2DC] hover:text-[var(--color-paper)] transition-colors underline decoration-transparent hover:decoration-current focus:outline-none focus:ring-2 focus:ring-[var(--color-paper)] rounded-[2px]"
             >
               {t('footer.disclaimer')}
-            </a>
-          </li>
-          <li>
-            <a
-              href={imageCreditsHref}
-              class="text-[1rem] text-[#E5E2DC] hover:text-[var(--color-paper)] transition-colors underline decoration-transparent hover:decoration-current focus:outline-none focus:ring-2 focus:ring-[var(--color-paper)] rounded-[2px]"
-            >
-              {t('footer.image_credits')}
             </a>
           </li>
           {lang !== 'en' && (

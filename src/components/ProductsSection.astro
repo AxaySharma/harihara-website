@@ -29,7 +29,7 @@ const products = [
   class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper)] scroll-mt-24"
   aria-labelledby="products-heading"
 >
-  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="site-container">
     <!-- Header -->
     <div class="mb-12 sm:mb-16">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
@@ -46,9 +46,9 @@ const products = [
     <!-- Two large editorial rows separated by rules (not cards) -->
     <div class="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
       {products.map((item) => (
-        <div class="py-8 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+        <div class="py-8 sm:py-12 grid-12 items-start">
           <!-- Numeral & Planned Tag -->
-          <div class="lg:col-span-2 flex items-baseline gap-4 lg:flex-col lg:gap-2">
+          <div class="col-span-12 lg:col-span-2 flex items-baseline gap-4 lg:flex-col lg:gap-2">
             <span class="font-heading text-[2.25rem] sm:text-[2.75rem] text-[var(--color-crimson)] leading-none">
               {item.num}
             </span>
@@ -58,7 +58,7 @@ const products = [
           </div>
 
           <!-- Title & Descriptor & Extra paragraph -->
-          <div class="lg:col-span-7 space-y-3">
+          <div class="col-span-12 lg:col-span-7 space-y-3">
             <h3 class="font-heading text-[1.5rem] sm:text-[1.75rem] text-[var(--color-charcoal)]">
               {item.title}
             </h3>
@@ -71,7 +71,7 @@ const products = [
           </div>
 
           <!-- Enquire Link to #contact -->
-          <div class="lg:col-span-3 flex lg:justify-end items-center pt-2 lg:pt-0">
+          <div class="col-span-12 lg:col-span-3 flex lg:justify-end items-center pt-2 lg:pt-0">
             <a
               href="#contact"
               class="enquire-trigger inline-flex items-center gap-2 text-[1.0625rem] font-semibold text-[var(--color-crimson)] hover:text-[var(--color-maroon)] transition-colors underline decoration-2 underline-offset-4 focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]"

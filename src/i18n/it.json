@@ -27,7 +27,8 @@
     "cta_primary": "Contattaci",
     "cta_secondary": "Informazioni sul progetto",
     "caption": "Saline, la sorgente delle acque madri. Immagine rappresentativa.",
-    "image_alt": "Veduta aerea di vasche di evaporazione del sale con acque variopinte"
+    "image_alt": "Veduta aerea di vasche di evaporazione del sale con acque variopinte",
+    "image_caption": "Illustrazione: saline, la fonte delle acque madri."
   },
   "facts": {
     "location_label": "Ubicazione",
@@ -244,7 +245,6 @@
     "quick_links": "Collegamenti rapidi",
     "privacy_policy": "Informativa sulla Privacy",
     "disclaimer": "Disclaimer legale",
-    "image_credits": "Crediti fotografici",
     "faq": "Domande e risposte",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
@@ -254,8 +254,6 @@
     "privacy_description": "Informativa sulla privacy di Hari Hara Serenity Chemical LLP, redatta in conformità al DPDP Act 2023.",
     "disclaimer_title": "Disclaimer legale",
     "disclaimer_description": "Dichiarazione di non responsabilità e note legali per il sito web di Hari Hara Serenity Chemical LLP.",
-    "image_credits_title": "Crediti fotografici e licenze",
-    "image_credits_description": "Licenze e attribuzioni per le fotografie rappresentative utilizzate sul sito di Hari Hara Serenity.",
     "last_updated": "Ultimo aggiornamento: ottobre 2026"
   },
   "not_found": {
