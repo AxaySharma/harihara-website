@@ -11,11 +11,12 @@
     "select_language": "Seleziona la lingua"
   },
   "nav": {
-    "about": "Chi siamo",
+    "about": "Progetto",
+    "bromine": "Bromo",
     "process": "Processo",
     "products": "Prodotti",
     "industries": "Settori",
-    "plant": "Impianto",
+    "location": "Sede",
     "contact": "Contatti"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "Impianto in fase di sviluppo",
     "cta_primary": "Contattaci",
     "cta_secondary": "Informazioni sul progetto",
-    "caption": "Illustrazione: saline, la fonte della salamoia residua."
+    "caption": "Saline, la sorgente delle acque madri. Immagine rappresentativa.",
+    "image_alt": "Veduta aerea di vasche di evaporazione del sale con acque variopinte"
   },
   "facts": {
     "location_label": "Ubicazione",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "Impianto in fase di sviluppo",
+    "photo_caption": "Distesa di sale. Immagine rappresentativa.",
+    "photo_alt": "Veduta paesaggistica di una distesa salina costiera",
+    "why_heading": "Perché questo progetto",
+    "why_p1": "L'industria indiana dipende dalle importazioni per il bromo. Il nostro obiettivo è ridurre tale dipendenza avviando una produzione nazionale.",
+    "why_p2": "La produzione di sale lungo la costa del Gujarat lascia acque madri (bittern), una salamoia minerale residua. Il recupero di bromo consente di valorizzare un sottoprodotto già generato dall'industria del sale.",
+    "why_p3": "L'impianto è attualmente in fase di sviluppo. Questo sito descrive i traguardi verso cui stiamo lavorando.",
     "partners_heading": "Soci fondatori",
     "partners": [
       {
@@ -72,32 +80,64 @@
       }
     ]
   },
+  "bromine": {
+    "label": "Informazioni generali",
+    "heading": "Il bromo in sintesi",
+    "intro": "Una breve panoramica dell'elemento al centro di questo progetto. Si tratta di nozioni generali e non di una descrizione dei nostri prodotti.",
+    "facts": {
+      "symbol_label": "Simbolo",
+      "symbol_value": "Br",
+      "atomic_number_label": "Numero atomico",
+      "atomic_number_value": "35",
+      "state_label": "A temperatura ambiente",
+      "state_value": "Liquido",
+      "family_label": "Famiglia",
+      "family_value": "Alogeni"
+    },
+    "photo_caption": "Immagine rappresentativa.",
+    "photo_alt": "Bromo liquido puro sigillato in fiala di vetro da laboratorio",
+    "blocks": [
+      {
+        "title": "Un elemento liquido raro",
+        "text": "Il bromo è un liquido denso di colore rosso-bruno con un odore pungente. Insieme al mercurio, è uno dei soli due elementi liquidi alle consuete temperature ambientali."
+      },
+      {
+        "title": "Origine e presenza",
+        "text": "Il bromo è presente come bromuro, un composto disciolto nell'acqua marina, nei laghi salati e nelle salamoie naturali. Durante l'evaporazione dell'acqua di mare per ricavare il sale, il bromuro si concentra nella salamoia residua (bittern)."
+      },
+      {
+        "title": "Una scoperta dalle acque saline",
+        "text": "Il bromo fu isolato per la prima volta negli anni 1820 dal chimico francese Antoine-Jerome Balard nei residui di salamoia delle paludi salmastre vicino a Montpellier."
+      },
+      {
+        "title": "L'origine del nome",
+        "text": "Il nome deriva dal termine greco bromos (fetore), a causa delle sue esalazioni intense e soffocanti."
+      },
+      {
+        "title": "Manipolazione accurata",
+        "text": "Il bromo è tossico e corrosivo. La sua produzione e manipolazione sono rigidamente regolamentate e soggette a rigorosi requisiti di sicurezza e tutela ambientale."
+      }
+    ]
+  },
   "process": {
     "label": "Processo",
     "heading": "Dalla salamoia residua al bromo",
     "intro": "Il processo pianificato presso il nostro stabilimento di Rapar, attualmente in fase di sviluppo.",
     "steps": [
       {
-        "num": "01",
-        "title": "Salamoia residua",
-        "desc": "La salamoia rimanente al termine della produzione di sale."
+        "extra": "Dopo la cristallizzazione del sale dall'acqua di mare evaporata, rimane un liquido residuo ricco di minerali."
       },
       {
-        "num": "02",
-        "title": "Recupero",
-        "desc": "Il bromo viene estratto dalla salamoia residua."
+        "extra": "Il bromo viene separato dalle acque madri per poter essere raccolto."
       },
       {
-        "num": "03",
-        "title": "Purificazione",
-        "desc": "Il bromo recuperato viene sottoposto a purificazione."
+        "extra": "La purificazione lo predispone per l'utilizzo industriale."
       },
       {
-        "num": "04",
-        "title": "Bromo",
-        "desc": "Bromo per usi industriali, composti di bromo e sali di bromuro."
+        "extra": "I prodotti finali descritti in questo sito internet."
       }
-    ]
+    ],
+    "closing_note": "Questo è uno schema generale. La progettazione dettagliata del processo è in corso di sviluppo."
   },
   "products": {
     "label": "Prodotti",
@@ -106,50 +146,49 @@
     "enquire_link": "Richiedi informazioni",
     "items": [
       {
-        "num": "01",
-        "title": "Bromo (grado industriale)",
-        "desc": "Bromo di purezza industriale, previsto per essere recuperato e purificato dalla salamoia residua a Rapar.",
-        "type": "product_bromine"
+        "extra": "Bromo nella forma impiegata dall'industria, nonché materia prima per la sintesi di intermedi bromurati."
       },
       {
-        "num": "02",
-        "title": "Composti di bromo e sali di bromuro",
-        "desc": "Composti bromurati e sali di bromuro per impieghi industriali a valle.",
-        "type": "product_compounds"
+        "extra": "I sali di bromuro legano il bromo a un metallo. I composti e sali di bromo trovano impiego nei settori indicati di seguito."
       }
     ],
-    "footer_note": "Per richieste relative ai prodotti, vi invitiamo a contattarci."
+    "footer_note": "La nostra gamma di prodotti è in corso di definizione. Per qualsiasi chiarimento, vi invitiamo a contattarci."
   },
   "industries": {
     "label": "Settori",
     "heading": "I settori serviti dal bromo",
     "intro": "Il bromo è una componente essenziale per queste filiere industriali.",
+    "intro_note": "Cenni generali sull'impiego industriale del bromo. Non descrive i nostri prodotti o clienti.",
+    "footer_disclaimer": "Tutte le immagini di questa pagina sono rappresentative e non mostrano i nostri impianti effettivi.",
     "items": [
       {
-        "num": "01",
-        "name": "Farmaceutico"
+        "desc": "I composti bromurati fungono da reagenti e intermedi nella sintesi di farmaci.",
+        "image_alt": "Provette in vetro da laboratorio in primo piano macro"
       },
       {
-        "num": "02",
-        "name": "Agrochimico"
+        "desc": "Alcuni agrofarmaci vengono prodotti impiegando intermedi a base di bromo.",
+        "image_alt": "Veduta aerea di campi agricoli coltivati"
       },
       {
-        "num": "03",
-        "name": "Ritardanti di fiamma"
+        "desc": "I composti bromurati vengono additivati a plastiche, tessuti ed elettronica per rallentare le fiamme.",
+        "image_alt": "Primo piano macro di circuito stampato elettronico"
       },
       {
-        "num": "04",
-        "name": "Trattamento acque"
+        "desc": "Formulati a base di bromo vengono utilizzati per disinfettare torri di raffreddamento e piscine.",
+        "image_alt": "Increspature sulla superficie di acqua limpida"
       },
       {
-        "num": "05",
-        "name": "Chimica petrolifera"
+        "desc": "Salamoie dense di bromuro vengono impiegate nelle operazioni di perforazione ed estrazione di petrolio e gas.",
+        "image_alt": "Sagoma di pompa petrolifera al tramonto"
       }
     ]
   },
   "location": {
     "label": "Impianto e ubicazione",
     "heading": "Dove stiamo costruendo",
+    "intro": "Nel Gujarat occidentale, Kachchh è il distretto più vasto dell'India per superficie. La rilevante produzione di sale nell'area lo rende la sede naturale per un impianto di lavorazione delle acque madri.",
+    "photo_caption": "Immagine rappresentativa.",
+    "photo_alt": "Ampio paesaggio naturale di distesa salina sotto cielo nuvoloso",
     "maps_link": "Apri in Google Maps",
     "plant_title": "Impianto (in fase di sviluppo)",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +197,55 @@
     "reg_title": "Sede legale",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "Domande frequenti",
+    "heading": "Domande e risposte",
+    "items": [
+      {
+        "q": "Cosa fa Hari Hara Serenity Chemical LLP?",
+        "a": "Stiamo realizzando un impianto a Rapar, Kachchh, Gujarat, per estrarre e purificare il bromo dalle acque madri (bittern)."
+      },
+      {
+        "q": "L'impianto è già operativo?",
+        "a": "No. L'impianto è in fase di sviluppo. Questo sito descrive i nostri programmi e non forniamo ancora alcun prodotto."
+      },
+      {
+        "q": "Cosa sono le acque madri (bittern)?",
+        "a": "È la salamoia residua dopo l'estrazione del sale dall'acqua marina, naturalmente ricca di minerali e bromuri."
+      },
+      {
+        "q": "Quali prodotti sono pianificati?",
+        "a": "Bromo di qualità industriale, composti di bromo e sali di bromuro. La gamma finale è in fase di definizione."
+      },
+      {
+        "q": "Quali industrie utilizzano il bromo?",
+        "a": "I settori farmaceutico, agrochimico, dei ritardanti di fiamma, trattamento acque e chimica petrolifera, tra gli altri."
+      },
+      {
+        "q": "Come posso contattarvi?",
+        "a": "Via email a Purchase@harihara.net, oppure tramite telefono o WhatsApp al 9427134190. Ketan Dholu, Partner, risponde alle richieste."
+      }
+    ]
+  },
   "contact": {
     "label": "Contatti",
     "heading": "Mettiti in contatto",
-    "line": "Per informazioni sui prodotti, collaborazioni o altre richieste.",
+    "line": "Siamo a disposizione per qualsiasi richiesta sul nostro progetto, sui prodotti previsti e su possibili collaborazioni.",
     "email_label": "Email",
-    "phone_label": "Telefono e WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "Telefono",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "Buongiorno, vi contatto dal sito web di Hari Hara Serenity.",
     "enquiries_note": "Le richieste vengono lette e gestite da Ketan Dholu, Partner.",
-    "form": {
-      "name_label": "Nome",
-      "company_label": "Azienda",
-      "email_label": "Email",
-      "phone_label": "Telefono",
-      "type_label": "Tipo di richiesta",
-      "type_options": {
-        "product": "Informazioni prodotto",
-        "partnership": "Collaborazione",
-        "other": "Altro"
-      },
-      "message_label": "Messaggio",
-      "consent_label": "Acconsento al trattamento dei miei dati per rispondere a questa richiesta, come descritto nell'Informativa sulla Privacy.",
-      "consent_privacy_link": "Informativa sulla Privacy",
-      "submit_btn": "Invia richiesta",
-      "submitting_btn": "Invio in corso...",
-      "success_message": "Grazie. La richiesta è stata ricevuta e sarà esaminata da Ketan Dholu, Partner.",
-      "error_message": "Si è verificato un errore nell'invio del modulo. Scrivici direttamente all'indirizzo Purchase@harihara.net.",
-      "validation": {
-        "name_required": "Inserisci il tuo nome.",
-        "email_required": "Inserisci il tuo indirizzo email.",
-        "email_invalid": "Inserisci un indirizzo email valido.",
-        "message_required": "Inserisci un messaggio.",
-        "consent_required": "È necessario accettare l'informativa sulla privacy per procedere."
-      }
-    }
+    "locations_heading": "Le nostre sedi"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "Collegamenti rapidi",
     "privacy_policy": "Informativa sulla Privacy",
     "disclaimer": "Disclaimer legale",
+    "image_credits": "Crediti fotografici",
+    "faq": "Domande e risposte",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +254,8 @@
     "privacy_description": "Informativa sulla privacy di Hari Hara Serenity Chemical LLP, redatta in conformità al DPDP Act 2023.",
     "disclaimer_title": "Disclaimer legale",
     "disclaimer_description": "Dichiarazione di non responsabilità e note legali per il sito web di Hari Hara Serenity Chemical LLP.",
+    "image_credits_title": "Crediti fotografici e licenze",
+    "image_credits_description": "Licenze e attribuzioni per le fotografie rappresentative utilizzate sul sito di Hari Hara Serenity.",
     "last_updated": "Ultimo aggiornamento: ottobre 2026"
   },
   "not_found": {

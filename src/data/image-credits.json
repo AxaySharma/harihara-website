@@ -1,0 +1,110 @@
+[
+  {
+    "slot": "Hero: salt pans evaporation aerial",
+    "filename": "public/images/hero-salt-pans.jpg",
+    "public_path": "/images/hero-salt-pans.jpg",
+    "description": "Aerial view of salt evaporation ponds with colorful water",
+    "author": "Alin Gavriliuc",
+    "author_url": "https://unsplash.com/@alingavriliuc",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/aerial-view-of-salt-evaporation-ponds-with-colorful-water-f749a241d5b1",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  },
+  {
+    "slot": "About: salt flats landscape",
+    "filename": "public/images/about-salt-flats.jpg",
+    "public_path": "/images/about-salt-flats.jpg",
+    "description": "Aerial view of a coastal salt flat and natural shoreline",
+    "author": "Eric Ardito",
+    "author_url": "https://unsplash.com/@ericardito",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/an-aerial-view-of-a-large-salt-flat-near-the-ocean-HIWEcfQFSkI",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  },
+  {
+    "slot": "Bromine: pure liquid bromine in glass ampoule",
+    "filename": "public/images/bromine-liquid.jpg",
+    "public_path": "/images/bromine-liquid.jpg",
+    "description": "Pure liquid bromine sealed in a glass laboratory ampoule",
+    "author": "Stas1995",
+    "author_url": "https://commons.wikimedia.org/wiki/User:Stas1995",
+    "source_site": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pure_liquid_bromine.jpg",
+    "license_name": "Creative Commons Attribution 3.0 Unported (CC BY 3.0)",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  {
+    "slot": "Location: vast salt flats landscape",
+    "filename": "public/images/location-salt-flats.jpg",
+    "public_path": "/images/location-salt-flats.jpg",
+    "description": "Vast natural salt flats landscape with distant horizon under cloudy sky",
+    "author": "Aveedibya Dey",
+    "author_url": "https://unsplash.com/@aveedibyadey",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/vast-salt-flats-with-distant-mountains-under-cloudy-sky-bc993723ac5b",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  },
+  {
+    "slot": "Industries: 01 Pharmaceutical",
+    "filename": "public/images/industry-pharmaceutical.jpg",
+    "public_path": "/images/industry-pharmaceutical.jpg",
+    "description": "Laboratory glassware test tubes macro",
+    "author": "National Cancer Institute",
+    "author_url": "https://unsplash.com/@nci",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/pile-of-clear-measuring-test-tubes-491299461284-6aa083937f71",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  },
+  {
+    "slot": "Industries: 02 Agrochemical",
+    "filename": "public/images/industry-agrochemical.jpg",
+    "public_path": "/images/industry-agrochemical.jpg",
+    "description": "Aerial view of cultivated green agricultural fields",
+    "author": "Alex Wigan",
+    "author_url": "https://unsplash.com/@alwig64",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/aerial-photography-of-green-fields-545300329-e785e923ed45",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  },
+  {
+    "slot": "Industries: 03 Flame retardants",
+    "filename": "public/images/industry-flame-retardants.jpg",
+    "public_path": "/images/industry-flame-retardants.jpg",
+    "description": "Printed circuit board electronics components macro without branding",
+    "author": "Alexandre Debiève",
+    "author_url": "https://unsplash.com/@alexkixa",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/macro-photography-of-black-circuit-board-FO7JIlwjOtU",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  },
+  {
+    "slot": "Industries: 04 Water treatment",
+    "filename": "public/images/industry-water-treatment.jpg",
+    "public_path": "/images/industry-water-treatment.jpg",
+    "description": "Close up of clear water surface ripples",
+    "author": "Sayulita / Unsplash Contributor",
+    "author_url": "https://unsplash.com",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/a-close-up-of-the-water-surface-of-a-body-of-water-affcb7653d07",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  },
+  {
+    "slot": "Industries: 05 Oil-field chemicals",
+    "filename": "public/images/industry-oil-field.jpg",
+    "public_path": "/images/industry-oil-field.jpg",
+    "description": "Generic oil pump jack silhouette against sunset without brand marks",
+    "author": "Zbynek Burival",
+    "author_url": "https://unsplash.com/@zburival",
+    "source_site": "Unsplash",
+    "source_url": "https://unsplash.com/photos/oil-pump-jack-silhouette-against-red-sunset-1f1e91b06f25",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license"
+  }
+]

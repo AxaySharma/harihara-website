@@ -1,0 +1,58 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const faqItems = [
+  { q: t('faq.items.0.q'), a: t('faq.items.0.a') },
+  { q: t('faq.items.1.q'), a: t('faq.items.1.a') },
+  { q: t('faq.items.2.q'), a: t('faq.items.2.a') },
+  { q: t('faq.items.3.q'), a: t('faq.items.3.a') },
+  { q: t('faq.items.4.q'), a: t('faq.items.4.a') },
+  { q: t('faq.items.5.q'), a: t('faq.items.5.a') },
+];
+---
+
+<section
+  id="faq"
+  class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper-light)] scroll-mt-24"
+  aria-labelledby="faq-heading"
+>
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="mb-10 sm:mb-14">
+      <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
+        {t('faq.label')}
+      </span>
+      <h2
+        id="faq-heading"
+        class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)]"
+      >
+        {t('faq.heading')}
+      </h2>
+    </div>
+
+    <!-- Native details/summary accordion list (no JavaScript required) -->
+    <div class="max-w-[48em] divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
+      {faqItems.map((item, idx) => (
+        <details class="group py-2">
+          <summary class="min-h-[3.5rem] flex items-center justify-between gap-4 cursor-pointer list-none py-3 text-[1.125rem] sm:text-[1.25rem] font-heading text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]">
+            <span>{item.q}</span>
+            <span class="w-8 h-8 rounded-full border border-[var(--color-border)] flex items-center justify-center shrink-0 text-[1.25rem] text-[var(--color-secondary)] group-hover:border-[var(--color-crimson)] group-hover:text-[var(--color-crimson)] transition-colors select-none font-sans font-light leading-none" aria-hidden="true">
+              <span class="group-open:hidden">+</span>
+              <span class="hidden group-open:inline">&minus;</span>
+            </span>
+          </summary>
+          <div class="pb-6 pt-2 text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed ps-1">
+            <p>{item.a}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

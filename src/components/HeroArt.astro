@@ -1,10 +1,11 @@
 ---
 interface Props {
   image?: string;
+  alt?: string;
   class?: string;
 }
 
-const { image, class: className = '' } = Astro.props;
+const { image, alt = '', class: className = '' } = Astro.props;
 ---
 
 <div class={`hero-art-wrapper relative w-full select-none ${className}`}>
@@ -13,13 +14,18 @@ const { image, class: className = '' } = Astro.props;
 
   <div class="hero-art-frame relative w-full overflow-hidden">
     {image ? (
-      <img
-        src={image}
-        alt=""
-        class="w-full h-auto object-cover aspect-[4/5] block"
-        loading="eager"
-        decoding="async"
-      />
+      <div class="relative w-full aspect-[4/5] overflow-hidden bg-[#F7F2E8]">
+        <img
+          src={image}
+          alt={alt}
+          width="800"
+          height="1000"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+          class="w-full h-full object-cover block filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+        />
+      </div>
     ) : (
       <div class="hero-art-canvas relative w-full aspect-[4/5] bg-[#F7F2E8] overflow-hidden min-h-[520px]">
         <!-- Inline SVG with salt pan geometry, high contrast mineral dykes, visible feTurbulence grain, and subtle ambient drift -->

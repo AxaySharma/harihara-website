@@ -12,10 +12,11 @@
   },
   "nav": {
     "about": "About",
+    "bromine": "Bromine",
     "process": "Process",
     "products": "Products",
     "industries": "Industries",
-    "plant": "Plant",
+    "location": "Location",
     "contact": "Contact"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "Plant under development",
     "cta_primary": "Get in touch",
     "cta_secondary": "About the project",
-    "caption": "Illustrative artwork: salt pans, the source of bittern."
+    "caption": "Salt pans, the source of bittern. Representative image.",
+    "image_alt": "Aerial view of colorful salt evaporation ponds"
   },
   "facts": {
     "location_label": "Location",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "Plant under development",
+    "photo_caption": "Salt flats. Representative image.",
+    "photo_alt": "Landscape view of coastal salt flats",
+    "why_heading": "Why this project",
+    "why_p1": "Indian industry depends on imports for bromine. Our aim is to reduce that dependence by producing bromine at home.",
+    "why_p2": "Salt production along Gujarat's coast leaves behind bittern, a mineral-rich residual brine. Recovering bromine from it makes further use of a material the salt industry already produces.",
+    "why_p3": "The plant is still under development. This website describes what we are working towards.",
     "partners_heading": "Founding partners",
     "partners": [
       {
@@ -72,6 +80,45 @@
       }
     ]
   },
+  "bromine": {
+    "label": "Background",
+    "heading": "Bromine, briefly",
+    "intro": "A short introduction to the element at the centre of this project. This is general background and not a description of our products.",
+    "facts": {
+      "symbol_label": "Symbol",
+      "symbol_value": "Br",
+      "atomic_number_label": "Atomic number",
+      "atomic_number_value": "35",
+      "state_label": "At room temperature",
+      "state_value": "Liquid",
+      "family_label": "Family",
+      "family_value": "Halogens"
+    },
+    "photo_caption": "Representative image.",
+    "photo_alt": "Pure liquid bromine sealed in a glass laboratory ampoule",
+    "blocks": [
+      {
+        "title": "A rare liquid element",
+        "text": "Bromine is a dense, reddish-brown liquid with a sharp smell. Along with mercury, it is one of only two elements that are liquid at normal room temperature."
+      },
+      {
+        "title": "Where it comes from",
+        "text": "Bromine occurs as bromide, a compound dissolved in seawater, salt lakes and natural brines. When seawater is evaporated to make salt, the bromide stays behind and becomes concentrated in the leftover brine, called bittern."
+      },
+      {
+        "title": "A discovery from salt brine",
+        "text": "Bromine was first isolated in the 1820s by the French chemist Antoine-Jerome Balard, who found it in the residue of salt-marsh brine near Montpellier."
+      },
+      {
+        "title": "How it got its name",
+        "text": "The name comes from the Greek word bromos, meaning stench, because of its strong smell."
+      },
+      {
+        "title": "Handled with care",
+        "text": "Bromine is toxic and corrosive. This is why its production and handling are regulated, and why any plant that works with it must meet strict safety and environmental requirements."
+      }
+    ]
+  },
   "process": {
     "label": "Process",
     "heading": "From bittern to bromine",
@@ -80,24 +127,29 @@
       {
         "num": "01",
         "title": "Bittern",
-        "desc": "The residual brine left after salt production."
+        "desc": "The residual brine left after salt production.",
+        "extra": "After salt crystallises out of evaporating seawater, a mineral-rich liquid remains."
       },
       {
         "num": "02",
         "title": "Recovery",
-        "desc": "Bromine is recovered from the bittern."
+        "desc": "Bromine is recovered from the bittern.",
+        "extra": "Bromine is separated from the bittern so that it can be collected."
       },
       {
         "num": "03",
         "title": "Purification",
-        "desc": "The recovered bromine is purified."
+        "desc": "The recovered bromine is purified.",
+        "extra": "Purification prepares it for industrial use."
       },
       {
         "num": "04",
         "title": "Bromine",
-        "desc": "Industrial-grade bromine, and bromine compounds and bromide salts."
+        "desc": "Industrial-grade bromine, and bromine compounds and bromide salts.",
+        "extra": "The end products described in this website."
       }
-    ]
+    ],
+    "closing_note": "This is a general outline. The detailed process design is still being developed."
   },
   "products": {
     "label": "Products",
@@ -109,47 +161,62 @@
         "num": "01",
         "title": "Bromine (industrial grade)",
         "desc": "Industrial-grade bromine, recovered and purified from bittern at our Rapar plant.",
-        "type": "product_bromine"
+        "extra": "Bromine in the form used by industry, and a starting material for making many other bromine-based chemicals."
       },
       {
         "num": "02",
         "title": "Bromine compounds and bromide salts",
         "desc": "Bromine compounds and bromide salts for downstream industrial use.",
-        "type": "product_compounds"
+        "extra": "Bromide salts combine bromine with a metal. Bromine compounds and salts are used across the industries listed below."
       }
     ],
-    "footer_note": "For product enquiries, please get in touch."
+    "footer_note": "Our product range is still being defined. For questions about products, please get in touch."
   },
   "industries": {
     "label": "Industries",
     "heading": "Industries bromine serves",
     "intro": "Bromine is a key input for these industries.",
+    "intro_note": "General background on how bromine is used. It does not describe our products or customers.",
+    "footer_disclaimer": "All images on this page are representative and do not show our plant or operations.",
     "items": [
       {
         "num": "01",
-        "name": "Pharmaceutical"
+        "name": "Pharmaceutical",
+        "desc": "Bromine compounds serve as reagents and building blocks in making some medicines.",
+        "image_alt": "Laboratory glassware test tubes macro"
       },
       {
         "num": "02",
-        "name": "Agrochemical"
+        "name": "Agrochemical",
+        "desc": "Some crop-protection chemicals are made using bromine-based intermediates.",
+        "image_alt": "Aerial view of cultivated green fields"
       },
       {
         "num": "03",
-        "name": "Flame retardants"
+        "name": "Flame retardants",
+        "desc": "Brominated compounds are added to certain plastics, textiles and electronic parts to slow the spread of fire.",
+        "image_alt": "Printed circuit board electronics macro"
       },
       {
         "num": "04",
-        "name": "Water treatment"
+        "name": "Water treatment",
+        "desc": "Bromine-based chemicals are used to disinfect some cooling-water systems and swimming pools.",
+        "image_alt": "Clear water surface ripples"
       },
       {
         "num": "05",
-        "name": "Oil-field chemicals"
+        "name": "Oil-field chemicals",
+        "desc": "Dense bromide brines are used in drilling and completing oil and gas wells.",
+        "image_alt": "Oil pump jack silhouette against sunset"
       }
     ]
   },
   "location": {
     "label": "Plant and location",
     "heading": "Where we are building",
+    "intro": "Kachchh, in western Gujarat, is India's largest district by area. Salt is produced in and around the district, which makes it a natural home for a plant that works with bittern.",
+    "photo_caption": "Representative image.",
+    "photo_alt": "Vast natural salt flats landscape with distant horizon under cloudy sky",
     "maps_link": "Open in Google Maps",
     "plant_title": "Plant (under development)",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +225,55 @@
     "reg_title": "Registered Office",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "FAQ",
+    "heading": "Questions and answers",
+    "items": [
+      {
+        "q": "What does Hari Hara Serenity Chemical LLP do?",
+        "a": "We are setting up a plant at Rapar, Kachchh, Gujarat, to recover and purify bromine from bittern."
+      },
+      {
+        "q": "Is the plant operating?",
+        "a": "No. The plant is under development. This website describes our plans, and we are not yet supplying any products."
+      },
+      {
+        "q": "What is bittern?",
+        "a": "Bittern is the residual brine left after salt is produced from seawater or brine. It is rich in minerals, including bromide."
+      },
+      {
+        "q": "What products are planned?",
+        "a": "Industrial-grade bromine, and bromine compounds and bromide salts. The range is still being defined."
+      },
+      {
+        "q": "Which industries use bromine?",
+        "a": "Pharmaceutical, agrochemical, flame-retardant, water-treatment and oil-field chemical industries, among others."
+      },
+      {
+        "q": "How can I contact you?",
+        "a": "By email at Purchase@harihara.net, or by phone or WhatsApp on 9427134190. Ketan Dholu, Partner, reads and replies to enquiries."
+      }
+    ]
+  },
   "contact": {
     "label": "Contact",
     "heading": "Get in touch",
-    "line": "For product, partnership or other enquiries.",
+    "line": "We welcome questions about our project, our planned products and possible partnerships.",
     "email_label": "Email",
-    "phone_label": "Phone & WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "Phone",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "Hello, I am writing from the Hari Hara Serenity website.",
     "enquiries_note": "Enquiries are read and replied to by Ketan Dholu, Partner.",
-    "form": {
-      "name_label": "Name",
-      "company_label": "Company",
-      "email_label": "Email",
-      "phone_label": "Phone",
-      "type_label": "Enquiry type",
-      "type_options": {
-        "product": "Product enquiry",
-        "partnership": "Partnership",
-        "other": "Other"
-      },
-      "message_label": "Message",
-      "consent_label": "I agree that my details may be used to reply to this enquiry, as described in the Privacy Policy.",
-      "consent_privacy_link": "Privacy Policy",
-      "submit_btn": "Send enquiry",
-      "submitting_btn": "Sending...",
-      "success_message": "Thank you. Your enquiry has been received and will be reviewed by Ketan Dholu, Partner.",
-      "error_message": "Sorry, there was a problem submitting your enquiry. Please email us directly at Purchase@harihara.net.",
-      "validation": {
-        "name_required": "Please enter your name.",
-        "email_required": "Please enter your email address.",
-        "email_invalid": "Please enter a valid email address.",
-        "message_required": "Please enter a message.",
-        "consent_required": "Please agree to the privacy policy to submit."
-      }
-    }
+    "locations_heading": "Our locations"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "Quick links",
     "privacy_policy": "Privacy Policy",
     "disclaimer": "Disclaimer",
+    "image_credits": "Image credits",
+    "faq": "Questions and answers",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +282,8 @@
     "privacy_description": "Privacy policy for Hari Hara Serenity Chemical LLP, aligned with the DPDP Act 2023.",
     "disclaimer_title": "Disclaimer",
     "disclaimer_description": "Legal disclaimer for Hari Hara Serenity Chemical LLP website.",
+    "image_credits_title": "Image Credits & Licensing",
+    "image_credits_description": "Licensing and attribution for representative photographs used on the Hari Hara Serenity website.",
     "last_updated": "Last updated: October 2026"
   },
   "not_found": {

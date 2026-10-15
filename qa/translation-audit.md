@@ -54,7 +54,7 @@
 | `location.plant_title` | Plant (under development)... | संयंत्र (विकासाधीन)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | संपर्क करें... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | पूछताछ Ketan Dholu, Partner द्वारा पढ़ी और उत्तर द... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | पूछताछ Ketan Dholu, Partner द्वारा पढ़ी और उत्तर द... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | मैं सहमत हूँ कि मेरी जानकारी का उपयोग इस पूछताछ का... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -87,7 +87,7 @@
 | `location.plant_title` | Plant (under development)... | પ્લાન્ટ (નિર્માણાધીન)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | સંપર્ક કરો... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | પૂછપરછ Ketan Dholu, Partner દ્વારા વાંચવામાં અને જ... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | પૂછપરછ Ketan Dholu, Partner દ્વારા વાંચવામાં અને જ... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | હું સંમત છું કે ગોપનીયતા નીતિમાં વર્ણવ્યા મુજબ આ પ... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -120,7 +120,7 @@
 | `location.plant_title` | Plant (under development)... | Planta (en desarrollo)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | Póngase en contacto... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | Las consultas son atendidas directamente por Ketan... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | Las consultas son atendidas directamente por Ketan... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | Acepto que mis datos se utilicen para responder a ... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -153,7 +153,7 @@
 | `location.plant_title` | Plant (under development)... | Usine (en cours de développement)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | Prendre contact... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | Les demandes sont examinées et traitées par Ketan ... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | Les demandes sont examinées et traitées par Ketan ... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | J'accepte que mes coordonnées soient traitées pour... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -186,7 +186,7 @@
 | `location.plant_title` | Plant (under development)... | Anlage (in Entwicklung)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | Kontakt aufnehmen... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | Anfragen werden von Partner Ketan Dholu, Partner g... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | Anfragen werden von Partner Ketan Dholu, Partner g... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | Ich stimme zu, dass meine Angaben zur Beantwortung... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -219,7 +219,7 @@
 | `location.plant_title` | Plant (under development)... | Impianto (in fase di sviluppo)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | Mettiti in contatto... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | Le richieste vengono lette e gestite da Ketan Dhol... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | Le richieste vengono lette e gestite da Ketan Dhol... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | Acconsento al trattamento dei miei dati per rispon... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -252,7 +252,7 @@
 | `location.plant_title` | Plant (under development)... | 工厂（建设中）... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | 取得联系... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | 所有咨询均由合伙人 Ketan Dholu, Partner 亲自查阅并回复。... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | 所有咨询均由合伙人 Ketan Dholu, Partner 亲自查阅并回复。... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | 我同意根据《隐私政策》所述，将我的信息用于回复此咨询。... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -285,7 +285,7 @@
 | `location.plant_title` | Plant (under development)... | プラント（建設中）... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | ご連絡はこちらから... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | お問い合わせはパートナーの Ketan Dholu, Partner が確認し回答いたします。... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | お問い合わせはパートナーの Ketan Dholu, Partner が確認し回答いたします。... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | プライバシーポリシーに記載されているとおり、この問い合わせに回答する目的で個人情報が使用されることに... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -318,7 +318,7 @@
 | `location.plant_title` | Plant (under development)... | 플랜트 (개발 중)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | 문의하기... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | 모든 문의는 파트너 Ketan Dholu, Partner 가 직접 확인하고 답변합니다.... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | 모든 문의는 파트너 Ketan Dholu, Partner 가 직접 확인하고 답변합니다.... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | 개인정보 처리방침에 명시된 대로 본 문의에 응답하기 위해 개인정보를 사용하는 데 동의합니다... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 
@@ -351,7 +351,7 @@
 | `location.plant_title` | Plant (under development)... | المنشأة (قيد التطوير)... | Plant (under development)... | Yes | Faithful business register; factual tone preserved. |
 | `location.plant_address` | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Village Manaba, Taluka Rapar, District Kachchh, Gu... | Yes | Faithful business register; factual tone preserved. |
 | `contact.heading` | Get in touch... | تواصل معنا... | Get in touch... | Yes | Faithful business register; factual tone preserved. |
-| `contact.enquiries_note` | Enquiries are read and replied to by Ketan Dholu, ... | تتم مراجعة الاستفسارات والرد عليها من قِبل Ketan D... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
+| `contact.enquiries_note` | Enquiries are read and replied by Ketan Dholu, ... | تتم مراجعة الاستفسارات والرد عليها من قِبل Ketan D... | Enquiries are received and answered by Ketan Dholu... | Yes | Partner designation and Latin name preserved. |
 | `contact.form.consent_label` | I agree that my details may be used to reply to th... | أوافق على استخدام بياناتي للرد على هذا الاستفسار و... | I agree that my details may be used to reply to th... | Yes | Faithful business register; factual tone preserved. |
 | `footer.exact_text` | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 ... | Yes | Exact verbatim protected text. |
 

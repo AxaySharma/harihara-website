@@ -12,10 +12,11 @@
   },
   "nav": {
     "about": "परिचय",
+    "bromine": "Bromine",
     "process": "प्रक्रिया",
     "products": "उत्पाद",
     "industries": "उद्योग",
-    "plant": "संयंत्र",
+    "location": "Location",
     "contact": "संपर्क"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "संयंत्र विकासाधीन है",
     "cta_primary": "संपर्क करें",
     "cta_secondary": "परियोजना के बारे में",
-    "caption": "चित्रमय कलाकृति: नमक के क्यारे, बिटर्न का स्रोत।"
+    "caption": "चित्रमय कलाकृति: नमक के क्यारे, बिटर्न का स्रोत।",
+    "image_alt": "Aerial view of colorful salt evaporation ponds"
   },
   "facts": {
     "location_label": "स्थान",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "संयंत्र विकासाधीन है",
+    "photo_caption": "Salt flats. Representative image.",
+    "photo_alt": "Landscape view of coastal salt flats",
+    "why_heading": "Why this project",
+    "why_p1": "Indian industry depends on imports for bromine. Our aim is to reduce that dependence by producing bromine at home.",
+    "why_p2": "Salt production along Gujarat's coast leaves behind bittern, a mineral-rich residual brine. Recovering bromine from it makes further use of a material the salt industry already produces.",
+    "why_p3": "The plant is still under development. This website describes what we are working towards.",
     "partners_heading": "संस्थापक भागीदार",
     "partners": [
       {
@@ -72,6 +80,45 @@
       }
     ]
   },
+  "bromine": {
+    "label": "Background",
+    "heading": "Bromine, briefly",
+    "intro": "A short introduction to the element at the centre of this project. This is general background and not a description of our products.",
+    "facts": {
+      "symbol_label": "Symbol",
+      "symbol_value": "Br",
+      "atomic_number_label": "Atomic number",
+      "atomic_number_value": "35",
+      "state_label": "At room temperature",
+      "state_value": "Liquid",
+      "family_label": "Family",
+      "family_value": "Halogens"
+    },
+    "photo_caption": "Representative image.",
+    "photo_alt": "Pure liquid bromine sealed in a glass laboratory ampoule",
+    "blocks": [
+      {
+        "title": "A rare liquid element",
+        "text": "Bromine is a dense, reddish-brown liquid with a sharp smell. Along with mercury, it is one of only two elements that are liquid at normal room temperature."
+      },
+      {
+        "title": "Where it comes from",
+        "text": "Bromine occurs as bromide, a compound dissolved in seawater, salt lakes and natural brines. When seawater is evaporated to make salt, the bromide stays behind and becomes concentrated in the leftover brine, called bittern."
+      },
+      {
+        "title": "A discovery from salt brine",
+        "text": "Bromine was first isolated in the 1820s by the French chemist Antoine-Jerome Balard, who found it in the residue of salt-marsh brine near Montpellier."
+      },
+      {
+        "title": "How it got its name",
+        "text": "The name comes from the Greek word bromos, meaning stench, because of its strong smell."
+      },
+      {
+        "title": "Handled with care",
+        "text": "Bromine is toxic and corrosive. This is why its production and handling are regulated, and why any plant that works with it must meet strict safety and environmental requirements."
+      }
+    ]
+  },
   "process": {
     "label": "प्रक्रिया",
     "heading": "बिटर्न से ब्रोमीन तक",
@@ -97,7 +144,8 @@
         "title": "ब्रोमीन",
         "desc": "औद्योगिक-ग्रेड ब्रोमीन, तथा ब्रोमीन यौगिक और ब्रोमाइड लवण।"
       }
-    ]
+    ],
+    "closing_note": "This is a general outline. The detailed process design is still being developed."
   },
   "products": {
     "label": "उत्पाद",
@@ -124,6 +172,8 @@
     "label": "उद्योग",
     "heading": "उद्योग जिनमें ब्रोमीन उपयोगी है",
     "intro": "ब्रोमीन इन उद्योगों के लिए एक महत्वपूर्ण कच्चा माल है।",
+    "intro_note": "General background on how bromine is used. It does not describe our products or customers.",
+    "footer_disclaimer": "All images on this page are representative and do not show our plant or operations.",
     "items": [
       {
         "num": "01",
@@ -150,6 +200,9 @@
   "location": {
     "label": "संयंत्र और स्थान",
     "heading": "हम कहाँ निर्माण कर रहे हैं",
+    "intro": "Kachchh, in western Gujarat, is India's largest district by area. Salt is produced in and around the district, which makes it a natural home for a plant that works with bittern.",
+    "photo_caption": "Representative image.",
+    "photo_alt": "Vast natural salt flats landscape with distant horizon under cloudy sky",
     "maps_link": "Google Maps में खोलें",
     "plant_title": "संयंत्र (विकासाधीन)",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +211,55 @@
     "reg_title": "पंजीकृत कार्यालय",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "FAQ",
+    "heading": "Questions and answers",
+    "items": [
+      {
+        "q": "What does Hari Hara Serenity Chemical LLP do?",
+        "a": "We are setting up a plant at Rapar, Kachchh, Gujarat, to recover and purify bromine from bittern."
+      },
+      {
+        "q": "Is the plant operating?",
+        "a": "No. The plant is under development. This website describes our plans, and we are not yet supplying any products."
+      },
+      {
+        "q": "What is bittern?",
+        "a": "Bittern is the residual brine left after salt is produced from seawater or brine. It is rich in minerals, including bromide."
+      },
+      {
+        "q": "What products are planned?",
+        "a": "Industrial-grade bromine, and bromine compounds and bromide salts. The range is still being defined."
+      },
+      {
+        "q": "Which industries use bromine?",
+        "a": "Pharmaceutical, agrochemical, flame-retardant, water-treatment and oil-field chemical industries, among others."
+      },
+      {
+        "q": "How can I contact you?",
+        "a": "By email at Purchase@harihara.net, or by phone or WhatsApp on 9427134190. Ketan Dholu, Partner, reads and replies to enquiries."
+      }
+    ]
+  },
   "contact": {
     "label": "संपर्क",
     "heading": "संपर्क करें",
     "line": "उत्पाद, साझेदारी या अन्य पूछताछ के लिए।",
     "email_label": "ईमेल",
+    "email_subject": "Enquiry from harihara.net",
     "phone_label": "फ़ोन और WhatsApp",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "Hello, I am writing from the Hari Hara Serenity website.",
     "enquiries_note": "पूछताछ Ketan Dholu, Partner द्वारा पढ़ी और उत्तर दी जाती हैं।",
-    "form": {
-      "name_label": "नाम",
-      "company_label": "कंपनी",
-      "email_label": "ईमेल",
-      "phone_label": "फ़ोन",
-      "type_label": "पूछताछ का प्रकार",
-      "type_options": {
-        "product": "उत्पाद पूछताछ",
-        "partnership": "साझेदारी",
-        "other": "अन्य"
-      },
-      "message_label": "संदेश",
-      "consent_label": "मैं सहमत हूँ कि मेरी जानकारी का उपयोग इस पूछताछ का उत्तर देने के लिए किया जा सकता है, जैसा कि गोपनीयता नीति में वर्णित है।",
-      "consent_privacy_link": "गोपनीयता नीति",
-      "submit_btn": "पूछताछ भेजें",
-      "submitting_btn": "भेज रहे हैं...",
-      "success_message": "धन्यवाद। आपकी पूछताछ प्राप्त हो गई है और Ketan Dholu, Partner द्वारा इसकी समीक्षा की जाएगी।",
-      "error_message": "क्षमा करें, आपकी पूछताछ भेजने में समस्या आई। कृपया हमें सीधे Purchase@harihara.net पर ईमेल करें।",
-      "validation": {
-        "name_required": "कृपया अपना नाम दर्ज करें।",
-        "email_required": "कृपया अपना ईमेल पता दर्ज करें।",
-        "email_invalid": "कृपया एक मान्य ईमेल पता दर्ज करें।",
-        "message_required": "कृपया संदेश दर्ज करें।",
-        "consent_required": "आगे बढ़ने के लिए कृपया गोपनीयता नीति से सहमति दें।"
-      }
-    }
+    "locations_heading": "Our locations"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "त्वरित लिंक",
     "privacy_policy": "गोपनीयता नीति",
     "disclaimer": "अस्वीकरण",
+    "image_credits": "Image credits",
+    "faq": "Questions and answers",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +268,8 @@
     "privacy_description": "Hari Hara Serenity Chemical LLP की गोपनीयता नीति, DPDP अधिनियम 2023 के अनुरूप।",
     "disclaimer_title": "अस्वीकरण",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP वेबसाइट के लिए कानूनी अस्वीकरण।",
+    "image_credits_title": "Image Credits & Licensing",
+    "image_credits_description": "Licensing and attribution for representative photographs used on the Hari Hara Serenity website.",
     "last_updated": "अंतिम अद्यतन: अक्टूबर 2026"
   },
   "not_found": {

@@ -190,7 +190,15 @@ function runContentAndLinksCheck() {
       }
     }
 
-    // Verify sections have visible content
+    // Verify sections have visible content and required IDs exist
+    const expectedSectionIds = ['about', 'bromine', 'process', 'products', 'industries', 'location', 'faq', 'contact'];
+    for (const secId of expectedSectionIds) {
+      if (!html.includes(`id="${secId}"`)) {
+        testResults.checkH_contentCompleteness.pass = false;
+        testResults.checkH_contentCompleteness.failures.push(`Language ${lang} missing section id: "${secId}"`);
+      }
+    }
+
     const sections = html.match(/<section[^>]*>([\s\S]*?)<\/section>/g) || [];
     for (const sec of sections) {
       const cleanText = sec.replace(/<[^>]+>/g, '').trim();
@@ -455,42 +463,22 @@ async function runPlaywrightSuite(browser) {
       testResults.checkI_links.failures.push(`[${lang}] External link missing rel="noopener": ${linksCheck.insecureExternal.join(', ')}`);
     }
 
-    // Verify Contact Form Interactive States (Empty submit, Invalid email, Consent check)
-    const formAudit = await page.evaluate(async () => {
-      const form = document.getElementById('enquiry-form');
-      if (!form) return { hasForm: false };
-
-      const submitBtn = document.getElementById('submit-btn');
-      const errName = document.getElementById('err-name');
-      const errEmail = document.getElementById('err-email');
-      const errMessage = document.getElementById('err-message');
-      const errConsent = document.getElementById('err-consent');
-
-      // 1. Empty submit
-      submitBtn.click();
-      const nameErrVisible = errName && !errName.classList.contains('hidden');
-      const emailErrVisible = errEmail && !errEmail.classList.contains('hidden');
-      const msgErrVisible = errMessage && !errMessage.classList.contains('hidden');
-      const consentErrVisible = errConsent && !errConsent.classList.contains('hidden');
-
-      // 2. Invalid email format
-      document.getElementById('form-name').value = 'Test User';
-      document.getElementById('form-email').value = 'invalid-email-string';
-      document.getElementById('form-message').value = 'Test enquiry message';
-      document.getElementById('form-consent').checked = true;
-      submitBtn.click();
-      const invalidEmailErr = errEmail && !errEmail.classList.contains('hidden');
+    // Verify Direct Contact Channels (email link, phone link, whatsapp link)
+    const contactAudit = await page.evaluate(() => {
+      const emailLink = document.querySelector('a[href^="mailto:Purchase@harihara.net"]');
+      const phoneLink = document.querySelector('a[href^="tel:9427134190"]');
+      const waLink = document.querySelector('a[href*="wa.me/919427134190"]');
 
       return {
-        hasForm: true,
-        emptyValidationWorks: nameErrVisible && emailErrVisible && msgErrVisible && consentErrVisible,
-        invalidEmailValidationWorks: invalidEmailErr
+        hasEmail: !!emailLink,
+        hasPhone: !!phoneLink,
+        hasWhatsApp: !!waLink
       };
     });
 
-    if (formAudit.hasForm && (!formAudit.emptyValidationWorks || !formAudit.invalidEmailValidationWorks)) {
+    if (!contactAudit.hasEmail || !contactAudit.hasPhone || !contactAudit.hasWhatsApp) {
       testResults.checkI_links.pass = false;
-      testResults.checkI_links.failures.push(`[${lang}] Contact form validation failed to display required error messages.`);
+      testResults.checkI_links.failures.push(`[${lang}] Missing one or more direct contact links (email: ${contactAudit.hasEmail}, phone: ${contactAudit.hasPhone}, wa: ${contactAudit.hasWhatsApp})`);
     }
 
     await page.close();

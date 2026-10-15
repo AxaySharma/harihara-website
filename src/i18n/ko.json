@@ -11,12 +11,13 @@
     "select_language": "언어 선택"
   },
   "nav": {
-    "about": "소개",
+    "about": "프로젝트 소개",
+    "bromine": "브롬 개요",
     "process": "공정",
-    "products": "제품",
+    "products": "계획 제품",
     "industries": "적용 산업",
-    "plant": "플랜트",
-    "contact": "문의"
+    "location": "위치",
+    "contact": "문의하기"
   },
   "hero": {
     "eyebrow": "Rapar, Kachchh, Gujarat",
@@ -25,7 +26,8 @@
     "status": "플랜트 개발 중",
     "cta_primary": "문의하기",
     "cta_secondary": "프로젝트 알아보기",
-    "caption": "예시 이미지: 염전, 간수의 공급원."
+    "caption": "염전, 간수의 원천. 대표 이미지.",
+    "image_alt": "다채로운 색상의 염전 증발지 항공 사진"
   },
   "facts": {
     "location_label": "위치",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "플랜트 개발 중",
+    "photo_caption": "염전 지대. 대표 이미지.",
+    "photo_alt": "해안 염전 지대의 자연 풍경",
+    "why_heading": "프로젝트 추진 배경",
+    "why_p1": "인도 산업계는 브롬 수급에 있어 수입에 크게 의존하고 있습니다. 국내 생산을 통해 이러한 대외 의존도를 낮추는 것이 본 사업의 목표입니다.",
+    "why_p2": "구자라트 해안의 제염 공정 후에는 미네랄이 풍부한 잔여 염수인 간수(bittern)가 남게 됩니다. 간수에서 브롬을 회수함으로써 기존 소금 산업의 부산물을 고부가가치 자원으로 활용합니다.",
+    "why_p3": "공장은 현재 개발 및 건설 단계에 있습니다. 본 웹사이트는 당사가 지향하는 사업 계획을 안내합니다.",
     "partners_heading": "창립 파트너",
     "partners": [
       {
@@ -72,32 +80,64 @@
       }
     ]
   },
+  "bromine": {
+    "label": "배경 지식",
+    "heading": "브롬 개요",
+    "intro": "본 사업의 핵심 원소인 브롬에 대한 기초 소개입니다. 이는 일반적인 과학 정보이며 당사 제품의 성능을 설명하는 것이 아닙니다.",
+    "facts": {
+      "symbol_label": "원소 기호",
+      "symbol_value": "Br",
+      "atomic_number_label": "원자 번호",
+      "atomic_number_value": "35",
+      "state_label": "상온 상태",
+      "state_value": "액체",
+      "family_label": "족",
+      "family_value": "할로겐"
+    },
+    "photo_caption": "대표 이미지.",
+    "photo_alt": "유리 앰플에 밀봉된 고순도 액체 브롬",
+    "blocks": [
+      {
+        "title": "상온에서 액체로 존재하는 희귀 원소",
+        "text": "브롬은 자극적인 냄새를 지닌 붉은 갈색의 무거운 액체입니다. 수은과 함께 표준 상온에서 액체 상태로 존재하는 유이한 화학 원소 중 하나입니다."
+      },
+      {
+        "title": "천연 존재 및 생성 과정",
+        "text": "브롬은 해수, 염호 및 천연 염수 중에 브롬화물 형태로 존재합니다. 소금을 얻기 위해 해수를 증발시키면 브롬화물이 잔류하여 간수(bittern)에 농축됩니다."
+      },
+      {
+        "title": "염전 염수로부터의 과학적 발견",
+        "text": "1820년대 프랑스 화학자 앙투안 제롬 발라르(Antoine-Jerome Balard)가 몽펠리에 인근 염전의 잔여 염수 침전물에서 브롬을 최초로 분리해 냈습니다."
+      },
+      {
+        "title": "어원과 명칭의 유래",
+        "text": "특유의 강력한 자극성 냄새로 인해 악취를 뜻하는 그리스어 브로모스(bromos)에서 명칭이 유래되었습니다."
+      },
+      {
+        "title": "철저하고 안전한 취급 관리",
+        "text": "브롬은 독성과 부식성이 강한 물질입니다. 따라서 생산과 운송은 엄격한 규제를 받으며, 브롬을 다루는 시설은 엄격한 안전 및 환경 기준을 충족해야 합니다."
+      }
+    ]
+  },
   "process": {
     "label": "공정",
     "heading": "간수에서 브롬으로",
     "intro": "현재 건설 및 개발 진행 중인 라파르 플랜트의 계획 공정입니다.",
     "steps": [
       {
-        "num": "01",
-        "title": "간수",
-        "desc": "소금 생산 후 남은 잔류 염수."
+        "extra": "증발하는 해수에서 소금이 결정화된 후, 미네랄이 풍부한 잔여 액체(간수)가 남습니다."
       },
       {
-        "num": "02",
-        "title": "회수",
-        "desc": "간수에서 브롬 성분을 회수 및 추출합니다."
+        "extra": "간수로부터 브롬 성분을 분리하여 수집합니다."
       },
       {
-        "num": "03",
-        "title": "정제",
-        "desc": "회수된 브롬을 고순도로 정제합니다."
+        "extra": "정제 공정을 통해 산업용 규격에 적합하도록 처리합니다."
       },
       {
-        "num": "04",
-        "title": "브롬 제품",
-        "desc": "공업용 브롬 및 브롬 화합물, 브롬화물 염."
+        "extra": "본 웹사이트에서 소개하는 계획 최종 제품군입니다."
       }
-    ]
+    ],
+    "closing_note": "이는 전반적인 공정 개요이며, 상세 엔지니어링 설계는 현재 진행 중입니다."
   },
   "products": {
     "label": "제품",
@@ -106,50 +146,49 @@
     "enquire_link": "문의하기",
     "items": [
       {
-        "num": "01",
-        "title": "공업용 브롬",
-        "desc": "라파르 플랜트에서 간수로부터 회수 및 정제될 계획의 공업용 등급 브롬.",
-        "type": "product_bromine"
+        "extra": "산업 전반에서 사용되는 고순도 브롬이자 다양한 브롬계 유도 화학물질의 기본 출발 원료입니다."
       },
       {
-        "num": "02",
-        "title": "브롬 화합물 및 브롬화물 염",
-        "desc": "다운스트림 산업용 브롬 화합물 및 브롬화물 염 제품군.",
-        "type": "product_compounds"
+        "extra": "브롬과 금속이 결합된 염 화합물입니다. 브롬 화합물 및 염류는 아래 명시된 주요 산업 분야에서 널리 활용됩니다."
       }
     ],
-    "footer_note": "제품 문의사항은 양식을 통해 문의해 주시기 바랍니다."
+    "footer_note": "당사의 계획 제품군은 현재 구체화 단계에 있습니다. 제품 관련 문의는 고객 지원 채널을 이용해 주시기 바랍니다."
   },
   "industries": {
     "label": "적용 산업",
     "heading": "브롬이 활용되는 산업",
     "intro": "브롬은 아래 주요 산업에서 필수적인 기초 원료입니다.",
+    "intro_note": "브롬의 일반적인 산업 활용에 대한 기초 설명이며, 당사의 특정 제품이나 고객사를 지칭하지 않습니다.",
+    "footer_disclaimer": "이 페이지의 모든 이미지는 대표 이미지이며 실제 당사 시설을 나타내지 않습니다.",
     "items": [
       {
-        "num": "01",
-        "name": "제약 산업"
+        "desc": "브롬 화합물은 특정 의약품 및 제약 중간체 제조 시 반응 시약 및 핵심 구조체로 사용됩니다.",
+        "image_alt": "실험실 유리 시험관 근접 매크로 사진"
       },
       {
-        "num": "02",
-        "name": "농약 화학"
+        "desc": "일부 작물 보호용 농화학 제품은 브롬계 중간체를 통해 합성됩니다.",
+        "image_alt": "녹색 농경지 항공 촬영 뷰"
       },
       {
-        "num": "03",
-        "name": "난연제"
+        "desc": "플라스틱, 섬유, 전자 기기 부품에 브롬계 난연제를 첨가하여 화재 확산을 억제합니다.",
+        "image_alt": "인쇄회로기판 전자 부품 매크로 사진"
       },
       {
-        "num": "04",
-        "name": "수처리"
+        "desc": "브롬계 화학물질은 특정 냉각수 시스템 및 수영장의 소독 및 수질 정화에 활용됩니다.",
+        "image_alt": "맑은 수면의 물결 잔물결 클로즈업"
       },
       {
-        "num": "05",
-        "name": "유전 화학"
+        "desc": "고밀도 브롬화 염수는 석유 및 천연가스 시추와 유정 완성 유체로 필수 사용됩니다.",
+        "image_alt": "일몰 배경의 석유 시추 펌프잭 실루엣"
       }
     ]
   },
   "location": {
     "label": "플랜트 및 위치",
     "heading": "건설 위치 안내",
+    "intro": "서부 구자라트에 위치한 카치(Kachchh)는 면적 기준 인도에서 가장 넓은 지역구입니다. 제염업이 발달하여 간수를 원료로 사용하는 플랜트에 있어 최적의 입지입니다.",
+    "photo_caption": "대표 이미지.",
+    "photo_alt": "흐린 하늘 아래 펼쳐진 광활한 천연 염전 풍경",
     "maps_link": "Google 지도에서 열기",
     "plant_title": "플랜트 (개발 중)",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +197,55 @@
     "reg_title": "등록 사무소",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "자주 묻는 질문",
+    "heading": "질문과 답변",
+    "items": [
+      {
+        "q": "Hari Hara Serenity Chemical LLP는 어떤 사업을 하나요?",
+        "a": "인도 구자라트주 카치 라파르(Rapar)에 공장을 설립하여 제염 부산물인 간수에서 브롬을 회수 및 정제하는 사업을 추진하고 있습니다."
+      },
+      {
+        "q": "현재 공장이 가동 중인가요?",
+        "a": "아닙니다. 공장은 개발 및 건설 단계에 있습니다. 본 사이트는 향후 계획을 설명하며 현재 제품을 공급하지 않습니다."
+      },
+      {
+        "q": "간수(Bittern)란 무엇인가요?",
+        "a": "해수나 염수에서 소금을 결정화한 후 남는 잔여 염수입니다. 브롬화물을 비롯한 유용한 미네랄이 농축되어 있습니다."
+      },
+      {
+        "q": "어떤 제품군을 생산할 계획인가요?",
+        "a": "산업용 등급의 브롬 단체, 브롬 화합물 및 브롬화물 염류입니다. 구체적 규격은 정립 중입니다."
+      },
+      {
+        "q": "브롬은 어떤 산업에 주로 사용되나요?",
+        "a": "제약, 농화학, 난연제, 수처리, 유전 화학 산업 등에 광범위하게 사용됩니다."
+      },
+      {
+        "q": "어떻게 연락할 수 있나요?",
+        "a": "이메일(Purchase@harihara.net) 또는 전화/WhatsApp(+91 9427134190)으로 문의하실 수 있습니다. 파트너인 Ketan Dholu가 직접 검토 후 회신합니다."
+      }
+    ]
+  },
   "contact": {
     "label": "문의",
     "heading": "문의하기",
-    "line": "제품 문의, 사업 협력 및 기타 문의 사항.",
+    "line": "프로젝트 진행 경과, 계획 제품 및 잠재적 협력에 관한 문의를 언제나 환영합니다.",
     "email_label": "이메일",
-    "phone_label": "전화 및 WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "전화",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "안녕하세요, Hari Hara Serenity 웹사이트를 통해 문의드립니다.",
     "enquiries_note": "모든 문의는 파트너 Ketan Dholu, Partner 가 직접 확인하고 답변합니다.",
-    "form": {
-      "name_label": "성함",
-      "company_label": "회사명",
-      "email_label": "이메일 주소",
-      "phone_label": "전화번호",
-      "type_label": "문의 유형",
-      "type_options": {
-        "product": "제품 문의",
-        "partnership": "협력 제안",
-        "other": "기타"
-      },
-      "message_label": "문의 내용",
-      "consent_label": "개인정보 처리방침에 명시된 대로 본 문의에 응답하기 위해 개인정보를 사용하는 데 동의합니다.",
-      "consent_privacy_link": "개인정보 처리방침",
-      "submit_btn": "문의 보내기",
-      "submitting_btn": "전송 중...",
-      "success_message": "감사합니다. 문의가 성공적으로 접수되었으며 Ketan Dholu, Partner 가 검토 후 연락드리겠습니다.",
-      "error_message": "전송 중 오류가 발생했습니다. Purchase@harihara.net 으로 직접 이메일을 보내주시기 바랍니다.",
-      "validation": {
-        "name_required": "성함을 입력해 주세요.",
-        "email_required": "이메일 주소를 입력해 주세요.",
-        "email_invalid": "유효한 이메일 주소를 입력해 주세요.",
-        "message_required": "문의 내용을 입력해 주세요.",
-        "consent_required": "제출을 위해 개인정보 처리방침에 동의해 주세요."
-      }
-    }
+    "locations_heading": "사업장 안내"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "빠른 링크",
     "privacy_policy": "개인정보 처리방침",
     "disclaimer": "면책 조항",
+    "image_credits": "이미지 출처",
+    "faq": "질문과 답변",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +254,8 @@
     "privacy_description": "인도 2023년 DPDP 법을 준수하는 Hari Hara Serenity Chemical LLP의 개인정보 처리방침.",
     "disclaimer_title": "면책 조항",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP 웹사이트 법적 고지 및 면책 조항.",
+    "image_credits_title": "이미지 저작권 및 라이선스",
+    "image_credits_description": "Hari Hara Serenity 웹사이트에서 사용된 대표 사진들의 라이선스 및 출처 안내.",
     "last_updated": "최종 업데이트: 2026년 10월"
   },
   "not_found": {

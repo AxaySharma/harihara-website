@@ -11,11 +11,12 @@
     "select_language": "Sprache wählen"
   },
   "nav": {
-    "about": "Über uns",
+    "about": "Projekt",
+    "bromine": "Brom",
     "process": "Verfahren",
     "products": "Produkte",
     "industries": "Branchen",
-    "plant": "Anlage",
+    "location": "Standort",
     "contact": "Kontakt"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "Anlage in Entwicklung",
     "cta_primary": "Kontakt aufnehmen",
     "cta_secondary": "Über das Projekt",
-    "caption": "Illustratives Werk: Salzgärten, die Quelle von Restbitterlauge."
+    "caption": "Salzgärten, die Quelle der Bitterlauge. Symbolbild.",
+    "image_alt": "Luftaufnahme von farbigen Salzverdunstungsbecken"
   },
   "facts": {
     "location_label": "Standort",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "Anlage in Entwicklung",
+    "photo_caption": "Salztonebene. Symbolbild.",
+    "photo_alt": "Landschaftliche Ansicht einer küstennahen Salztonebene",
+    "why_heading": "Warum dieses Projekt",
+    "why_p1": "Die indische Industrie ist beim Bezug von Brom auf Importe angewiesen. Unser Ziel ist es, diese Abhängigkeit durch eine heimische Bromgewinnung zu verringern.",
+    "why_p2": "Bei der Salzgewinnung an der Küste von Gujarat bleibt Restbitterlauge zurück, eine mineralstoffreiche Sole. Die Bromgewinnung daraus ermöglicht eine weitere stoffliche Nutzung eines bereits anfallenden Nebenprodukts.",
+    "why_p3": "Die Anlage befindet sich noch im Aufbau. Diese Website beschreibt unsere Entwicklungsziele.",
     "partners_heading": "Gründungspartner",
     "partners": [
       {
@@ -72,32 +80,64 @@
       }
     ]
   },
+  "bromine": {
+    "label": "Hintergrund",
+    "heading": "Brom im Überblick",
+    "intro": "Eine kurze Einführung in das chemische Element dieses Projekts. Es handelt sich um allgemeine Sachinformationen und keine Beschreibung unserer Produkte.",
+    "facts": {
+      "symbol_label": "Symbol",
+      "symbol_value": "Br",
+      "atomic_number_label": "Ordnungszahl",
+      "atomic_number_value": "35",
+      "state_label": "Bei Raumtemperatur",
+      "state_value": "Flüssig",
+      "family_label": "Gruppe",
+      "family_value": "Halogene"
+    },
+    "photo_caption": "Symbolbild.",
+    "photo_alt": "Reines flüssiges Brom in einer versiegelten Glasampulle",
+    "blocks": [
+      {
+        "title": "Ein seltenes flüssiges Element",
+        "text": "Brom ist eine schwere, rotbraune Flüssigkeit mit stechendem Geruch. Neben Quecksilber ist es das einzige Element, das unter normalen Raumbedingungen flüssig vorliegt."
+      },
+      {
+        "title": "Woher es stammt",
+        "text": "Brom kommt natürlicherweise als Bromid gelöst in Meerwasser, Salzseen und Mineralquellen vor. Verdunstet Meerwasser bei der Salzproduktion, bleibt das Bromid zurück und reichert sich in der Restlauge (Bitterlauge) an."
+      },
+      {
+        "title": "Entdeckung aus der Salzsole",
+        "text": "Brom wurde in den 1820er-Jahren durch den französischen Chemiker Antoine-Jerome Balard erstmals isoliert, der es in Rückständen von Meerwassersole nahe Montpellier nachwies."
+      },
+      {
+        "title": "Namensherkunft",
+        "text": "Der Name leitet sich vom altgriechischen Wort bromos für Gestank ab, bezugnehmend auf die intensiv stechenden Dämpfe."
+      },
+      {
+        "title": "Sorgfältige Handhabung",
+        "text": "Brom ist giftig und stark ätzend. Aus diesem Grund unterliegen Erzeugung und Handhabung strengen Sicherheits- und Umweltauflagen."
+      }
+    ]
+  },
   "process": {
     "label": "Verfahren",
     "heading": "Von der Restbitterlauge zum Brom",
     "intro": "Das geplante Verfahren an unserem Standort Rapar, der sich derzeit im Aufbau befindet.",
     "steps": [
       {
-        "num": "01",
-        "title": "Restbitterlauge",
-        "desc": "Die nach der Salzgewinnung verbleibende Restsole."
+        "extra": "Nachdem das Kochsalz aus dem verdunstenden Meerwasser auskristallisiert ist, verbleibt eine mineralreiche Restlauge."
       },
       {
-        "num": "02",
-        "title": "Gewinnung",
-        "desc": "Brom wird aus der Restbitterlauge gewonnen."
+        "extra": "Das Brom wird aus der Bitterlauge abgetrennt, um gesammelt werden zu können."
       },
       {
-        "num": "03",
-        "title": "Reinigung",
-        "desc": "Das gewonnene Brom wird hochrein aufbereitet."
+        "extra": "Durch Reinigung wird es für die industrielle Weiterverarbeitung aufbereitet."
       },
       {
-        "num": "04",
-        "title": "Brom",
-        "desc": "Industriebrom sowie Bromverbindungen und Bromidsalze."
+        "extra": "Die auf dieser Website beschriebenen Endprodukte."
       }
-    ]
+    ],
+    "closing_note": "Dies ist eine allgemeine Prozessübersicht. Das detaillierte Anlagendesign befindet sich in der Entwicklung."
   },
   "products": {
     "label": "Produkte",
@@ -106,50 +146,49 @@
     "enquire_link": "Anfragen",
     "items": [
       {
-        "num": "01",
-        "title": "Brom (Industriequalität)",
-        "desc": "Industriegerechtes Brom, das in unserer Anlage in Rapar aus Restbitterlauge gewonnen und aufbereitet werden soll.",
-        "type": "product_bromine"
+        "extra": "Brom in technischer Form sowie als Ausgangsstoff für zahlreiche brombasierte chemische Zwischenprodukte."
       },
       {
-        "num": "02",
-        "title": "Bromverbindungen und Bromidsalze",
-        "desc": "Bromverbindungen und Bromidsalze für nachgelagerte industrielle Anwendungen.",
-        "type": "product_compounds"
+        "extra": "Bromidsalze verbinden Brom mit einem Metall. Bromverbindungen und -salze finden in den unten genannten Industriezweigen Verwendung."
       }
     ],
-    "footer_note": "Für Produktanfragen nehmen Sie bitte Kontakt mit uns auf."
+    "footer_note": "Unser geplantes Produktsortiment wird derzeit festgelegt. Bei Produktanfragen nehmen Sie bitte Kontakt auf."
   },
   "industries": {
     "label": "Branchen",
     "heading": "Branchen, die Brom beliefert",
     "intro": "Brom ist ein wesentlicher Vorstoff für diese Industriebereiche.",
+    "intro_note": "Allgemeine Hintergrundinformationen zur industriellen Verwendung von Brom. Keine Beschreibung unserer Produkte oder Kunden.",
+    "footer_disclaimer": "Alle Abbildungen auf dieser Seite sind Symbolbilder und zeigen nicht unsere tatsächliche Anlage.",
     "items": [
       {
-        "num": "01",
-        "name": "Pharmazeutik"
+        "desc": "Bromverbindungen dienen als Reagenzien und Bausteine bei der Synthese bestimmter Arzneimittel.",
+        "image_alt": "Nahaufnahme von Reagenzgläsern im Labor"
       },
       {
-        "num": "02",
-        "name": "Agrochemie"
+        "desc": "Einige Pflanzenschutzmittel werden unter Verwendung brombasierter Zwischenstufen hergestellt.",
+        "image_alt": "Luftaufnahme von grünen Agrarfeldern"
       },
       {
-        "num": "03",
-        "name": "Flammschutzmittel"
+        "desc": "Bromierte Verbindungen werden Kunststoffen, Textilien und Elektronikbauteilen beigefügt, um die Brandausbreitung zu hemmen.",
+        "image_alt": "Makroaufnahme einer Leiterplatte"
       },
       {
-        "num": "04",
-        "name": "Wasseraufbereitung"
+        "desc": "Bromverbindungen werden zur Entkeimung bestimmter Kühlwassersysteme und Schwimmbäder eingesetzt.",
+        "image_alt": "Wellen auf einer klaren Wasseroberfläche"
       },
       {
-        "num": "05",
-        "name": "Ölfeldchemie"
+        "desc": "Schwere Bromidsohlen werden bei Bohr- und Komplettierungsarbeiten in der Erdöl- und Erdgasförderung verwendet.",
+        "image_alt": "Silhouette einer Erdöl-Pferdekopf-Pumpe bei Sonnenuntergang"
       }
     ]
   },
   "location": {
     "label": "Anlage und Standort",
     "heading": "Unser Entwicklungsstandort",
+    "intro": "Kachchh im Westen Gujarats ist flächenmäßig der größte Distrikt Indiens. Die dortige Salzgewinnung bietet natürliche Standortvorteile für eine Anlage zur Bitterlaugennutzung.",
+    "photo_caption": "Symbolbild.",
+    "photo_alt": "Weite Salztonebene unter bewölktem Himmel",
     "maps_link": "In Google Maps öffnen",
     "plant_title": "Anlage (in Entwicklung)",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +197,55 @@
     "reg_title": "Eingetragener Sitz",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "Häufige Fragen",
+    "heading": "Fragen und Antworten",
+    "items": [
+      {
+        "q": "Was plant Hari Hara Serenity Chemical LLP?",
+        "a": "Wir errichten eine Anlage in Rapar, Kachchh, Gujarat, zur Gewinnung und Reinigung von Brom aus Restbitterlauge."
+      },
+      {
+        "q": "Ist die Anlage bereits in Betrieb?",
+        "a": "Nein. Die Anlage befindet sich in der Entwicklung. Diese Website beschreibt unsere Vorhaben; wir liefern noch keine Produkte aus."
+      },
+      {
+        "q": "Was ist Bitterlauge?",
+        "a": "Bitterlauge ist die Restsole, die nach der Auskristallisation von Salz aus Meerwasser übrig bleibt. Sie ist reich an Mineralien und Bromid."
+      },
+      {
+        "q": "Welche Produkte sind geplant?",
+        "a": "Brom in Industriequalität sowie Bromverbindungen und Bromidsalze. Das konkrete Portfolio wird derzeit ausgearbeitet."
+      },
+      {
+        "q": "In welchen Branchen wird Brom genutzt?",
+        "a": "Unter anderem in der Pharma-, Pflanzenschutz-, Flammschutzmittel-, Wasseraufbereitungs- und Ölfeldchemie."
+      },
+      {
+        "q": "Wie kann man mit Ihnen Kontakt aufnehmen?",
+        "a": "Per E-Mail an Purchase@harihara.net oder per Telefon/WhatsApp unter 9427134190. Ketan Dholu, Partner, beantwortet Ihre Anfragen."
+      }
+    ]
+  },
   "contact": {
     "label": "Kontakt",
     "heading": "Kontakt aufnehmen",
-    "line": "Für Produkt-, Partnerschafts- und allgemeine Anfragen.",
+    "line": "Wir freuen uns über Ihre Fragen zu unserem Projekt, den geplanten Produkten und potenziellen Kooperationen.",
     "email_label": "E-Mail",
-    "phone_label": "Telefon & WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "Telefon",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "Hallo, ich schreibe Ihnen über die Website von Hari Hara Serenity.",
     "enquiries_note": "Anfragen werden von Partner Ketan Dholu, Partner gelesen und beantwortet.",
-    "form": {
-      "name_label": "Name",
-      "company_label": "Unternehmen",
-      "email_label": "E-Mail",
-      "phone_label": "Telefon",
-      "type_label": "Art der Anfrage",
-      "type_options": {
-        "product": "Produktanfrage",
-        "partnership": "Partnerschaft",
-        "other": "Sonstiges"
-      },
-      "message_label": "Nachricht",
-      "consent_label": "Ich stimme zu, dass meine Angaben zur Beantwortung dieser Anfrage gemäß der Datenschutzerklärung verarbeitet werden dürfen.",
-      "consent_privacy_link": "Datenschutzerklärung",
-      "submit_btn": "Anfrage senden",
-      "submitting_btn": "Wird gesendet...",
-      "success_message": "Vielen Dank. Ihre Anfrage ist eingegangen und wird von Ketan Dholu, Partner geprüft.",
-      "error_message": "Beim Übermitteln ist ein Fehler aufgetreten. Bitte schreiben Sie uns direkt an Purchase@harihara.net.",
-      "validation": {
-        "name_required": "Bitte geben Sie Ihren Namen ein.",
-        "email_required": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
-        "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
-        "message_required": "Bitte geben Sie eine Nachricht ein.",
-        "consent_required": "Bitte stimmen Sie der Datenschutzerklärung zu, um fortzufahren."
-      }
-    }
+    "locations_heading": "Unsere Standorte"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "Schnelllinks",
     "privacy_policy": "Datenschutzerklärung",
     "disclaimer": "Haftungsausschluss",
+    "image_credits": "Bildnachweise",
+    "faq": "Fragen und Antworten",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +254,8 @@
     "privacy_description": "Datenschutzerklärung von Hari Hara Serenity Chemical LLP im Einklang mit dem DPDP Act 2023.",
     "disclaimer_title": "Haftungsausschluss",
     "disclaimer_description": "Rechtlicher Haftungsausschluss für die Website von Hari Hara Serenity Chemical LLP.",
+    "image_credits_title": "Bildnachweise und Lizenzen",
+    "image_credits_description": "Lizenz- und Urheberangaben zu den auf der Website verwendeten Symbolbildern.",
     "last_updated": "Zuletzt aktualisiert: Oktober 2026"
   },
   "not_found": {

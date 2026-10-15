@@ -13,13 +13,13 @@ const products = [
     num: '01',
     title: t('products.items.0.title'),
     desc: t('products.items.0.desc'),
-    type: 'product',
+    extra: t('products.items.0.extra'),
   },
   {
     num: '02',
     title: t('products.items.1.title'),
     desc: t('products.items.1.desc'),
-    type: 'product',
+    extra: t('products.items.1.extra'),
   },
 ];
 ---
@@ -57,21 +57,23 @@ const products = [
             </span>
           </div>
 
-          <!-- Title & Descriptor -->
-          <div class="lg:col-span-7 space-y-2">
+          <!-- Title & Descriptor & Extra paragraph -->
+          <div class="lg:col-span-7 space-y-3">
             <h3 class="font-heading text-[1.5rem] sm:text-[1.75rem] text-[var(--color-charcoal)]">
               {item.title}
             </h3>
-            <p class="text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed max-w-[42em]">
+            <p class="text-[var(--text-base)] text-[var(--color-charcoal)] leading-relaxed max-w-[42em]">
               {item.desc}
+            </p>
+            <p class="text-[0.9375rem] sm:text-[1rem] text-[var(--color-secondary)] leading-relaxed max-w-[42em]">
+              {item.extra}
             </p>
           </div>
 
-          <!-- Enquire Link with query parameter preselection -->
+          <!-- Enquire Link to #contact -->
           <div class="lg:col-span-3 flex lg:justify-end items-center pt-2 lg:pt-0">
             <a
-              href={`#contact?interest=${item.type}`}
-              data-enquiry-type={item.type}
+              href="#contact"
               class="enquire-trigger inline-flex items-center gap-2 text-[1.0625rem] font-semibold text-[var(--color-crimson)] hover:text-[var(--color-maroon)] transition-colors underline decoration-2 underline-offset-4 focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]"
             >
               <span>{t('products.enquire_link')}</span>
@@ -97,7 +99,10 @@ const products = [
     <!-- Under the rows -->
     <div class="mt-8 pt-4">
       <p class="text-[1rem] sm:text-[1.0625rem] text-[var(--color-secondary)]">
-        {t('products.footer_note')}
+        {t('products.footer_note')}{' '}
+        <a href="#contact" class="text-[var(--color-crimson)] underline hover:text-[var(--color-maroon)]">
+          {t('nav.contact')}
+        </a>
       </p>
     </div>
   </div>

@@ -67,3 +67,17 @@ Astro (latest stable), TypeScript strict, Tailwind CSS v4, static output. Hosted
 - Uppercase labels: sparing, tracking at most 0.12em, never for scripts without case.
 - Contrast: body text at least 7:1 on paper (charcoal #1C1C1C); secondary text at least 5.5:1 (#55524F on #F6F3EE, never light grey). Crimson only for large text, rules, buttons and accents.
 - Interactive targets at least 48 x 48 px. Visible 3px focus ring with offset on every interactive element. Meaning never by colour alone. Respect prefers-reduced-motion and prefers-contrast.
+
+## Content rules (updated)
+- The site may include GENERAL BACKGROUND about bromine, bittern and the industries that use bromine, written in plain language, using only widely established facts. Every such fact must be checked against reputable sources (for example Royal Society of Chemistry, Britannica, USGS, national or university sources) and listed in CONTENT_SOURCES.md with the source URL. If you cannot confirm a statement, soften or remove it.
+- Never state market statistics, import figures, prices, capacities, quality levels, delivery times, customer names, partnerships, certifications, approvals, environmental or safety performance, or any promise or timeline about the company. General background is always framed as general information and not as a description of our products or customers.
+- Always say the plant is under development. Never imply that products exist or are available.
+- No contact form and no third-party form service. Contact is by email, phone and WhatsApp only.
+
+## Image rules
+- Real photographs only, from free-licence sources: Unsplash (Unsplash Licence), Pexels (Pexels Licence), Wikimedia Commons (only CC0, public domain or CC BY; never CC BY-SA, NC or ND). Verify the licence on each image's own page.
+- Never use AI-generated photo-realistic images. AI or code-made artwork is allowed only as clearly illustrative graphics (like the existing hero SVG and process line drawings).
+- No identifiable people or faces, no readable text, brand names, logos, watermarks or other companies' sites in any photo. Never show anything that could be read as the company's own plant, equipment, laboratory or team. Prefer landscapes, aerial views, materials and generic industry scenes.
+- Every photo is labelled as representative (see captions below). Record file, source URL, author, licence name and licence URL for every image in src/data/image-credits.json and public/IMAGE_CREDITS.md, and add a small "Image credits" page at /image-credits/ (English, linked from the footer, with the same page under language prefixes).
+- Use Astro's image optimisation (AVIF and WebP, responsive srcset, explicit width and height, lazy loading except the hero, fetchpriority high on the hero). Keep source images at most 2400 px wide. Alt text is written per language in the i18n files. Never put text directly over a photograph; use a solid paper panel next to or overlapping the image.
+- If you cannot download or verify an image for a slot, do NOT leave the slot empty and do not invent a photo: fall back to a refined SVG illustration in the brand style and list the slot in LAUNCH_CHECKLIST.md as "needs a real photo".

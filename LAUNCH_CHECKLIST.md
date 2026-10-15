@@ -11,10 +11,12 @@ This document records the mandatory verification and configuration steps that mu
 - [ ] **Remove Development Previews & Route Stubs**:
   - Delete `/brand-preview/` (`src/pages/brand-preview/index.astro`).
   - Confirm DEV-only navigation stubs (`isDev` conditionals in `src/pages/index.astro` and `src/pages/[lang]/index.astro`) are excluded from production builds (`astro build` sets `import.meta.env.DEV` to `false`).
-- [ ] **Contact Form Web3Forms Access Key**:
-  - Obtain production Access Key from Web3Forms for `Purchase@harihara.net`.
-  - Set `WEB3FORMS_ACCESS_KEY` in Cloudflare Pages environment variables (never commit this key to version control).
-  - Verify honeypot field, form submission rate limiting, and client consent checkbox.
+- [ ] **Contact Form Deferred**:
+  - The contact form has been deferred to a later phase. Direct contact is via verified email (`Purchase@harihara.net`), phone, and WhatsApp (`9427134190`).
+- [ ] **Replace Representative Photos with Client's Own Photos**:
+  - Review all representative photographs and replace them with the client's verified photos of the Rapar site and operations when available.
+- [ ] **Needs a Real Photo Slots**:
+  - Review any slots temporarily using fallback brand illustrations and replace them with verified licensed photos.
 
 ---
 
@@ -25,7 +27,9 @@ This document records the mandatory verification and configuration steps that mu
 - [ ] **Original Client Logo Vector Assets**:
   - If the client delivers official high-resolution vector artwork (`.svg` / `.ai`), swap the files into `public/brand/` and re-verify visual fidelity.
 - [ ] **Client Written Approval of Content**:
-  - Obtain written client approval for all English source copy across all sections.
+  - Obtain written client approval for all English source copy across all sections, including the general-background content in all sections.
+- [ ] **Review Image Licences & Credits**:
+  - Confirm all image licences in `src/data/image-credits.json`, `public/IMAGE_CREDITS.md` and `/image-credits/`.
 - [ ] **Client Legal Approval of Privacy Policy & Disclaimer**:
   - The client must review and approve both `/privacy-policy/` and `/disclaimer/`. Note: The developer is not a lawyer; these pages provide standard DPDP Act 2023 aligned editorial baselines and must be legally verified by the client's legal counsel prior to binding use.
 

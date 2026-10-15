@@ -2,10 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
 import AboutSection from '../../components/AboutSection.astro';
+import BromineSection from '../../components/BromineSection.astro';
 import ProcessSection from '../../components/ProcessSection.astro';
 import ProductsSection from '../../components/ProductsSection.astro';
 import IndustriesSection from '../../components/IndustriesSection.astro';
 import LocationSection from '../../components/LocationSection.astro';
+import FAQSection from '../../components/FAQSection.astro';
 import ContactSection from '../../components/ContactSection.astro';
 import { languages } from '../../i18n/languages.config';
 
@@ -26,6 +28,9 @@ const { lang = 'en' } = Astro.params;
   <!-- About Section -->
   <AboutSection lang={lang} />
 
+  <!-- Bromine Background Section -->
+  <BromineSection lang={lang} />
+
   <!-- Process Section -->
   <ProcessSection lang={lang} />
 
@@ -38,6 +43,9 @@ const { lang = 'en' } = Astro.params;
   <!-- Plant and Location Section -->
   <LocationSection lang={lang} />
 
-  <!-- Contact & Enquiry Form Section -->
+  <!-- FAQ Section (Native details/summary) -->
+  <FAQSection lang={lang} />
+
+  <!-- Contact Section (Email, phone, WhatsApp) -->
   <ContactSection lang={lang} />
 </BaseLayout>

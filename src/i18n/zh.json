@@ -11,11 +11,12 @@
     "select_language": "选择语言"
   },
   "nav": {
-    "about": "关于我们",
+    "about": "项目概况",
+    "bromine": "溴简介",
     "process": "工艺流程",
-    "products": "产品",
+    "products": "规划产品",
     "industries": "适用领域",
-    "plant": "工厂",
+    "location": "基地选址",
     "contact": "联系我们"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "工厂正在建设中",
     "cta_primary": "联系我们",
     "cta_secondary": "了解项目",
-    "caption": "示意图：盐田，苦卤的来源。"
+    "caption": "盐田，苦卤之源。示意图。",
+    "image_alt": "色彩斑斓的晒盐蒸发池鸟瞰图"
   },
   "facts": {
     "location_label": "选址",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "工厂正在建设中",
+    "photo_caption": "盐沼风貌。示意图。",
+    "photo_alt": "沿海盐沼自然景观",
+    "why_heading": "立项初衷",
+    "why_p1": "印度工业的溴素需求长期依赖进口。我们的目标是在本土回收与提纯溴素，降低对外部进口的依赖。",
+    "why_p2": "古吉拉特邦沿海制盐业留下了大量苦卤（析盐后的残余浓盐水），其中富含多种矿物质。从中提取溴素，是对制盐产业现有副产物的循环利用。",
+    "why_p3": "工厂目前仍处于开发建设阶段。本网站旨在介绍我们正在稳步推进的发展规划。",
     "partners_heading": "创始合伙人",
     "partners": [
       {
@@ -72,32 +80,64 @@
       }
     ]
   },
+  "bromine": {
+    "label": "科普背景",
+    "heading": "溴素简述",
+    "intro": "简要介绍作为本工程核心的化学元素。此内容为常识性科学背景，并非对我司具体产品的性能说明。",
+    "facts": {
+      "symbol_label": "元素符号",
+      "symbol_value": "Br",
+      "atomic_number_label": "原子序数",
+      "atomic_number_value": "35",
+      "state_label": "常温状态",
+      "state_value": "液体",
+      "family_label": "元素族",
+      "family_value": "卤族元素"
+    },
+    "photo_caption": "示意图。",
+    "photo_alt": "封装于玻璃安瓿瓶中的高纯液体溴",
+    "blocks": [
+      {
+        "title": "稀有的常温液态单质",
+        "text": "溴是一种具有刺激性气味的高密度红棕色液体。除水银（汞）之外，它是元素周期表中在常温常压下仅有的液态单质元素。"
+      },
+      {
+        "title": "自然存在与来源",
+        "text": "溴以溴化物的形式天然存在于海水、盐湖及地下卤水中。当海水被蒸发结晶制取食盐后，溴离子留在母液中并浓缩成苦卤。"
+      },
+      {
+        "title": "源自海盐卤水的科学发现",
+        "text": "19世纪20年代，法国化学家 Antoine-Jerome Balard 首次从蒙彼利埃附近的盐沼制盐残留母液中分离并鉴定了单质溴。"
+      },
+      {
+        "title": "词源与名称由来",
+        "text": "由于其强烈的刺鼻气味，其名称源自希腊语 bromos，意为“恶臭”。"
+      },
+      {
+        "title": "严格合规的专业处置",
+        "text": "溴具有毒性与强腐蚀性。因此，其提取、净化与储运受到国家严格法规管控，相关厂区必须符合严格的安全与环保标准。"
+      }
+    ]
+  },
   "process": {
     "label": "工艺流程",
     "heading": "从苦卤到溴素",
     "intro": "拉帕尔（Rapar）工厂规划的工艺流程，目前正在建设中。",
     "steps": [
       {
-        "num": "01",
-        "title": "苦卤",
-        "desc": "制盐后留下的残留盐水。"
+        "extra": "海水经自然蒸发结晶析出食盐后，留下富含矿物的浓缩苦卤。"
       },
       {
-        "num": "02",
-        "title": "回收",
-        "desc": "从苦卤中回收提取溴素。"
+        "extra": "通过特定工艺将溴从苦卤中分离并富集。"
       },
       {
-        "num": "03",
-        "title": "提纯",
-        "desc": "对回收的溴素进行高纯度提纯。"
+        "extra": "进一步提纯精制，使其达到工业级使用标准。"
       },
       {
-        "num": "04",
-        "title": "溴产品",
-        "desc": "工业级溴素，以及溴化合物与溴化物盐。"
+        "extra": "本网站所描述的规划最终产品。"
       }
-    ]
+    ],
+    "closing_note": "本流程为工艺大纲说明。详细工程方案正在深化编制中。"
   },
   "products": {
     "label": "产品",
@@ -106,50 +146,49 @@
     "enquire_link": "咨询",
     "items": [
       {
-        "num": "01",
-        "title": "工业级溴素",
-        "desc": "工业级溴素，规划在我们拉帕尔（Rapar）工厂由苦卤回收提纯获得。",
-        "type": "product_bromine"
+        "extra": "工业领域直接应用的高纯溴素，也是合成多种下游溴系化学品的基础原料。"
       },
       {
-        "num": "02",
-        "title": "溴化合物与溴化物盐",
-        "desc": "用于下游工业用途的溴化合物和溴化物盐产品。",
-        "type": "product_compounds"
+        "extra": "金属阳离子与溴结合形成的无机盐。溴化物及溴系化合物广泛应用于下列下游工业支柱中。"
       }
     ],
-    "footer_note": "如需咨询产品详情，请与我们联系。"
+    "footer_note": "规划产品范围正在最终界定中。如有相关业务咨询，欢迎与我们联系。"
   },
   "industries": {
     "label": "适用领域",
     "heading": "溴素服务的工业领域",
     "intro": "溴素是这些工业领域的关键原材料。",
+    "intro_note": "关于溴在工业中基础应用的常识介绍，不代表我司现有产品或特定客户。",
+    "footer_disclaimer": "本页面所有配图均为行业示意图，并非我司实际设施。",
     "items": [
       {
-        "num": "01",
-        "name": "医药工业"
+        "desc": "溴化合物在合成某些关键医药活性分子与药物中间体中充当试剂与结构基元。",
+        "image_alt": "实验室玻璃试管微距摄影"
       },
       {
-        "num": "02",
-        "name": "农业化学品"
+        "desc": "部分高效低毒的现代农药与植物保护化学品采用溴系中间体合成。",
+        "image_alt": "农用绿色耕地鸟瞰图"
       },
       {
-        "num": "03",
-        "name": "阻燃剂"
+        "desc": "将溴化阻燃剂添加至工程塑料、电子元器件及纺织品中，以有效延缓火势蔓延。",
+        "image_alt": "印制电路板电子元器件微距摄影"
       },
       {
-        "num": "04",
-        "name": "水处理"
+        "desc": "溴系杀菌剂被广泛用于工业循环冷却水系统及大型泳池的消杀处理。",
+        "image_alt": "清澈水面波纹特写"
       },
       {
-        "num": "05",
-        "name": "油田化学品"
+        "desc": "高密度无固相溴化重盐水常用于油气井的钻井、完井与修井作业中。",
+        "image_alt": "落日余晖下的抽油机剪影"
       }
     ]
   },
   "location": {
     "label": "工厂与选址",
     "heading": "项目建设地点",
+    "intro": "位于古吉拉特邦西部的卡奇（Kachchh）是印度按地理面积划分的最大县级行政区。该地区及其周边拥有庞大的海盐晒产，是依托苦卤发展溴素提炼的天然基地。",
+    "photo_caption": "示意图。",
+    "photo_alt": "多云天空下开阔的天然盐沼景观",
     "maps_link": "在 Google 地图中查看",
     "plant_title": "工厂（建设中）",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +197,55 @@
     "reg_title": "注册办事处",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "常见问题",
+    "heading": "问与答",
+    "items": [
+      {
+        "q": "Hari Hara Serenity Chemical LLP 的主营业务是什么？",
+        "a": "我们正在古吉拉特邦卡奇县拉帕尔（Rapar）筹建生产基地，利用制盐苦卤提取并提纯工业级溴素。"
+      },
+      {
+        "q": "该工厂目前是否已投产？",
+        "a": "尚未投产。该工厂目前正处于规划开发阶段。本网站仅介绍筹建规划，我们目前暂不供应任何现货产品。"
+      },
+      {
+        "q": "什么是苦卤（Bittern）？",
+        "a": "苦卤是海水或天然盐水晒制结晶析出食盐后剩下的残余母液，富含溴化镁等矿物质。"
+      },
+      {
+        "q": "规划生产哪些产品？",
+        "a": "工业级溴单质，以及溴化合物与溴化物盐类。产品规格正在明确中。"
+      },
+      {
+        "q": "哪些行业需要用到溴？",
+        "a": "主要包括制药、农用化学品、阻燃材料、水处理和油田化学等行业。"
+      },
+      {
+        "q": "如何与贵方取得联系？",
+        "a": "可通过电邮 Purchase@harihara.net，或致电/WhatsApp +91 9427134190。合伙人 Ketan Dholu 负责查阅并回复各项咨询。"
+      }
+    ]
+  },
   "contact": {
     "label": "联系我们",
     "heading": "取得联系",
-    "line": "欢迎就产品、合作或其它事项进行咨询。",
+    "line": "我们真诚欢迎关于项目进展、规划产品及潜在商业合作的各项交流。",
     "email_label": "电子邮件",
-    "phone_label": "电话及 WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "电话",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "您好，我通过 Hari Hara Serenity 网站与您取得联系。",
     "enquiries_note": "所有咨询均由合伙人 Ketan Dholu, Partner 亲自查阅并回复。",
-    "form": {
-      "name_label": "姓名",
-      "company_label": "公司名称",
-      "email_label": "电子邮件",
-      "phone_label": "电话",
-      "type_label": "咨询类别",
-      "type_options": {
-        "product": "产品咨询",
-        "partnership": "商务合作",
-        "other": "其它"
-      },
-      "message_label": "留言信息",
-      "consent_label": "我同意根据《隐私政策》所述，将我的信息用于回复此咨询。",
-      "consent_privacy_link": "隐私政策",
-      "submit_btn": "发送咨询",
-      "submitting_btn": "正在发送...",
-      "success_message": "感谢您的留言。我们已收到您的咨询，Ketan Dholu, Partner 将尽快回复。",
-      "error_message": "抱歉，提交咨询时出现错误。请直接发送邮件至 Purchase@harihara.net 与我们联系。",
-      "validation": {
-        "name_required": "请输入您的姓名。",
-        "email_required": "请输入您的电子邮件地址。",
-        "email_invalid": "请输入有效的电子邮件地址。",
-        "message_required": "请输入留言内容。",
-        "consent_required": "请同意隐私政策以继续提交。"
-      }
-    }
+    "locations_heading": "办公与基地地址"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "快捷导航",
     "privacy_policy": "隐私政策",
     "disclaimer": "免责声明",
+    "image_credits": "版权与图片鸣谢",
+    "faq": "常见问题解答",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +254,8 @@
     "privacy_description": "Hari Hara Serenity Chemical LLP 隐私政策，符合 2023 年印度 DPDP 法案要求。",
     "disclaimer_title": "免责声明",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP 网站法律免责声明。",
+    "image_credits_title": "图片版权与开源许可说明",
+    "image_credits_description": "Hari Hara Serenity 网站所使用的示意性照片来源出处与开源授权声明。",
     "last_updated": "最近更新：2026年10月"
   },
   "not_found": {

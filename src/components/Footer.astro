@@ -16,15 +16,18 @@ const copyrightText = t('footer.copyright').replace('{year}', currentYear.toStri
 
 const navLinks = [
   { id: 'about', label: t('nav.about') },
+  { id: 'bromine', label: t('nav.bromine') },
   { id: 'process', label: t('nav.process') },
   { id: 'products', label: t('nav.products') },
   { id: 'industries', label: t('nav.industries') },
-  { id: 'location', label: t('nav.plant') },
+  { id: 'location', label: t('nav.location') },
+  { id: 'faq', label: t('footer.faq') },
   { id: 'contact', label: t('nav.contact') },
 ];
 
 const privacyHref = lang === 'en' ? '/privacy-policy/' : `/${lang}/privacy-policy/`;
 const disclaimerHref = lang === 'en' ? '/disclaimer/' : `/${lang}/disclaimer/`;
+const imageCreditsHref = lang === 'en' ? '/image-credits/' : `/${lang}/image-credits/`;
 const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig.name} (${lang})`);
 ---
 
@@ -90,6 +93,14 @@ const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig
               {t('footer.disclaimer')}
             </a>
           </li>
+          <li>
+            <a
+              href={imageCreditsHref}
+              class="text-[1rem] text-[#E5E2DC] hover:text-[var(--color-paper)] transition-colors underline decoration-transparent hover:decoration-current focus:outline-none focus:ring-2 focus:ring-[var(--color-paper)] rounded-[2px]"
+            >
+              {t('footer.image_credits')}
+            </a>
+          </li>
           {lang !== 'en' && (
             <li class="pt-2">
               <a
@@ -122,9 +133,8 @@ const reportSubject = encodeURIComponent(`Translation issue report: ${langConfig
         </p>
       )}
 
-      <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-[0.875rem] text-[#A8A49E]">
+      <div class="pt-2 text-[0.875rem] text-[#A8A49E]">
         <p>{copyrightText}</p>
-        <p class="text-[0.875rem]">Self-hosted fonts &bull; Zero tracking cookies &bull; Hosted on Cloudflare</p>
       </div>
     </div>
   </div>

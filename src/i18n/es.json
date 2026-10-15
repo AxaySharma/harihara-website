@@ -11,11 +11,12 @@
     "select_language": "Seleccionar idioma"
   },
   "nav": {
-    "about": "Nosotros",
+    "about": "Proyecto",
+    "bromine": "Bromo",
     "process": "Proceso",
     "products": "Productos",
     "industries": "Sectores",
-    "plant": "Planta",
+    "location": "Ubicación",
     "contact": "Contacto"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "Planta en desarrollo",
     "cta_primary": "Póngase en contacto",
     "cta_secondary": "Sobre el proyecto",
-    "caption": "Ilustración: salinas, la fuente de la salmuera residual."
+    "caption": "Salinas, la fuente de salmuera residual. Imagen representativa.",
+    "image_alt": "Vista aérea de balsas de evaporación de sal con aguas coloridas"
   },
   "facts": {
     "location_label": "Ubicación",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "Planta en desarrollo",
+    "photo_caption": "Salar. Imagen representativa.",
+    "photo_alt": "Vista panorámica de un salar costero",
+    "why_heading": "Por qué este proyecto",
+    "why_p1": "La industria india depende de las importaciones para el bromo. Nuestro objetivo es reducir esa dependencia produciendo bromo en el país.",
+    "why_p2": "La producción de sal en la costa de Gujarat deja salmuera residual (bittern), una salmuera rica en minerales. Recuperar bromo de ella permite un mayor aprovechamiento de un recurso que la industria salinera ya produce.",
+    "why_p3": "La planta aún está en desarrollo. Este sitio web describe los objetivos hacia los cuales estamos trabajando.",
     "partners_heading": "Socios fundadores",
     "partners": [
       {
@@ -72,32 +80,64 @@
       }
     ]
   },
+  "bromine": {
+    "label": "Información general",
+    "heading": "El bromo, en breve",
+    "intro": "Una breve introducción al elemento central de este proyecto. Esta información es de carácter general y no constituye una descripción de nuestros productos.",
+    "facts": {
+      "symbol_label": "Símbolo",
+      "symbol_value": "Br",
+      "atomic_number_label": "Número atómico",
+      "atomic_number_value": "35",
+      "state_label": "A temperatura ambiente",
+      "state_value": "Líquido",
+      "family_label": "Familia",
+      "family_value": "Halógenos"
+    },
+    "photo_caption": "Imagen representativa.",
+    "photo_alt": "Bromo líquido puro sellado en una ampolla de vidrio de laboratorio",
+    "blocks": [
+      {
+        "title": "Un elemento líquido poco común",
+        "text": "El bromo es un líquido denso de color marrón rojizo con un olor penetrante. Junto con el mercurio, es uno de los dos únicos elementos que son líquidos a temperatura ambiente normal."
+      },
+      {
+        "title": "De dónde proviene",
+        "text": "El bromo se encuentra en forma de bromuro, un compuesto disuelto en el agua de mar, lagos salados y salmueras naturales. Al evaporar el agua de mar para obtener sal, el bromuro permanece y se concentra en la salmuera residual, denominada bittern."
+      },
+      {
+        "title": "Un descubrimiento a partir de la salmuera",
+        "text": "El bromo fue aislado por primera vez en la década de 1820 por el químico francés Antoine-Jerome Balard, quien lo identificó en los residuos de salmuera de marisma cerca de Montpellier."
+      },
+      {
+        "title": "El origen de su nombre",
+        "text": "El nombre proviene de la palabra griega bromos, que significa hedor, debido a su fuerte e irritante olor."
+      },
+      {
+        "title": "Manipulación responsable",
+        "text": "El bromo es tóxico y corrosivo. Por esta razón, su producción y manipulación están estrictamente reguladas, y cualquier instalación que trabaje con él debe cumplir rigurosos requisitos ambientales y de seguridad."
+      }
+    ]
+  },
   "process": {
     "label": "Proceso",
     "heading": "De la salmuera residual al bromo",
     "intro": "El proceso proyectado en nuestra planta de Rapar, actualmente en desarrollo.",
     "steps": [
       {
-        "num": "01",
-        "title": "Salmuera residual",
-        "desc": "La salmuera remanente tras la obtención de sal."
+        "extra": "Tras la cristalización de la sal en el agua de mar que se evapora, queda un líquido residual rico en minerales."
       },
       {
-        "num": "02",
-        "title": "Recuperación",
-        "desc": "El bromo se recupera de la salmuera residual."
+        "extra": "El bromo se separa de la salmuera residual para su posterior recolección."
       },
       {
-        "num": "03",
-        "title": "Purificación",
-        "desc": "El bromo recuperado se somete a purificación."
+        "extra": "La purificación lo acondiciona para su utilización en aplicaciones industriales."
       },
       {
-        "num": "04",
-        "title": "Bromo",
-        "desc": "Bromo de grado industrial, compuestos de bromo y sales de bromuro."
+        "extra": "Los productos finales descritos en este sitio web."
       }
-    ]
+    ],
+    "closing_note": "Este es un esquema general. La ingeniería de detalle del proceso continúa en desarrollo."
   },
   "products": {
     "label": "Productos",
@@ -106,50 +146,49 @@
     "enquire_link": "Consultar",
     "items": [
       {
-        "num": "01",
-        "title": "Bromo (grado industrial)",
-        "desc": "Bromo de pureza industrial, previsto para ser recuperado y purificado en nuestra planta de Rapar.",
-        "type": "product_bromine"
+        "extra": "Bromo en la forma utilizada por la industria química, y materia prima para elaborar numerosos derivados bromados."
       },
       {
-        "num": "02",
-        "title": "Compuestos de bromo y sales de bromuro",
-        "desc": "Compuestos bromados y sales de bromuro para aplicaciones industriales secundarias.",
-        "type": "product_compounds"
+        "extra": "Las sales de bromuro combinan el bromo con un metal. Los compuestos y sales de bromo se utilizan en los sectores indicados a continuación."
       }
     ],
-    "footer_note": "Para consultas comerciales sobre productos, póngase en contacto con nosotros."
+    "footer_note": "Nuestra gama de productos aún está en fase de definición. Para consultas sobre productos, póngase en contacto con nosotros."
   },
   "industries": {
     "label": "Sectores",
     "heading": "Sectores a los que sirve el bromo",
     "intro": "El bromo es un componente fundamental para estas industrias.",
+    "intro_note": "Información general sobre las aplicaciones del bromo. No describe nuestros productos ni clientes.",
+    "footer_disclaimer": "Todas las imágenes de esta página son representativas y no muestran nuestras instalaciones u operaciones.",
     "items": [
       {
-        "num": "01",
-        "name": "Farmacéutica"
+        "desc": "Los derivados bromados actúan como reactivos y bloques de construcción en la síntesis de fármacos.",
+        "image_alt": "Tubos de ensayo de vidrio de laboratorio en primer plano macro"
       },
       {
-        "num": "02",
-        "name": "Agroquímica"
+        "desc": "Determinados productos fitosanitarios se elaboran a partir de intermedios a base de bromo.",
+        "image_alt": "Vista aérea de campos agrícolas verdes"
       },
       {
-        "num": "03",
-        "name": "Retardantes de llama"
+        "desc": "Se incorporan compuestos bromados a plásticos, textiles y componentes electrónicos para retardar el fuego.",
+        "image_alt": "Primer plano macro de placa de circuito impreso"
       },
       {
-        "num": "04",
-        "name": "Tratamiento de aguas"
+        "desc": "Los productos a base de bromo se emplean para desinfectar sistemas de agua de refrigeración y piscinas.",
+        "image_alt": "Ondulaciones en la superficie de agua limpia"
       },
       {
-        "num": "05",
-        "name": "Química para yacimientos petrolíferos"
+        "desc": "Se utilizan salmueras densas de bromuro en perforación y completación de pozos de petróleo y gas.",
+        "image_alt": "Silueta de bomba de varilla de petróleo al atardecer"
       }
     ]
   },
   "location": {
     "label": "Planta y ubicación",
     "heading": "Dónde estamos construyendo",
+    "intro": "Kachchh, en el oeste de Gujarat, es el distrito más extenso de la India por superficie. La sal se produce en el distrito y sus alrededores, lo que lo convierte en un emplazamiento natural para una planta basada en salmuera residual.",
+    "photo_caption": "Imagen representativa.",
+    "photo_alt": "Paisaje natural de salar amplio con horizonte bajo cielo nublado",
     "maps_link": "Abrir en Google Maps",
     "plant_title": "Planta (en desarrollo)",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +197,55 @@
     "reg_title": "Domicilio social",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "Preguntas frecuentes",
+    "heading": "Preguntas y respuestas",
+    "items": [
+      {
+        "q": "¿A qué se dedica Hari Hara Serenity Chemical LLP?",
+        "a": "Estamos estableciendo una planta en Rapar, Kachchh, Gujarat, para recuperar y purificar bromo a partir de salmuera residual (bittern)."
+      },
+      {
+        "q": "¿Está la planta en funcionamiento?",
+        "a": "No. La planta se encuentra en desarrollo. Este sitio web describe nuestros planes y aún no suministramos ningún producto."
+      },
+      {
+        "q": "¿Qué es la salmuera residual (bittern)?",
+        "a": "Es la salmuera remanente tras la obtención de sal a partir del agua de mar o salmueras. Es rica en minerales, incluido el bromuro."
+      },
+      {
+        "q": "¿Qué productos están previstos?",
+        "a": "Bromo de calidad industrial, así como compuestos de bromo y sales de bromuro. La gama aún se está definiendo."
+      },
+      {
+        "q": "¿Qué industrias utilizan bromo?",
+        "a": "Las industrias farmacéutica, agroquímica, de retardantes de llama, tratamiento de aguas y química petrolera, entre otras."
+      },
+      {
+        "q": "¿Cómo puedo ponerme en contacto?",
+        "a": "Por correo electrónico a Purchase@harihara.net, o por teléfono o WhatsApp al 9427134190. Ketan Dholu, Partner, atiende y responde a las consultas."
+      }
+    ]
+  },
   "contact": {
     "label": "Contacto",
     "heading": "Póngase en contacto",
-    "line": "Para consultas de productos, alianzas u otras dudas.",
+    "line": "Agradecemos sus consultas sobre nuestro proyecto, los productos previstos y posibles acuerdos de colaboración.",
     "email_label": "Correo electrónico",
-    "phone_label": "Teléfono y WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "Teléfono",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "Hola, le escribo desde el sitio web de Hari Hara Serenity.",
     "enquiries_note": "Las consultas son atendidas directamente por Ketan Dholu, Partner.",
-    "form": {
-      "name_label": "Nombre",
-      "company_label": "Empresa",
-      "email_label": "Correo electrónico",
-      "phone_label": "Teléfono",
-      "type_label": "Tipo de consulta",
-      "type_options": {
-        "product": "Consulta de producto",
-        "partnership": "Alianzas",
-        "other": "Otro"
-      },
-      "message_label": "Mensaje",
-      "consent_label": "Acepto que mis datos se utilicen para responder a esta consulta, conforme a la Política de Privacidad.",
-      "consent_privacy_link": "Política de Privacidad",
-      "submit_btn": "Enviar consulta",
-      "submitting_btn": "Enviando...",
-      "success_message": "Gracias. Su consulta ha sido recibida y será revisada por Ketan Dholu, Partner.",
-      "error_message": "Se produjo un error al enviar el formulario. Escríbanos directamente a Purchase@harihara.net.",
-      "validation": {
-        "name_required": "Por favor, introduzca su nombre.",
-        "email_required": "Por favor, introduzca su correo electrónico.",
-        "email_invalid": "Por favor, introduzca un correo electrónico válido.",
-        "message_required": "Por favor, introduzca un mensaje.",
-        "consent_required": "Debe aceptar la política de privacidad para enviar el formulario."
-      }
-    }
+    "locations_heading": "Nuestras sedes"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "Enlaces rápidos",
     "privacy_policy": "Política de Privacidad",
     "disclaimer": "Aviso Legal",
+    "image_credits": "Créditos de imagen",
+    "faq": "Preguntas y respuestas",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +254,8 @@
     "privacy_description": "Política de privacidad de Hari Hara Serenity Chemical LLP conforme a la Ley DPDP de 2023.",
     "disclaimer_title": "Aviso Legal",
     "disclaimer_description": "Aviso legal y descargo de responsabilidad para el sitio web de Hari Hara Serenity Chemical LLP.",
+    "image_credits_title": "Créditos de imágenes y licencias",
+    "image_credits_description": "Licencias y atribuciones de las fotografías representativas utilizadas en el sitio web de Hari Hara Serenity.",
     "last_updated": "Última actualización: octubre de 2026"
   },
   "not_found": {

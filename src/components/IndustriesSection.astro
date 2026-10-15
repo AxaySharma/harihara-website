@@ -9,11 +9,41 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 
 const industries = [
-  { num: '01', name: t('industries.items.0.name') },
-  { num: '02', name: t('industries.items.1.name') },
-  { num: '03', name: t('industries.items.2.name') },
-  { num: '04', name: t('industries.items.3.name') },
-  { num: '05', name: t('industries.items.4.name') },
+  {
+    num: '01',
+    name: t('industries.items.0.name'),
+    desc: t('industries.items.0.desc'),
+    img: '/images/industry-pharmaceutical.jpg',
+    alt: t('industries.items.0.image_alt'),
+  },
+  {
+    num: '02',
+    name: t('industries.items.1.name'),
+    desc: t('industries.items.1.desc'),
+    img: '/images/industry-agrochemical.jpg',
+    alt: t('industries.items.1.image_alt'),
+  },
+  {
+    num: '03',
+    name: t('industries.items.2.name'),
+    desc: t('industries.items.2.desc'),
+    img: '/images/industry-flame-retardants.jpg',
+    alt: t('industries.items.2.image_alt'),
+  },
+  {
+    num: '04',
+    name: t('industries.items.3.name'),
+    desc: t('industries.items.3.desc'),
+    img: '/images/industry-water-treatment.jpg',
+    alt: t('industries.items.3.image_alt'),
+  },
+  {
+    num: '05',
+    name: t('industries.items.4.name'),
+    desc: t('industries.items.4.desc'),
+    img: '/images/industry-oil-field.jpg',
+    alt: t('industries.items.4.image_alt'),
+  },
 ];
 ---
 
@@ -25,7 +55,7 @@ const industries = [
 >
   <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header -->
-    <div class="mb-12 sm:mb-16 max-w-[36em]">
+    <div class="mb-12 sm:mb-16 max-w-[42em]">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[#C4C2BE] mb-3">
         {t('industries.label')}
       </span>
@@ -35,70 +65,98 @@ const industries = [
       >
         {t('industries.heading')}
       </h2>
-      <p class="text-[var(--text-base)] text-[#DCD8D0] leading-relaxed">
+      <p class="text-[var(--text-base)] text-[#DCD8D0] leading-relaxed mb-2">
         {t('industries.intro')}
+      </p>
+      <p class="text-[0.9375rem] sm:text-[1rem] text-[#A8A49E] leading-relaxed italic">
+        {t('industries.intro_note')}
       </p>
     </div>
 
-    <!-- Five numbered rows with hairlines, monoline pictograms -->
+    <!-- Five numbered rows with hairlines, duotone arch-cropped photos, and monoline pictograms -->
     <div class="divide-y divide-[#363432] border-y border-[#363432]">
       {industries.map((item, idx) => (
-        <div class="py-6 sm:py-8 flex items-center justify-between gap-4 group">
-          <div class="flex items-center gap-6 sm:gap-10">
-            <!-- Numeral in crimson accent -->
-            <span class="font-heading text-[1.5rem] sm:text-[1.875rem] text-[var(--color-crimson)] leading-none shrink-0 w-8">
+        <div class="py-6 sm:py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center group">
+          <!-- Col 1: Numeral & Industry Name & General Background Descriptor -->
+          <div class="md:col-span-8 flex items-start gap-5 sm:gap-8">
+            <span class="font-heading text-[1.5rem] sm:text-[1.875rem] text-[var(--color-crimson)] leading-none shrink-0 w-8 pt-1">
               {item.num}
             </span>
-            <!-- Industry Name -->
-            <h3 class="font-heading text-[1.25rem] sm:text-[1.625rem] text-[var(--color-paper)] group-hover:text-[var(--color-paper-light)] transition-colors">
-              {item.name}
-            </h3>
+            <div class="space-y-1.5">
+              <div class="flex items-center gap-3">
+                <h3 class="font-heading text-[1.25rem] sm:text-[1.625rem] text-[var(--color-paper)] group-hover:text-[var(--color-paper-light)] transition-colors">
+                  {item.name}
+                </h3>
+              </div>
+              <p class="text-[0.9375rem] sm:text-[1.0625rem] text-[#DCD8D0] leading-relaxed max-w-[34em]">
+                {item.desc}
+              </p>
+            </div>
           </div>
 
-          <!-- Refined monoline SVG pictogram (1.5px stroke, inline, hand-built) -->
-          <div class="shrink-0 text-[#A8A49E] group-hover:text-[var(--color-paper)] transition-colors pe-2" aria-hidden="true">
-            {idx === 0 && (
-              /* Pharmaceutical: Capsule / molecular bond */
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" />
-                <path d="m8.5 8.5 7 7" />
-              </svg>
-            )}
-            {idx === 1 && (
-              /* Agrochemical: Leaf seedling */
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22v-9" />
-                <path d="M12 13a5 5 0 0 0 5-5c0-4-5-6-5-6s-5 2-5 6a5 5 0 0 0 5 5Z" />
-                <path d="M8 17a4 4 0 0 1-4-4c0-2.5 4-3.5 4-3.5" />
-                <path d="M16 17a4 4 0 0 0 4-4c0-2.5-4-3.5-4-3.5" />
-              </svg>
-            )}
-            {idx === 2 && (
-              /* Flame retardants: Shield with inner flame line */
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                <path d="M12 8c.5 1 2 2 2 3.5a2 2 0 1 1-4 0c0-1.5 1.5-2.5 2-3.5z" />
-              </svg>
-            )}
-            {idx === 3 && (
-              /* Water treatment: Water drop with ripple ring */
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
-                <path d="M12 16a3 3 0 0 0 3-3" />
-              </svg>
-            )}
-            {idx === 4 && (
-              /* Oil-field chemicals: Industrial derrick / reservoir layer */
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 22l6-19 6 19" />
-                <path d="M8 15h8" />
-                <path d="M9 10h6" />
-                <path d="M3 22h18" />
-              </svg>
-            )}
+          <!-- Col 2: Duotone Photo + Monoline Pictogram -->
+          <div class="md:col-span-4 flex items-center justify-start md:justify-end gap-5">
+            <!-- Arch-cropped small duotone photo (~160x100 on mobile, ~140x160 on desktop) -->
+            <div class="relative w-[130px] sm:w-[150px] aspect-[4/5] rounded-t-[75px] rounded-b-[2px] overflow-hidden border border-[#363432] bg-[#2A2826] shrink-0">
+              <img
+                src={item.img}
+                alt={item.alt}
+                width="300"
+                height="375"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 hover:grayscale-0 transition-[filter] duration-300"
+              />
+              <div class="absolute inset-0 bg-[#D01A45] mix-blend-color opacity-25 pointer-events-none" aria-hidden="true" />
+            </div>
+
+            <!-- Refined monoline SVG pictogram (1.5px stroke, inline, hand-built) -->
+            <div class="shrink-0 text-[#A8A49E] group-hover:text-[var(--color-paper)] transition-colors pe-2" aria-hidden="true">
+              {idx === 0 && (
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" />
+                  <path d="m8.5 8.5 7 7" />
+                </svg>
+              )}
+              {idx === 1 && (
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22v-9" />
+                  <path d="M12 13a5 5 0 0 0 5-5c0-4-5-6-5-6s-5 2-5 6a5 5 0 0 0 5 5Z" />
+                  <path d="M8 17a4 4 0 0 1-4-4c0-2.5 4-3.5 4-3.5" />
+                  <path d="M16 17a4 4 0 0 0 4-4c0-2.5-4-3.5-4-3.5" />
+                </svg>
+              )}
+              {idx === 2 && (
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M12 8c.5 1 2 2 2 3.5a2 2 0 1 1-4 0c0-1.5 1.5-2.5 2-3.5z" />
+                </svg>
+              )}
+              {idx === 3 && (
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                  <path d="M12 16a3 3 0 0 0 3-3" />
+                </svg>
+              )}
+              {idx === 4 && (
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 22l6-19 6 19" />
+                  <path d="M8 15h8" />
+                  <path d="M9 10h6" />
+                  <path d="M3 22h18" />
+                </svg>
+              )}
+            </div>
           </div>
         </div>
       ))}
+    </div>
+
+    <!-- Below the list: Representative image disclaimer -->
+    <div class="mt-8 pt-4">
+      <p class="text-[0.875rem] text-[#A8A49E]">
+        {t('industries.footer_disclaimer')}
+      </p>
     </div>
   </div>
 </section>

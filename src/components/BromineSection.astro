@@ -1,0 +1,140 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const blocks = [
+  {
+    title: t('bromine.blocks.0.title'),
+    text: t('bromine.blocks.0.text')
+  },
+  {
+    title: t('bromine.blocks.1.title'),
+    text: t('bromine.blocks.1.text')
+  },
+  {
+    title: t('bromine.blocks.2.title'),
+    text: t('bromine.blocks.2.text')
+  },
+  {
+    title: t('bromine.blocks.3.title'),
+    text: t('bromine.blocks.3.text')
+  },
+  {
+    title: t('bromine.blocks.4.title'),
+    text: t('bromine.blocks.4.text')
+  }
+];
+---
+
+<section
+  id="bromine"
+  class="relative py-[var(--section-space)] border-b border-[var(--color-border)] bg-[var(--color-paper)] scroll-mt-24"
+  aria-labelledby="bromine-heading"
+>
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Label -->
+    <div class="mb-4">
+      <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)]">
+        {t('bromine.label')}
+      </span>
+    </div>
+
+    <!-- Section Heading & Intro -->
+    <div class="max-w-[48em] mb-10 sm:mb-14 space-y-3">
+      <h2
+        id="bromine-heading"
+        class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)] leading-tight"
+      >
+        {t('bromine.heading')}
+      </h2>
+      <p class="text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed">
+        {t('bromine.intro')}
+      </p>
+    </div>
+
+    <!-- Ruled facts strip: Symbol: Br | Atomic number: 35 | At room temperature: Liquid | Family: Halogens -->
+    <div class="border-y border-[var(--color-border)] py-6 mb-12 sm:mb-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y md:divide-y-0 md:divide-x divide-[var(--color-border)] rtl:md:divide-x-reverse">
+        <div class="flex flex-col gap-1 sm:pe-4">
+          <span class="text-[0.875rem] font-semibold uppercase tracking-[0.1em] text-[var(--color-secondary)]">
+            {t('bromine.facts.symbol_label')}
+          </span>
+          <span class="font-heading text-[1.5rem] sm:text-[1.75rem] text-[var(--color-crimson)] font-normal">
+            {t('bromine.facts.symbol_value')}
+          </span>
+        </div>
+
+        <div class="pt-4 md:pt-0 flex flex-col gap-1 md:px-6">
+          <span class="text-[0.875rem] font-semibold uppercase tracking-[0.1em] text-[var(--color-secondary)]">
+            {t('bromine.facts.atomic_number_label')}
+          </span>
+          <span class="font-heading text-[1.5rem] sm:text-[1.75rem] text-[var(--color-charcoal)] font-normal">
+            {t('bromine.facts.atomic_number_value')}
+          </span>
+        </div>
+
+        <div class="pt-4 md:pt-0 flex flex-col gap-1 md:px-6">
+          <span class="text-[0.875rem] font-semibold uppercase tracking-[0.1em] text-[var(--color-secondary)]">
+            {t('bromine.facts.state_label')}
+          </span>
+          <span class="font-heading text-[1.25rem] sm:text-[1.5rem] text-[var(--color-charcoal)] font-normal">
+            {t('bromine.facts.state_value')}
+          </span>
+        </div>
+
+        <div class="pt-4 md:pt-0 flex flex-col gap-1 md:ps-6">
+          <span class="text-[0.875rem] font-semibold uppercase tracking-[0.1em] text-[var(--color-secondary)]">
+            {t('bromine.facts.family_label')}
+          </span>
+          <span class="font-heading text-[1.25rem] sm:text-[1.5rem] text-[var(--color-charcoal)] font-normal">
+            {t('bromine.facts.family_value')}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two-column editorial layout: Photo in arch frame on start side, 5 ruled text blocks on end side -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      <!-- Start Column: Macro Photo in Arch Frame -->
+      <div class="lg:col-span-5 flex flex-col items-center lg:items-start">
+        <div class="w-full max-w-[380px]">
+          <!-- Arch shape frame: semicircular top, straight sides, thin 1px outline offset -->
+          <div class="relative w-full rounded-t-[190px] rounded-b-[2px] overflow-hidden border border-[var(--color-border)] bg-[#F7F2E8] aspect-[3/4] shadow-[0_0_0_1px_rgba(28,28,28,0.06)]">
+            <img
+              src="/images/bromine-liquid.jpg"
+              alt={t('bromine.photo_alt')}
+              width="600"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+            />
+          </div>
+          <p class="text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
+            {t('bromine.photo_caption')}
+          </p>
+        </div>
+      </div>
+
+      <!-- End Column: Five Short Ruled Text Blocks -->
+      <div class="lg:col-span-7 divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
+        {blocks.map((b) => (
+          <div class="py-6 sm:py-7 first:pt-4 last:pb-4 space-y-2">
+            <h3 class="font-heading text-[1.25rem] sm:text-[1.375rem] text-[var(--color-charcoal)]">
+              {b.title}
+            </h3>
+            <p class="text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed max-w-[42em]">
+              {b.text}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

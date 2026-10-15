@@ -41,16 +41,37 @@ const locations = [
 >
   <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header -->
-    <div class="mb-12 sm:mb-16">
+    <div class="mb-10 sm:mb-12 max-w-[44em]">
       <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
         {t('location.label')}
       </span>
       <h2
         id="location-heading"
-        class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)]"
+        class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)] mb-4"
       >
         {t('location.heading')}
       </h2>
+      <p class="text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed">
+        {t('location.intro')}
+      </p>
+    </div>
+
+    <!-- Wide photo of salt flats / coast of Kachchh -->
+    <div class="mb-12 sm:mb-16">
+      <div class="relative w-full aspect-[21/9] sm:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
+        <img
+          src="/images/location-salt-flats.jpg"
+          alt={t('location.photo_alt')}
+          width="1600"
+          height="600"
+          loading="lazy"
+          decoding="async"
+          class="w-full h-full object-cover filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+        />
+      </div>
+      <p class="text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
+        {t('location.photo_caption')}
+      </p>
     </div>
 
     <!-- Three ruled columns (stack on mobile), plant first and visually largest -->

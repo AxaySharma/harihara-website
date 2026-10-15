@@ -76,6 +76,40 @@ const partners = [
       </div>
     </div>
 
+    <!-- Wide landscape photo of salt flat with caption -->
+    <div class="mt-14 sm:mt-20">
+      <div class="relative w-full aspect-[21/9] sm:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
+        <img
+          src="/images/about-salt-flats.jpg"
+          alt={t('about.photo_alt')}
+          width="1600"
+          height="600"
+          loading="lazy"
+          decoding="async"
+          class="w-full h-full object-cover filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+        />
+      </div>
+      <p class="text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
+        {t('about.photo_caption')}
+      </p>
+    </div>
+
+    <!-- Ruled block titled "Why this project" with three short paragraphs -->
+    <div class="mt-14 sm:mt-20 pt-10 border-t border-[var(--color-border)]">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start">
+        <div class="lg:col-span-4">
+          <h3 class="font-heading text-[1.375rem] sm:text-[1.625rem] text-[var(--color-charcoal)]">
+            {t('about.why_heading')}
+          </h3>
+        </div>
+        <div class="lg:col-span-8 space-y-4 text-[var(--text-base)] text-[var(--color-charcoal)] leading-relaxed max-w-[44em]">
+          <p>{t('about.why_p1')}</p>
+          <p>{t('about.why_p2')}</p>
+          <p class="text-[var(--color-secondary)]">{t('about.why_p3')}</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Founding partners (Ruled list of 6 rows, shown when SHOW_PARTNERS is true) -->
     {SHOW_PARTNERS && (
       <div class="mt-16 sm:mt-24 pt-10 border-t border-[var(--color-border)]">

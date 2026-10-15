@@ -86,10 +86,13 @@ const t = useTranslations(lang);
         </div>
       </div>
 
-      <!-- End Column: Arch Artwork (5 cols on 12-col desktop grid, ~5.5 cols visually, min 520px desktop) -->
+      <!-- End Column: Arch Artwork with real photo & SVG fallback (5 cols desktop) -->
       <div class="lg:col-span-5 flex flex-col items-center lg:items-end w-full mt-6 lg:mt-0">
         <div class="w-full max-w-[480px] flex flex-col">
-          <HeroArt />
+          <HeroArt
+            image="/images/hero-salt-pans.jpg"
+            alt={t('hero.image_alt')}
+          />
           <!-- Translated Caption below artwork: minimum 0.875rem in secondary color -->
           <p class="font-body text-[0.875rem] text-[var(--color-secondary)] text-start mt-4 leading-relaxed tracking-normal">
             {t('hero.caption')}

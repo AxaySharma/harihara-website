@@ -11,11 +11,12 @@
     "select_language": "Choisir la langue"
   },
   "nav": {
-    "about": "À propos",
+    "about": "Projet",
+    "bromine": "Brome",
     "process": "Procédé",
     "products": "Produits",
     "industries": "Secteurs",
-    "plant": "Usine",
+    "location": "Site",
     "contact": "Contact"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "Usine en cours de développement",
     "cta_primary": "Nous contacter",
     "cta_secondary": "Découvrir le projet",
-    "caption": "Illustration : marais salants, la source des eaux-mères."
+    "caption": "Marais salants, la source des eaux-mères. Image représentative.",
+    "image_alt": "Vue aérienne de bassins d'évaporation de sel aux eaux colorées"
   },
   "facts": {
     "location_label": "Emplacement",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "Usine en cours de développement",
+    "photo_caption": "Désert de sel. Image représentative.",
+    "photo_alt": "Paysage de marais salant côtier naturel",
+    "why_heading": "Pourquoi ce projet",
+    "why_p1": "L'industrie indienne dépend des importations pour son approvisionnement en brome. Notre objectif est de réduire cette dépendance en produisant du brome sur le territoire national.",
+    "why_p2": "La production de sel le long du littoral du Gujarat produit des eaux-mères résiduelles (bittern), une saumure riche en minéraux. En extraire le brome valorise une ressource déjà générée par l'industrie salicole.",
+    "why_p3": "L'usine est actuellement en cours de développement. Ce site web présente les objectifs vers lesquels nous tendons.",
     "partners_heading": "Associés fondateurs",
     "partners": [
       {
@@ -72,32 +80,64 @@
       }
     ]
   },
+  "bromine": {
+    "label": "Généralités",
+    "heading": "Le brome en bref",
+    "intro": "Une brève présentation de l'élément chimique au cœur de ce projet. Ces informations générales ne constituent pas une description de nos produits.",
+    "facts": {
+      "symbol_label": "Symbole",
+      "symbol_value": "Br",
+      "atomic_number_label": "Numéro atomique",
+      "atomic_number_value": "35",
+      "state_label": "À température ambiante",
+      "state_value": "Liquide",
+      "family_label": "Famille",
+      "family_value": "Halogènes"
+    },
+    "photo_caption": "Image représentative.",
+    "photo_alt": "Brome liquide pur scellé dans une ampoule de laboratoire en verre",
+    "blocks": [
+      {
+        "title": "Un élément liquide rare",
+        "text": "Le brome est un liquide dense d'un rouge-brun intense à l'odeur piquante. Avec le mercure, c'est l'un des deux seuls éléments liquides aux températures ambiantes usuelles."
+      },
+      {
+        "title": "D'où provient-il",
+        "text": "Le brome se trouve sous forme d'ions bromure dissous dans l'eau de mer, les lacs salés et les saumures naturelles. Lorsque l'eau de mer s'évapore pour produire du sel, le bromure se concentre dans la saumure résiduelle, appelée eaux-mères (bittern)."
+      },
+      {
+        "title": "Une découverte issue des saumures",
+        "text": "Le brome a été isolé dans les années 1820 par le chimiste français Antoine-Jérôme Balard, qui l'a identifié dans les résidus d'eaux-mères des marais salants près de Montpellier."
+      },
+      {
+        "title": "Origine du nom",
+        "text": "Son nom découle du grec ancien bromos, signifiant puanteur, en référence à ses émanations fortes et suffocantes."
+      },
+      {
+        "title": "Une manipulation rigoureuse",
+        "text": "Le brome est un produit toxique et corrosif. C'est pourquoi sa fabrication et sa manutention sont strictement encadrées par des exigences de sécurité et de protection de l'environnement."
+      }
+    ]
+  },
   "process": {
     "label": "Procédé",
     "heading": "Des eaux-mères au brome",
     "intro": "Le procédé planifié sur notre site de Rapar, actuellement en cours de développement.",
     "steps": [
       {
-        "num": "01",
-        "title": "Eaux-mères",
-        "desc": "La saumure résiduelle subsistant après la récolte du sel."
+        "extra": "Après la cristallisation du sel marin lors de l'évaporation, il subsiste un liquide concentré riche en minéraux."
       },
       {
-        "num": "02",
-        "title": "Récupération",
-        "desc": "Le brome est extrait des eaux-mères résiduelles."
+        "extra": "Le brome est extrait des eaux-mères résiduelles afin d'être recueilli."
       },
       {
-        "num": "03",
-        "title": "Purification",
-        "desc": "Le brome extrait subit une purification de haute précision."
+        "extra": "La purification prépare la matière aux applications industrielles exigeantes."
       },
       {
-        "num": "04",
-        "title": "Brome",
-        "desc": "Brome de qualité industrielle, dérivés bromés et sels de bromure."
+        "extra": "Les produits finis présentés sur ce site internet."
       }
-    ]
+    ],
+    "closing_note": "Il s'agit d'une présentation de principe. L'ingénierie détaillée du procédé est en cours d'élaboration."
   },
   "products": {
     "label": "Produits",
@@ -106,50 +146,49 @@
     "enquire_link": "Demande",
     "items": [
       {
-        "num": "01",
-        "title": "Brome (qualité industrielle)",
-        "desc": "Brome de qualité industrielle, extrait et purifié à partir des eaux-mères dans notre usine de Rapar.",
-        "type": "product_bromine"
+        "extra": "Le brome sous sa forme industrielle, matière première essentielle pour de nombreuses synthèses chimiques dérivées."
       },
       {
-        "num": "02",
-        "title": "Dérivés bromés et sels de bromure",
-        "desc": "Composés de brome et sels de bromure pour applications industrielles en aval.",
-        "type": "product_compounds"
+        "extra": "Les sels de bromure associent le brome à un métal. Les composés et sels de brome sont utilisés dans les secteurs indiqués ci-dessous."
       }
     ],
-    "footer_note": "Pour toute demande de renseignements sur les produits, veuillez nous contacter."
+    "footer_note": "Notre gamme commerciale est en cours de définition. Pour toute demande relative aux produits, veuillez nous contacter."
   },
   "industries": {
     "label": "Secteurs",
     "heading": "Industries utilisatrices du brome",
     "intro": "Le brome est un intrant essentiel pour ces filières industrielles.",
+    "intro_note": "Aperçu général des utilisations du brome. Ne décrit ni nos produits ni nos clients.",
+    "footer_disclaimer": "Toutes les photographies de cette page sont représentatives et ne montrent pas nos installations réelles.",
     "items": [
       {
-        "num": "01",
-        "name": "Pharmaceutique"
+        "desc": "Les composés bromés servent de réactifs et d'intermédiaires clés pour la fabrication de certains principes actifs.",
+        "image_alt": "Tubes à essai de laboratoire en verre en vue rapprochée"
       },
       {
-        "num": "02",
-        "name": "Agrochimie"
+        "desc": "Certains produits de protection des cultures font appel à des intermédiaires bromés.",
+        "image_alt": "Vue aérienne de champs agricoles verdoyants"
       },
       {
-        "num": "03",
-        "name": "Retardateurs de flamme"
+        "desc": "Des composés bromés sont incorporés dans les polymères, textiles et matériels électroniques pour retarder les flammes.",
+        "image_alt": "Vue rapprochée macro d'un circuit imprimé électronique"
       },
       {
-        "num": "04",
-        "name": "Traitement de l'eau"
+        "desc": "Des formulations bromées sont utilisées pour désinfecter les circuits d'eau de refroidissement et les piscines.",
+        "image_alt": "Ondulations à la surface d'une eau claire"
       },
       {
-        "num": "05",
-        "name": "Chimie des champs pétrolifères"
+        "desc": "Des saumures denses de bromure sont employées pour le forage et le conditionnement des puits pétroliers et gaziers.",
+        "image_alt": "Silhouette d'un chevalet de pompage pétrolier au couchant"
       }
     ]
   },
   "location": {
     "label": "Usine et implantation",
     "heading": "Notre site d'implantation",
+    "intro": "Situé dans l'ouest du Gujarat, le district de Kachchh est le plus vaste d'Inde par sa superficie. Le sel y est abondamment produit, constituant un bassin naturel pour une unité de valorisation du bittern.",
+    "photo_caption": "Image représentative.",
+    "photo_alt": "Vaste étendue naturelle de désert de sel sous un ciel nuageux",
     "maps_link": "Ouvrir dans Google Maps",
     "plant_title": "Usine (en cours de développement)",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +197,55 @@
     "reg_title": "Siège social",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "Foire aux questions",
+    "heading": "Questions et réponses",
+    "items": [
+      {
+        "q": "Quelle est l'activité de Hari Hara Serenity Chemical LLP ?",
+        "a": "Nous implantons une usine à Rapar, Kachchh, Gujarat, pour extraire et purifier le brome à partir des eaux-mères résiduelles de marais salants."
+      },
+      {
+        "q": "L'usine est-elle actuellement en exploitation ?",
+        "a": "Non. L'usine est en cours de développement. Ce site présente notre projet et nous ne commercialisons actuellement aucun produit."
+      },
+      {
+        "q": "Que sont les eaux-mères (bittern) ?",
+        "a": "Il s'agit de la saumure résiduelle restante après l'extraction du sel de l'eau de mer. Elle concentre de nombreux minéraux, notamment des bromures."
+      },
+      {
+        "q": "Quels produits sont envisagés ?",
+        "a": "Du brome de qualité industrielle, ainsi que des composés bromés et sels de bromure. Le catalogue définitif est en cours d'établissement."
+      },
+      {
+        "q": "Quelles industries utilisent le brome ?",
+        "a": "La pharmacie, l'agrochimie, les retardateurs de flamme, le traitement des eaux et la chimie pétrolière, entre autres."
+      },
+      {
+        "q": "Comment nous contacter ?",
+        "a": "Par courriel à Purchase@harihara.net, ou par téléphone et WhatsApp au 9427134190. Ketan Dholu, Partner, prend connaissance des demandes et y répond."
+      }
+    ]
+  },
   "contact": {
     "label": "Contact",
     "heading": "Prendre contact",
-    "line": "Pour toute question relative aux produits, partenariats ou informations générales.",
+    "line": "Nous accueillons volontiers vos questions sur notre projet, les produits envisagés et d'éventuels partenariats.",
     "email_label": "E-mail",
-    "phone_label": "Téléphone & WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "Téléphone",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "Bonjour, je vous contacte depuis le site internet Hari Hara Serenity.",
     "enquiries_note": "Les demandes sont examinées et traitées par Ketan Dholu, Partner.",
-    "form": {
-      "name_label": "Nom",
-      "company_label": "Société",
-      "email_label": "E-mail",
-      "phone_label": "Téléphone",
-      "type_label": "Nature de la demande",
-      "type_options": {
-        "product": "Information produit",
-        "partnership": "Partenariat",
-        "other": "Autre"
-      },
-      "message_label": "Message",
-      "consent_label": "J'accepte que mes coordonnées soient traitées pour répondre à cette demande, conformément à la Politique de Confidentialité.",
-      "consent_privacy_link": "Politique de Confidentialité",
-      "submit_btn": "Envoyer la demande",
-      "submitting_btn": "Envoi en cours...",
-      "success_message": "Merci. Votre demande a bien été reçue et sera examinée par Ketan Dholu, Partner.",
-      "error_message": "Une erreur est survenue lors de l'envoi. Veuillez nous écrire directement à Purchase@harihara.net.",
-      "validation": {
-        "name_required": "Veuillez renseigner votre nom.",
-        "email_required": "Veuillez renseigner votre adresse e-mail.",
-        "email_invalid": "Veuillez renseigner une adresse e-mail valide.",
-        "message_required": "Veuillez saisir votre message.",
-        "consent_required": "Veuillez accepter la politique de confidentialité pour envoyer le formulaire."
-      }
-    }
+    "locations_heading": "Nos implantations"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "Accès rapide",
     "privacy_policy": "Politique de Confidentialité",
     "disclaimer": "Mentions Légales",
+    "image_credits": "Crédits photos",
+    "faq": "Questions et réponses",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +254,8 @@
     "privacy_description": "Politique de confidentialité de Hari Hara Serenity Chemical LLP, conforme au DPDP Act 2023.",
     "disclaimer_title": "Mentions Légales et Clause de non-responsabilité",
     "disclaimer_description": "Clause de non-responsabilité légale pour le site internet de Hari Hara Serenity Chemical LLP.",
+    "image_credits_title": "Crédits photographiques et licences",
+    "image_credits_description": "Licences et attributions des photographies représentatives figurant sur le site Hari Hara Serenity.",
     "last_updated": "Dernière mise à jour : octobre 2026"
   },
   "not_found": {

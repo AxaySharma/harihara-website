@@ -11,11 +11,12 @@
     "select_language": "言語を選択"
   },
   "nav": {
-    "about": "企業情報",
+    "about": "事業概要",
+    "bromine": "臭素について",
     "process": "工程",
     "products": "取扱品目",
     "industries": "適用分野",
-    "plant": "プラント",
+    "location": "所在地",
     "contact": "お問い合わせ"
   },
   "hero": {
@@ -25,7 +26,8 @@
     "status": "プラント建設中",
     "cta_primary": "お問い合わせ",
     "cta_secondary": "事業概要を見る",
-    "caption": "説明図：塩田、にがりの供給源。"
+    "caption": "製塩池（にがりの供給源）。イメージ写真。",
+    "image_alt": "色とりどりの製塩蒸発池の航空写真"
   },
   "facts": {
     "location_label": "所在地",
@@ -44,6 +46,12 @@
     "fact_llp": "Limited Liability Partnership",
     "fact_act": "Registered under the LLP Act, 2008",
     "fact_status": "プラント建設中",
+    "photo_caption": "塩平原。イメージ写真。",
+    "photo_alt": "沿岸部の塩平原の自然景観",
+    "why_heading": "事業の意義",
+    "why_p1": "インドの産業界は臭素供給の多くを海外からの輸入に依存しています。国内での精製供給体制を整えることで、その輸入依存度の低減を目指しています。",
+    "why_p2": "グジャラート州沿岸の製塩工程では、ミネラルを豊富に含む残余塩水「にがり（苦汁）」が生じます。ここから臭素を回収することで、製塩副産物の有効利用を図ります。",
+    "why_p3": "プラントは現在建設開発中です。本ウェブサイトは、私たちが目指している事業方針と計画を説明するものです。",
     "partners_heading": "創業パートナー",
     "partners": [
       {
@@ -72,32 +80,64 @@
       }
     ]
   },
+  "bromine": {
+    "label": "基礎知識",
+    "heading": "臭素の基礎知識",
+    "intro": "本事業の中心となる化学元素についての概要です。これは一般的な学術情報であり、当社製品の仕様を説明するものではありません。",
+    "facts": {
+      "symbol_label": "元素記号",
+      "symbol_value": "Br",
+      "atomic_number_label": "原子番号",
+      "atomic_number_value": "35",
+      "state_label": "常温での状態",
+      "state_value": "液体",
+      "family_label": "族",
+      "family_value": "ハロゲン"
+    },
+    "photo_caption": "イメージ写真。",
+    "photo_alt": "ガラスアンプルに密封された高純度液体臭素",
+    "blocks": [
+      {
+        "title": "常温で液体として存在する希少な元素",
+        "text": "臭素は特異な刺激臭を持つ密度の高い赤褐色の液体です。水銀と並び、標準的な常温常圧において液体状態で存在する極めて珍しい元素です。"
+      },
+      {
+        "title": "自然界における存在と由来",
+        "text": "臭素は海水、塩湖、天然地下塩水中に臭化物として溶存しています。海水を蒸発させて食塩を結晶化させた後、残された残余塩水（にがり）中に高濃度で濃縮されます。"
+      },
+      {
+        "title": "塩田塩水からの科学的発見",
+        "text": "1820年代、フランスの化学者アントワーヌ・ジェローム・バラール（Antoine-Jerome Balard）がモンペリエ近郊の塩田のにがり残渣から初めて単体分離に成功しました。"
+      },
+      {
+        "title": "名称の由来",
+        "text": "その強く息詰まるような刺激臭から、ギリシャ語で悪臭を意味する「bromos」にちなんで命名されました。"
+      },
+      {
+        "title": "厳格な安全・環境管理",
+        "text": "臭素は強い腐食性と毒性を有します。そのため、その製造、貯蔵および輸送は厳格に規制されており、取り扱うプラントには高度な保安・環境基準の順守が義務付けられています。"
+      }
+    ]
+  },
   "process": {
     "label": "工程",
     "heading": "にがりから臭素へ",
     "intro": "建設を進めているラパル・プラントにおける計画製造プロセス。",
     "steps": [
       {
-        "num": "01",
-        "title": "にがり",
-        "desc": "製塩後に残る残留塩水。"
+        "extra": "蒸発した海水から塩が結晶化した後、ミネラル豊富な残余塩水（にがり）が残ります。"
       },
       {
-        "num": "02",
-        "title": "回収",
-        "desc": "にがりから臭素を回収・抽出します。"
+        "extra": "にがりから臭素分を効率的に分離・回収します。"
       },
       {
-        "num": "03",
-        "title": "精製",
-        "desc": "回収した臭素を高純度に精製します。"
+        "extra": "精製処理を施すことで、各種産業用途に適した高純度化を行います。"
       },
       {
-        "num": "04",
-        "title": "臭素製品",
-        "desc": "工業グレード臭素、ならびに臭素化合物および臭化物塩。"
+        "extra": "本サイトでご案内している計画製品です。"
       }
-    ]
+    ],
+    "closing_note": "本内容は工程の概要方針です。詳細なプロセス設計は現在策定中です。"
   },
   "products": {
     "label": "取扱品目",
@@ -106,50 +146,49 @@
     "enquire_link": "お問い合わせ",
     "items": [
       {
-        "num": "01",
-        "title": "工業用グレード臭素",
-        "desc": "ラパル工場にてにがりから回収・精製される計画の工業用グレード臭素。",
-        "type": "product_bromine"
+        "extra": "産業界で広く利用される高純度臭素であり、様々な誘導化合物の基礎原料となります。"
       },
       {
-        "num": "02",
-        "title": "臭素化合物および臭化物塩",
-        "desc": "各種産業用途向けの臭素化合物および臭化物塩。",
-        "type": "product_compounds"
+        "extra": "臭素と金属が結合した無機塩。臭素化合物および塩類は、下記に示す主要産業で幅広く活用されています。"
       }
     ],
-    "footer_note": "製品に関するお問い合わせは、フォームよりご連絡ください。"
+    "footer_note": "計画製品の規格詳細は現在策定中です。製品に関するご質問はお問い合わせ窓口までご連絡ください。"
   },
   "industries": {
     "label": "適用分野",
     "heading": "臭素が支える産業分野",
     "intro": "臭素はこれらの産業において不可欠な原料です。",
+    "intro_note": "臭素の産業用途に関する一般的な概要です。当社の特定の製品や顧客を示すものではありません。",
+    "footer_disclaimer": "本ページの画像はすべてイメージ写真であり、当社の実際の設備を示すものではありません。",
     "items": [
       {
-        "num": "01",
-        "name": "医薬品"
+        "desc": "臭素化合物は、医薬品や中間体の合成における重要な反応試薬および構造ブロックとして機能します。",
+        "image_alt": "実験室のガラス製試験管のマクロ写真"
       },
       {
-        "num": "02",
-        "name": "農薬"
+        "desc": "一部の農薬や植物保護資材は、臭素系中間体を用いて製造されます。",
+        "image_alt": "緑豊かな農地の航空写真"
       },
       {
-        "num": "03",
-        "name": "難燃剤"
+        "desc": "プラスチック、繊維、電子機器基板に臭素系難燃剤を添加することで、火災の延焼を抑制します。",
+        "image_alt": "プリント基板の電子部品マクロ写真"
       },
       {
-        "num": "04",
-        "name": "水処理"
+        "desc": "一部の冷却水系やプール設備の水質維持・殺菌消毒剤として臭素系薬剤が利用されています。",
+        "image_alt": "澄んだ水面の波紋クローズアップ"
       },
       {
-        "num": "05",
-        "name": "油田化学品"
+        "desc": "高密度の透明な臭化物塩水は、石油および天然ガス井の掘削・仕上げ流体として広く用いられます。",
+        "image_alt": "夕暮れ時の石油採掘ポンプジャックのシルエット"
       }
     ]
   },
   "location": {
     "label": "プラントおよび拠点",
     "heading": "建設拠点",
+    "intro": "グジャラート州西部に位置するカッチ（Kachchh）は、インドで最も面積の広い地区です。同地域では伝統的に製塩が盛んであり、にがりを活用するプラントにとって理想的な立地環境です。",
+    "photo_caption": "イメージ写真。",
+    "photo_alt": "曇り空の下に広がる広大な天然塩原の景観",
     "maps_link": "Google マップで開く",
     "plant_title": "プラント（建設中）",
     "plant_address": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
@@ -158,45 +197,55 @@
     "reg_title": "登録事務所",
     "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
   },
+  "faq": {
+    "label": "よくあるご質問",
+    "heading": "ご質問と回答",
+    "items": [
+      {
+        "q": "Hari Hara Serenity Chemical LLP の事業内容は？",
+        "a": "グジャラート州カッチ県ラパル（Rapar）において、製塩にがりから臭素を回収・高純度精製するプラントを建設開発中です。"
+      },
+      {
+        "q": "プラントは既に稼働していますか？",
+        "a": "いいえ。プラントは開発途上にあります。本ウェブサイトは建設計画をご説明するものであり、現在は製品供給を行っておりません。"
+      },
+      {
+        "q": "にがり（Bittern）とは何ですか？",
+        "a": "海水等から塩分を析出させた後に残る残余塩水です。臭化物イオンをはじめとする豊富なミネラルを含んでいます。"
+      },
+      {
+        "q": "どのような製品を計画していますか？",
+        "a": "工業用グレードの臭素単体、ならびに臭素化合物および臭化物塩類です。取扱品目は現在確定作業を進めています。"
+      },
+      {
+        "q": "臭素はどのような産業で使用されますか？",
+        "a": "医薬品、農業化学、難燃剤、水処理、油田開発用化学品などの分野で不可欠な原料となっています。"
+      },
+      {
+        "q": "問い合わせ方法を教えてください。",
+        "a": "Eメール（Purchase@harihara.net）または電話／WhatsApp（+91 9427134190）にて承ります。パートナーの Ketan Dholu が確認の上、回答いたします。"
+      }
+    ]
+  },
   "contact": {
     "label": "お問い合わせ",
     "heading": "ご連絡はこちらから",
-    "line": "製品、パートナーシップ、その他のお問い合わせ。",
+    "line": "事業計画、計画製品、協業の可能性に関するご相談やお問い合わせを歓迎いたします。",
     "email_label": "Eメール",
-    "phone_label": "電話および WhatsApp",
+    "email_subject": "Enquiry from harihara.net",
+    "phone_label": "電話",
+    "whatsapp_label": "WhatsApp",
+    "whatsapp_greeting": "こんにちは。Hari Hara Serenity のウェブサイトより連絡しております。",
     "enquiries_note": "お問い合わせはパートナーの Ketan Dholu, Partner が確認し回答いたします。",
-    "form": {
-      "name_label": "お名前",
-      "company_label": "貴社名",
-      "email_label": "Eメールアドレス",
-      "phone_label": "電話番号",
-      "type_label": "お問い合わせ項目",
-      "type_options": {
-        "product": "製品について",
-        "partnership": "協業・パートナーシップ",
-        "other": "その他"
-      },
-      "message_label": "メッセージ本文",
-      "consent_label": "プライバシーポリシーに記載されているとおり、この問い合わせに回答する目的で個人情報が使用されることに同意します。",
-      "consent_privacy_link": "プライバシーポリシー",
-      "submit_btn": "送信する",
-      "submitting_btn": "送信中...",
-      "success_message": "ありがとうございます。お問い合わせを受け付けました。Ketan Dholu, Partner よりご連絡いたします。",
-      "error_message": "送信中にエラーが発生しました。お手数ですが Purchase@harihara.net まで直接メールをお送りください。",
-      "validation": {
-        "name_required": "お名前を入力してください。",
-        "email_required": "Eメールアドレスを入力してください。",
-        "email_invalid": "有効なEメールアドレスを入力してください。",
-        "message_required": "メッセージを入力してください。",
-        "consent_required": "送信するにはプライバシーポリシーに同意してください。"
-      }
-    }
+    "locations_heading": "拠点情報"
   },
   "footer": {
     "exact_text": "Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008",
     "quick_links": "リンク",
     "privacy_policy": "プライバシーポリシー",
     "disclaimer": "免責事項",
+    "image_credits": "クレジット表記",
+    "faq": "よくあるご質問",
     "copyright": "© {year} Hari Hara Serenity Chemical LLP"
   },
   "legal": {
@@ -205,6 +254,8 @@
     "privacy_description": "インド DPDP 法（2023年）に準拠した Hari Hara Serenity Chemical LLP のプライバシーポリシー。",
     "disclaimer_title": "免責事項",
     "disclaimer_description": "Hari Hara Serenity Chemical LLP ウェブサイトに関する法的免責事項。",
+    "image_credits_title": "画像の権利とライセンス",
+    "image_credits_description": "Hari Hara Serenity ウェブサイトで使用されているイメージ写真のライセンスおよび帰属情報。",
     "last_updated": "最終更新日：2026年10月"
   },
   "not_found": {

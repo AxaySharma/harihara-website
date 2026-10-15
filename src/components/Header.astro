@@ -13,10 +13,11 @@ const homeHref = lang === 'en' ? '/' : `/${lang}/`;
 
 const navItems = [
   { id: 'about', label: t('nav.about') },
+  { id: 'bromine', label: t('nav.bromine') },
   { id: 'process', label: t('nav.process') },
   { id: 'products', label: t('nav.products') },
   { id: 'industries', label: t('nav.industries') },
-  { id: 'location', label: t('nav.plant') },
+  { id: 'location', label: t('nav.location') },
   { id: 'contact', label: t('nav.contact') },
 ];
 ---
@@ -48,9 +49,9 @@ const navItems = [
       </span>
     </a>
 
-    <!-- Centre/Right: Desktop Navigation with 1.5rem gaps -->
+    <!-- Centre/Right: Desktop Navigation with 1.25rem-1.5rem gaps, hidden below 1180px -->
     <nav
-      class="hidden lg:flex items-center gap-6"
+      class="hidden min-[1180px]:flex items-center gap-5 xl:gap-6"
       aria-label={t('a11y.main_navigation')}
     >
       {navItems.map((item) => (
@@ -76,11 +77,11 @@ const navItems = [
         />
       </div>
 
-      <!-- Mobile Menu Button: at least 48 x 48 px (<900px / lg) -->
+      <!-- Mobile Menu Button: at least 48 x 48 px (<1180px) -->
       <button
         id="mobile-menu-trigger"
         type="button"
-        class="lg:hidden min-w-[48px] min-h-[48px] flex items-center justify-center p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] cursor-pointer"
+        class="min-[1180px]:hidden min-w-[48px] min-h-[48px] flex items-center justify-center p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] cursor-pointer"
         aria-expanded="false"
         aria-controls="mobile-menu-drawer"
         aria-label={t('a11y.open_menu')}
@@ -231,7 +232,7 @@ const navItems = [
 
     // 2. Active section observer for desktop nav links
     const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav-link[data-nav-target]');
-    const sectionIds = ['hero', 'about', 'process', 'products', 'industries', 'location', 'contact'];
+    const sectionIds = ['hero', 'about', 'bromine', 'process', 'products', 'industries', 'location', 'contact'];
     const sections: HTMLElement[] = [];
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
