@@ -18,7 +18,7 @@ This document records the mandatory verification and configuration steps that mu
 - [ ] **Needs a Real Photo Slots**:
   - Review any slots temporarily using fallback brand illustrations and replace them with verified licensed photos.
 - [ ] **Google Maps Link / Pins**:
-  - Client to send a Google Maps share link or pin for each of the three locations; paste into mapsUrl in src/data/locations.ts.
+  - Corporate and accounts office pin is completed (exact coordinates link verified). Client may optionally send custom Google Maps share links or pins for the plant and registered office; paste into `mapsUrl` in `src/data/locations.ts`.
 - [ ] **Preview Safety & Indexing (PUBLIC_NOINDEX)**:
   - Remove PUBLIC_NOINDEX in the production environment and confirm robots.txt and the sitemap are normal.
 

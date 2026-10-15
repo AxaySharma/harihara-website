@@ -28,9 +28,9 @@ export const LOCATIONS: LocationItem[] = [
     titleKey: 'location.corp_title',
     // Verbatim address as provided by the client
     address: 'Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001',
-    // Verified on Google Maps: lands on Shiv Residency on Bhuj Bypass Road, Bhuj, Gujarat 370001
-    mapsQuery: 'Shiv Residency, Bhuj Bypass Road, Bhuj, Gujarat 370001',
-    mapsUrl: '',
+    // Verified on Google Maps: lands on Shiv Aaradhna Society, Airport Ring Road, Bhuj, Gujarat 370001
+    mapsQuery: 'Shiv Aaradhna Society, Airport Ring Road, Bhuj, Gujarat 370001',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=23.2588477%2C69.6407146',
     isPrimary: false,
   },
   {
