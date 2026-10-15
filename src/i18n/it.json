@@ -50,7 +50,7 @@
     "photo_caption": "Distesa di sale. Immagine rappresentativa.",
     "photo_alt": "Veduta paesaggistica di una distesa salina costiera",
     "why_heading": "Perché questo progetto",
-    "why_p1": "L'industria indiana dipende dalle importazioni per il bromo. Il nostro obiettivo è ridurre tale dipendenza avviando una produzione nazionale.",
+    "why_p1": "Il nostro obiettivo è contribuire a ridurre la dipendenza dell'industria indiana dal bromo importato producendolo in India.",
     "why_p2": "La produzione di sale lungo la costa del Gujarat lascia acque madri (bittern), una salamoia minerale residua. Il recupero di bromo consente di valorizzare un sottoprodotto già generato dall'industria del sale.",
     "why_p3": "L'impianto è attualmente in fase di sviluppo. Questo sito descrive i traguardi verso cui stiamo lavorando.",
     "partners_heading": "Soci fondatori",
@@ -196,7 +196,8 @@
     "corp_title": "Ufficio direzionale e contabile",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "Sede legale",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "(si apre in una nuova scheda)"
   },
   "faq": {
     "label": "Domande frequenti",

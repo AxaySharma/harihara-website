@@ -1,5 +1,6 @@
 ---
 import { useTranslations } from '../i18n/utils';
+import { LOCATIONS } from '../data/locations';
 
 interface Props {
   lang: string;
@@ -7,31 +8,6 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
-
-const plantAddress = "Village Manaba, Taluka Rapar, District Kachchh, Gujarat";
-const corpAddress = "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001";
-const regAddress = "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra";
-
-const locations = [
-  {
-    title: t('location.plant_title'),
-    address: plantAddress,
-    mapQuery: encodeURIComponent(plantAddress),
-    isPrimary: true,
-  },
-  {
-    title: t('location.corp_title'),
-    address: corpAddress,
-    mapQuery: encodeURIComponent(corpAddress),
-    isPrimary: false,
-  },
-  {
-    title: t('location.reg_title'),
-    address: regAddress,
-    mapQuery: encodeURIComponent(regAddress),
-    isPrimary: false,
-  },
-];
 ---
 
 <section
@@ -58,69 +34,76 @@ const locations = [
 
     <!-- Wide photo of salt flats / coast of Kachchh -->
     <div class="mb-12 sm:mb-16">
-      <div class="relative w-full aspect-[16/9] sm:aspect-[21/9] lg:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
-        <img
-          src="/images/salt-flat-02.jpg"
-          alt={t('location.photo_alt')}
-          width="1600"
-          height="600"
-          loading="lazy"
-          decoding="async"
-          class="w-full h-full object-cover object-center filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
-        />
-      </div>
-      <p class="w-full text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
-        {t('location.photo_caption')}
-      </p>
+      <figure class="w-full m-0 p-0">
+        <div class="image-frame relative w-full aspect-[16/9] sm:aspect-[21/9] lg:aspect-[2.8/1] overflow-hidden rounded-[2px] border border-[var(--color-border)] bg-[#F7F2E8]">
+          <img
+            src="/images/salt-flat-02.jpg"
+            alt={t('location.photo_alt')}
+            width="2400"
+            height="1601"
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover object-center filter sepia-[0.10] brightness-[0.98] contrast-[1.02]"
+          />
+        </div>
+        <figcaption class="image-caption w-full text-[0.875rem] text-[var(--color-secondary)] mt-3 text-start">
+          {t('location.photo_caption')}
+        </figcaption>
+      </figure>
     </div>
 
     <!-- Three ruled columns (stack on mobile), plant first and visually largest -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 divide-y md:divide-y-0 md:divide-x divide-[var(--color-border)] rtl:md:divide-x-reverse items-start">
-      {locations.map((loc, idx) => (
-        <div class={`pt-8 md:pt-0 ${idx === 0 ? 'md:pe-8' : idx === 1 ? 'md:px-8' : 'md:ps-8'} flex flex-col justify-between h-full`}>
-          <div>
-            <div class="flex items-center gap-2 mb-3">
-              {loc.isPrimary && (
-                <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-crimson)] shrink-0" aria-hidden="true" />
-              )}
-              <h3 class={`font-heading text-[var(--color-charcoal)] ${loc.isPrimary ? 'text-[1.375rem] sm:text-[1.625rem] font-semibold' : 'text-[1.1875rem] sm:text-[1.3125rem]'}`}>
-                {loc.title}
-              </h3>
+      {LOCATIONS.map((loc, idx) => {
+        const linkUrl = loc.mapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc.mapsQuery)}`;
+        const title = t(loc.titleKey);
+        return (
+          <div class={`pt-8 md:pt-0 ${idx === 0 ? 'md:pe-8' : idx === 1 ? 'md:px-8' : 'md:ps-8'} flex flex-col justify-between h-full`}>
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                {loc.isPrimary && (
+                  <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-crimson)] shrink-0" aria-hidden="true" />
+                )}
+                <h3 class={`font-heading text-[var(--color-charcoal)] ${loc.isPrimary ? 'text-[1.375rem] sm:text-[1.625rem] font-semibold' : 'text-[1.1875rem] sm:text-[1.3125rem]'}`}>
+                  {title}
+                </h3>
+              </div>
+
+              <!-- Address verbatim as provided by the client -->
+              <p class="text-[1rem] sm:text-[1.0625rem] text-[var(--color-secondary)] leading-relaxed mb-6">
+                {loc.address}
+              </p>
             </div>
 
-            <!-- Address verbatim -->
-            <p class="text-[1rem] sm:text-[1.0625rem] text-[var(--color-secondary)] leading-relaxed mb-6">
-              {loc.address}
-            </p>
-          </div>
-
-          <!-- Maps link with rel="noopener" -->
-          <div class="pt-2">
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${loc.mapQuery}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 text-[1rem] font-semibold text-[var(--color-crimson)] hover:text-[var(--color-maroon)] transition-colors underline decoration-2 underline-offset-4 focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]"
-            >
-              <span>{t('location.maps_link')}</span>
-              <svg
-                class="w-4 h-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
+            <!-- Maps link opening in new tab with rel="noopener" and translated visually hidden text -->
+            <div class="pt-2">
+              <a
+                href={linkUrl}
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center gap-2 text-[1rem] font-semibold text-[var(--color-crimson)] hover:text-[var(--color-maroon)] transition-colors underline decoration-2 underline-offset-4 focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]"
               >
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                <polyline points="15 3 21 3 21 9" />
-                <line x1="10" y1="14" x2="21" y2="3" />
-              </svg>
-            </a>
+                <span>{t('location.maps_link')}</span>
+                <span class="sr-only"> {t('location.opens_in_new_tab')}</span>
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   </div>
 </section>

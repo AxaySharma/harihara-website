@@ -50,7 +50,7 @@
     "photo_caption": "盐沼风貌。示意图。",
     "photo_alt": "沿海盐沼自然景观",
     "why_heading": "立项初衷",
-    "why_p1": "印度工业的溴素需求长期依赖进口。我们的目标是在本土回收与提纯溴素，降低对外部进口的依赖。",
+    "why_p1": "我们的目标是通过在印度本土生产溴，帮助减少印度工业对进口溴的依赖。",
     "why_p2": "古吉拉特邦沿海制盐业留下了大量苦卤（析盐后的残余浓盐水），其中富含多种矿物质。从中提取溴素，是对制盐产业现有副产物的循环利用。",
     "why_p3": "工厂目前仍处于开发建设阶段。本网站旨在介绍我们正在稳步推进的发展规划。",
     "partners_heading": "创始合伙人",
@@ -196,7 +196,8 @@
     "corp_title": "企业与财务办事处",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "注册办事处",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "（在新标签页中打开）"
   },
   "faq": {
     "label": "常见问题",

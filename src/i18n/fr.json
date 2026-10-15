@@ -50,7 +50,7 @@
     "photo_caption": "Désert de sel. Image représentative.",
     "photo_alt": "Paysage de marais salant côtier naturel",
     "why_heading": "Pourquoi ce projet",
-    "why_p1": "L'industrie indienne dépend des importations pour son approvisionnement en brome. Notre objectif est de réduire cette dépendance en produisant du brome sur le territoire national.",
+    "why_p1": "Notre objectif est de contribuer à réduire la dépendance de l'industrie indienne à l'égard du brome importé en le produisant en Inde.",
     "why_p2": "La production de sel le long du littoral du Gujarat produit des eaux-mères résiduelles (bittern), une saumure riche en minéraux. En extraire le brome valorise une ressource déjà générée par l'industrie salicole.",
     "why_p3": "L'usine est actuellement en cours de développement. Ce site web présente les objectifs vers lesquels nous tendons.",
     "partners_heading": "Associés fondateurs",
@@ -196,7 +196,8 @@
     "corp_title": "Bureau administratif et comptable",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "Siège social",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "(ouvre un nouvel onglet)"
   },
   "faq": {
     "label": "Foire aux questions",

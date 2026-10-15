@@ -24,35 +24,37 @@ const faqItems = [
   aria-labelledby="faq-heading"
 >
   <div class="site-container">
-    <!-- Header -->
-    <div class="mb-10 sm:mb-14">
-      <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
-        {t('faq.label')}
-      </span>
-      <h2
-        id="faq-heading"
-        class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)]"
-      >
-        {t('faq.heading')}
-      </h2>
-    </div>
+    <div class="grid-12 items-start">
+      <!-- Header Column (5 cols) -->
+      <div class="col-span-12 lg:col-span-5 mb-8 lg:mb-0">
+        <span class="inline-block text-[0.875rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-secondary)] mb-3">
+          {t('faq.label')}
+        </span>
+        <h2
+          id="faq-heading"
+          class="font-heading text-[var(--text-xl)] sm:text-[var(--text-2xl)] text-[var(--color-charcoal)]"
+        >
+          {t('faq.heading')}
+        </h2>
+      </div>
 
-    <!-- Native details/summary accordion list (no JavaScript required) -->
-    <div class="max-w-[48em] divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
-      {faqItems.map((item, idx) => (
-        <details class="group py-2">
-          <summary class="min-h-[3.5rem] flex items-center justify-between gap-4 cursor-pointer list-none py-3 text-[1.125rem] sm:text-[1.25rem] font-heading text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]">
-            <span>{item.q}</span>
-            <span class="w-8 h-8 rounded-full border border-[var(--color-border)] flex items-center justify-center shrink-0 text-[1.25rem] text-[var(--color-secondary)] group-hover:border-[var(--color-crimson)] group-hover:text-[var(--color-crimson)] transition-colors select-none font-sans font-light leading-none" aria-hidden="true">
-              <span class="group-open:hidden">+</span>
-              <span class="hidden group-open:inline">&minus;</span>
-            </span>
-          </summary>
-          <div class="pb-6 pt-2 text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed ps-1">
-            <p>{item.a}</p>
-          </div>
-        </details>
-      ))}
+      <!-- Native details/summary accordion list (7 cols) -->
+      <div class="col-span-12 lg:col-span-7 divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
+        {faqItems.map((item, idx) => (
+          <details class="group py-2">
+            <summary class="min-h-[3.5rem] flex items-center justify-between gap-4 cursor-pointer list-none py-3 text-[1.125rem] sm:text-[1.25rem] font-heading text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-3 focus:ring-[var(--color-crimson)] rounded-[2px]">
+              <span>{item.q}</span>
+              <span class="w-8 h-8 rounded-full border border-[var(--color-border)] flex items-center justify-center shrink-0 text-[1.25rem] text-[var(--color-secondary)] group-hover:border-[var(--color-crimson)] group-hover:text-[var(--color-crimson)] transition-colors select-none font-sans font-light leading-none" aria-hidden="true">
+                <span class="group-open:hidden">+</span>
+                <span class="hidden group-open:inline">&minus;</span>
+              </span>
+            </summary>
+            <div class="pb-6 pt-2 text-[var(--text-base)] text-[var(--color-secondary)] leading-relaxed ps-1">
+              <p>{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
     </div>
   </div>
 </section>

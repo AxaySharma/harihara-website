@@ -50,7 +50,7 @@
     "photo_caption": "塩平原。イメージ写真。",
     "photo_alt": "沿岸部の塩平原の自然景観",
     "why_heading": "事業の意義",
-    "why_p1": "インドの産業界は臭素供給の多くを海外からの輸入に依存しています。国内での精製供給体制を整えることで、その輸入依存度の低減を目指しています。",
+    "why_p1": "私たちの目的は、臭素をインド国内で生産することにより、輸入臭素に対するインド産業の依存度を低減することです。",
     "why_p2": "グジャラート州沿岸の製塩工程では、ミネラルを豊富に含む残余塩水「にがり（苦汁）」が生じます。ここから臭素を回収することで、製塩副産物の有効利用を図ります。",
     "why_p3": "プラントは現在建設開発中です。本ウェブサイトは、私たちが目指している事業方針と計画を説明するものです。",
     "partners_heading": "創業パートナー",
@@ -196,7 +196,8 @@
     "corp_title": "本社および会計事務所",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "登録事務所",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "（新しいタブで開きます）"
   },
   "faq": {
     "label": "よくあるご質問",

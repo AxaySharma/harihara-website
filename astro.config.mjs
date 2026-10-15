@@ -3,10 +3,12 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
+const isNoIndex = process.env.PUBLIC_NOINDEX === 'true';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://harihara.net',
-  integrations: [sitemap()],
+  integrations: isNoIndex ? [] : [sitemap()],
   i18n: {
     defaultLocale: 'en',
     locales: [

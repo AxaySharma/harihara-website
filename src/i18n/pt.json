@@ -50,7 +50,7 @@
     "photo_caption": "Deserto de sal. Imagem representativa.",
     "photo_alt": "Vista de salina natural costeira",
     "why_heading": "Por que este projeto",
-    "why_p1": "A indústria indiana depende de importações para o bromo. Nosso objetivo é reduzir essa dependência produzindo bromo no país.",
+    "why_p1": "O nosso objetivo é ajudar a reduzir a dependência da indústria indiana do bromo importado, produzindo-o na Índia.",
     "why_p2": "A produção de sal na costa de Gujarat deixa para trás a salmoura residual (bittern), uma salmoura rica em minerais. Recuperar o bromo permite aproveitar um material já gerado pela indústria salineira.",
     "why_p3": "A fábrica ainda está em desenvolvimento. Este site descreve os objetivos para os quais estamos trabalhando.",
     "partners_heading": "Sócios fundadores",
@@ -196,7 +196,8 @@
     "corp_title": "Escritório corporativo e contábil",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "Sede registrada",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "(abre num novo separador)"
   },
   "faq": {
     "label": "Perguntas frequentes",

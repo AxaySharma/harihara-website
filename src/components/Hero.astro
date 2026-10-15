@@ -88,10 +88,10 @@ const t = useTranslations(lang);
 
       <!-- End Column: Arch Artwork with clean SVG salt pans (5 cols desktop) -->
       <div class="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-end w-full mt-6 lg:mt-0">
-        <div class="w-full max-w-[480px] flex flex-col">
+        <div class="w-full max-w-[560px] flex flex-col">
           <HeroArt />
           <!-- Translated Caption below artwork: minimum 0.875rem in secondary color -->
-          <p class="font-body text-[0.875rem] text-[var(--color-secondary)] text-start mt-4 leading-relaxed tracking-normal">
+          <p class="font-body text-[0.875rem] text-[var(--color-secondary)] text-start mt-4 leading-relaxed tracking-normal" data-caption="true">
             {t('hero.image_caption')}
           </p>
         </div>
@@ -147,7 +147,17 @@ const t = useTranslations(lang);
 
 <style>
   .hero-section {
-    padding-block: var(--section-space);
+    padding-block-start: clamp(2.5rem, 1.5rem + 3vw, 4.5rem);
+    padding-block-end: var(--section-space);
+  }
+
+  @media (min-width: 1024px) {
+    .hero-section {
+      min-height: calc(100dvh - 5rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   .hero-headline {
@@ -159,8 +169,8 @@ const t = useTranslations(lang);
   }
 
   .facts-wrapper {
-    margin-top: clamp(3.5rem, 2.5rem + 4vw, 6rem);
-    padding-top: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+    margin-top: clamp(2.5rem, 1.5rem + 3vw, 4.5rem);
+    padding-top: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
   }
 
   .fact-col {

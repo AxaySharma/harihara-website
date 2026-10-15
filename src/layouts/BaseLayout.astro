@@ -16,6 +16,8 @@ const { lang = 'en', title, description } = Astro.props;
 const t = useTranslations(lang);
 const langConfig = languages[lang] || languages.en;
 
+const isNoIndex = import.meta.env.PUBLIC_NOINDEX === 'true' || process.env.PUBLIC_NOINDEX === 'true';
+
 const siteName = t('site_name');
 const pageTitle = title ? `${title} | ${siteName}` : `${siteName} | Industrial Bromine Recovery`;
 const metaDescription = description || t('hero.lead');
@@ -72,6 +74,7 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
     <meta name="description" content={metaDescription} />
+    {isNoIndex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />

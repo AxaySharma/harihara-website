@@ -50,7 +50,7 @@
     "photo_caption": "Salar. Imagen representativa.",
     "photo_alt": "Vista panorámica de un salar costero",
     "why_heading": "Por qué este proyecto",
-    "why_p1": "La industria india depende de las importaciones para el bromo. Nuestro objetivo es reducir esa dependencia produciendo bromo en el país.",
+    "why_p1": "Nuestro objetivo es ayudar a reducir la dependencia de la industria india respecto al bromo importado produciéndolo en la India.",
     "why_p2": "La producción de sal en la costa de Gujarat deja salmuera residual (bittern), una salmuera rica en minerales. Recuperar bromo de ella permite un mayor aprovechamiento de un recurso que la industria salinera ya produce.",
     "why_p3": "La planta aún está en desarrollo. Este sitio web describe los objetivos hacia los cuales estamos trabajando.",
     "partners_heading": "Socios fundadores",
@@ -196,7 +196,8 @@
     "corp_title": "Oficina corporativa y de contabilidad",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "Domicilio social",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "(se abre en una nueva pestaña)"
   },
   "faq": {
     "label": "Preguntas frecuentes",

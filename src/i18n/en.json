@@ -50,7 +50,7 @@
     "photo_caption": "Salt flats. Representative image.",
     "photo_alt": "Landscape view of coastal salt flats",
     "why_heading": "Why this project",
-    "why_p1": "Indian industry depends on imports for bromine. Our aim is to reduce that dependence by producing bromine at home.",
+    "why_p1": "Our aim is to help reduce Indian industry's dependence on imported bromine by producing it in India.",
     "why_p2": "Salt production along Gujarat's coast leaves behind bittern, a mineral-rich residual brine. Recovering bromine from it makes further use of a material the salt industry already produces.",
     "why_p3": "The plant is still under development. This website describes what we are working towards.",
     "partners_heading": "Founding partners",
@@ -224,7 +224,8 @@
     "corp_title": "Corporate and Accounts Office",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "Registered Office",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "(opens in a new tab)"
   },
   "faq": {
     "label": "FAQ",

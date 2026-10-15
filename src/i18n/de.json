@@ -50,7 +50,7 @@
     "photo_caption": "Salztonebene. Symbolbild.",
     "photo_alt": "Landschaftliche Ansicht einer küstennahen Salztonebene",
     "why_heading": "Warum dieses Projekt",
-    "why_p1": "Die indische Industrie ist beim Bezug von Brom auf Importe angewiesen. Unser Ziel ist es, diese Abhängigkeit durch eine heimische Bromgewinnung zu verringern.",
+    "why_p1": "Unser Ziel ist es, die Abhängigkeit der indischen Industrie von importiertem Brom durch die Produktion in Indien zu verringern.",
     "why_p2": "Bei der Salzgewinnung an der Küste von Gujarat bleibt Restbitterlauge zurück, eine mineralstoffreiche Sole. Die Bromgewinnung daraus ermöglicht eine weitere stoffliche Nutzung eines bereits anfallenden Nebenprodukts.",
     "why_p3": "Die Anlage befindet sich noch im Aufbau. Diese Website beschreibt unsere Entwicklungsziele.",
     "partners_heading": "Gründungspartner",
@@ -196,7 +196,8 @@
     "corp_title": "Unternehmens- und Buchhaltungsbüro",
     "corp_address": "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
     "reg_title": "Eingetragener Sitz",
-    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra"
+    "reg_address": "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
+    "opens_in_new_tab": "(öffnet in neuem Tab)"
   },
   "faq": {
     "label": "Häufige Fragen",
