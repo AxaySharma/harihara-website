@@ -1,15 +1,39 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
+  "convenience_note": "仅供参考。英文版本为官方正式版本。",
+  "a11y": {
+    "skip_to_content": "跳转至主要内容",
+    "open_menu": "打开导航菜单",
+    "close_menu": "关闭导航菜单",
+    "main_navigation": "主导航",
+    "select_language": "选择语言"
+  },
   "nav": {
     "about": "关于我们",
-    "process": "工艺流程",
-    "products": "产品中心",
-    "industries": "应用领域",
-    "plant": "生产基地",
+    "process": "生产工艺",
+    "products": "产品介绍",
+    "industries": "应用行业",
+    "plant": "工厂设施",
     "contact": "联系我们"
   },
-  "convenience_note": "为了方便而翻译。英文版本为官方正式版本。",
-  "hero_heading": "从制盐苦卤中提纯工业溴",
-  "hero_subheading": "正在印度古吉拉特邦卡奇县拉帕尔筹建现代化的溴提取与精制工厂，以供应印度工业需求。"
+  "hero": {
+    "eyebrow": "Rapar, Kachchh, Gujarat",
+    "headline": "为印度工业构建高品质溴素供应来源。",
+    "lead": "我们正在古吉拉特邦卡奇县拉帕尔（Rapar, Kachchh）筹建工厂，从制盐后的残留苦卤中提取并提纯溴素。",
+    "status": "工厂正在筹建中",
+    "cta_primary": "取得联系",
+    "cta_secondary": "了解项目",
+    "caption": "概念示意图：盐田，苦卤之来源。"
+  },
+  "facts": {
+    "location_label": "地理位置",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "规划方向",
+    "focus_value": "溴素及溴化物化合物",
+    "industries_label": "应用行业",
+    "industries_value": "制药、农化、阻燃剂、水处理、油田化学品",
+    "status_label": "建设状态",
+    "status_value": "工厂正在筹建中"
+  }
 }

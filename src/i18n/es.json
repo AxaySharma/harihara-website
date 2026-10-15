@@ -1,15 +1,39 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
+  "convenience_note": "Traducido para su comodidad. La versión oficial está en inglés.",
+  "a11y": {
+    "skip_to_content": "Ir al contenido principal",
+    "open_menu": "Abrir menú de navegación",
+    "close_menu": "Cerrar menú de navegación",
+    "main_navigation": "Navegación principal",
+    "select_language": "Seleccionar idioma"
+  },
   "nav": {
     "about": "Nosotros",
     "process": "Proceso",
     "products": "Productos",
-    "industries": "Industrias",
+    "industries": "Sectores",
     "plant": "Planta",
     "contact": "Contacto"
   },
-  "convenience_note": "Traducido para su comodidad. La versión en inglés es la versión oficial.",
-  "hero_heading": "Purificación de bromo a partir de salmuera residual",
-  "hero_subheading": "Instalación de una planta moderna de recuperación y purificación de bromo en Rapar, Kachchh, Gujarat para abastecer a la industria india."
+  "hero": {
+    "eyebrow": "Rapar, Kachchh, Gujarat",
+    "headline": "Construyendo una fuente de bromo de calidad para la industria india.",
+    "lead": "Estamos instalando una planta en Rapar, Kachchh, para recuperar y purificar bromo a partir de bittern, la salmuera residual de la producción salinera.",
+    "status": "Planta en desarrollo",
+    "cta_primary": "Ponerse en contacto",
+    "cta_secondary": "Acerca del proyecto",
+    "caption": "Obra ilustrativa: salinas, fuente de bittern."
+  },
+  "facts": {
+    "location_label": "Ubicación",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "Enfoque previsto",
+    "focus_value": "Bromo y compuestos de bromo",
+    "industries_label": "Sectores",
+    "industries_value": "Farmacéutico, agroquímico, retardantes de llama, tratamiento de agua, yacimientos petrolíferos",
+    "status_label": "Estado",
+    "status_value": "Planta en desarrollo"
+  }
 }

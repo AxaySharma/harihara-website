@@ -1,6 +1,14 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
+  "convenience_note": "Bequemlichkeitshalber übersetzt. Die englische Version ist die offizielle Fassung.",
+  "a11y": {
+    "skip_to_content": "Zum Hauptinhalt springen",
+    "open_menu": "Navigationsmenü öffnen",
+    "close_menu": "Navigationsmenü schließen",
+    "main_navigation": "Hauptnavigation",
+    "select_language": "Sprache wählen"
+  },
   "nav": {
     "about": "Über uns",
     "process": "Verfahren",
@@ -9,7 +17,23 @@
     "plant": "Anlage",
     "contact": "Kontakt"
   },
-  "convenience_note": "Zur Erleichterung übersetzt. Die englische Version ist die maßgebliche Fassung.",
-  "hero_heading": "Gewinnung und Reinigung von Brom aus Restbitterlauge",
-  "hero_subheading": "Errichtung einer modernen Anlage zur Bromgewinnung und -aufbereitung in Rapar, Kachchh, Gujarat zur Versorgung der indischen Industrie."
+  "hero": {
+    "eyebrow": "Rapar, Kachchh, Gujarat",
+    "headline": "Aufbau einer Bezugsquelle für Qualitätsbrom für die indische Industrie.",
+    "lead": "Wir errichten eine Anlage in Rapar, Kachchh, um Brom aus Restbitterlauge zu gewinnen und aufzureinigen, der nach der Salzgewinnung verbleibenden Restsole.",
+    "status": "Anlage in Entwicklung",
+    "cta_primary": "Kontakt aufnehmen",
+    "cta_secondary": "Über das Projekt",
+    "caption": "Illustratives Werk: Salzgärten, die Quelle von Restbitterlauge."
+  },
+  "facts": {
+    "location_label": "Standort",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "Geplanter Fokus",
+    "focus_value": "Brom und Bromverbindungen",
+    "industries_label": "Branchen",
+    "industries_value": "Pharmazeutik, Agrochemie, Flammschutzmittel, Wasseraufbereitung, Ölfeldchemie",
+    "status_label": "Status",
+    "status_value": "Anlage in Entwicklung"
+  }
 }

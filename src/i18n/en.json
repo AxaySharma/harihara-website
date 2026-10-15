@@ -1,6 +1,14 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
+  "convenience_note": "Translated for convenience. The English version is the official version.",
+  "a11y": {
+    "skip_to_content": "Skip to content",
+    "open_menu": "Open navigation menu",
+    "close_menu": "Close navigation menu",
+    "main_navigation": "Main navigation",
+    "select_language": "Select language"
+  },
   "nav": {
     "about": "About",
     "process": "Process",
@@ -9,7 +17,23 @@
     "plant": "Plant",
     "contact": "Contact"
   },
-  "convenience_note": "Translated for convenience. The English version is the official version.",
-  "hero_heading": "Purifying Bromine from Residual Bittern",
-  "hero_subheading": "Setting up a modern bromine recovery and purification plant at Rapar, Kachchh, Gujarat to supply Indian industry."
+  "hero": {
+    "eyebrow": "Rapar, Kachchh, Gujarat",
+    "headline": "Building a source of quality bromine for Indian industry.",
+    "lead": "We are setting up a plant at Rapar, Kachchh, to recover and purify bromine from bittern, the residual brine left after salt production.",
+    "status": "Plant under development",
+    "cta_primary": "Get in touch",
+    "cta_secondary": "About the project",
+    "caption": "Illustrative artwork: salt pans, the source of bittern."
+  },
+  "facts": {
+    "location_label": "Location",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "Planned focus",
+    "focus_value": "Bromine and bromine compounds",
+    "industries_label": "Industries",
+    "industries_value": "Pharmaceutical, agrochemical, flame retardants, water treatment, oil-field",
+    "status_label": "Status",
+    "status_value": "Plant under development"
+  }
 }

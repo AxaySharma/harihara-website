@@ -1,15 +1,39 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
+  "convenience_note": "便宜上の翻訳です。公式版は英語版となります。",
+  "a11y": {
+    "skip_to_content": "メインコンテンツへスキップ",
+    "open_menu": "ナビゲーションメニューを開く",
+    "close_menu": "ナビゲーションメニューを閉じる",
+    "main_navigation": "メインナビゲーション",
+    "select_language": "言語を選択"
+  },
   "nav": {
-    "about": "会社概要",
+    "about": "企業情報",
     "process": "工程",
     "products": "取扱品目",
     "industries": "適用分野",
-    "plant": "生産拠点",
+    "plant": "プラント",
     "contact": "お問い合わせ"
   },
-  "convenience_note": "便宜上の翻訳です。英語版が公式版となります。",
-  "hero_heading": "製塩残余にがりからの臭素精製",
-  "hero_subheading": "インド産業界への供給を目指し、グジャラート州カッチ県ラパールにて最新鋭の臭素回収・精製プラントを建設中です。"
+  "hero": {
+    "eyebrow": "Rapar, Kachchh, Gujarat",
+    "headline": "インド産業に向けた高品質な臭素の供給源を構築。",
+    "lead": "製塩後に残る塩水（にがり）から臭素を回収・高純度精製するため、グジャラート州カッチ県ラパル（Rapar, Kachchh）にプラントを建設中です。",
+    "status": "プラント建設中",
+    "cta_primary": "お問い合わせ",
+    "cta_secondary": "事業概要について",
+    "caption": "イメージ図：にがりの供給源である塩田。"
+  },
+  "facts": {
+    "location_label": "所在地",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "計画品目",
+    "focus_value": "臭素および臭素化合物",
+    "industries_label": "適用分野",
+    "industries_value": "医薬品、農薬、難燃剤、水処理、油田化学",
+    "status_label": "現況",
+    "status_value": "プラント建設中"
+  }
 }

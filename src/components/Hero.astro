@@ -1,0 +1,193 @@
+---
+import HeroArt from './HeroArt.astro';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section id="hero" class="relative pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 overflow-hidden">
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Desktop 12-column grid: 7 cols text on start side, 5 cols art on end side bottom-aligned -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-end">
+      <!-- Start Column: Editorial Copy & Actions (7 cols desktop) -->
+      <div class="lg:col-span-7 flex flex-col justify-end text-start">
+        <!-- Eyebrow with leading crimson rule -->
+        <div class="hero-load-item flex items-center gap-3 mb-6 sm:mb-8" style="--stagger: 0;">
+          <span class="w-6 h-[1.5px] bg-[var(--color-crimson)] shrink-0" aria-hidden="true"></span>
+          <span class="hero-eyebrow font-label text-xs tracking-[0.2em] uppercase font-semibold text-[var(--color-charcoal)]">
+            {t('hero.eyebrow')}
+          </span>
+        </div>
+
+        <!-- Headline: Newsreader, regular weight, clamp(), tight leading -->
+        <h1
+          class="hero-load-item font-heading font-normal text-[var(--color-charcoal)] text-[2.5rem] sm:text-[3.5rem] md:text-[4.25rem] lg:text-[4.75rem] leading-[1.08] tracking-[-0.02em] mb-6 sm:mb-8"
+          style="--stagger: 1;"
+        >
+          {t('hero.headline')}
+        </h1>
+
+        <!-- Lead paragraph -->
+        <p
+          class="hero-load-item font-body text-base sm:text-lg md:text-xl text-[var(--color-charcoal)]/85 max-w-2xl leading-relaxed mb-6 sm:mb-8"
+          style="--stagger: 2;"
+        >
+          {t('hero.lead')}
+        </p>
+
+        <!-- Status line with thin crimson dot -->
+        <div
+          class="hero-load-item inline-flex items-center gap-2.5 mb-8 sm:mb-10"
+          style="--stagger: 3;"
+        >
+          <span class="w-2 h-2 rounded-full bg-[var(--color-crimson)] shrink-0" aria-hidden="true"></span>
+          <span class="text-xs uppercase tracking-[0.14em] font-medium text-[var(--color-grey)]">
+            {t('hero.status')}
+          </span>
+        </div>
+
+        <!-- Two Action Links: Primary button & Secondary text link -->
+        <div
+          class="hero-load-item flex flex-wrap items-center gap-5 sm:gap-8"
+          style="--stagger: 4;"
+        >
+          <!-- Primary button: solid crimson, paper text, 2px radius, visible focus -->
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center px-6 py-3.5 bg-[var(--color-crimson)] text-[var(--color-paper)] text-xs font-semibold uppercase tracking-[0.16em] rounded-[2px] transition-colors hover:bg-[var(--color-maroon)] focus:outline-none focus:ring-2 focus:ring-[var(--color-charcoal)] focus:ring-offset-2 focus:ring-offset-[var(--color-paper)]"
+          >
+            {t('hero.cta_primary')}
+          </a>
+
+          <!-- Secondary text link with thin arrow (mirrors in RTL) -->
+          <a
+            href="#about"
+            class="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] py-1"
+          >
+            <span>{t('hero.cta_secondary')}</span>
+            <svg
+              class="w-4 h-4 text-[var(--color-crimson)] transition-transform duration-200 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 8h10M9 4l4 4-4 4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- End Column: Arch Artwork (5 cols desktop, ~75% width on mobile) -->
+      <div class="lg:col-span-5 flex flex-col items-center lg:items-end w-full mt-6 lg:mt-0">
+        <div class="w-[78%] sm:w-[65%] lg:w-full max-w-[420px] flex flex-col">
+          <HeroArt />
+          <!-- Translated Caption below artwork -->
+          <p class="font-body text-[11px] sm:text-xs text-[var(--color-grey)] text-start mt-3.5 leading-relaxed tracking-normal">
+            {t('hero.caption')}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ruled Facts Strip below hero block (4 cols desktop, 2 tablet, 1 mobile separated by 1px rules) -->
+    <div class="mt-16 sm:mt-24 pt-10 sm:pt-12 border-t border-[var(--color-border)]">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 facts-strip divide-y md:divide-y-0 divide-[var(--color-border)]">
+        <!-- Item 1: Location -->
+        <div class="fact-col py-5 md:py-0 md:pe-6 lg:pe-8 flex flex-col gap-2">
+          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+            {t('facts.location_label')}
+          </span>
+          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+            {t('facts.location_value')}
+          </span>
+        </div>
+
+        <!-- Item 2: Planned focus -->
+        <div class="fact-col py-5 md:py-0 md:px-6 lg:px-8 md:border-s md:border-[var(--color-border)] flex flex-col gap-2">
+          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+            {t('facts.focus_label')}
+          </span>
+          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+            {t('facts.focus_value')}
+          </span>
+        </div>
+
+        <!-- Item 3: Industries -->
+        <div class="fact-col py-5 md:py-0 md:pe-6 lg:px-8 md:border-t lg:border-t-0 md:border-s-0 lg:border-s lg:border-[var(--color-border)] flex flex-col gap-2">
+          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+            {t('facts.industries_label')}
+          </span>
+          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+            {t('facts.industries_value')}
+          </span>
+        </div>
+
+        <!-- Item 4: Status -->
+        <div class="fact-col py-5 md:py-0 md:px-6 lg:ps-8 md:border-t lg:border-t-0 md:border-s md:border-[var(--color-border)] flex flex-col gap-2">
+          <span class="fact-label font-label text-[10px] sm:text-[11px] tracking-[0.18em] uppercase text-[var(--color-grey)] font-medium">
+            {t('facts.status_label')}
+          </span>
+          <span class="font-body text-xs sm:text-[13px] text-[var(--color-charcoal)] leading-relaxed font-normal">
+            {t('facts.status_value')}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Load-in entrance animation: fade and rise 12px with 80ms stagger, 600ms ease-out */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-load-item {
+      opacity: 0;
+      transform: translateY(12px);
+      animation: heroEntrance 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: calc(var(--stagger, 0) * 80ms);
+    }
+  }
+
+  @keyframes heroEntrance {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* No JS or reduced-motion guarantee */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-load-item {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+    }
+  }
+
+  /* Non-casing script typography adjustments */
+  html[lang="hi"] .hero-eyebrow,
+  html[lang="gu"] .hero-eyebrow,
+  html[lang="zh-Hans"] .hero-eyebrow,
+  html[lang="ja"] .hero-eyebrow,
+  html[lang="ko"] .hero-eyebrow,
+  html[lang="ar"] .hero-eyebrow {
+    letter-spacing: normal;
+  }
+
+  html[lang="hi"] .fact-label,
+  html[lang="gu"] .fact-label,
+  html[lang="zh-Hans"] .fact-label,
+  html[lang="ja"] .fact-label,
+  html[lang="ko"] .fact-label,
+  html[lang="ar"] .fact-label {
+    letter-spacing: normal;
+  }
+</style>

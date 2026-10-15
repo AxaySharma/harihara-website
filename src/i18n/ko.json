@@ -1,15 +1,39 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
+  "convenience_note": "편의를 위해 번역되었습니다. 공식 본문은 영문본입니다.",
+  "a11y": {
+    "skip_to_content": "본문 바로가기",
+    "open_menu": "내비게이션 메뉴 열기",
+    "close_menu": "내비게이션 메뉴 닫기",
+    "main_navigation": "주요 내비게이션",
+    "select_language": "언어 선택"
+  },
   "nav": {
     "about": "회사 소개",
-    "process": "공정 과정",
-    "products": "예정 제품",
+    "process": "공정",
+    "products": "제품",
     "industries": "적용 산업",
-    "plant": "생산 시설",
-    "contact": "문의하기"
+    "plant": "플랜트",
+    "contact": "문의"
   },
-  "convenience_note": "편의를 위해 번역되었습니다. 영문 본문이 공식 문서입니다.",
-  "hero_heading": "잔류 간수로부터 브롬 정제 및 회수",
-  "hero_subheading": "인도 산업 공급을 위해 구자라트주 카치 라파르에 최신 브롬 회수 및 정제 공장을 설립 중입니다."
+  "hero": {
+    "eyebrow": "Rapar, Kachchh, Gujarat",
+    "headline": "인도 산업을 위한 고품질 브롬 공급원 구축.",
+    "lead": "소금 생산 후 남은 잔류 염수(간수)에서 브롬을 회수 및 정제하기 위해 구자라트주 카치 라파르(Rapar, Kachchh)에 플랜트를 구축하고 있습니다.",
+    "status": "플랜트 구축 진행 중",
+    "cta_primary": "문의하기",
+    "cta_secondary": "프로젝트 정보",
+    "caption": "삽화: 간수의 공급원인 염전."
+  },
+  "facts": {
+    "location_label": "위치",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "계획 품목",
+    "focus_value": "브롬 및 브롬 화합물",
+    "industries_label": "적용 산업",
+    "industries_value": "제약, 농화학, 난연제, 수처리, 유전 화학",
+    "status_label": "상태",
+    "status_value": "플랜트 구축 진행 중"
+  }
 }

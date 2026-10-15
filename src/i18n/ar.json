@@ -1,15 +1,39 @@
 {
   "site_name": "Hari Hara Serenity Chemical LLP",
   "short_name": "HARI HARA SERENITY",
+  "convenience_note": "مترجم للتيسير. النسخة الإنجليزية هي النسخة الرسمية المعتمدة.",
+  "a11y": {
+    "skip_to_content": "الانتقال إلى المحتوى الرئيسي",
+    "open_menu": "فتح قائمة التنقل",
+    "close_menu": "إغلاق قائمة التنقل",
+    "main_navigation": "التنقل الرئيسي",
+    "select_language": "اختر اللغة"
+  },
   "nav": {
     "about": "نبذة عنا",
     "process": "العملية",
     "products": "المنتجات",
     "industries": "القطاعات",
-    "plant": "المصنع",
+    "plant": "المنشأة",
     "contact": "اتصل بنا"
   },
-  "convenience_note": "مترجم للملاءمة. النسخة الإنجليزية هي النسخة الرسمية.",
-  "hero_heading": "استخلاص وتنقية البروم من المحلول الملحي المتبقي",
-  "hero_subheading": "إنشاء مصنع حديث لاستخلاص وتنقية البروم في رابار، كوتش، غوجارات لتزويد الصناعة الهندية."
+  "hero": {
+    "eyebrow": "Rapar, Kachchh, Gujarat",
+    "headline": "بناء مصدر موثوق للبروم عالي الجودة للصناعة الهندية.",
+    "lead": "نعمل على إنشاء منشأة في Rapar, Kachchh لاستخلاص وتكرير البروم من المحلول الملحي المتبقي (البتيرن) الناتج عن إنتاج الملح.",
+    "status": "المنشأة قيد التطوير",
+    "cta_primary": "تواصل معنا",
+    "cta_secondary": "عن المشروع",
+    "caption": "عمل توضيحي: ملاحات، مصدر البتيرن."
+  },
+  "facts": {
+    "location_label": "الموقع",
+    "location_value": "Village Manaba, Taluka Rapar, District Kachchh, Gujarat",
+    "focus_label": "التركيز المخطط",
+    "focus_value": "البروم ومركبات البروم",
+    "industries_label": "القطاعات",
+    "industries_value": "الأدوية، الكيماويات الزراعية، مثبطات اللهب، معالجة المياه، حقول النفط",
+    "status_label": "الحالة",
+    "status_value": "المنشأة قيد التطوير"
+  }
 }

@@ -1,0 +1,236 @@
+---
+interface Props {
+  image?: string;
+  class?: string;
+}
+
+const { image, class: className = '' } = Astro.props;
+---
+
+<div class={`hero-art-frame relative w-full overflow-hidden select-none ${className}`}>
+  {image ? (
+    <img
+      src={image}
+      alt=""
+      class="w-full h-auto object-cover aspect-[4/5] block"
+      loading="eager"
+      decoding="async"
+    />
+  ) : (
+    <div class="hero-art-canvas relative w-full aspect-[4/5] bg-[#F3EDE4] overflow-hidden">
+      <!-- Inline SVG with salt pan geometry, natural mineral gradient, subtle feTurbulence grain, and gentle ambient motion -->
+      <svg
+        viewBox="0 0 600 750"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-full h-full block"
+        preserveAspectRatio="xMidYMid slice"
+        aria-hidden="true"
+        role="presentation"
+      >
+        <defs>
+          <!-- Subtle feTurbulence grain filter for realistic salt crystalline surface texture -->
+          <filter id="saltGrain" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.65"
+              numOctaves="3"
+              result="noise"
+            />
+            <feColorMatrix
+              type="matrix"
+              values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 0.055 0"
+              result="softNoise"
+            />
+            <feComposite in="SourceGraphic" in2="softNoise" operator="over" />
+          </filter>
+
+          <!-- Linear gradients reflecting real crystallisation ponds from pure white salt crust down to deep bromine-rich bittern -->
+          <linearGradient id="panGrad0" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FCFAF7" />
+            <stop offset="100%" stop-color="#F2ECE1" />
+          </linearGradient>
+
+          <linearGradient id="panGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#EFE7DA" />
+            <stop offset="100%" stop-color="#E5D9C7" />
+          </linearGradient>
+
+          <linearGradient id="panGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#EBD5CF" />
+            <stop offset="100%" stop-color="#DFC0B7" />
+          </linearGradient>
+
+          <linearGradient id="panGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#D9A3A3" />
+            <stop offset="100%" stop-color="#C78082" />
+          </linearGradient>
+
+          <linearGradient id="panGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#C14F6B" />
+            <stop offset="100%" stop-color="#B23351" />
+          </linearGradient>
+
+          <linearGradient id="panGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#9C1E3C" />
+            <stop offset="100%" stop-color="#80142F" />
+          </linearGradient>
+
+          <linearGradient id="panGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6E1129" />
+            <stop offset="100%" stop-color="#4E0B1C" />
+          </linearGradient>
+        </defs>
+
+        <!-- Base background -->
+        <rect width="600" height="750" fill="#F4EFE6" />
+
+        <!-- Salt pan ponds grid: varied rectangular shapes separated by thin dykes (#F6F3EE) -->
+        <!-- Filter group with delicate crystalline noise -->
+        <g filter="url(#saltGrain)">
+          <!-- Tier 1: Initial evaporation reservoirs (near-white / chalk / pale sand) -->
+          <g class="pan-layer-drift-1">
+            <rect x="20" y="20" width="160" height="90" fill="url(#panGrad0)" rx="2" />
+            <rect x="188" y="20" width="220" height="90" fill="url(#panGrad0)" rx="2" class="pan-shimmer-1" />
+            <rect x="416" y="20" width="164" height="90" fill="url(#panGrad1)" rx="2" />
+
+            <rect x="20" y="118" width="270" height="85" fill="url(#panGrad1)" rx="2" />
+            <rect x="298" y="118" width="150" height="85" fill="url(#panGrad0)" rx="2" />
+            <rect x="456" y="118" width="124" height="85" fill="url(#panGrad1)" rx="2" class="pan-shimmer-2" />
+          </g>
+
+          <!-- Tier 2: Intermediate brine concentration (soft mineral blush, pale terracotta, dusty rose) -->
+          <g class="pan-layer-drift-2">
+            <rect x="20" y="211" width="190" height="100" fill="url(#panGrad2)" rx="2" />
+            <rect x="218" y="211" width="200" height="100" fill="url(#panGrad2)" rx="2" />
+            <rect x="426" y="211" width="154" height="100" fill="url(#panGrad3)" rx="2" class="pan-shimmer-1" />
+
+            <rect x="20" y="319" width="130" height="105" fill="url(#panGrad2)" rx="2" />
+            <rect x="158" y="319" width="255" height="105" fill="url(#panGrad3)" rx="2" />
+            <rect x="421" y="319" width="159" height="105" fill="url(#panGrad3)" rx="2" />
+          </g>
+
+          <!-- Tier 3: High saline & concentrated liquor (crimson, rose-madder, deep ruby) -->
+          <g class="pan-layer-drift-3">
+            <rect x="20" y="432" width="240" height="120" fill="url(#panGrad4)" rx="2" class="pan-shimmer-3" />
+            <rect x="268" y="432" width="170" height="120" fill="url(#panGrad4)" rx="2" />
+            <rect x="446" y="432" width="134" height="120" fill="url(#panGrad5)" rx="2" />
+
+            <rect x="20" y="560" width="175" height="90" fill="url(#panGrad5)" rx="2" />
+            <rect x="203" y="560" width="235" height="90" fill="url(#panGrad5)" rx="2" class="pan-shimmer-2" />
+            <rect x="446" y="560" width="134" height="90" fill="url(#panGrad4)" rx="2" />
+          </g>
+
+          <!-- Tier 4: Dense residual bittern (deep rich maroon, intense mineral density) -->
+          <g class="pan-layer-drift-1">
+            <rect x="20" y="658" width="210" height="72" fill="url(#panGrad6)" rx="2" />
+            <rect x="238" y="658" width="200" height="72" fill="url(#panGrad6)" rx="2" class="pan-shimmer-1" />
+            <rect x="446" y="658" width="134" height="72" fill="url(#panGrad6)" rx="2" />
+          </g>
+
+          <!-- Subtle linear dyke channels / bund accents -->
+          <line x1="20" y1="207" x2="580" y2="207" stroke="#F6F3EE" stroke-width="2.5" />
+          <line x1="20" y1="428" x2="580" y2="428" stroke="#F6F3EE" stroke-width="2.5" />
+          <line x1="20" y1="654" x2="580" y2="654" stroke="#F6F3EE" stroke-width="2.5" />
+
+          <line x1="184" y1="20" x2="184" y2="207" stroke="#F6F3EE" stroke-width="2.5" />
+          <line x1="412" y1="20" x2="412" y2="207" stroke="#F6F3EE" stroke-width="2.5" />
+
+          <line x1="214" y1="211" x2="214" y2="428" stroke="#F6F3EE" stroke-width="2.5" />
+          <line x1="422" y1="211" x2="422" y2="428" stroke="#F6F3EE" stroke-width="2.5" />
+
+          <line x1="264" y1="432" x2="264" y2="654" stroke="#F6F3EE" stroke-width="2.5" />
+          <line x1="442" y1="432" x2="442" y2="654" stroke="#F6F3EE" stroke-width="2.5" />
+        </g>
+      </svg>
+    </div>
+  )}
+</div>
+
+<style>
+  /* Arch frame mirroring the brand arch symbol */
+  .hero-art-frame {
+    border-radius: 14rem 14rem 0 0;
+    box-shadow: 0 0 0 1px var(--color-border);
+    background-color: var(--color-paper-light);
+  }
+
+  /* Extremely slow, gentle drift animation (40s - 60s loops) */
+  @media (prefers-reduced-motion: no-preference) {
+    .pan-layer-drift-1 {
+      animation: driftSlow 52s ease-in-out infinite alternate;
+    }
+
+    .pan-layer-drift-2 {
+      animation: driftOpposite 58s ease-in-out infinite alternate;
+    }
+
+    .pan-layer-drift-3 {
+      animation: driftSlow 46s ease-in-out infinite alternate;
+    }
+
+    .pan-shimmer-1 {
+      animation: shimmerFaint 38s ease-in-out infinite alternate;
+    }
+
+    .pan-shimmer-2 {
+      animation: shimmerFaint 44s ease-in-out infinite alternate 12s;
+    }
+
+    .pan-shimmer-3 {
+      animation: shimmerFaint 50s ease-in-out infinite alternate 6s;
+    }
+  }
+
+  @keyframes driftSlow {
+    0% {
+      transform: translateY(0px) scale(1);
+    }
+    50% {
+      transform: translateY(-2.5px) scale(1.003);
+    }
+    100% {
+      transform: translateY(1.5px) scale(0.998);
+    }
+  }
+
+  @keyframes driftOpposite {
+    0% {
+      transform: translateY(0px) scale(1);
+    }
+    50% {
+      transform: translateY(2px) scale(0.997);
+    }
+    100% {
+      transform: translateY(-2px) scale(1.002);
+    }
+  }
+
+  @keyframes shimmerFaint {
+    0% {
+      opacity: 0.94;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.91;
+    }
+  }
+
+  /* Strict prefers-reduced-motion: disable all animation */
+  @media (prefers-reduced-motion: reduce) {
+    .pan-layer-drift-1,
+    .pan-layer-drift-2,
+    .pan-layer-drift-3,
+    .pan-shimmer-1,
+    .pan-shimmer-2,
+    .pan-shimmer-3 {
+      animation: none !important;
+      transform: none !important;
+    }
+  }
+</style>

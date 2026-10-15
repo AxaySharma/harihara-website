@@ -6,7 +6,7 @@
     --color-crimson: #D01A45;
     --color-maroon: #7A1230;
     --color-charcoal: #1C1C1C;
-    --color-grey: #7A7A7A;
+    --color-grey: #6F6F6F; /* calibrated for WCAG AA >= 4.5:1 against #F6F3EE */
     --color-paper: #F6F3EE;
     --color-paper-light: #FAF8F5;
     --color-border: rgba(28, 28, 28, 0.12);

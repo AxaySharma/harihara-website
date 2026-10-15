@@ -1,21 +1,43 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { useTranslations } from '../i18n/utils';
+import Hero from '../components/Hero.astro';
 
 const lang = 'en';
-const t = useTranslations(lang);
+const isDev = import.meta.env.DEV;
+
+// Temporary stub section targets for navigation testing during development
+const stubs = [
+  { id: 'about', label: 'About (Planned Section Stub)' },
+  { id: 'process', label: 'Process (Planned Section Stub)' },
+  { id: 'products', label: 'Products (Planned Section Stub)' },
+  { id: 'industries', label: 'Industries (Planned Section Stub)' },
+  { id: 'location', label: 'Plant (Planned Section Stub)' },
+  { id: 'contact', label: 'Contact (Planned Section Stub)' },
+];
 ---
 
 <BaseLayout lang={lang}>
-  <div class="max-w-4xl mx-auto px-4 py-20 sm:py-28 text-start">
-    <div class="inline-block px-3 py-1 mb-6 text-xs uppercase tracking-widest text-[var(--color-crimson)] border border-[var(--color-crimson)]/20 rounded-full font-label">
-      {t('short_name')}
+  <!-- Hero Section -->
+  <Hero lang={lang} />
+
+  <!-- DEV-only stubs for anchor targets -->
+  {isDev && (
+    <div class="dev-stubs-container">
+      {stubs.map((stub) => (
+        <section
+          id={stub.id}
+          class="scroll-mt-24 border-t border-dashed border-[var(--color-border)] py-16 px-4 text-center bg-[var(--color-paper-light)]/40"
+        >
+          <div class="max-w-[78rem] mx-auto">
+            <span class="inline-block px-2.5 py-1 text-[10px] uppercase font-label tracking-widest text-[var(--color-grey)] border border-[var(--color-border)]">
+              DEV Stub: #{stub.id}
+            </span>
+            <p class="font-heading text-lg text-[var(--color-charcoal)]/60 mt-2">
+              {stub.label}
+            </p>
+          </div>
+        </section>
+      ))}
     </div>
-    <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl text-[var(--color-charcoal)] leading-tight tracking-tight mb-6">
-      {t('hero_heading')}
-    </h1>
-    <p class="font-body text-lg text-[var(--color-grey)] max-w-2xl leading-relaxed">
-      {t('hero_subheading')}
-    </p>
-  </div>
+  )}
 </BaseLayout>

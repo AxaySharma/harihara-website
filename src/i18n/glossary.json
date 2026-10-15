@@ -28,6 +28,20 @@
       "ar": "المحلول الملحي المتبقي (البتيرن)",
       "pt": "Salmoura residual (bittern)"
     },
+    "brine": {
+      "en": "Brine",
+      "hi": "लवण जल",
+      "gu": "ક્ષારયુક્ત જળ",
+      "es": "Salmuera",
+      "fr": "Saumure",
+      "de": "Sole",
+      "it": "Salamoia",
+      "zh": "盐水",
+      "ja": "塩水",
+      "ko": "염수",
+      "ar": "ماء ملحي",
+      "pt": "Salmoura"
+    },
     "bromide_salts": {
       "en": "Bromide salts",
       "hi": "ब्रोमाइड लवण",
@@ -41,6 +55,34 @@
       "ko": "브롬화물 염",
       "ar": "أملاح البروميد",
       "pt": "Sais de brometo"
+    },
+    "salt_pans": {
+      "en": "Salt pans",
+      "hi": "नमक के क्यारे",
+      "gu": "મીઠાના અગરો",
+      "es": "Salinas",
+      "fr": "Marais salants",
+      "de": "Salzgärten",
+      "it": "Saline",
+      "zh": "盐田",
+      "ja": "塩田",
+      "ko": "염전",
+      "ar": "ملاحات",
+      "pt": "Salinas"
+    },
+    "plant": {
+      "en": "Plant",
+      "hi": "संयंत्र",
+      "gu": "પ્લાન્ટ",
+      "es": "Planta",
+      "fr": "Usine",
+      "de": "Anlage",
+      "it": "Impianto",
+      "zh": "工厂",
+      "ja": "プラント",
+      "ko": "플랜트",
+      "ar": "منشأة",
+      "pt": "Planta"
     }
   },
   "protected_terms": [
@@ -51,7 +93,6 @@
     "Purchase@harihara.net",
     "9427134190",
     "106, Ruby Monarch Arcade, Saki Vihar Road, Sakinaka, Andheri (East), Mumbai - 400072, Maharashtra",
-    "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001",
-    "Village Manaba, Taluka Rapar, District Kachchh, Gujarat"
+    "Plot No. 390, Shiv Residency, Shiv Aaradhana Society, Bhuj Bypass, Bhuj, Kachchh, Gujarat - 370001"
   ]
 }

@@ -1,0 +1,333 @@
+---
+import Logo from './Logo.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const homeHref = lang === 'en' ? '/' : `/${lang}/`;
+
+const navItems = [
+  { id: 'about', label: t('nav.about') },
+  { id: 'process', label: t('nav.process') },
+  { id: 'products', label: t('nav.products') },
+  { id: 'industries', label: t('nav.industries') },
+  { id: 'location', label: t('nav.plant') },
+  { id: 'contact', label: t('nav.contact') },
+];
+---
+
+<!-- Skip to content link (first focusable element) -->
+<a
+  href="#main-content"
+  class="skip-to-content sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--color-crimson)] focus:text-[var(--color-paper)] focus:text-xs focus:uppercase focus:font-semibold focus:tracking-wider focus:outline-none focus:ring-2 focus:ring-[var(--color-charcoal)]"
+>
+  {t('a11y.skip_to_content')}
+</a>
+
+<header
+  id="site-header"
+  class="sticky top-0 z-40 w-full transition-colors duration-200"
+  data-scrolled="false"
+>
+  <div class="max-w-[78rem] mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between">
+    <!-- Left: Brand mark (Logo symbol ~36px) + Live text HARI HARA SERENITY -->
+    <a
+      href={homeHref}
+      class="brand-link inline-flex items-center gap-3.5 focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] focus:ring-offset-2 focus:ring-offset-[var(--color-paper)]"
+      aria-label="Hari Hara Serenity Chemical LLP"
+    >
+      <Logo variant="symbol" height={36} width={34} class="h-9 w-auto shrink-0" />
+      <span class="brand-title font-semibold text-xs sm:text-[13px] text-[var(--color-charcoal)] uppercase tracking-[0.22em] select-none whitespace-nowrap">
+        HARI HARA SERENITY
+      </span>
+    </a>
+
+    <!-- Centre/Right: Desktop Navigation -->
+    <nav
+      class="hidden lg:flex items-center gap-7 lg:gap-8"
+      aria-label={t('a11y.main_navigation')}
+    >
+      {navItems.map((item) => (
+        <a
+          href={`#${item.id}`}
+          data-nav-target={item.id}
+          class="nav-link relative py-1 text-xs uppercase tracking-[0.14em] font-medium text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)]"
+        >
+          {item.label}
+          <span class="nav-indicator absolute bottom-0 inset-x-0 h-[1.5px] bg-[var(--color-crimson)] scale-x-0 transition-transform duration-200 origin-start" />
+        </a>
+      ))}
+    </nav>
+
+    <!-- Far Right: Desktop Language Switcher & Mobile Menu Trigger -->
+    <div class="flex items-center gap-3">
+      <div class="hidden sm:block">
+        <LanguageSwitcher
+          currentLang={lang}
+          selectLangLabel={t('a11y.select_language')}
+          idPrefix="desktop-header"
+        />
+      </div>
+
+      <!-- Mobile Menu Button (<900px / lg) -->
+      <button
+        id="mobile-menu-trigger"
+        type="button"
+        class="lg:hidden p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] cursor-pointer"
+        aria-expanded="false"
+        aria-controls="mobile-menu-drawer"
+        aria-label={t('a11y.open_menu')}
+      >
+        <svg
+          class="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <line x1="3" y1="7" x2="21" y2="7" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="17" x2="21" y2="17" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Full-Screen Paper-Coloured Drawer -->
+<div
+  id="mobile-menu-drawer"
+  role="dialog"
+  aria-modal="true"
+  aria-label={t('a11y.main_navigation')}
+  class="fixed inset-0 z-50 bg-[var(--color-paper)] hidden flex-col justify-between px-6 py-6 overflow-y-auto"
+>
+  <!-- Drawer Top Bar -->
+  <div class="flex items-center justify-between border-b border-[var(--color-border)] pb-5">
+    <a
+      href={homeHref}
+      class="mobile-drawer-brand inline-flex items-center gap-3"
+      tabindex="-1"
+    >
+      <Logo variant="symbol" height={32} width={30} class="h-8 w-auto shrink-0" />
+      <span class="font-semibold text-xs text-[var(--color-charcoal)] uppercase tracking-[0.2em]">
+        HARI HARA SERENITY
+      </span>
+    </a>
+
+    <button
+      id="mobile-menu-close"
+      type="button"
+      class="p-2 text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)] cursor-pointer"
+      aria-label={t('a11y.close_menu')}
+    >
+      <svg
+        class="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Large Editorial Serif Navigation Links -->
+  <nav class="flex flex-col gap-5 py-8 my-auto">
+    {navItems.map((item) => (
+      <a
+        href={`#${item.id}`}
+        class="mobile-nav-link font-heading text-2xl sm:text-3xl text-[var(--color-charcoal)] hover:text-[var(--color-crimson)] transition-colors focus:outline-none focus:ring-1 focus:ring-[var(--color-crimson)]"
+      >
+        {item.label}
+      </a>
+    ))}
+  </nav>
+
+  <!-- Mobile Drawer Footer with Language Switcher -->
+  <div class="border-t border-[var(--color-border)] pt-6 flex flex-col gap-4">
+    <div class="text-[11px] uppercase tracking-wider text-[var(--color-grey)]">
+      {t('a11y.select_language')}
+    </div>
+    <div>
+      <LanguageSwitcher
+        currentLang={lang}
+        selectLangLabel={t('a11y.select_language')}
+        idPrefix="mobile-drawer"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Header scroll state transition */
+  #site-header {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  #site-header[data-scrolled="true"] {
+    background-color: var(--color-paper);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Active nav item indicator */
+  .nav-link[aria-current="true"] {
+    color: var(--color-crimson);
+  }
+
+  .nav-link[aria-current="true"] .nav-indicator {
+    transform: scaleX(1);
+  }
+
+  /* Script-specific letter spacing adjustment */
+  html[lang="hi"] .brand-title,
+  html[lang="gu"] .brand-title,
+  html[lang="zh-Hans"] .brand-title,
+  html[lang="ja"] .brand-title,
+  html[lang="ko"] .brand-title,
+  html[lang="ar"] .brand-title {
+    /* Brand title is in Latin Montserrat, keep tracking */
+    letter-spacing: 0.22em;
+  }
+
+  /* Disable letter-spacing on nav labels for scripts without casing */
+  html[lang="hi"] .nav-link,
+  html[lang="gu"] .nav-link,
+  html[lang="zh-Hans"] .nav-link,
+  html[lang="ja"] .nav-link,
+  html[lang="ko"] .nav-link,
+  html[lang="ar"] .nav-link {
+    letter-spacing: normal;
+  }
+</style>
+
+<script>
+  (function () {
+    // 1. Sticky header background on scroll past 24px
+    const header = document.getElementById('site-header');
+    function onScroll() {
+      if (!header) return;
+      const scrolled = window.scrollY > 24;
+      header.setAttribute('data-scrolled', scrolled ? 'true' : 'false');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // 2. Active section observer for desktop nav links
+    const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav-link[data-nav-target]');
+    const sectionIds = ['hero', 'about', 'process', 'products', 'industries', 'location', 'contact'];
+    const sections: HTMLElement[] = [];
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) sections.push(el);
+    });
+
+    if ('IntersectionObserver' in window && sections.length > 0) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const currentId = entry.target.id;
+              navLinks.forEach((link) => {
+                const target = link.getAttribute('data-nav-target');
+                if (target === currentId) {
+                  link.setAttribute('aria-current', 'true');
+                } else {
+                  link.removeAttribute('aria-current');
+                }
+              });
+            }
+          });
+        },
+        {
+          rootMargin: '-20% 0px -60% 0px',
+          threshold: 0,
+        }
+      );
+
+      sections.forEach((s) => observer.observe(s));
+    }
+
+    // 3. Mobile menu drawer handling with focus trap & scroll lock
+    const trigger = document.getElementById('mobile-menu-trigger');
+    const drawer = document.getElementById('mobile-menu-drawer');
+    const closeBtn = document.getElementById('mobile-menu-close');
+    const mobileLinks = drawer?.querySelectorAll<HTMLAnchorElement>('.mobile-nav-link');
+
+    let previousActiveElement: HTMLElement | null = null;
+
+    function openMobileMenu() {
+      if (!drawer || !trigger) return;
+      previousActiveElement = document.activeElement as HTMLElement;
+      drawer.classList.remove('hidden');
+      drawer.classList.add('flex');
+      trigger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+
+      // Focus close button initially
+      closeBtn?.focus();
+    }
+
+    function closeMobileMenu() {
+      if (!drawer || !trigger) return;
+      drawer.classList.add('hidden');
+      drawer.classList.remove('flex');
+      trigger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+
+      if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
+        previousActiveElement.focus();
+      }
+    }
+
+    trigger?.addEventListener('click', openMobileMenu);
+    closeBtn?.addEventListener('click', closeMobileMenu);
+
+    mobileLinks?.forEach((link) => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close on Escape key & trap focus
+    drawer?.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+        return;
+      }
+
+      if (e.key === 'Tab') {
+        const focusable = drawer.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (e.shiftKey) {
+          if (document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
+    });
+  })();
+</script>

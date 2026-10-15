@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css';
 import FontLoader from '../components/FontLoader.astro';
-import LanguageSwitcher from '../components/LanguageSwitcher.astro';
-import Logo from '../components/Logo.astro';
+import Header from '../components/Header.astro';
 import { languages, getVisibleLanguages } from '../i18n/languages.config';
 import { useTranslations } from '../i18n/utils';
 
@@ -18,7 +17,7 @@ const langConfig = languages[lang] || languages.en;
 
 const siteName = t('site_name');
 const pageTitle = title ? `${title} | ${siteName}` : `${siteName} | Industrial Bromine Recovery`;
-const metaDescription = description || t('hero_subheading');
+const metaDescription = description || t('hero.lead');
 
 const showDrafts = import.meta.env.SHOW_DRAFT_LANGUAGES === 'true';
 const visibleLocales = getVisibleLanguages(showDrafts);
@@ -41,7 +40,7 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <!-- Hreflang tags for all visible/published languages -->
+    <!-- Hreflang tags for visible languages -->
     {visibleLocales.map((locale) => {
       const href = locale.code === 'en' ? `${siteUrl}/` : `${siteUrl}/${locale.code}/`;
       return <link rel="alternate" hreflang={locale.htmlLang} href={href} />;
@@ -54,29 +53,24 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
     <FontLoader lang={lang} />
   </head>
   <body class="bg-[var(--color-paper)] text-[var(--color-charcoal)] antialiased flex flex-col min-h-screen">
-    <header class="border-b border-[var(--color-border)] bg-[var(--color-paper-light)]/80 backdrop-blur-xs sticky top-0 z-40">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
-        <a href={lang === 'en' ? '/' : `/${lang}/`} class="flex items-center group">
-          <Logo variant="full" width={220} height={58} class="h-10 w-auto" alt={siteName} />
-        </a>
-        <div class="flex items-center gap-4">
-          <LanguageSwitcher currentLang={lang} />
-        </div>
-      </div>
-    </header>
+    <!-- Sticky editorial Header -->
+    <Header lang={lang} />
 
     {lang !== 'en' && (
-      <div class="bg-[var(--color-paper-light)] border-b border-[var(--color-border-subtle)] text-xs text-[var(--color-grey)] py-2 text-center px-4">
+      <aside
+        aria-label="Convenience translation note"
+        class="bg-[var(--color-paper-light)] border-b border-[var(--color-border-subtle)] text-[11px] text-[var(--color-grey)] py-1.5 text-center px-4"
+      >
         <p>{t('convenience_note')}</p>
-      </div>
+      </aside>
     )}
 
-    <main class="flex-grow">
+    <main id="main-content" class="flex-grow">
       <slot />
     </main>
 
     <footer class="border-t border-[var(--color-border)] py-8 px-4 text-center text-xs text-[var(--color-grey)]">
-      <div class="max-w-7xl mx-auto space-y-2">
+      <div class="max-w-[78rem] mx-auto space-y-2">
         <p>Hari Hara Serenity Chemical LLP | LLPIN: ACR-8196 | GSTIN: 24AASFH7523H1Z5 | Limited Liability Partnership registered under the LLP Act, 2008</p>
       </div>
     </footer>
