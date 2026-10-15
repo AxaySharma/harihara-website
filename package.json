@@ -11,6 +11,8 @@
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
     "check:i18n": "node scripts/check-i18n.js",
     "qa": "node scripts/qa.mjs",
+    "qa:quick": "node scripts/qa.mjs --mode=quick",
+    "qa:full": "node scripts/qa.mjs --mode=full",
     "astro": "astro"
   },
   "dependencies": {

@@ -49,8 +49,8 @@ html {
   background-color: var(--color-paper);
   color: var(--color-charcoal);
   font-family: var(--font-body);
-  /* Fluid root scaling: 100% up to 1440px, grows smoothly to ~111% at 1920px, ~125% at 2560px, capped at 135% */
-  font-size: calc(clamp(100%, 100% + 0.0223 * (100vw - 1440px), 135%) * var(--script-scale));
+  /* Fluid root scaling: 100% up to 1440px, grows smoothly to ~115% at 1920px, ~135% at 2560px */
+  font-size: calc(clamp(100%, 100% + 0.0315 * (100vw - 1440px), 140%) * var(--script-scale));
   line-height: var(--lh-body);
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -92,8 +92,8 @@ body {
 }
 
 /* Desktop minimum typography rules (1024px and up):
-   - nav links, buttons, FAQ summaries: minimum 1.125rem
-   - labels, eyebrows, captions, facts labels: minimum 0.9375rem */
+   - nav links, buttons, FAQ summaries: minimum 1.125rem (18px)
+   - labels, eyebrows, captions, facts labels, switcher items, footnotes: minimum 0.9375rem (15px at 16px root) */
 @media (min-width: 1024px) {
   .nav-link,
   .btn-primary,
@@ -104,9 +104,12 @@ body {
   .font-label,
   .hero-eyebrow,
   .fact-label,
+  .image-caption,
   [data-caption],
   p.caption-text,
-  span.label-text {
+  span.label-text,
+  .text-\[0\.875rem\],
+  .text-xs {
     font-size: 0.9375rem !important;
   }
 }

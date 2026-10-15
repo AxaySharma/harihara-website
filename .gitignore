@@ -36,3 +36,4 @@ desktop.ini
 
 # QA outputs
 qa/screenshots/
+qa/results/
